@@ -1,17 +1,19 @@
-# Kho cài đặt Javis
+# Kho cài đặt SenOS
 
-Trợ lý, kỹ năng, quy trình, công cụ và kết nối làm sẵn cho [Javis OS](https://github.com/blogminhquy/javis-os).
+> Kho này bắt nguồn từ [Javis Store](https://github.com/blogminhquy/javis-store) của Nguyễn Minh Quý. Mã gói (`javis.*`) được giữ nguyên để mọi gói cài và chạy đúng trên SenOS.
 
-Javis đọc thẳng `index.json` trong repo này, nên **thêm một mục ở đây là mọi máy đang chạy Javis
+Trợ lý, kỹ năng, quy trình, công cụ và kết nối làm sẵn cho [SenOS](https://github.com/thayhieumasterai/senos-os).
+
+SenOS đọc thẳng `index.json` trong repo này, nên **thêm một mục ở đây là mọi máy đang chạy SenOS
 thấy ngay** - không phải chờ bản cập nhật nào cả. Đó là toàn bộ lý do kho tách ra thành một repo
 riêng.
 
-## Người dùng Javis
+## Người dùng SenOS
 
-Không cần làm gì với repo này. Mở Javis, vào tab **Kho cài đặt** trên bất kỳ trang năng lực nào
+Không cần làm gì với repo này. Mở SenOS, vào tab **Kho cài đặt** trên bất kỳ trang năng lực nào
 (Trợ lý, Kỹ năng, Quy trình, Plugin, Kết nối), rồi bấm **Cài đặt**.
 
-Javis tải gói về, **mở ra cho bạn xem bên trong có gì rồi mới hỏi**. Gói có chứa mã Python thì
+SenOS tải gói về, **mở ra cho bạn xem bên trong có gì rồi mới hỏi**. Gói có chứa mã Python thì
 màn hình xác nhận hiện khối cảnh báo đỏ nói thẳng điều đó, kèm tên từng tệp mã, và gói cài xong
 ở trạng thái tắt cho tới khi bạn bật.
 
@@ -19,27 +21,27 @@ Kho không tới được cũng không sao: gói đã cài chạy bình thườn
 
 ## Bố cục repo
 
-    index.json          danh mục - thứ Javis đọc
+    index.json          danh mục - thứ SenOS đọc
     packs/<id>/         MÃ NGUỒN từng gói, để ai cũng đọc được trước khi cài
     packs/<id>/assets/  logo của gói: thẻ trong Kho cài đặt và trang Kết nối cùng dùng tệp này
-    dist/<id>-<ver>.zip tệp Javis thật sự tải về
+    dist/<id>-<ver>.zip tệp SenOS thật sự tải về
     huong-dan/<tên>.md  hướng dẫn cho người dùng, trang Kết nối trỏ link tới đây
     mcp/                MCP bên thứ 3 chưa lên npm, kho build từ commit ghim (xem mcp/nguon.json)
     mcp-nguon/<tên>/    mã nguồn MCP kho tự viết khi không có MCP nào dùng được
     tools/dong-goi.py   đóng gói một thư mục thành .zip và in dấu vân tay
     theo-goc/<id>.json  gói THEO REPO GỐC: repo GitHub của tác giả và thư mục skill chép về
     tools/theo-goc.py   chép nguyên văn từ repo gốc, mỗi ngày CI chạy lại để lấy bản mới
-    plan-names.json     danh bạ tên gói thuê bao (Claude, ChatGPT, Grok, Antigravity) - Javis đọc như index.json
+    plan-names.json     danh bạ tên gói thuê bao (Claude, ChatGPT, Grok, Antigravity) - SenOS đọc như index.json
 
-Mã nguồn nằm ngay cạnh tệp phát hành là có chủ ý: gói **chạy được mã Python trong máy chủ Javis
+Mã nguồn nằm ngay cạnh tệp phát hành là có chủ ý: gói **chạy được mã Python trong máy chủ SenOS
 của bạn**, nên bạn phải đọc được nó mà không cần tải gì về trước.
 
 ## Repo khuyên dùng (theo repo gốc)
 
 Một số gói không phải bản chụp mà **theo repo gốc**: skill chép nguyên văn từ repo GitHub của tác
 giả, không dịch, không sửa. Mỗi ngày job `Theo repo gốc` so lại, repo gốc đổi thì gói lên một bản
-vá và Javis báo trong chuông. Đổi chữ thì vào thẳng kho; đổi tệp mã (script) thì thành một Pull
-Request chờ chủ kho đọc. Trong Javis, các gói này nằm ở mục **Repo khuyên dùng** của Store.
+vá và SenOS báo trong chuông. Đổi chữ thì vào thẳng kho; đổi tệp mã (script) thì thành một Pull
+Request chờ chủ kho đọc. Trong SenOS, các gói này nằm ở mục **Repo khuyên dùng** của Store.
 
 Thêm một repo: viết `theo-goc/<id>.json` (xem hai tệp có sẵn), chạy `python tools/theo-goc.py <id>`,
 rồi `python tools/kiem-tra.py`.
@@ -47,7 +49,7 @@ Repo để skill thành tệp `.md` phẳng thay vì thư mục có `SKILL.md` (
 `"phang": true` trong mục `chep`, xem `theo-goc/javis.flowkit.json`.
 
 Repo chứa **agent** thay vì skill (như agency-agents) thì khai `"den": "agents"`, xem
-`theo-goc/javis.agency-agents.json`. Thân prompt giữ nguyên văn, phần đầu tệp thêm vài khoá để Javis
+`theo-goc/javis.agency-agents.json`. Thân prompt giữ nguyên văn, phần đầu tệp thêm vài khoá để SenOS
 đọc được, tên và mô tả tiếng Việt lấy từ `theo-goc/dich/<id>.json`. Khai thêm `"tach"` thì mỗi agent
 còn thành một gói lẻ trong tab Agent của Store (cài từng cái), cập nhật cùng lượt với gói gộp.
 
@@ -59,15 +61,15 @@ mục trong `index.json`. Mọi gói đều **được người phát hành kho 
 ## Định dạng
 
 Định dạng `index.json` và cách viết một gói: xem
-[docs/dev/pack-store-index.md](https://github.com/blogminhquy/javis-os/blob/main/docs/dev/pack-store-index.md)
-trong repo Javis OS.
+[docs/dev/pack-store-index.md](https://github.com/thayhieumasterai/senos-os/blob/main/docs/dev/pack-store-index.md)
+trong repo SenOS.
 
 ## Danh bạ tên gói thuê bao
 
 `plan-names.json` đổi mã gói mà CLI của nhà cung cấp gửi (ví dụ `prolite` của Codex) ra tên họ đang
-bán. Javis ưu tiên tên do chính nhà cung cấp gửi (Claude Code có), sau đó tới tệp
+bán. SenOS ưu tiên tên do chính nhà cung cấp gửi (Claude Code có), sau đó tới tệp
 này, cuối cùng mới tự viết gọn mã. Nhà cung cấp đổi tên thì sửa một dòng ở đây, mọi máy thấy ở lần
-làm mới kế tiếp, không cần bản Javis mới.
+làm mới kế tiếp, không cần bản SenOS mới.
 
 Mỗi tuần một lịch chạy trên cloud dò tin đổi tên gói của bốn nhà và mở Pull Request sửa tệp này nếu
 có gì khác. Mã chưa chắc tên nằm ở `pending` kèm lý do, không đoán vào `providers`. Luật đầy đủ ở

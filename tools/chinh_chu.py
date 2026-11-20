@@ -36,7 +36,7 @@ from pathlib import Path
 
 GOC = Path(__file__).resolve().parent.parent
 THU_MUC = GOC / "chinh-chu"
-_UA = {"User-Agent": "javis-store-soi"}
+_UA = {"User-Agent": "senos-store-soi"}
 TRAN_GIAY = 60
 
 # Thứ tự nặng dần, để gộp các biến thể của cùng một tool (GitHub có tệp snapshot riêng cho bản

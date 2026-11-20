@@ -245,7 +245,7 @@ for tm in thu_muc_goi:
 # 5. Danh mục khớp gói và khớp zip
 # ============================================================
 idx = json.loads((GOC / "index.json").read_text(encoding="utf-8"))
-check("index.json đúng format", idx.get("format") == "javis-pack-index", idx.get("format"))
+check("index.json đúng format", idx.get("format") == "senos-pack-index", idx.get("format"))
 check("index.json đúng format_version", int(idx.get("format_version") or 0) == 1)
 
 ids = [g.get("id") for g in idx.get("packs") or []]

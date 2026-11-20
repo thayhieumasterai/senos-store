@@ -1,12 +1,12 @@
-# Dùng FlowKit với Javis
+# Dùng FlowKit với SenOS
 
 [FlowKit](https://github.com/crisng95/flowkit) là bộ công cụ làm video AI bằng Google Flow (Veo 3,
 Omni): từ ý tưởng, kịch bản, nhân vật, hình cảnh, clip 8 giây, lồng tiếng, nhạc, ghép phim tới
 thumbnail và đăng YouTube.
 
-Gói **FlowKit** trong Kho cài đặt chỉ mang **41 skill** (công thức làm việc) vào Javis. Skill gọi
+Gói **FlowKit** trong Kho cài đặt chỉ mang **41 skill** (công thức làm việc) vào SenOS. Skill gọi
 tới máy chủ FlowKit chạy trên chính máy bạn, nên bạn cần cài FlowKit một lần theo các bước dưới.
-Chưa cài thì skill vẫn hiện trong Javis nhưng không tạo được hình hay video.
+Chưa cài thì skill vẫn hiện trong SenOS nhưng không tạo được hình hay video.
 
 ## Cần chuẩn bị
 
@@ -51,18 +51,18 @@ curl http://127.0.0.1:8100/health
 
 Thấy `"extension_connected": true` là xong.
 
-## Bước 4. Cài gói trong Javis
+## Bước 4. Cài gói trong SenOS
 
-1. Mở Javis, vào **Kỹ năng**, tab **Kho cài đặt**, mục **Repo khuyên dùng**.
+1. Mở SenOS, vào **Kỹ năng**, tab **Kho cài đặt**, mục **Repo khuyên dùng**.
 2. Chọn **FlowKit: Làm video AI bằng Google Flow**, bấm **Cài đặt**.
-3. Khi làm việc, cho Javis chạy lệnh **trong thư mục `~/flowkit`**: nhiều skill gọi script có sẵn
+3. Khi làm việc, cho SenOS chạy lệnh **trong thư mục `~/flowkit`**: nhiều skill gọi script có sẵn
    trong repo (ví dụ `scripts/`, `youtube/`).
 
-Rồi nói với Javis bằng lời thường, ví dụ: "Làm cho mình video 3 cảnh về chú mèo phi hành gia, khổ dọc,
-phong cách hoạt hình 3D". Javis sẽ dùng `fk-pipeline` để đi hết các bước, hoặc bạn gọi từng skill như
+Rồi nói với SenOS bằng lời thường, ví dụ: "Làm cho mình video 3 cảnh về chú mèo phi hành gia, khổ dọc,
+phong cách hoạt hình 3D". SenOS sẽ dùng `fk-pipeline` để đi hết các bước, hoặc bạn gọi từng skill như
 `fk-create-project`, `fk-gen-images`, `fk-gen-videos`, `fk-concat`.
 
-Gặp lỗi gì thì bảo Javis dùng `fk-doctor`: skill này biết hết các lỗi thường gặp và cách sửa.
+Gặp lỗi gì thì bảo SenOS dùng `fk-doctor`: skill này biết hết các lỗi thường gặp và cách sửa.
 
 ## Lưu ý về tài khoản Google
 
@@ -74,7 +74,7 @@ Nên:
 
 ## Cập nhật
 
-Gói đi theo repo gốc: mỗi ngày kho so lại với FlowKit, có bản mới thì Javis báo trong chuông, bạn
+Gói đi theo repo gốc: mỗi ngày kho so lại với FlowKit, có bản mới thì SenOS báo trong chuông, bạn
 bấm **Cập nhật**. Phần máy chủ FlowKit trên máy bạn thì tự cập nhật:
 
 ```bash

@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: |
-          git config user.name "javis-store-bot"
+          git config user.name "senos-store-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: "Lượt 1: gói chỉ đổi chữ"

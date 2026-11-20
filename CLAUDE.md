@@ -1,6 +1,6 @@
-# Javis Store: quy ước cho phiên Claude Code
+# Kho SenOS: quy ước cho phiên Claude Code
 
-Kho này chứa các gói cài thêm cho Javis OS. Gói có mã chạy Python thật trong máy chủ của người dùng, và `README.md`
+Kho này chứa các gói cài thêm cho SenOS. Gói có mã chạy Python thật trong máy chủ của người dùng, và `README.md`
 hứa mọi gói được người phát hành kho đọc mã trước khi trộn: mở PR rồi báo chủ kho duyệt, trừ khi chủ kho bảo merge.
 
 Đọc `CONTRIBUTING.md` trước khi sửa gói. Mấy luật hay bị quên:
@@ -10,14 +10,14 @@ hứa mọi gói được người phát hành kho đọc mã trước khi trộ
   thêm thư mục plugin thứ hai.
 - Ra bản mới: tăng `version` ở manifest gói và mục `index.json`, đóng zip bằng `python tools/dong-goi.py <id>` (giữ zip
   cũ), dán `sha256` vào `index.json`, chạy `python tools/kiem-tra.py`.
-- Gói có mã thì chạy test của nó trên bản Javis OS: `JAVIS_OS_DIR=../javis-os python tests/<id>/test_*.py`.
+- Gói có mã thì chạy test của nó trên bản SenOS: `JAVIS_OS_DIR=../javis-os python tests/<id>/test_*.py`.
 - Không dùng ký tự gạch ngang dài (em dash) trong mọi tệp.
 
 ## Thiết kế trang của gói
 
 Chủ kho 15/11/2026: "lưu lại phong cách thiết kế, lần sau làm theo cho anh đỡ phải nhắc". Phong cách đầy đủ, gom từ mọi
-lần chủ đã sửa giao diện, ở `docs/dev/design-style.md` của repo Javis OS
-(https://github.com/blogminhquy/javis-os/blob/main/docs/dev/design-style.md). Đọc nó trước khi vẽ trang HTML cho một
+lần chủ đã sửa giao diện, ở `docs/dev/design-style.md` của repo SenOS
+(https://github.com/thayhieumasterai/senos-os/blob/main/docs/dev/design-style.md). Đọc nó trước khi vẽ trang HTML cho một
 gói, và chạy mục 0 "Kiểm trước khi gửi" trước khi báo xong. Mấy điểm chính:
 
 - **Màn mới hoặc thiết kế lại:** làm bản HTML cho chủ duyệt trước khi code, trừ khi chủ bảo làm thẳng. Gửi ảnh trước và

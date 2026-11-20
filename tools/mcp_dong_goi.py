@@ -55,7 +55,7 @@ THU_MUC = GOC / "mcp"
 NGUON = THU_MUC / "nguon.json"
 # Địa chỉ connector dùng để tải tệp. Nhánh `main`: tệp trong `mcp/` không bao giờ bị ghi đè, nên
 # URL theo tên tệp đã là URL bất biến.
-URL_GOC = "https://raw.githubusercontent.com/blogminhquy/javis-store/main/mcp/"
+URL_GOC = "https://raw.githubusercontent.com/thayhieumasterai/senos-store/main/mcp/"
 
 
 def doc_nguon():

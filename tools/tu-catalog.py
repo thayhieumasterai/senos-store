@@ -102,7 +102,7 @@ def lam_goi(c: dict, logo_dir: Path) -> tuple:
         "description: {vi: " + j(mo_ta) + "}\n"
         "author: {name: Javis}\n"
         "license: MIT\n"
-        'homepage: "https://github.com/blogminhquy/javis-store"\n'
+        'homepage: "https://github.com/thayhieumasterai/senos-store"\n'
         # 0.55.27 là bản đầu đọc đúng phiên bản của CHÍNH NÓ; bản trước đó từ chối MỌI gói có
         # khai `compat`, kèm câu "bản này là " bỏ trống.
         'compat: {app: ">=0.55.27"}\n'
@@ -121,7 +121,7 @@ def lam_goi(c: dict, logo_dir: Path) -> tuple:
         "category": slug(nhom), "category_label": {"vi": nhom},
         "tier": "code" if code else "data",
         "verified": True, "updated": "2026-09-05",
-        "homepage": "https://github.com/blogminhquy/javis-store/tree/main/packs/" + pid,
+        "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/" + pid,
         # Id connector gói này cấp. Kho dùng nó để KHÔNG hiện hai thẻ cho cùng một dịch vụ khi
         # app vẫn còn bản của mình - và để biết thẻ nào trở nên cài được sau khi app bỏ nó đi.
         "provides": {"connectors": [cid]},

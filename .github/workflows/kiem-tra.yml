@@ -45,7 +45,7 @@ jobs:
           persist-credentials: false
       - uses: actions/checkout@v4
         with:
-          repository: blogminhquy/javis-os
+          repository: thayhieumasterai/senos-os
           path: javis-os
           persist-credentials: false
       - uses: actions/setup-python@v5
@@ -73,7 +73,7 @@ jobs:
           persist-credentials: false
       - uses: actions/checkout@v4
         with:
-          repository: blogminhquy/javis-os
+          repository: thayhieumasterai/senos-os
           path: javis-os
           persist-credentials: false
       - uses: actions/setup-python@v5

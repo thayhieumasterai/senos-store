@@ -52,7 +52,7 @@ class TheoGoc(unittest.TestCase):
         for d in ("theo-goc", "packs", "dist"):
             (self.kho / d).mkdir(parents=True)
         (self.kho / "index.json").write_text(json.dumps(
-            {"format": "javis-pack-index", "format_version": 1, "updated": "", "packs": []}), encoding="utf-8")
+            {"format": "senos-pack-index", "format_version": 1, "updated": "", "packs": []}), encoding="utf-8")
         (self.kho / "theo-goc" / "javis.thu.json").write_text(json.dumps({
             "repo": "tac-gia/kho-skill", "ref": "main",
             "chep": [{"tu": "skills", "den": "skills"}],
@@ -397,7 +397,7 @@ class TheoGocAgent(unittest.TestCase):
         for d in ("theo-goc/dich", "packs", "dist"):
             (self.kho / d).mkdir(parents=True)
         (self.kho / "index.json").write_text(json.dumps(
-            {"format": "javis-pack-index", "format_version": 1, "updated": "",
+            {"format": "senos-pack-index", "format_version": 1, "updated": "",
              "packs": [{"id": "javis.khac"}]}), encoding="utf-8")
         self.cau_hinh = {
             "repo": "tac-gia/agents", "ref": "main", "tien_to": "ag-", "tach": "javis.ag.", "the": "Bộ AG",

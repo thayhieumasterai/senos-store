@@ -130,7 +130,7 @@ def liet_ke_tool(con):
 
         gui({"jsonrpc": "2.0", "id": 1, "method": "initialize",
              "params": {"protocolVersion": "2025-06-18", "capabilities": {},
-                        "clientInfo": {"name": "javis-store-soi", "version": "1"}}})
+                        "clientInfo": {"name": "senos-store-soi", "version": "1"}}})
         m, e = nhan(1)
         if not m:
             return None, e
