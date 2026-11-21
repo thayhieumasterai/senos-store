@@ -17,7 +17,7 @@ import re
 import sys
 import tempfile
 
-os.environ.setdefault("JAVIS_STATE_DIR", tempfile.mkdtemp(prefix="javis-fbmon-"))
+os.environ.setdefault("SENOS_STATE_DIR", tempfile.mkdtemp(prefix="javis-fbmon-"))
 
 _fails = []
 def check(n, c):

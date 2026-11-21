@@ -30,7 +30,7 @@ ROOT = Path(os.environ.get("JAVIS_OS_DIR") or (STORE.parent / "javis-os")).resol
 if not (ROOT / "server" / "mcp_catalog.py").is_file():
     raise SystemExit(f"Javis OS checkout not found at {ROOT} (set JAVIS_OS_DIR)")
 os.environ["JAVIS_OS_DIR"] = str(ROOT)
-os.environ.setdefault("JAVIS_STATE_DIR", tempfile.mkdtemp(prefix="javis-test-chinh-chu-"))
+os.environ.setdefault("SENOS_STATE_DIR", tempfile.mkdtemp(prefix="javis-test-chinh-chu-"))
 sys.path.insert(0, str(STORE / "tools"))
 
 import chinh_chu  # noqa: E402

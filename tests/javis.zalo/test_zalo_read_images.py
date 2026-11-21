@@ -27,7 +27,7 @@ import tempfile
 import types
 from pathlib import Path
 
-os.environ.setdefault("JAVIS_STATE_DIR", tempfile.mkdtemp(prefix="javis-zri-"))
+os.environ.setdefault("SENOS_STATE_DIR", tempfile.mkdtemp(prefix="javis-zri-"))
 try:
     sys.stdout.reconfigure(encoding="utf-8")
 except Exception:

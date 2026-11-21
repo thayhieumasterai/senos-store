@@ -33,6 +33,18 @@ def urls(s):
     return s
 
 
+# Store tests run against the SenOS app (kiem-tra.yml checks out senos-os): the names the APP owns are SenOS's there.
+# Names the packs own (javis.gate, javis-gate, JAVIS_OS_DIR = where the app is checked out) stay.
+HOST_IN_TESTS = [(re.compile(r"\bJAVIS_(STATE_DIR|REQUIRE_LOGIN|API_STREAM_TOOLS)\b"), r"SENOS_\1"),
+                 (re.compile(r"\bjavis_chat_"), "senos_chat_"), (re.compile(r"JAVIS GATE"), "SENOS GATE")]
+
+
+def host_names(s):
+    for rx, b in HOST_IN_TESTS:
+        s = rx.sub(b, s)
+    return s
+
+
 def prose(s):
     """Docs: URLs and brand words, but never on the credit line (it names where the store comes from)."""
     return "\n".join(ln if ln.startswith(CREDIT_START) else words(urls(ln)) for ln in s.split("\n"))
@@ -40,12 +52,15 @@ def prose(s):
 
 changed = 0
 for p in ROOT.rglob("*"):
-    if not p.is_file() or p.parts[0] in SKIP_TOP or p.name == "index.json" or p.name == "senos_rebrand.py":
+    # the sync workflow names upstream's repo on purpose; this script and the index are handled on their own
+    if (not p.is_file() or p.parts[0] in SKIP_TOP or p.name in ("index.json", "senos_rebrand.py", "dong-bo-javis.yml")):
         continue
     if p.suffix not in (".md", ".py", ".yml", ".yaml", ".json", ".txt"):
         continue
     s = p.read_text(encoding="utf-8")
     t = prose(s) if p.suffix == ".md" or p.parts[0] == "huong-dan" else urls(s)
+    if p.parts[0] == "tests" and p.suffix == ".py":
+        t = host_names(t)
     if t != s:
         p.write_text(t, encoding="utf-8", newline="\n")
         changed += 1

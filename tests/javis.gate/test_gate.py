@@ -8,12 +8,12 @@ calls on /ext/javis-gate/mcp. The model behind Javis is a fake OpenRouter (HTTP 
 
 Locks:
 1. Redirects: ChatGPT, Claude and localhost (Claude Code / Desktop) yes; any other host no.
-2. The four chat tools are listed on the Gate; javis_chat_send only at Full access.
-3. javis_chat_send posts into the chat, Javis answers, and the stored message carries the sender "Claude".
+2. The four chat tools are listed on the Gate; senos_chat_send only at Full access.
+3. senos_chat_send posts into the chat, Javis answers, and the stored message carries the sender "Claude".
 4. Upgrade from javis.javis-trong-chatgpt 1.x: the token issued before the update still works, on the OLD address.
-5. Notes (Javis 0.441.0+): javis_chat_note saves the owner's decision into a "Từ Claude: <title>" chat.
-6. Model and effort (gate 2.2.0, on a Javis OS that has javis_chat_models): through this pack's own OAuth door, the
-   outside AI pins a chat's model and sets one message's effort, the consent page says so, and javis_chat_updates
+5. Notes (Javis 0.441.0+): senos_chat_note saves the owner's decision into a "Từ Claude: <title>" chat.
+6. Model and effort (gate 2.2.0, on a Javis OS that has senos_chat_models): through this pack's own OAuth door, the
+   outside AI pins a chat's model and sets one message's effort, the consent page says so, and senos_chat_updates
    hands over a result it did not wait for.
 7. Other AI tools (gate 2.2.0, any Javis OS): an unknown redirect address is refused but listed for the owner, who
    alone can allow it (https or an app scheme, never http); a personal key, made by the owner only, connects a tool
@@ -40,9 +40,9 @@ import tempfile
 import zipfile
 from pathlib import Path
 
-os.environ["JAVIS_STATE_DIR"] = tempfile.mkdtemp(prefix="javis-gate-store-")
-os.environ["JAVIS_REQUIRE_LOGIN"] = "1"
-os.environ["JAVIS_API_STREAM_TOOLS"] = "0"
+os.environ["SENOS_STATE_DIR"] = tempfile.mkdtemp(prefix="javis-gate-store-")
+os.environ["SENOS_REQUIRE_LOGIN"] = "1"
+os.environ["SENOS_API_STREAM_TOOLS"] = "0"
 
 from fastapi.testclient import TestClient   # noqa: E402
 import config as cfg   # noqa: E402
@@ -160,7 +160,7 @@ def rpc(client, path, method, params=None, token="", n=1):
 
 r = rpc(stranger, "/ext/javis-trong-chatgpt/mcp", "tools/list", token=old_token)
 check("token from before the update still works on the OLD address", r.status_code == 200
-      and "javis_chat_find" in r.text, r.status_code)
+      and "senos_chat_find" in r.text, r.status_code)
 r = stranger.get("/.well-known/oauth-protected-resource/ext/javis-trong-chatgpt/mcp")
 check("discovery on the old address answers with the old resource",
       r.status_code == 200 and r.json().get("resource", "").endswith("/ext/javis-trong-chatgpt/mcp"), r.text[:200])
@@ -212,12 +212,12 @@ tok = r.json()["access_token"]
 # ============================================================
 names = [t["name"] for t in rpc(stranger, "/ext/javis-gate/mcp", "tools/list", token=tok).json()["result"]["tools"]]
 check("Full access lists the four chat tools",
-      all(n in names for n in ("javis_chat_find", "javis_chat_read", "javis_chat_send", "javis_chat_result")))
+      all(n in names for n in ("senos_chat_find", "senos_chat_read", "senos_chat_send", "senos_chat_result")))
 plugin_ctx = next(lp.ctx for lp in plugins_host._plugin_http() if lp.slug == "javis-gate")
 G.dat_muc_quyen(plugin_ctx, "suggest")
 names = [t["name"] for t in rpc(stranger, "/ext/javis-gate/mcp", "tools/list", token=tok).json()["result"]["tools"]]
-check("Read-only level: no javis_chat_send, find and read stay", "javis_chat_send" not in names
-      and "javis_chat_find" in names)
+check("Read-only level: no senos_chat_send, find and read stay", "senos_chat_send" not in names
+      and "senos_chat_find" in names)
 G.dat_muc_quyen(plugin_ctx, "full")
 
 # ============================================================
@@ -227,27 +227,27 @@ ss = main.get_store()
 sid = ss.create_session(brain="brain", engine="test", model="test", title="Viết Web")
 ss.append_message(sid, "user", "Làm trang web giúp anh")
 ss.append_message(sid, "assistant", "Đã dựng bản nháp.")
-r = rpc(stranger, "/ext/javis-gate/mcp", "tools/call", {"name": "javis_chat_find", "arguments": {"query": "viet web"}},
+r = rpc(stranger, "/ext/javis-gate/mcp", "tools/call", {"name": "senos_chat_find", "arguments": {"query": "viet web"}},
         token=tok)
 check("find the 'Viết Web' chat", sid in r.json()["result"]["content"][0]["text"])
 r = rpc(stranger, "/ext/javis-gate/mcp", "tools/call",
-        {"name": "javis_chat_send", "arguments": {"id": sid, "message": "Anh duyệt phương án 2. Làm trang giỏ hàng.",
+        {"name": "senos_chat_send", "arguments": {"id": sid, "message": "Anh duyệt phương án 2. Làm trang giỏ hàng.",
                                                   "wait_seconds": 15}}, token=tok)
 txt = r.json()["result"]["content"][0]["text"]
 out = json.loads(txt) if not txt.startswith("ERROR") else {}
 check("send: Javis answers in the same call", (out.get("result") or {}).get("status") == "done"
       and "trang giỏ hàng" in (out.get("result") or {}).get("answer", ""), txt[:300])
 last_user = [m for m in ss.get_messages(sid) if m["role"] == "user"][-1]["content"]
-check("the stored message says it came from Claude", last_user.startswith("[GỬI QUA JAVIS GATE: Claude."),
+check("the stored message says it came from Claude", last_user.startswith("[GỬI QUA SENOS GATE: Claude."),
       last_user[:80])
 
 # ============================================================
 # 5. Notes (Javis 0.441.0): the outside AI saves what the owner decided, Javis runs nothing
 # ============================================================
 import chat_bridge  # noqa: E402
-if "javis_chat_note" in chat_bridge.TOOLS:
+if "senos_chat_note" in chat_bridge.TOOLS:
     r = rpc(stranger, "/ext/javis-gate/mcp", "tools/call",
-            {"name": "javis_chat_note", "arguments": {"title": "Tet plan", "asked": "Run ads for Tet?",
+            {"name": "senos_chat_note", "arguments": {"title": "Tet plan", "asked": "Run ads for Tet?",
                                                       "decided": "Plan 2, 5M a week"}}, token=tok)
     txt = r.json()["result"]["content"][0]["text"]
     out = json.loads(txt) if not txt.startswith("ERROR") else {}
@@ -260,7 +260,7 @@ else:
 # ============================================================
 # 6. Model and effort, and unread results (javis.gate 2.2.0 on a Javis OS that has them)
 # ============================================================
-if "javis_chat_models" in chat_bridge.TOOLS:
+if "senos_chat_models" in chat_bridge.TOOLS:
     SEEN = []
     _post = _FakeClient.post
 
@@ -274,9 +274,9 @@ if "javis_chat_models" in chat_bridge.TOOLS:
         r = rpc(stranger, "/ext/javis-gate/mcp", "tools/call", {"name": name, "arguments": args}, token=tok)
         return r.json()["result"]["content"][0]["text"]
 
-    txt = call("javis_chat_models", {"id": sid})
-    check("javis_chat_models through the gate lists the connected models", "model-b" in txt, txt[:200])
-    txt = call("javis_chat_send", {"id": sid, "message": "Viết lại trang chủ.", "model": "openrouter/model-b",
+    txt = call("senos_chat_models", {"id": sid})
+    check("senos_chat_models through the gate lists the connected models", "model-b" in txt, txt[:200])
+    txt = call("senos_chat_send", {"id": sid, "message": "Viết lại trang chủ.", "model": "openrouter/model-b",
                                    "effort": "high", "wait_seconds": 15})
     out = json.loads(txt) if not txt.startswith("ERROR") else {}
     check("send with model + effort through the gate: answered", (out.get("result") or {}).get("status") == "done",
@@ -289,14 +289,14 @@ if "javis_chat_models" in chat_bridge.TOOLS:
     # A turn left running after the request ends does not go on under TestClient (its event loop closes with the
     # request), so the unread-result path itself is locked in Javis OS (tests/python/test_javis_gate_model_notice.py).
     # Here: the tool answers through this pack's door, and a result the AI already waited for is not handed over again.
-    txt = call("javis_chat_updates", {})
-    check("javis_chat_updates answers through the gate, nothing unread after a send it waited for",
+    txt = call("senos_chat_updates", {})
+    check("senos_chat_updates answers through the gate, nothing unread after a send it waited for",
           not txt.startswith("ERROR") and json.loads(txt).get("items") == [], txt[:300])
     _FakeClient.post = _post
     r = owner.get("/ext/javis-gate/oauth/authorize", params={**q, "state": "st2"})
     check("consent page says the AI may pick the model and effort", "chọn cả model" in r.text, r.text[:300])
 else:
-    print("skip model/effort: this Javis OS has no javis_chat_models yet")
+    print("skip model/effort: this Javis OS has no senos_chat_models yet")
 
 # ============================================================
 # 6b. Javis Sync (gate 2.2.3 on a Javis OS that has javis_sync_setup): connecting Gate is the whole setup
@@ -379,11 +379,11 @@ check("the page lists the key by name, never the key itself", "n8n" in page and 
 kho = (STATE_DIR / "plugin-data" / "javis-gate" / "kho.json").read_text(encoding="utf-8")
 check("the key is stored hashed only", key not in kho and hashlib.sha256(key.encode()).hexdigest() in kho)
 r = rpc(stranger, "/ext/javis-gate/mcp", "tools/list", token=key)
-check("the key opens the gate", r.status_code == 200 and "javis_chat_find" in r.text, r.status_code)
+check("the key opens the gate", r.status_code == 200 and "senos_chat_find" in r.text, r.status_code)
 r = rpc(stranger, "/ext/javis-gate/mcp", "tools/call",
-        {"name": "javis_chat_send", "arguments": {"id": sid, "message": "Gửi từ n8n.", "wait_seconds": 15}}, token=key)
+        {"name": "senos_chat_send", "arguments": {"id": sid, "message": "Gửi từ n8n.", "wait_seconds": 15}}, token=key)
 last_user = [m for m in ss.get_messages(sid) if m["role"] == "user"][-1]["content"]
-check("its messages carry the key's name as the source", last_user.startswith("[GỬI QUA JAVIS GATE: n8n."),
+check("its messages carry the key's name as the source", last_user.startswith("[GỬI QUA SENOS GATE: n8n."),
       last_user[:80])
 check("a made-up jg_ key is refused", rpc(stranger, "/ext/javis-gate/mcp", "tools/list",
                                           token="jg_" + secrets.token_urlsafe(32)).status_code == 401)
