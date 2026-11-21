@@ -1,0 +1,94 @@
+# Đồng bộ từ Javis Store: mỗi ngày xem kho gốc (blogminhquy/javis-store) có gì mới, kéo về, đổi sang thương hiệu SenOS
+# (tools/senos_rebrand.py), chạy trình kiểm của kho, rồi mở MỘT Pull Request đề xuất với bản tóm tắt gói thêm/sửa/xoá.
+# Không trộn gì vào main: chủ kho đọc PR rồi bấm Merge. PR cũ cùng nhánh được cập nhật thay vì mở thêm.
+#
+# Trộn theo kiểu "-X theirs": chỗ nào hai bên cùng sửa thì lấy bản Javis, vì phần riêng của SenOS (địa chỉ repo, tên
+# kho, chữ thương hiệu) được bộ chuyển đặt lại ngay sau đó. Mã gói, tên tệp zip và mã kiểm tra giữ nguyên của Javis.
+name: Đồng bộ từ Javis Store
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: dong-bo-javis
+  cancel-in-progress: false
+
+jobs:
+  dong-bo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Lấy kho gốc
+        id: goc
+        run: |
+          git remote add javis https://github.com/blogminhquy/javis-store.git
+          git fetch -q javis main
+          if git merge-base --is-ancestor javis/main HEAD; then
+            echo "Kho SenOS đã có mọi thay đổi của Javis Store."
+            echo "moi=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "moi=$(git rev-list --count HEAD..javis/main)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trộn, đổi thương hiệu, kiểm tra
+        if: steps.goc.outputs.moi != '0'
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          git config user.name "senos-store-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git show HEAD:index.json > "$RUNNER_TEMP/index-cu.json"
+          git log --format='- %s' HEAD..javis/main > "$RUNNER_TEMP/commits.txt"
+          git checkout -B dong-bo/javis
+          git merge -X theirs --no-edit -m "Đồng bộ từ Javis Store" javis/main
+          python tools/senos_rebrand.py
+          python tools/kiem-tra.py
+          git add -A
+          git diff --cached --quiet || git commit -q -m "Đổi sang thương hiệu SenOS sau khi đồng bộ"
+          python - <<'EOF' > "$RUNNER_TEMP/body.md"
+          import json, os
+          t = os.environ["RUNNER_TEMP"]
+          cu = {p["id"]: p for p in json.load(open(f"{t}/index-cu.json", encoding="utf-8"))["packs"]}
+          moi = {p["id"]: p for p in json.load(open("index.json", encoding="utf-8"))["packs"]}
+          ten = lambda p: (p.get("name") or {}).get("vi") or p["id"]
+          them = [p for i, p in moi.items() if i not in cu]
+          sua = [p for i, p in moi.items() if i in cu and p.get("version") != cu[i].get("version")]
+          xoa = [p for i, p in cu.items() if i not in moi]
+          print("Kho gốc Javis Store có thay đổi mới. Đã đổi sang thương hiệu SenOS và qua `tools/kiem-tra.py`.\n")
+          print(f"**{len(them)} gói mới, {len(sua)} gói cập nhật, {len(xoa)} gói bị gỡ.**\n")
+          for nhan, ds, f in (("Gói mới", them, lambda p: p.get("version")),
+                              ("Cập nhật", sua, lambda p: f"{cu[p['id']].get('version')} → {p.get('version')}"),
+                              ("Bị gỡ", xoa, lambda p: p.get("version"))):
+              if ds:
+                  print(f"### {nhan}")
+                  for p in ds[:80]:
+                      print(f"- {ten(p)} (`{p['id']}`, {f(p)})")
+                  print()
+          print("### Các commit của Javis Store")
+          print(open(f"{t}/commits.txt", encoding="utf-8").read()[:20000])
+          EOF
+          git push -q -f origin dong-bo/javis
+
+      - name: Mở hoặc cập nhật Pull Request
+        if: steps.goc.outputs.moi != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          so=$(gh pr list --head dong-bo/javis --state open --json number -q '.[0].number')
+          if [ -n "$so" ]; then
+            gh pr edit "$so" --body-file "$RUNNER_TEMP/body.md"
+          else
+            gh pr create --base main --head dong-bo/javis --title "Đồng bộ từ Javis Store" --body-file "$RUNNER_TEMP/body.md"
+          fi
