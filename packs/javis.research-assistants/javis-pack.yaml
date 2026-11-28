@@ -14,7 +14,7 @@ description:
   en: '3 agents for learning and multilingual writing: a researcher who answers with citations and files
     findings into the Second Brain, a translator who localises marketing copy between Vietnamese and English
     without losing its selling power, and an explainer who unpacks a hard concept before you rely on it.'
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.440.0"}

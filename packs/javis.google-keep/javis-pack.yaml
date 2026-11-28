@@ -4,7 +4,7 @@ id: javis.google-keep
 version: 1.0.4
 name: {vi: "Google Keep"}
 description: {vi: "Đọc và sửa ghi chú Google Keep: tìm note, tạo note và danh sách việc, gắn nhãn, ghim, lưu trữ. LƯU Ý: Keep không có API chính chủ nên phải dùng master token có TOÀN QUYỀN tài khoản Google, không phải OAuth giới hạn phạm vi như Gmail hay Lịch. SenOS chỉ thao tác được ghi chú, nhưng token thì mở cả tài khoản nếu bị lộ."}
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.55.27"}

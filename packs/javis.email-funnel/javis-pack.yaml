@@ -13,7 +13,7 @@ description:
     mà không lộ hết nội dung sản phẩm trả phí.'
   en: '3 agents and 3 workflows for email marketing: a nurture sequence after a lead magnet, a re-engagement
     sequence for a cold list, and a funnel leak diagnosis.'
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.440.0"}

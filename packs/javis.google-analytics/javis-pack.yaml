@@ -4,7 +4,7 @@ id: javis.google-analytics
 version: 1.0.0
 name: {vi: "Google Analytics (GA4)", en: "Google Analytics (GA4)"}
 description: {vi: "Số liệu website qua MCP chính chủ của Google cho GA4 (chỉ đọc): phiên truy cập, nguồn và chiến dịch (UTM), sự kiện, chuyển đổi, báo cáo thời gian thực. Chạy local, đăng nhập Google 1 lần.", en: "Website numbers through Google's official GA4 MCP (read-only): sessions, sources and campaigns (UTM), events, conversions and realtime reports. Runs locally; one Google sign-in."}
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.55.27"}

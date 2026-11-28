@@ -14,7 +14,7 @@ description:
   en: '3 agents and 3 workflows for ad analytics: weekly Meta/Google/TikTok reports, wasted-spend hunting,
     and a monthly Search Console read. Every number must cite its source, and an independent verifier
     checks the final step.'
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.440.0"}
