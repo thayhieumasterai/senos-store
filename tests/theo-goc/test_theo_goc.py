@@ -7,7 +7,7 @@ lên bản vá và không cần duyệt; đổi script thì lên bản vá và c
 commit chỉ đụng phần ngoài
 skill thì không ra bản; liên kết mềm hay tên nhạy cảm thì từ chối và gói đứng yên; skill dạng tệp `.md`
 phẳng (`phang`) chép nguyên văn thành `<tên>/SKILL.md`. Gói agent (`den: agents`): thân giữ nguyên byte,
-phần đầu thêm khoá Javis, bảng dịch, và gói lẻ (`tach`) thêm, lên bản, rời danh mục theo repo gốc.
+phần đầu thêm khoá SenOS, bảng dịch, và gói lẻ (`tach`) thêm, lên bản, rời danh mục theo repo gốc.
 """
 import importlib.util
 import json
@@ -282,7 +282,7 @@ class TheoGoc(unittest.TestCase):
                 self.dong_bo()
 
     def test_thay_bien_chi_plugin_moi_co(self):
-        # Review PR #53: skill gọi "${CLAUDE_PLUGIN_ROOT}/scripts/chay", Javis không đặt biến đó nên lệnh
+        # Review PR #53: skill gọi "${CLAUDE_PLUGIN_ROOT}/scripts/chay", SenOS không đặt biến đó nên lệnh
         # thành /scripts/chay (exit 127). `thay` viết lại như bộ cài tay của tác giả, chỉ trong `.md`.
         lenh = '"${CLAUDE_PLUGIN_ROOT}/scripts/chay" run x.py'
         (self.up / "skills" / "viet-thu" / "SKILL.md").write_bytes(
@@ -314,7 +314,7 @@ class TheoGoc(unittest.TestCase):
         self.assertIn("${CLAUDE_SKILL_DIR}/../viet-thu/SKILL.md",
                       (goi / "doc-thu" / "SKILL.md").read_text(encoding="utf-8"))
         self.assertIn(lenh, (goi / "viet-thu" / "chay.sh").read_text(encoding="utf-8"), "tệp mã không bao giờ bị thay")
-        # Lệnh đã viết lại chạy được từ thư mục skill khác, khi không có CLAUDE_PLUGIN_ROOT (đúng như Javis).
+        # Lệnh đã viết lại chạy được từ thư mục skill khác, khi không có CLAUDE_PLUGIN_ROOT (đúng như SenOS).
         (goi / "viet-thu" / "scripts" / "chay").chmod(0o755)
         env = {k: v for k, v in os.environ.items() if not k.startswith("CLAUDE_")}
         ra = subprocess.run(["sh", "-c", '"${CLAUDE_SKILL_DIR}/../viet-thu/scripts/chay"'], capture_output=True,
@@ -460,7 +460,7 @@ class TheoGocAgent(unittest.TestCase):
         self.assertIn('\nrole: "Builds B across two lines"\n', b, "mô tả nhiều dòng gộp lại")
         self.assertIn("\ntools: Read, Write\n", b)
         self.assertIn("\nslug: ag-unity-b\n", b)
-        self.assertNotIn("goc-b", b, "khoá trùng tên khoá của Javis bị bỏ")
+        self.assertNotIn("goc-b", b, "khoá trùng tên khoá của SenOS bị bỏ")
 
         goi = [x["id"] for x in self.goi()]
         self.assertEqual(goi, ["javis.khac", "javis.ag", "javis.ag.engineering-a", "javis.ag.unity-b"],

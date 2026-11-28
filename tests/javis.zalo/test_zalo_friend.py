@@ -2,7 +2,7 @@
 
     JAVIS_OS_DIR=../javis-os python tests/javis.zalo/test_zalo_friend.py   (KHÔNG mạng: thay chỗ chạy CLI bằng bản ghi lại lệnh)
 
-Chủ dự án (2026-10-11): Javis cần CÓ KHẢ NĂNG kết bạn, còn kết bạn với ai do model quyết định hoặc người dùng yêu cầu, không dựng
+Chủ dự án (2026-10-11): SenOS cần CÓ KHẢ NĂNG kết bạn, còn kết bạn với ai do model quyết định hoặc người dùng yêu cầu, không dựng
 tính năng cứng. Nên test canh đúng ba thứ:
   1. Mỗi tool gọi ĐÚNG lệnh CLI với ĐÚNG tham số, và id sai khuôn bị chặn trước khi chạm Zalo.
   2. Thành công/thất bại đọc đúng: CLI thoát mã 0 cả khi Zalo từ chối ("✗"), và có thể in "undefined" thay JSON khi đã làm xong ("✓").

@@ -1,25 +1,25 @@
-"""Lệnh trong skill của javis.claude-seo phải chạy được ở nơi Javis cài skill.
+"""Lệnh trong skill của javis.claude-seo phải chạy được ở nơi SenOS cài skill.
 
     python tests/javis.claude-seo/test_duong_dan_script.py
 
 Repo gốc viết lệnh dạng `"${CLAUDE_PLUGIN_ROOT}/scripts/claude-seo" run x.py`. Biến đó chỉ có khi
-skill chạy như plugin Claude Code. Javis cài skill vào `skills/<slug>/` của brain và KHÔNG đặt
+skill chạy như plugin Claude Code. SenOS cài skill vào `skills/<slug>/` của brain và KHÔNG đặt
 `CLAUDE_PLUGIN_ROOT`, nên lệnh thành `/scripts/claude-seo` và chết với exit 127 (review PR #53).
 Bộ cài tay của chính tác giả (install.sh) cũng gặp đúng chuyện này và viết lại token trong mọi
 tệp `.md`. Gói này viết lại sang `${CLAUDE_SKILL_DIR}`, biến mà Claude Code thay bằng thư mục của
 skill đang nạp.
 
-Lỗi thứ hai cùng đường chạy: Javis cài MỌI tệp của gói ở mode 0644 (`pack_install.py` không nghe bit
+Lỗi thứ hai cùng đường chạy: SenOS cài MỌI tệp của gói ở mode 0644 (`pack_install.py` không nghe bit
 thực thi trong zip), nên gọi thẳng launcher là exit 126 dù đường dẫn đúng. Lệnh phải gọi qua `bash`.
 
-Lỗi thứ ba (1.0.2): Javis bản đang chạy chưa thay `${CLAUDE_SKILL_DIR}` cho engine khác Claude Code
+Lỗi thứ ba (1.0.2): SenOS bản đang chạy chưa thay `${CLAUDE_SKILL_DIR}` cho engine khác Claude Code
 (API, Codex, Grok, Antigravity). Engine đó nhận NGUYÊN chữ, bash thay biến rỗng, lệnh thành
 `/../seo/scripts/claude-seo` và chết exit 127. Lệnh phải tự lùi về `skills/seo` tính từ gốc brain
-(cwd mặc định của terminal Javis và các CLI engine) khi biến rỗng, mà vẫn giữ nguyên chữ
-`${CLAUDE_SKILL_DIR}` để Claude Code (và Javis bản mới) thay bằng đường dẫn tuyệt đối như cũ.
+(cwd mặc định của terminal SenOS và các CLI engine) khi biến rỗng, mà vẫn giữ nguyên chữ
+`${CLAUDE_SKILL_DIR}` để Claude Code (và SenOS bản mới) thay bằng đường dẫn tuyệt đối như cũ.
 
 Test dựng đúng điều kiện đó: chép skill vào `skills/` của một brain tạm (tên có dấu cách) với mọi tệp
-0644 như Javis cài, không có `CLAUDE_PLUGIN_ROOT`, rồi chạy NGUYÊN lệnh viết trong SKILL.md với
+0644 như SenOS cài, không có `CLAUDE_PLUGIN_ROOT`, rồi chạy NGUYÊN lệnh viết trong SKILL.md với
 `--help` (argparse của launcher: không dựng môi trường, không ghi gì) theo ba cách engine nhận lệnh:
 biến môi trường có đặt; Claude Code thay chữ, cwd ở chỗ khác; engine khác nhận nguyên chữ, cwd là gốc brain.
 """
@@ -54,7 +54,7 @@ class DuongDanScript(unittest.TestCase):
         # Dùng làm ĐƯỜNG DẪN (`${CLAUDE_PLUGIN_ROOT}/...`). Một câu giải thích nhắc tên biến thì vô hại.
         con = [p.relative_to(GOI).as_posix() for p in _md()
                if "${CLAUDE_PLUGIN_ROOT}/" in p.read_text(encoding="utf-8")]
-        self.assertEqual(con, [], "Javis không đặt CLAUDE_PLUGIN_ROOT: lệnh sẽ thành /scripts/claude-seo")
+        self.assertEqual(con, [], "SenOS không đặt CLAUDE_PLUGIN_ROOT: lệnh sẽ thành /scripts/claude-seo")
 
     def _chay_moi_lenh(self, cach: str):
         """Chạy mọi lệnh launcher trong mọi SKILL.md theo một `cach` engine nhận lệnh."""
@@ -66,7 +66,7 @@ class DuongDanScript(unittest.TestCase):
             shutil.copytree(GOI, brain)
             for f in brain.rglob("*"):
                 if f.is_file():
-                    f.chmod(0o644)          # đúng như pack_install.py của Javis đặt
+                    f.chmod(0o644)          # đúng như pack_install.py của SenOS đặt
             for p in sorted(brain.glob("*/SKILL.md")):
                 if "scripts/claude-seo" in p.read_text(encoding="utf-8"):
                     can_chay.add(p.parent.name)
@@ -95,7 +95,7 @@ class DuongDanScript(unittest.TestCase):
         self._chay_moi_lenh("claude-code")
 
     def test_lenh_chay_khi_engine_khong_thay_bien(self):
-        # API, Codex, Grok, Antigravity trên Javis chưa thay biến: nhận nguyên chữ, cwd là gốc brain.
+        # API, Codex, Grok, Antigravity trên SenOS chưa thay biến: nhận nguyên chữ, cwd là gốc brain.
         self._chay_moi_lenh("nguyen-chu")
 
     def test_duong_dan_tham_chieu_ton_tai(self):

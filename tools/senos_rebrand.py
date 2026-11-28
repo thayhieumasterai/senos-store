@@ -15,7 +15,8 @@ URLS = [("blogminhquy/javis-store", "thayhieumasterai/senos-store"),
         ("javis-store-soi", "senos-store-soi"),
         ("javis-pack-index", "senos-pack-index")]
 WORD = [(re.compile(r"\bJavis OS\b"), "SenOS"), (re.compile(r"\bJavis Store\b"), "Kho SenOS"),
-        (re.compile(r"\bJavis\b"), "SenOS")]
+        (re.compile(r"\bJavis\b"), "SenOS"),
+        (re.compile(r"\bJAVIS OS\b"), "SENOS"), (re.compile(r"\bJAVIS\b(?![-_.][A-Za-z0-9])"), "SENOS")]
 CREDIT_START = "> Kho này bắt nguồn từ"
 CREDIT = (CREDIT_START + " [Javis Store](https://github.com/blogminhquy/javis-store) của Nguyễn Minh Quý. "
           "Mã gói (`javis.*`) được giữ nguyên để mọi gói cài và chạy đúng trên SenOS.")
@@ -61,7 +62,8 @@ for p in ROOT.rglob("*"):
     s = p.read_text(encoding="utf-8")
     t = prose(s) if p.suffix == ".md" or p.parts[0] == "huong-dan" else urls(s)
     if p.parts[0] == "tests" and p.suffix == ".py":
-        t = host_names(t)
+        # the packs' own text is SenOS now (see rebrand_packs below), so the strings their tests expect follow
+        t = words(host_names(t))
     if t != s:
         p.write_text(t, encoding="utf-8", newline="\n")
         changed += 1
