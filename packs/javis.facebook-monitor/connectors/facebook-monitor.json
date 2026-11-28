@@ -17,7 +17,7 @@
         "env": "APIFY_TOKEN"
       }
     ],
-    "guide": "Làm 1 lần:\n1. Vào apify.com đăng ký tài khoản (có gói free + trả theo lượng dùng).\n2. Vào Console > Settings > API & Integrations, copy 'Personal API token'.\n3. Dán vào ô dưới rồi bấm Kết nối.\n\nChi phí quét tính theo lượt, khoảng 2.6 USD cho 1000 bài với actor mặc định. Javis chỉ quét khi bạn hoặc loop yêu cầu.\n\nV1 hỗ trợ Trang và Nhóm CÔNG KHAI, không cần cookie. Nhóm KÍN sẽ bổ sung sau, cần thêm cookie của tài khoản là thành viên.",
+    "guide": "Làm 1 lần:\n1. Vào apify.com đăng ký tài khoản (có gói free + trả theo lượng dùng).\n2. Vào Console > Settings > API & Integrations, copy 'Personal API token'.\n3. Dán vào ô dưới rồi bấm Kết nối.\n\nChi phí quét tính theo lượt, khoảng 2.6 USD cho 1000 bài với actor mặc định. SenOS chỉ quét khi bạn hoặc loop yêu cầu.\n\nV1 hỗ trợ Trang và Nhóm CÔNG KHAI, không cần cookie. Nhóm KÍN sẽ bổ sung sau, cần thêm cookie của tài khoản là thành viên.",
     "guide_url": "https://console.apify.com/settings/integrations"
   },
   "tool_meta": {

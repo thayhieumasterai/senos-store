@@ -2,11 +2,11 @@
 
     JAVIS_OS_DIR=../javis-os python tests/javis.zalo/test_zalo_group.py   (KHÔNG mạng: thay chỗ chạy CLI bằng bản ghi lại lệnh)
 
-Chủ dự án (2026-09-30): "trong nhóm Javis không tag được tên chính xác như @minhquy", muốn có cả ghi chú, nhắc hẹn, poll. Thứ dễ hỏng
+Chủ dự án (2026-09-30): "trong nhóm SenOS không tag được tên chính xác như @minhquy", muốn có cả ghi chú, nhắc hẹn, poll. Thứ dễ hỏng
 và không rút lại được nên được canh kỹ nhất:
   1. TAG NHẦM NGƯỜI. Zalo tag bằng uid, người dùng chỉ nói tên. Trùng tên hoặc không thấy thì phải HỎI LẠI kèm ứng viên, không đoán.
   2. VỊ TRÍ CHỮ. Zalo đọc pos/len theo đơn vị UTF-16 như JavaScript: emoji chiếm 2. Tính theo ký tự Python là vệt tô lệch chữ.
-  3. GIỜ NHẮC HẸN. CLI đọc --time theo múi giờ của MÁY; người dùng nói theo giờ của Javis. VPS ở UTC thì "9 giờ sáng" thành 16 giờ.
+  3. GIỜ NHẮC HẸN. CLI đọc --time theo múi giờ của MÁY; người dùng nói theo giờ của SenOS. VPS ở UTC thì "9 giờ sáng" thành 16 giờ.
   4. CLI KHÔNG thoát mã khác 0 khi Zalo từ chối: lỗi phải nổi lên chứ không được báo "đã gửi".
 """
 from _paths import PACK, ROOT, SERVER  # noqa: E402,F401
@@ -269,7 +269,7 @@ check("đọc bảng tin: type lạ thì từ chối, không chạy lệnh", cal
 check("đọc bảng tin: thiếu nhóm thì báo", call(P._list_notes, {}).startswith("ERROR") and RAN == [])
 fake_world(replies=[{"rc": 1, "out": "", "err": "error: unknown command 'note-list'"}])
 r = call(P._list_notes, {"thread_id": "g1"})
-check("CLI cũ chưa có note-list: bảo cập nhật Javis", r.startswith("ERROR") and "1.8.0" in r and "Cập nhật Javis" in r, r)
+check("CLI cũ chưa có note-list: bảo cập nhật SenOS", r.startswith("ERROR") and "1.8.0" in r and "Cập nhật SenOS" in r, r)
 
 fake_world(replies=[{"rc": 0, "out": json.dumps({"id": "n7", "editTime": 1761600000000}), "err": ""}])
 r = call(P._edit_note, {"group_id": "g1", "note_id": "n7", "title": "THÔNG TIN DỊCH VỤ\nNgày cưới: 13/12"})
@@ -302,7 +302,7 @@ check("không có quyền sửa: báo lý do Zalo và nhắc trưởng/phó nhó
       and "trưởng/phó" in r, r)
 
 # ============================================================
-# 6. Nhắc hẹn: giờ theo múi giờ của Javis, đổi sang đồng hồ máy
+# 6. Nhắc hẹn: giờ theo múi giờ của SenOS, đổi sang đồng hồ máy
 # ============================================================
 VN = timezone(timedelta(hours=7))
 import localefmt  # noqa: E402
@@ -312,7 +312,7 @@ localefmt.now = lambda: datetime.now(VN)
 future = (datetime.now(VN) + timedelta(days=3)).replace(hour=9, minute=0, second=0, microsecond=0)
 want_local = future.astimezone().strftime("%Y-%m-%d %H:%M")
 got, why = P.machine_local_time(future.strftime("%Y-%m-%d %H:%M"))
-check("CANARY: 9 giờ theo giờ Javis (UTC+7) được đổi sang đồng hồ của máy (VPS ở UTC thì không được gửi nguyên chữ)",
+check("CANARY: 9 giờ theo giờ SenOS (UTC+7) được đổi sang đồng hồ của máy (VPS ở UTC thì không được gửi nguyên chữ)",
       got == want_local and not why, (got, want_local))
 got, why = P.machine_local_time("2000-01-01 09:00")
 check("giờ đã qua thì từ chối", got is None and "đã qua" in why)
@@ -420,7 +420,7 @@ check("mọi tool có check_fn và handler", all(callable(t["check_fn"]) and cal
 check("schema bắt buộc đúng tham số", by["zalo_send_mention"]["schema"]["required"] == ["thread_id", "text"]
       and by["zalo_create_poll"]["schema"]["required"] == ["group_id", "question", "options"]
       and by["zalo_create_reminder"]["schema"]["required"] == ["thread_id", "title", "time"])
-check("mô tả tool phân biệt nhắc hẹn Zalo với nhắc hẹn riêng của Javis (tránh model nhầm hai loại)",
+check("mô tả tool phân biệt nhắc hẹn Zalo với nhắc hẹn riêng của SenOS (tránh model nhầm hai loại)",
       "javis_schedule" in by["zalo_create_reminder"]["description"])
 check("mô tả dặn hỏi lại khi trùng tên, không đoán", "HỎI LẠI" in by["zalo_send_mention"]["description"])
 

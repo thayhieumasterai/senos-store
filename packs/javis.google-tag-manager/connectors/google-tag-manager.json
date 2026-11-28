@@ -4,8 +4,8 @@
   "icon": "assets/google-tag-manager.png",
   "category": "Marketing",
   "key_family": "google",
-  "description": "Xem và sửa Google Tag Manager: thẻ, trình kích hoạt, biến, phiên bản, xuất bản khi bạn cho phép. Chạy trên máy cài Javis, đăng nhập Google 1 lần, dùng lại được key Google đã lưu ở dịch vụ Google khác.",
-  "_mcp_doc": "Google không phát hành MCP chính chủ cho Tag Manager (chỉ có Ads và Analytics). Gói dùng google-tag-manager-mcp-server của Stape (Apache-2.0, npm), bản CHẠY TẠI MÁY: nó chỉ gọi oauth2.googleapis.com và API Tag Manager của Google, không qua máy chủ của Stape. Bản 'hosted' của Stape thì giữ token Google ở máy họ, nên không dùng. Đăng nhập: Javis chạy luồng OAuth Google như Analytics, rồi đưa client_id, client_secret, refresh_token vào biến môi trường (oauth_env, Javis 0.573.0 trở lên) vì server này đọc biến chứ không đọc file ADC.",
+  "description": "Xem và sửa Google Tag Manager: thẻ, trình kích hoạt, biến, phiên bản, xuất bản khi bạn cho phép. Chạy trên máy cài SenOS, đăng nhập Google 1 lần, dùng lại được key Google đã lưu ở dịch vụ Google khác.",
+  "_mcp_doc": "Google không phát hành MCP chính chủ cho Tag Manager (chỉ có Ads và Analytics). Gói dùng google-tag-manager-mcp-server của Stape (Apache-2.0, npm), bản CHẠY TẠI MÁY: nó chỉ gọi oauth2.googleapis.com và API Tag Manager của Google, không qua máy chủ của Stape. Bản 'hosted' của Stape thì giữ token Google ở máy họ, nên không dùng. Đăng nhập: SenOS chạy luồng OAuth Google như Analytics, rồi đưa client_id, client_secret, refresh_token vào biến môi trường (oauth_env, SenOS 0.573.0 trở lên) vì server này đọc biến chứ không đọc file ADC.",
   "status": "beta",
   "transport": "stdio",
   "command": "npx",
@@ -48,7 +48,7 @@
         "placeholder": "Ví dụ: GOCSPX-..."
       }
     ],
-    "guide": "Cần trước: Node.js 20 trở lên trên máy cài Javis. Javis tự tải bản mới nhất của server Tag Manager mỗi lần khởi động.\n\nĐã đấu Gmail, Lịch, Analytics hay dịch vụ Google khác rồi thì bấm Dùng lại key ở đầu khung này, chỉ cần bật thêm Tag Manager API.\n\nLàm 1 lần, khoảng 10 phút:\n1. Vào console.cloud.google.com, chọn project rồi bật Tag Manager API.\n2. Màn hình đồng ý OAuth: chọn External, thêm email của bạn vào Test users.\n3. Thông tin xác thực > Tạo OAuth client ID loại 'Ứng dụng web'.\n4. Ở phần 'URI chuyển hướng được ủy quyền', thêm đúng địa chỉ này:\nhttp://localhost:7777/connect/oauth/callback\nNếu chạy trên VPS thì thêm cả https://<tên-miền>/connect/oauth/callback\n5. Điền Client ID + Secret rồi bấm đăng nhập, tick hết các ô quyền.\n\nEmail đăng nhập phải có quyền trong Tag Manager: Đọc để xem, Sửa để Javis sửa thẻ, Xuất bản nếu muốn Javis đưa thay đổi lên website.\n\nGặp cảnh báo 'ứng dụng chưa được xác minh' thì bấm Nâng cao > Tiếp tục, vì đây là app của chính bạn.",
+    "guide": "Cần trước: Node.js 20 trở lên trên máy cài SenOS. SenOS tự tải bản mới nhất của server Tag Manager mỗi lần khởi động.\n\nĐã đấu Gmail, Lịch, Analytics hay dịch vụ Google khác rồi thì bấm Dùng lại key ở đầu khung này, chỉ cần bật thêm Tag Manager API.\n\nLàm 1 lần, khoảng 10 phút:\n1. Vào console.cloud.google.com, chọn project rồi bật Tag Manager API.\n2. Màn hình đồng ý OAuth: chọn External, thêm email của bạn vào Test users.\n3. Thông tin xác thực > Tạo OAuth client ID loại 'Ứng dụng web'.\n4. Ở phần 'URI chuyển hướng được ủy quyền', thêm đúng địa chỉ này:\nhttp://localhost:7777/connect/oauth/callback\nNếu chạy trên VPS thì thêm cả https://<tên-miền>/connect/oauth/callback\n5. Điền Client ID + Secret rồi bấm đăng nhập, tick hết các ô quyền.\n\nEmail đăng nhập phải có quyền trong Tag Manager: Đọc để xem, Sửa để SenOS sửa thẻ, Xuất bản nếu muốn SenOS đưa thay đổi lên website.\n\nGặp cảnh báo 'ứng dụng chưa được xác minh' thì bấm Nâng cao > Tiếp tục, vì đây là app của chính bạn.",
     "guide_url": "https://www.npmjs.com/package/google-tag-manager-mcp-server",
     "steps": [
       {
@@ -74,7 +74,7 @@
         "text": "Tải file JSON của client rồi kéo thả vào ô bên dưới (hoặc copy Client ID + Secret), bấm đăng nhập. Gặp cảnh báo 'ứng dụng chưa được xác minh' thì bấm Nâng cao rồi Tiếp tục, vì đây là app của chính bạn. Nhớ TICK HẾT các ô quyền."
       },
       {
-        "text": "Email đăng nhập phải có quyền trong Tag Manager: Đọc để xem, Sửa để Javis sửa thẻ, Xuất bản nếu muốn Javis đưa thay đổi lên website."
+        "text": "Email đăng nhập phải có quyền trong Tag Manager: Đọc để xem, Sửa để SenOS sửa thẻ, Xuất bản nếu muốn SenOS đưa thay đổi lên website."
       }
     ]
   },
@@ -118,5 +118,5 @@
     }
   },
   "default_perm": "readonly",
-  "risk": "Mức Ghi nháp cho Javis tạo và sửa thẻ, trình kích hoạt, biến, thư mục trong không gian làm việc nháp, và tạo phiên bản. Chưa có gì lên website cho tới khi xuất bản.\n\nMức Toàn quyền thêm quyền XUẤT BẢN lên website thật, XOÁ, vứt thay đổi nháp, gộp hay chuyển container. Xuất bản sai có thể làm hỏng đo lường hay quảng cáo đang chạy.\n\nChỉ cần xem cấu hình thì giữ mức Chỉ đọc."
+  "risk": "Mức Ghi nháp cho SenOS tạo và sửa thẻ, trình kích hoạt, biến, thư mục trong không gian làm việc nháp, và tạo phiên bản. Chưa có gì lên website cho tới khi xuất bản.\n\nMức Toàn quyền thêm quyền XUẤT BẢN lên website thật, XOÁ, vứt thay đổi nháp, gộp hay chuyển container. Xuất bản sai có thể làm hỏng đo lường hay quảng cáo đang chạy.\n\nChỉ cần xem cấu hình thì giữ mức Chỉ đọc."
 }

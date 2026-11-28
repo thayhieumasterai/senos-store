@@ -4,9 +4,9 @@ id: javis.google-tasks
 version: 1.0.4
 name: {vi: "Google Tasks"}
 description: {vi: "Việc cần làm trong Google Tasks: xem danh sách, thêm việc, đặt hạn, đánh dấu xong. Chỉ xin quyền Tasks, không đụng Gmail hay Drive. Đăng nhập Google bằng OAuth client tự tạo (~10 phút, có hướng dẫn)."}
-author: {name: Javis}
+author: {name: SenOS}
 license: MIT
-homepage: "https://github.com/blogminhquy/javis-store"
+homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.55.27"}
 provides:
   connectors: [connectors/google-tasks.json]

@@ -307,4 +307,4 @@ RUST_LOG=trace RUST_BACKTRACE=1 himalaya envelope list
 ---
 
 *Nguồn: [Nous Research](https://github.com/NousResearch/hermes-agent) - `hermes-agent/skills/email/himalaya` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `group` được thêm cho trang Kỹ năng của Javis. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `group` được thêm cho trang Kỹ năng của SenOS. Nội dung skill giữ nguyên bản gốc.*

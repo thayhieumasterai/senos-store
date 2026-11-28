@@ -11,7 +11,7 @@ fragmented. They were merged into one plugin whose modules keep their own code. 
    lists exactly those.
 3. NO LEVEL CHANGED. Every tool keeps the permission level it had before the merge: a merge that quietly lowered
    "send a friend request" to readonly would let a read-only loop act on Zalo.
-4. IT LOADS IN JAVIS. Through the real loader of Javis OS (`plugins_host._import_entry`), and through a bare
+4. IT LOADS IN SENOS. Through the real loader of SenOS (`plugins_host._import_entry`), and through a bare
    `spec_from_file_location` like the oldest loaders, without relying on package-relative imports.
 """
 from _paths import PACK, SERVER  # noqa: F401
@@ -73,7 +73,7 @@ check("plugin.yaml: slug zalo-extras, on inside the pack, strongest level shown"
 check("plugin version follows the pack", manifest.get("version") == pack.get("version"),
       (manifest.get("version"), pack.get("version")))
 
-# ---- 2 and 3. Through the real Javis loader
+# ---- 2 and 3. Through the real SenOS loader
 module = plugins_host._import_entry("zalo-extras", "pack", PLUGIN / "plugin.py")
 c = Ctx()
 module.register(c)

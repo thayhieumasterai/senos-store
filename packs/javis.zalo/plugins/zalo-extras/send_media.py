@@ -1,7 +1,7 @@
-"""Phần của plugin `zalo-extras` (gói javis.zalo, Javis Store): gửi ẢNH / FILE qua Zalo.
+"""Phần của plugin `zalo-extras` (gói javis.zalo, Chợ Sen): gửi ẢNH / FILE qua Zalo.
 
 Vì sao có plugin này. MCP chuẩn của `zalo-agent-cli` chỉ khai đúng `text` cho
-`zalo_send_message`, nên Javis tạo được ảnh (tool `javis_generate_image`) hay xuất được báo
+`zalo_send_message`, nên SenOS tạo được ảnh (tool `javis_generate_image`) hay xuất được báo
 cáo mà vẫn không gửi cho ai qua Zalo được. Trong khi thư viện bên dưới (`zca-js`) làm được từ
 lâu: `sendMessage({ msg, attachments: [...] }, threadId, type)`, và chính CLI đó đã có lệnh
 `msg send-image` / `msg send-file` dùng đúng dạng ấy. Bản 1.6.2 là bản MỚI NHẤT trên npm, nên
@@ -16,11 +16,11 @@ lại, để một nguồn sự thật duy nhất về "phiên Zalo nằm ở đ
 `min_mode: full`: gửi tin ra ngoài là hành động THẬT và không rút lại được, đúng hạng với
 `zalo_send_message` vốn đã nằm trong nhóm `danger` của connector.
 
-FILE (không phải ảnh) KHÔNG đi đường CLI nữa (gói 1.2.0, cần Javis 0.139.0+). Zalo chỉ báo "đã tải
+FILE (không phải ảnh) KHÔNG đi đường CLI nữa (gói 1.2.0, cần SenOS 0.139.0+). Zalo chỉ báo "đã tải
 lên xong" cho file qua kết nối thời gian thực, mà lệnh CLI chạy một lần không mở kết nối đó, nên
 `msg send-file` treo tới khi bị giết ở 120 giây và file không tới (14/10/2026, bảng Excel 11 KB).
 File đi qua `zalo_cli.send_files` của lõi: tool MCP `zalo_send_file` trong chính tiến trình đang giữ
-kết nối, có hạn chờ 60 giây. Javis cũ chưa có hàm đó thì báo ngay thay vì treo.
+kết nối, có hạn chờ 60 giây. SenOS cũ chưa có hàm đó thì báo ngay thay vì treo.
 """
 from __future__ import annotations
 
@@ -55,7 +55,7 @@ def _ket_noi_zalo():
 
 def _check():
     if not shutil.which("npx"):
-        return ("Máy chạy Javis chưa có Node.js 20+ (lệnh npx) nên không gửi được ảnh Zalo. "
+        return ("Máy chạy SenOS chưa có Node.js 20+ (lệnh npx) nên không gửi được ảnh Zalo. "
                 "Cài tại nodejs.org rồi thử lại.")
     if not _ket_noi_zalo():
         return ("Chưa đấu tài khoản Zalo nào. Vào trang Kết nối, chọn 'Zalo Agent MCP', "
@@ -66,7 +66,7 @@ def _check():
 def _duong_dan_that(p, vault_root):
     """Đường dẫn người gọi đưa vào -> đường dẫn tuyệt đối ĐÃ KIỂM TRA, hoặc (None, lý do).
 
-    Nhận đường dẫn tương đối GỐC VAULT (đúng quy ước Javis vẫn ghi trong chat, vd
+    Nhận đường dẫn tương đối GỐC VAULT (đúng quy ước SenOS vẫn ghi trong chat, vd
     'attachments/anh.jpg') hoặc tuyệt đối. Nhưng dù đường nào thì kết quả cũng PHẢI nằm trong
     vault: thiếu rào này thì một câu chat khéo léo là gửi được /etc/passwd hay file khoá ra
     ngoài qua Zalo, và tin đã gửi thì không thu hồi được.
@@ -106,7 +106,7 @@ async def _gui_file(conn, thread_id, files, ttype, caption):
     """Gửi FILE qua MCP của kết nối (xem đầu file). Trả `(ok, dữ liệu, lỗi)`."""
     send_files = getattr(zalo_cli, "send_files", None)
     if send_files is None:
-        return False, None, (f"Javis bản này gửi file qua Zalo sẽ treo (lỗi đã biết), cần cập nhật Javis lên {_CAN_JAVIS} "
+        return False, None, (f"SenOS bản này gửi file qua Zalo sẽ treo (lỗi đã biết), cần cập nhật SenOS lên {_CAN_JAVIS} "
                              "trở lên. Tạm thời gửi nội dung dưới dạng ảnh.")
     return await send_files(conn["id"], conn["home"], thread_id, files, ttype, caption)
 

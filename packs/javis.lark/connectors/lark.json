@@ -45,7 +45,7 @@
         "env": "APP_SECRET"
       }
     ],
-    "guide": "Cần trước: Node.js 18+ trên máy chạy Javis.\n\nLàm 1 lần:\n1. Vào open.larksuite.com/app > Create custom app.\n2. Ở 'Credentials & Basic Info' lấy App ID + App Secret.\n3. Vào 'Permissions & Scopes' cấp các quyền cần dùng (vd im:message, im:chat, docx:document, bitable:app, contact:user.id).\n4. Bấm 'Create version' để phát hành app. Có thể cần admin duyệt.\n5. Dán App ID + App Secret vào đây.\n\nJavis chỉ đọc và làm được đúng những quyền bạn đã cấp cho app.",
+    "guide": "Cần trước: Node.js 18+ trên máy chạy SenOS.\n\nLàm 1 lần:\n1. Vào open.larksuite.com/app > Create custom app.\n2. Ở 'Credentials & Basic Info' lấy App ID + App Secret.\n3. Vào 'Permissions & Scopes' cấp các quyền cần dùng (vd im:message, im:chat, docx:document, bitable:app, contact:user.id).\n4. Bấm 'Create version' để phát hành app. Có thể cần admin duyệt.\n5. Dán App ID + App Secret vào đây.\n\nSenOS chỉ đọc và làm được đúng những quyền bạn đã cấp cho app.",
     "guide_url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction"
   },
   "tool_meta": {
@@ -68,5 +68,5 @@
     ]
   },
   "default_perm": "readonly",
-  "risk": "Mức Ghi nháp cho phép Javis TẠO và SỬA bảng dữ liệu, tài liệu, nhóm chat thật trong Lark.\n\nMức Toàn quyền thêm quyền GỬI TIN NHẮN vào chat và CẤP QUYỀN truy cập file.\n\nChỉ cần xem và tìm thì giữ mức Chỉ đọc. Javis chỉ làm được đúng phạm vi quyền bạn cấp cho Lark app."
+  "risk": "Mức Ghi nháp cho phép SenOS TẠO và SỬA bảng dữ liệu, tài liệu, nhóm chat thật trong Lark.\n\nMức Toàn quyền thêm quyền GỬI TIN NHẮN vào chat và CẤP QUYỀN truy cập file.\n\nChỉ cần xem và tìm thì giữ mức Chỉ đọc. SenOS chỉ làm được đúng phạm vi quyền bạn cấp cho Lark app."
 }

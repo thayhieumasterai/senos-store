@@ -114,7 +114,7 @@ check("dùng lệnh con send-image cho ảnh", "send-image" in argv and "msg" in
 # "msg send-image" là commander coi như tham số lạ của lệnh con.
 check("cờ --json đứng trước lệnh con", argv.index("--json") < argv.index("msg"))
 check("truyền đúng threadId", "t1" in argv)
-check("đường dẫn đưa sang CLI là TUYỆT ĐỐI (CLI resolve theo cwd của nó, không phải của Javis)",
+check("đường dẫn đưa sang CLI là TUYỆT ĐỐI (CLI resolve theo cwd của nó, không phải của SenOS)",
       all(Path(a).is_absolute() for a in argv if a.endswith((".jpg", ".png"))))
 check("truyền loại hội thoại (nhóm = 1)", argv[argv.index("-t") + 1] == "1")
 check("truyền lời nhắn kèm", argv[argv.index("-m") + 1] == "ảnh sản phẩm")
@@ -135,7 +135,7 @@ check("50 ảnh được chờ lâu hơn (mỗi ảnh tải lên riêng)",
 # 3b. FILE đi qua MCP (zalo_cli.send_files), KHÔNG qua CLI send-file
 # ============================================================
 # 14/10/2026: `msg send-file` treo tới 120 giây với một file Excel 11 KB, vì Zalo chỉ xác nhận file qua kết nối thời
-# gian thực mà lệnh CLI chạy một lần không mở. Từ gói 1.2.0 file đi qua tool MCP của lõi (Javis 0.139.0+).
+# gian thực mà lệnh CLI chạy một lần không mở. Từ gói 1.2.0 file đi qua tool MCP của lõi (SenOS 0.139.0+).
 (VAULT / "danh-sach.xlsx").write_bytes(b"PK")
 (VAULT / "attachments" / "so-do.bmp").write_bytes(b"BM")
 _gui = []
@@ -179,7 +179,7 @@ check("lời gọi MCP quá giờ thì nhắc kiểm cuộc chat trước khi g�
 del P.zalo_cli.send_files
 _gui.clear()
 r = goi({"thread_id": "t1", "paths": ["danh-sach.xlsx"]})
-check("CANARY: Javis cũ chưa có send_files thì báo cập nhật NGAY, không chạy CLI (không treo 120 giây)",
+check("CANARY: SenOS cũ chưa có send_files thì báo cập nhật NGAY, không chạy CLI (không treo 120 giây)",
       r.startswith("ERROR") and "0.139.0" in r and not _da_chay and not _gui)
 if co_san is not None:
     P.zalo_cli.send_files = co_san

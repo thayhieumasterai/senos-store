@@ -13,9 +13,9 @@ description:
     chữ thừa sau khi viết.'
   en: '4 agents and 3 workflows for content: turn one idea into a finished post, split a long piece into
     a post series, and plan a month of content. Angle-finding before writing, editing after.'
-author: {name: Javis}
+author: {name: SenOS}
 license: MIT
-homepage: "https://github.com/blogminhquy/javis-store"
+homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.440.0"}
 provides:
   agents: [nd-goc-nhin, nd-viet-bai, nd-bien-tap, nd-kiem-chung]

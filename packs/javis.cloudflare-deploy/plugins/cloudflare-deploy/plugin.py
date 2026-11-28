@@ -22,7 +22,7 @@ Rào an toàn (cố ý hẹp)
 - Không qua shell. Tham số do model đưa (tên dự án, nhánh, môi trường) đi qua regex chặt trước
   khi vào argv, vì trên Windows `npx` là tệp .cmd và cmd.exe tự diễn giải lại dòng lệnh.
 - Env lọc trắng như `run_command` của lõi: tiến trình con KHÔNG thấy khoá trong `.env` của
-  Javis, chỉ thấy token Cloudflare và vài biến hệ thống cần để Node chạy.
+  SenOS, chỉ thấy token Cloudflare và vài biến hệ thống cần để Node chạy.
 - Token bị che khỏi mọi output trả về model.
 """
 from __future__ import annotations
@@ -68,12 +68,12 @@ def _ket_noi(ten: str = ""):
     try:
         import mcp_store
     except Exception:
-        return None, "Không đọc được kho kết nối của Javis."
+        return None, "Không đọc được kho kết nối của SenOS."
     co = [c for c in mcp_store.list_connections()
           if c.get("connector_id") == CONNECTOR_ID and c.get("enabled", True)]
     if not co:
         return None, ("Chưa kết nối Cloudflare bằng API token. Vào trang Kết nối, mở thẻ Cloudflare, "
-                      "chọn cách Dán API token (Javis cũ chưa có thẻ này thì cài gói 'Cloudflare' "
+                      "chọn cách Dán API token (SenOS cũ chưa có thẻ này thì cài gói 'Cloudflare' "
                       "trong Kho cài đặt trước). Cách đăng nhập web chưa dùng được cho deploy.")
     ten = str(ten or "").strip().lower()
     if ten:
@@ -276,8 +276,8 @@ def _npx():
 
 
 def _thieu_node() -> str:
-    return ("Máy chạy Javis chưa có Node.js (không thấy lệnh npx). Cài Node.js 20 trở lên "
-            "(nodejs.org) rồi khởi động lại Javis. Bản Docker của Javis đã có sẵn Node.")
+    return ("Máy chạy SenOS chưa có Node.js (không thấy lệnh npx). Cài Node.js 20 trở lên "
+            "(nodejs.org) rồi khởi động lại SenOS. Bản Docker của SenOS đã có sẵn Node.")
 
 
 def _ra(kq, token, **them):

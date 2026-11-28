@@ -8,19 +8,19 @@ Giấy phép gốc: **MIT** - nguyên văn ở `docs/LICENSE.txt`.
 ## Đã sửa những gì
 
 Thân prompt của từng agent **giữ nguyên bản gốc, không dịch**. Phần đầu file được viết
-lại theo định dạng agent của Javis:
+lại theo định dạng agent của SenOS:
 
 - Slug thêm tiền tố `ecc-` để không đè agent cùng tên người dùng đã có trong brain.
 - `name` và `role` tiếng Việt, thêm `tags`, gán `skills` trỏ vào skill của các gói ECC
   khác trong kho (thiếu skill thì agent vẫn làm tiếp, xem dòng cuối mỗi agent).
-- Bỏ `tools` và `model` của Claude Code: ở Javis, agent dùng bộ công cụ chung và chạy
+- Bỏ `tools` và `model` của Claude Code: ở SenOS, agent dùng bộ công cụ chung và chạy
   trên bộ não người dùng đang chọn.
-- Cuối mỗi agent có một khối ngắn của Javis: ghi nguồn, luật trình bày và cách xử lý khi
+- Cuối mỗi agent có một khối ngắn của SenOS: ghi nguồn, luật trình bày và cách xử lý khi
   thiếu skill.
 
 ## Bảng đối chiếu
 
-| Agent trong Javis | Đường dẫn gốc |
+| Agent trong SenOS | Đường dẫn gốc |
 |---|---|
 | `ecc-planner` (Người lập kế hoạch) | `ECC/agents/planner.md` |
 | `ecc-architect` (Kiến trúc sư phần mềm) | `ECC/agents/architect.md` |
@@ -45,4 +45,4 @@ lại theo định dạng agent của Javis:
 ECC viết cho Claude Code, nên vài chỗ nhắc tới lệnh `/...`, hook, đường dẫn `~/.claude` hay
 MCP (Exa, firecrawl, fal.ai, Context7) mà brain của bạn có thể chưa có. Thiếu thì bỏ qua
 bước đó hoặc đấu MCP tương ứng ở trang Kết nối; phần phương pháp vẫn dùng được trên mọi
-bộ não của Javis.
+bộ não của SenOS.

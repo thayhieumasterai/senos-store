@@ -9,7 +9,7 @@
   "command": "npx",
   "args": [
     "-y",
-    "--package=https://raw.githubusercontent.com/blogminhquy/javis-store/main/mcp/nhanh-mcp-1.0.0-aa47d76.tgz",
+    "--package=https://raw.githubusercontent.com/thayhieumasterai/senos-store/main/mcp/nhanh-mcp-1.0.0-aa47d76.tgz",
     "nhanh-mcp"
   ],
   "ngoai_le_ban_chinh_thuc": "nhanh-mcp (của Junokyo) chưa phát hành bản nào lên npm, và npx không chạy được thẳng từ GitHub vì gói không khai lệnh chạy (bin); kho thêm đúng dòng đó, xem `va` trong mcp/nguon.json. Kho build một lần từ commit ghim trong mcp/nguon.json rồi chạy tệp đó, xem tools/mcp_dong_goi.py.",
@@ -77,5 +77,5 @@
   "ghi_da_can_nhac": [
     "get_orders"
   ],
-  "risk": "MCP này hiện chỉ có tool đọc (đơn hàng, doanh thu, tồn kho, khách hàng), nên ở mức nào Javis cũng không sửa được gì trên Nhanh.vn.\n\nAccess Token thấy mọi dữ liệu bán hàng của doanh nghiệp trong 1 năm. Lộ thì vào open.nhanh.vn tạo lại token."
+  "risk": "MCP này hiện chỉ có tool đọc (đơn hàng, doanh thu, tồn kho, khách hàng), nên ở mức nào SenOS cũng không sửa được gì trên Nhanh.vn.\n\nAccess Token thấy mọi dữ liệu bán hàng của doanh nghiệp trong 1 năm. Lộ thì vào open.nhanh.vn tạo lại token."
 }

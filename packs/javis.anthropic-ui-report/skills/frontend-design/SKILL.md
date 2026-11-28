@@ -74,7 +74,7 @@ Keep the tone conversational: plain verbs, sentence case, no filler, with tone m
 ---
 
 *Nguồn: [Anthropic](https://github.com/anthropics/claude-plugins-official) - `claude-plugins-official/plugins/frontend-design/skills/frontend-design` - giấy phép Apache-2.0.*
-*Đã sửa để chạy trên Javis OS: `description` được rút còn ≤150 ký tự cho router của Javis; `group` được thêm cho trang Kỹ năng của Javis. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `description` được rút còn ≤150 ký tự cho router của SenOS; `group` được thêm cho trang Kỹ năng của SenOS. Nội dung skill giữ nguyên bản gốc.*
 
 *Mô tả gốc:*
 

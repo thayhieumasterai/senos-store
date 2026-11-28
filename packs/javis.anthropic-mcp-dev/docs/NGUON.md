@@ -8,9 +8,9 @@ Giấy phép gốc: **Apache-2.0** - nguyên văn ở `docs/LICENSE.txt`.
 ## Đã sửa những gì
 
 Nội dung skill (thân file, `scripts/`, `references/`, `templates/`) **giữ nguyên bản
-gốc, không dịch**. Chỉ frontmatter của `SKILL.md` được chỉnh cho khớp Javis:
+gốc, không dịch**. Chỉ frontmatter của `SKILL.md` được chỉnh cho khớp SenOS:
 
-- `description` dài hơn 150 ký tự được rút gọn - router của Javis cắt đúng ở
+- `description` dài hơn 150 ký tự được rút gọn - router của SenOS cắt đúng ở
   150 nên phần dư vốn mất im lặng. Mô tả gốc được chép xuống cuối file.
 - Thêm `group` để trang Kỹ năng gom nhóm.
 - Vài skill được đổi tên thư mục cho khỏi trùng slug trong cùng một brain
@@ -19,7 +19,7 @@ gốc, không dịch**. Chỉ frontmatter của `SKILL.md` được chỉnh cho 
 
 ## Bảng đối chiếu
 
-| Slug trong Javis | Đường dẫn gốc |
+| Slug trong SenOS | Đường dẫn gốc |
 |---|---|
 | `build-mcp-server` | `claude-plugins-official/plugins/mcp-server-dev/skills/build-mcp-server` |
 | `build-mcp-app` | `claude-plugins-official/plugins/mcp-server-dev/skills/build-mcp-app` |

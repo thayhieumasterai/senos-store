@@ -55,7 +55,7 @@ State the defect, location, impact, and evidence. Place a localized defect inlin
 ---
 
 *Nguồn: [DeepSeek](https://github.com/deepseek-ai/deepseek-harness) - `deepseek-harness/.agents/skills/dsh-code-review` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `description` được rút còn ≤150 ký tự cho router của Javis; `group` được thêm cho trang Kỹ năng của Javis. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `description` được rút còn ≤150 ký tự cho router của SenOS; `group` được thêm cho trang Kỹ năng của SenOS. Nội dung skill giữ nguyên bản gốc.*
 
 *Mô tả gốc:*
 

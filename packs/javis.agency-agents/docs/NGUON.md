@@ -1,12 +1,12 @@
 # Nguồn của gói theo repo gốc `msitarzewski/agency-agents`
 
 Agent trong gói này lấy từ [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents), nhánh `main`. Thân prompt
-chép **nguyên văn**: không dịch, không rút gọn. Phần đầu mỗi tệp thêm vài khoá để Javis
+chép **nguyên văn**: không dịch, không rút gọn. Phần đầu mỗi tệp thêm vài khoá để SenOS
 đọc được (`type`, `slug`, `name` và `role` tiếng Việt, `tags`, `group`); tên gốc nằm ở
 `ten_goc`, các khoá gốc khác giữ nguyên.
 
 Mỗi ngày kho so lại với repo gốc (`tools/theo-goc.py`). Repo gốc đổi thì gói lên một bản
-vá, Javis báo trong chuông và bạn bấm Cập nhật. Agent bạn đã tự sửa thì Javis giữ lại,
+vá, SenOS báo trong chuông và bạn bấm Cập nhật. Agent bạn đã tự sửa thì SenOS giữ lại,
 không ghi đè. Commit gốc của bản đang phát hành nằm ở trường `upstream.commit` trong
 `index.json`.
 

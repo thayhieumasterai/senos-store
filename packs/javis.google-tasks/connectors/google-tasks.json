@@ -58,11 +58,11 @@
         "optional": true
       }
     ],
-    "guide": "Kết nối này chạy TRÊN MÁY CÀI JAVIS: lần đầu gọi tool Google Tasks, trình duyệt của chính\nmáy đó mở ra để bạn bấm đồng ý. Máy không có màn hình (VPS) thì đường này không đi được.\n\nLàm 1 lần, khoảng 10 phút. Đã đấu Google Workspace rồi thì dùng lại đúng Client ID + Secret cũ,\nchỉ cần làm thêm bước 2:\n1. Vào console.cloud.google.com tạo project, hoặc dùng project sẵn có.\n2. Bật Google Tasks API cho project đó.\n3. Màn hình đồng ý OAuth: chọn External rồi thêm email Google của bạn vào Test users.\nBỏ bước này là Google chặn ngay lúc đăng nhập.\n4. Tạo OAuth client, chọn loại 'Ứng dụng dành cho máy tính' (Desktop app).\nLoại này KHÔNG phải khai URI chuyển hướng nào cả, thấy phần đó trống là đúng.\n5. Tải file JSON của client rồi kéo thả vào ô bên dưới, hoặc copy tay Client ID + Secret.\n6. Điền luôn ô email Google rồi bấm Kết nối.\n\nLần đầu gọi tool, gặp cảnh báo 'ứng dụng chưa được xác minh' thì bấm Nâng cao rồi Tiếp tục,\nvì đây là app của chính bạn. Nhớ TICK HẾT các ô quyền.",
+    "guide": "Kết nối này chạy TRÊN MÁY CÀI SENOS: lần đầu gọi tool Google Tasks, trình duyệt của chính\nmáy đó mở ra để bạn bấm đồng ý. Máy không có màn hình (VPS) thì đường này không đi được.\n\nLàm 1 lần, khoảng 10 phút. Đã đấu Google Workspace rồi thì dùng lại đúng Client ID + Secret cũ,\nchỉ cần làm thêm bước 2:\n1. Vào console.cloud.google.com tạo project, hoặc dùng project sẵn có.\n2. Bật Google Tasks API cho project đó.\n3. Màn hình đồng ý OAuth: chọn External rồi thêm email Google của bạn vào Test users.\nBỏ bước này là Google chặn ngay lúc đăng nhập.\n4. Tạo OAuth client, chọn loại 'Ứng dụng dành cho máy tính' (Desktop app).\nLoại này KHÔNG phải khai URI chuyển hướng nào cả, thấy phần đó trống là đúng.\n5. Tải file JSON của client rồi kéo thả vào ô bên dưới, hoặc copy tay Client ID + Secret.\n6. Điền luôn ô email Google rồi bấm Kết nối.\n\nLần đầu gọi tool, gặp cảnh báo 'ứng dụng chưa được xác minh' thì bấm Nâng cao rồi Tiếp tục,\nvì đây là app của chính bạn. Nhớ TICK HẾT các ô quyền.",
     "guide_url": "https://github.com/taylorwilsdon/google_workspace_mcp",
     "steps": [
       {
-        "text": "TRƯỚC KHI LÀM, đọc dòng này: kết nối này chạy trên chính máy cài Javis, và lần đầu gọi tool nó mở trình duyệt CỦA MÁY ĐÓ để bạn bấm đồng ý. Javis chạy trên VPS không màn hình thì đường này không đi được."
+        "text": "TRƯỚC KHI LÀM, đọc dòng này: kết nối này chạy trên chính máy cài SenOS, và lần đầu gọi tool nó mở trình duyệt CỦA MÁY ĐÓ để bạn bấm đồng ý. SenOS chạy trên VPS không màn hình thì đường này không đi được."
       },
       {
         "text": "Đã đấu Google Workspace hoặc dịch vụ Google khác rồi thì DÙNG LẠI key của nó (ô Dùng lại key ở đầu khung này), chỉ cần làm thêm bước bật API."
@@ -83,13 +83,13 @@
         "link_label": "Tạo OAuth client"
       },
       {
-        "text": "Tải file JSON của client rồi kéo thả vào ô bên dưới, Javis tự điền Client ID + Secret. Hoặc copy tay hai giá trị đó vào hai ô."
+        "text": "Tải file JSON của client rồi kéo thả vào ô bên dưới, SenOS tự điền Client ID + Secret. Hoặc copy tay hai giá trị đó vào hai ô."
       },
       {
         "text": "Điền luôn ô email Google rồi bấm Kết nối. Bỏ trống ô email thì mỗi lần gọi tool, server lại hỏi ngược xem dùng tài khoản nào."
       },
       {
-        "text": "Lần đầu Javis gọi tool Google Tasks, trình duyệt trên máy chạy Javis mở ra. Gặp cảnh báo 'ứng dụng chưa được xác minh' thì bấm Nâng cao rồi Tiếp tục, vì đây là app của chính bạn. Nhớ TICK HẾT các ô quyền."
+        "text": "Lần đầu SenOS gọi tool Google Tasks, trình duyệt trên máy chạy SenOS mở ra. Gặp cảnh báo 'ứng dụng chưa được xác minh' thì bấm Nâng cao rồi Tiếp tục, vì đây là app của chính bạn. Nhớ TICK HẾT các ô quyền."
       }
     ]
   },
@@ -106,5 +106,5 @@
     ]
   },
   "default_perm": "safe",
-  "risk": "Mức Ghi nháp (mặc định) cho phép Javis TẠO và SỬA việc thật trong Google Tasks: thêm việc, đổi hạn, đánh dấu xong, kể cả xoá một việc lẻ (tool gộp manage_task có hành động delete).\n\nMức Toàn quyền thêm quyền TẠO, ĐỔI TÊN và XOÁ cả DANH SÁCH việc. Xoá danh sách là mất toàn bộ việc bên trong, không hoàn tác được.\n\nKết nối này chỉ xin quyền Google Tasks, không đọc được Gmail, Drive hay Lịch."
+  "risk": "Mức Ghi nháp (mặc định) cho phép SenOS TẠO và SỬA việc thật trong Google Tasks: thêm việc, đổi hạn, đánh dấu xong, kể cả xoá một việc lẻ (tool gộp manage_task có hành động delete).\n\nMức Toàn quyền thêm quyền TẠO, ĐỔI TÊN và XOÁ cả DANH SÁCH việc. Xoá danh sách là mất toàn bộ việc bên trong, không hoàn tác được.\n\nKết nối này chỉ xin quyền Google Tasks, không đọc được Gmail, Drive hay Lịch."
 }

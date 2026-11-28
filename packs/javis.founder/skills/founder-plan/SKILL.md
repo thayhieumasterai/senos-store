@@ -7,7 +7,7 @@ group: "Founder"
 
 # founder-plan
 
-> **Javis:** `${CLAUDE_SKILL_DIR}` is this skill's folder. If your engine does not expand it, use `skills/founder-plan` from the brain root (sibling skills sit next to it in `skills/`). The tools need Python 3.8+ and a shell; nothing to install.
+> **SenOS:** `${CLAUDE_SKILL_DIR}` is this skill's folder. If your engine does not expand it, use `skills/founder-plan` from the brain root (sibling skills sit next to it in `skills/`). The tools need Python 3.8+ and a shell; nothing to install.
 
 The last step. One document a founder can act on, or hand to a partner or a
 lender, built only from what the pack found.
@@ -85,7 +85,7 @@ the user the verdict in one line and the one thing to do this week.
 ---
 
 *Nguồn: [founder-skill](https://github.com/Jakeschincariol/founder-skill) của Jake Schincariol - `founder-skill/skills/founder-plan` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `description` được viết lại còn ≤150 ký tự cho router của Javis; `group` được thêm cho trang Kỹ năng của Javis; thêm một dòng `Javis:` dưới tiêu đề chỉ chỗ đặt thư mục skill. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `description` được viết lại còn ≤150 ký tự cho router của SenOS; `group` được thêm cho trang Kỹ năng của SenOS; thêm một dòng `SenOS:` dưới tiêu đề chỉ chỗ đặt thư mục skill. Nội dung skill giữ nguyên bản gốc.*
 
 *Mô tả gốc:*
 

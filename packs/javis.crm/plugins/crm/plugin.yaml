@@ -1,8 +1,8 @@
 name: Quản lý khách hàng (CRM)
 slug: crm
 version: 1.0.0
-description: Khách hàng từ mọi kênh chat (Telegram, Zalo Bot, Zalo cá nhân) - danh sách khách, hồ sơ và lịch sử từng người, gắn tag / ghi chú, hội thoại chờ trả lời, thống kê, xuất CSV. Đọc kho hội thoại của Javis, không gọi mạng.
-author: Javis
+description: Khách hàng từ mọi kênh chat (Telegram, Zalo Bot, Zalo cá nhân) - danh sách khách, hồ sơ và lịch sử từng người, gắn tag / ghi chú, hội thoại chờ trả lời, thống kê, xuất CSV. Đọc kho hội thoại của SenOS, không gọi mạng.
+author: SenOS
 enabled: true
 # Mặc định chỉ đọc. Hai tool ghi (gắn tag, xuất CSV) tự khai min_mode safe trong mã: chúng chỉ
 # ghi vào kho khách và vào thư mục exports/ của brain, không gửi gì ra ngoài.

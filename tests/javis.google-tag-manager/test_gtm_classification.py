@@ -1,11 +1,11 @@
-"""How Javis classifies each Google Tag Manager command, and how the pack hands over the Google sign-in.
+"""How SenOS classifies each Google Tag Manager command, and how the pack hands over the Google sign-in.
 
     JAVIS_OS_DIR=../javis-os python tests/javis.google-tag-manager/test_gtm_classification.py   (no network)
 
 Every gtm_* tool of Stape's server is a combined tool: the command sits in its `action` argument. So the danger
 lives in `call_rules`, not in tool names, and `tools/soi-ban-moi.py` (which checks names) cannot see a command
 slipping from danger to write. This test pins each command of google-tag-manager-mcp-server 6.0.1 to its group,
-using Javis's own `classify`, so an edit of the template that loosens publishing or deleting turns the PR red.
+using SenOS's own `classify`, so an edit of the template that loosens publishing or deleting turns the PR red.
 """
 import importlib.util
 import json
@@ -22,7 +22,7 @@ except Exception:
 STORE = Path(__file__).resolve().parents[2]
 ROOT = Path(os.environ.get("JAVIS_OS_DIR") or (STORE.parent / "javis-os")).resolve()
 if not (ROOT / "server" / "mcp_catalog.py").is_file():
-    raise SystemExit(f"Javis OS checkout not found at {ROOT} (set JAVIS_OS_DIR)")
+    raise SystemExit(f"SenOS checkout not found at {ROOT} (set JAVIS_OS_DIR)")
 os.environ.setdefault("SENOS_STATE_DIR", tempfile.mkdtemp(prefix="javis-test-gtm-"))
 sys.path.insert(0, str(ROOT / "server"))
 
@@ -107,7 +107,7 @@ check("one step with the redirect copy box", sum(1 for s in auth.get("steps", []
 check("the post-sign-in check is a read", group(CON["validate"]["tool"], CON["validate"]["args"].get("action")) == "read")
 
 manifest = (PACK / "javis-pack.yaml").read_text(encoding="utf-8")
-check("the pack asks for the Javis that knows oauth_env (0.573.0)", 'compat: {app: ">=0.573.0"}' in manifest)
+check("the pack asks for the SenOS that knows oauth_env (0.573.0)", 'compat: {app: ">=0.573.0"}' in manifest)
 
 # soi-ban-moi fills the oauth_env variables, or the server exits at once and is never checked.
 spec = importlib.util.spec_from_file_location("soi_ban_moi", STORE / "tools" / "soi-ban-moi.py")

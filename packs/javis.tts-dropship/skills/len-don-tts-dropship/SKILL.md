@@ -129,7 +129,7 @@ còn, lồng lại lớp bọc nếu có, thử lại và lưu bản sửa ra ng
 Token sàn sống khoảng 3 ngày. Có `@refreshToken` trong kết nối thì gói tự gia hạn, kể cả khi
 sàn bất ngờ báo token hỏng. Thấy `canh_bao` về token trong kết quả thì nhắc người dùng dán
 thêm refresh token theo hướng dẫn:
-https://github.com/blogminhquy/javis-store/blob/main/huong-dan/tts-dropship.md
+https://github.com/thayhieumasterai/senos-store/blob/main/huong-dan/tts-dropship.md
 
 ## Loop chạy nền
 

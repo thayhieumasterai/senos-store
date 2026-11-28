@@ -9,7 +9,7 @@
   "command": "npx",
   "args": [
     "-y",
-    "--package=https://raw.githubusercontent.com/blogminhquy/javis-store/main/mcp/kiotviet-mcp-0.1.0-ba00e4a.tgz",
+    "--package=https://raw.githubusercontent.com/thayhieumasterai/senos-store/main/mcp/kiotviet-mcp-0.1.0-ba00e4a.tgz",
     "kiotviet-mcp",
     "mcp"
   ],
@@ -103,5 +103,5 @@
     ]
   },
   "default_perm": "readonly",
-  "risk": "Mức Chỉ đọc (mặc định) chỉ xem hàng hoá, khách hàng, hoá đơn, trả hàng, chi nhánh. An toàn.\n\nMức Ghi nháp cho phép Javis TẠO và SỬA hàng hoá (tên, giá, mô tả) trên gian hàng thật.\n\nMức Toàn quyền thêm quyền XOÁ hàng hoá, TẠO, SỬA và HUỶ HOÁ ĐƠN. Hoá đơn là doanh thu và tồn kho thật của cửa hàng, huỷ hay xoá rồi không hoàn tác được.\n\nChỉ nâng quyền khi bạn thật sự cần Javis thao tác thay mình."
+  "risk": "Mức Chỉ đọc (mặc định) chỉ xem hàng hoá, khách hàng, hoá đơn, trả hàng, chi nhánh. An toàn.\n\nMức Ghi nháp cho phép SenOS TẠO và SỬA hàng hoá (tên, giá, mô tả) trên gian hàng thật.\n\nMức Toàn quyền thêm quyền XOÁ hàng hoá, TẠO, SỬA và HUỶ HOÁ ĐƠN. Hoá đơn là doanh thu và tồn kho thật của cửa hàng, huỷ hay xoá rồi không hoàn tác được.\n\nChỉ nâng quyền khi bạn thật sự cần SenOS thao tác thay mình."
 }

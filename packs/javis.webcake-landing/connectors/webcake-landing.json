@@ -75,6 +75,6 @@
       "publish_page"
     ]
   },
-  "risk": "Mức Ghi nháp (mặc định) cho phép Javis TẠO và SỬA trang landing thật trong tài khoản của bạn, kể cả trang đang có.\n\nMức Toàn quyền thêm quyền ĐĂNG trang lên công khai. Trang đã đăng là người ngoài xem được ngay.\n\nCoi JWT như mật khẩu: nó vào thẳng tài khoản Webcake của bạn.",
+  "risk": "Mức Ghi nháp (mặc định) cho phép SenOS TẠO và SỬA trang landing thật trong tài khoản của bạn, kể cả trang đang có.\n\nMức Toàn quyền thêm quyền ĐĂNG trang lên công khai. Trang đã đăng là người ngoài xem được ngay.\n\nCoi JWT như mật khẩu: nó vào thẳng tài khoản Webcake của bạn.",
   "default_perm": "safe"
 }

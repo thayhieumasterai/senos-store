@@ -1,4 +1,4 @@
-"""Reading images posted in a Zalo group (Javis 0.73.0).
+"""Reading images posted in a Zalo group (SenOS 0.73.0).
 
     JAVIS_OS_DIR=../javis-os python tests/javis.zalo/test_zalo_read_images.py   (NO network: fake CLI, buffer, httpx)
 
@@ -15,7 +15,7 @@ What is pinned here:
      #1221: Zalo's intermittent 404 on a group history is tried once more; still failing with nothing in the buffer, the ERROR says it
      is Zalo's side and passes later (not config, rights or a wrong id); photos from the buffer alone carry `history_error`.
   5. EYES FOR EVERY ENGINE. ChatGPT gets the saved photos with one label per photo; `describe=false` skips it. (`image_vision`
-     itself is tested in the Javis OS repo, tests/python/test_image_vision.py.)
+     itself is tested in the SenOS repo, tests/python/test_image_vision.py.)
 """
 from _paths import PACK, ROOT, SERVER  # noqa: E402,F401
 import asyncio

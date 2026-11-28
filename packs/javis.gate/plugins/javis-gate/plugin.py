@@ -1,17 +1,17 @@
-"""Javis Gate: cổng cho ChatGPT, Claude và AI khác làm việc cùng Javis qua một MCP connector.
+"""SenOS Gate: cổng cho ChatGPT, Claude và AI khác làm việc cùng SenOS qua một MCP connector.
 
 Vì sao là một gói, không phải tính năng có sẵn
 ----------------------------------------------
-Bản 0.64.21 đưa cửa này vào lõi Javis. Chủ repo gỡ nó ở 0.64.26 vì nó đi ngược nguyên tắc của
-Javis: mọi cuộc chat nằm chung MỘT nền tảng. Ai vẫn muốn chat trên chatgpt.com hay claude.ai bằng
+Bản 0.64.21 đưa cửa này vào lõi SenOS. Chủ repo gỡ nó ở 0.64.26 vì nó đi ngược nguyên tắc của
+SenOS: mọi cuộc chat nằm chung MỘT nền tảng. Ai vẫn muốn chat trên chatgpt.com hay claude.ai bằng
 gói của mình thì cài gói này, và việc cài là lựa chọn có chủ ý của họ.
 
-2.0.0 (Javis 0.440.0): tên mới Javis Gate (mã cũ `javis.javis-trong-chatgpt`, plugin
-`javis-trong-chatgpt`), thêm Claude, và bốn tool chat lõi Javis cấp riêng cho cửa này: AI bên ngoài
-đọc hội thoại của Javis và nhắn THẲNG vào khung chat như chủ gõ, thay vì giao việc qua Kanban. Lượt
-đó chạy trên Javis như mọi lượt chat: chủ xem chữ chạy, bấm Dừng được, Javis học được.
+2.0.0 (SenOS 0.440.0): tên mới SenOS Gate (mã cũ `javis.javis-trong-chatgpt`, plugin
+`javis-trong-chatgpt`), thêm Claude, và bốn tool chat lõi SenOS cấp riêng cho cửa này: AI bên ngoài
+đọc hội thoại của SenOS và nhắn THẲNG vào khung chat như chủ gõ, thay vì giao việc qua Kanban. Lượt
+đó chạy trên SenOS như mọi lượt chat: chủ xem chữ chạy, bấm Dừng được, SenOS học được.
 
-2.2.0: lõi Javis cho cửa này chọn model (ghim cho hội thoại) và effort (chỉ cho một tin) trong câu lệnh, và báo chủ
+2.2.0: lõi SenOS cho cửa này chọn model (ghim cho hội thoại) và effort (chỉ cho một tin) trong câu lệnh, và báo chủ
 qua chuông khi việc AI bên ngoài giao xong mà nó đã thôi chờ. Mọi AI đi qua cửa đều có, không riêng ChatGPT.
 
 Cũng 2.2.0 (chủ dự án 14/11: "không chỉ ChatGPT, các công cụ AI khác nối vào cũng được như vậy"), hai đường nối
@@ -23,8 +23,8 @@ cho công cụ ngoài ChatGPT và Claude, cả hai do CHỦ mở trên trang c�
 
 Cách chạy
 ---------
-Người dùng chat trên chatgpt.com hay claude.ai như bình thường, còn AI đó tự gọi sang Javis qua
-tính năng MCP connector chính thức. Javis vốn đã là một MCP server đầy đủ (hub mà Claude Code và
+Người dùng chat trên chatgpt.com hay claude.ai như bình thường, còn AI đó tự gọi sang SenOS qua
+tính năng MCP connector chính thức. SenOS vốn đã là một MCP server đầy đủ (hub mà Claude Code và
 Codex dùng); gói này chỉ thêm CỬA: OAuth 2.1 tối giản, đúng phần các AI đó dùng.
 
   - khám phá: RFC 9728 (protected resource) + RFC 8414 (authorization server)
@@ -34,11 +34,11 @@ Codex dùng); gói này chỉ thêm CỬA: OAuth 2.1 tối giản, đúng phần
 
 Bước "Cho phép" dựa vào ĐĂNG NHẬP DASHBOARD sẵn có (mật khẩu + 2FA), không thêm bí mật nào.
 
-Cần Javis 0.64.26 trở lên: bản đó mở `ctx.register_http` và `ctx.register_well_known`.
+Cần SenOS 0.64.26 trở lên: bản đó mở `ctx.register_http` và `ctx.register_well_known`.
 
 Ranh giới an toàn
 -----------------
-- Javis chưa có mật khẩu quản trị thì mọi cửa OAuth trả 404: cửa đồng ý dựa vào đăng nhập.
+- SenOS chưa có mật khẩu quản trị thì mọi cửa OAuth trả 404: cửa đồng ý dựa vào đăng nhập.
 - `redirect_uri` chỉ nhận máy của OpenAI, của Anthropic, chính máy của chủ (localhost, cho
   Claude Code và Claude Desktop), hoặc một gốc CHỦ tự cho phép trên trang của gói (trang đòi đăng nhập).
   Kẻ tự đăng ký client trỏ về máy mình rồi dụ chủ bấm "Cho phép" sẽ không nhận được mã; địa chỉ của
@@ -48,7 +48,7 @@ Ranh giới an toàn
 - Token của cửa này KHÔNG phải `hub_token` của Claude Code/Codex, và ngược lại.
 - Mức quyền (full / auto / suggest) chủ chọn trên trang của gói; hub ép ở lớp cứng như mọi
   engine khác, đọc lại TỪNG lượt gọi nên hạ quyền có hiệu lực ngay.
-- Các cửa máy chủ OpenAI gọi (đổi token, MCP...) khai `no_cookie`: lõi Javis gỡ cookie trước
+- Các cửa máy chủ OpenAI gọi (đổi token, MCP...) khai `no_cookie`: lõi SenOS gỡ cookie trước
   khi giao request cho gói, nên không trang lạ nào mượn được phiên của chủ qua đó.
 """
 from __future__ import annotations
@@ -71,14 +71,14 @@ TTL_YEU_CAU = 600                   # trang Cho phép mở quá 10 phút thì b�
 MAX_CLIENT = 20                     # chặn ai đó đăng ký client tới đầy đĩa
 MAX_YEU_CAU = 100
 MUC_QUYEN = ("full", "auto", "suggest")
-MUC_MAC_DINH = "full"               # quyết định 2026-09-10 của chủ repo: Javis tự làm
+MUC_MAC_DINH = "full"               # quyết định 2026-09-10 của chủ repo: SenOS tự làm
 
 _HOST_REDIRECT = ("chatgpt.com", "chat.openai.com", "claude.ai", "claude.com")
 _DUOI_REDIRECT = (".chatgpt.com", ".openai.com", ".claude.ai", ".claude.com", ".anthropic.com")
 # Ứng dụng chạy trên máy của chủ (Claude Code, Claude Desktop) nhận mã qua localhost (RFC 8252):
 # mã chỉ tới được chính máy đang mở trình duyệt, nên kẻ gian ở máy khác không nhặt được.
 _HOST_MAY_NHA = ("localhost", "127.0.0.1", "::1")
-# Plugin này từng tên `javis-trong-chatgpt` (gói 1.x). Lõi Javis chuyển đường /ext/<tên cũ>/ sang
+# Plugin này từng tên `javis-trong-chatgpt` (gói 1.x). Lõi SenOS chuyển đường /ext/<tên cũ>/ sang
 # đây; trang khám phá OAuth cũng phải nhận tên cũ thì connector đã dán vào ChatGPT mới chạy tiếp.
 SLUG_CU = "javis-trong-chatgpt"
 
@@ -94,7 +94,7 @@ GHI_LAN_DUNG_S = 600                # "dùng lần cuối" của khoá ghi xuố
 
 _KHOA = threading.Lock()
 
-HUONG_DAN = ("https://github.com/blogminhquy/javis-store/blob/main/packs/"
+HUONG_DAN = ("https://github.com/thayhieumasterai/senos-store/blob/main/packs/"
              "javis.gate/docs/HUONG-DAN.md")
 
 
@@ -103,7 +103,7 @@ HUONG_DAN = ("https://github.com/blogminhquy/javis-store/blob/main/packs/"
 # ============================================================
 
 def _p(ctx, duoi: str = "", slug: str = "") -> str:
-    """Đường tuyệt đối của gói trên Javis: /ext/<slug>/<duoi>."""
+    """Đường tuyệt đối của gói trên SenOS: /ext/<slug>/<duoi>."""
     return f"/ext/{slug or ctx.slug}/" + duoi
 
 
@@ -115,7 +115,7 @@ def _slug_goi(ctx, request) -> str:
 
 
 def _goc(request) -> str:
-    """Gốc công khai của Javis, không có "/" cuối.
+    """Gốc công khai của SenOS, không có "/" cuối.
 
     Ưu tiên tên miền riêng đã khai ở trang Thương hiệu: nó ỔN ĐỊNH, còn header proxy thì đổi
     theo đường người ta đi vào. Issuer của OAuth mà đổi giữa chừng là ChatGPT coi như máy khác."""
@@ -167,7 +167,7 @@ def metadata_pr(ctx, goc: str, slug: str = "") -> dict:
         "authorization_servers": [goc],
         "scopes_supported": ["javis"],
         "bearer_methods_supported": ["header"],
-        "resource_name": "Javis",
+        "resource_name": "SenOS",
     }
 
 
@@ -249,7 +249,7 @@ def dat_nguon(ctx, goc: str, cho: bool) -> tuple:
 
 def _doc(ctx) -> dict:
     """Kho: client, token, yêu cầu đang chờ Cho phép, mã cấp quyền. Nằm TRÊN ĐĨA chứ không
-    trong RAM: Javis nạp lại plugin mỗi khi bật/tắt một plugin bất kỳ, và một yêu cầu đang chờ
+    trong RAM: SenOS nạp lại plugin mỗi khi bật/tắt một plugin bất kỳ, và một yêu cầu đang chờ
     mà mất giữa chừng là người dùng bấm Cho phép rồi nhận câu "quá hạn"."""
     d = _doc_json(ctx.data_dir / "kho.json", {})
     for k in ("clients", "tokens", "yeu_cau", "ma", "khoa_rieng", "cho_duyet"):
@@ -320,7 +320,7 @@ _TEN_AI = (("chatgpt", "ChatGPT"), ("openai", "ChatGPT"), ("claude", "Claude"), 
 
 
 def ten_ai(ten: str) -> str:
-    """Tên ngắn của AI đang gọi, để nhãn "từ ChatGPT" / "từ Claude" / "từ Gemini" trên khung chat của Javis.
+    """Tên ngắn của AI đang gọi, để nhãn "từ ChatGPT" / "từ Claude" / "từ Gemini" trên khung chat của SenOS.
     Codex đứng sau OpenAI vì client của Codex CLI hay mang cả chữ "OpenAI"; tên lạ thì giữ nguyên, cắt 40 chữ."""
     t = re.sub(r"\s+", " ", str(ten or "")).strip()
     thap = t.lower()
@@ -358,8 +358,8 @@ def dang_ky_client(ctx, body: dict) -> tuple:
                     d["cho_duyet"][g] = {"ten": ten[:60], "luc": time.time()}
             _ghi(ctx, d)
         return 400, {"error": "invalid_redirect_uri",
-                     "error_description": ("this redirect address is not allowed yet. The Javis owner can allow it "
-                                           "on the Javis Gate page in Javis (Plugins, Javis Gate, Open page), then "
+                     "error_description": ("this redirect address is not allowed yet. The SenOS owner can allow it "
+                                           "on the SenOS Gate page in SenOS (Plugins, SenOS Gate, Open page), then "
                                            "connect again")}
     with _KHOA:
         d = _doc(ctx)
@@ -399,7 +399,7 @@ def bat_dau_uy_quyen(ctx, q: dict) -> tuple:
             return "trang_loi", "Địa chỉ quay về không khớp với lúc đăng ký."
         if not redirect_hop_le(ru, nguon_them(ctx)):
             # Chủ đã bỏ gốc này khỏi danh sách cho phép thêm sau lúc công cụ đăng ký.
-            return "trang_loi", "Địa chỉ quay về này không còn được cho phép. Mở trang Javis Gate để cho phép lại."
+            return "trang_loi", "Địa chỉ quay về này không còn được cho phép. Mở trang SenOS Gate để cho phép lại."
         state = str(q.get("state") or "")
         if q.get("response_type") != "code":
             return "chuyen", _noi(ru, {"error": "unsupported_response_type",
@@ -432,7 +432,7 @@ def ket_thuc_uy_quyen(ctx, yid: str, cho_phep: bool):
                                  "challenge": yc["challenge"], "het": time.time() + TTL_MA}
             q["code"] = ma
         else:
-            q = {"error": "access_denied", "error_description": "the Javis owner declined"}
+            q = {"error": "access_denied", "error_description": "the SenOS owner declined"}
         if yc["state"]:
             q["state"] = yc["state"]
         _ghi(ctx, d)
@@ -632,8 +632,8 @@ def so_ket_noi(ctx) -> int:
 # HTML (chữ tối thiểu 16px, đọc trên điện thoại)
 # ============================================================
 
-# Màu lấy theo biến của dashboard (`dashboard/style.css` của Javis OS: --bg, --bg2, --border, --text, --text2,
-# --accent-solid), để trang của gói nhìn như một trang của Javis. Sáng là mặc định; tối chỉ khi `_JS_GIAO_DIEN`
+# Màu lấy theo biến của dashboard (`dashboard/style.css` của SenOS: --bg, --bg2, --border, --text, --text2,
+# --accent-solid), để trang của gói nhìn như một trang của SenOS. Sáng là mặc định; tối chỉ khi `_JS_GIAO_DIEN`
 # đặt data-theme="dark" theo lựa chọn đã lưu của dashboard (2.2.2).
 _CSS = """
 :root { color-scheme: light; --nen:#fbf9f7; --the:#ffffff; --chu:#1c1a24; --phu:#55505f;
@@ -762,13 +762,13 @@ def _trang(than: str, status: int = 200, khung: bool = True):
     # `same-origin`, KHÔNG phải `no-referrer`. URL trang Cho phép mang state và code_challenge
     # nên không được rò sang trang khác qua Referer, và cả hai giá trị đều chặn được điều đó.
     # Nhưng `no-referrer` còn làm trình duyệt gửi `Origin: null` khi nộp form, hàng rào CSRF
-    # của Javis coi "null" là nguồn lạ và chặn nút Cho phép (đo trên Chromium thật 23/09).
+    # của SenOS coi "null" là nguồn lạ và chặn nút Cho phép (đo trên Chromium thật 23/09).
     from starlette.responses import HTMLResponse
     return HTMLResponse(
         '<!doctype html><html lang="vi"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<meta name="referrer" content="same-origin"><meta name="theme-color" content="#ffffff">'
-        '<title>Javis Gate</title>'
+        '<title>SenOS Gate</title>'
         f'<script>{_JS_GIAO_DIEN}</script>'
         # Font của dashboard (Be Vietnam Pro, tự chứa ở /static/, mở công khai nên trang đăng nhập cũng tải được).
         '<link rel="stylesheet" href="/static/fonts/fonts.css?v=1">'
@@ -781,14 +781,14 @@ def _trang(than: str, status: int = 200, khung: bool = True):
 
 
 _MO_TA_MUC = {
-    "full": "Toàn quyền: đọc dữ liệu, nhắn vào khung chat để Javis làm, và làm việc thật (gửi tin, tạo đơn, đăng bài...)",
+    "full": "Toàn quyền: đọc dữ liệu, nhắn vào khung chat để SenOS làm, và làm việc thật (gửi tin, tạo đơn, đăng bài...)",
     "auto": "Tự làm có giới hạn: đọc dữ liệu và viết nháp, không làm việc ra bên ngoài",
     "suggest": "Chỉ đọc và gợi ý: không ghi file, không làm việc ra bên ngoài",
 }
 
 
 _MUC_THE = (
-    ("full", "Toàn quyền", "Đọc, nhắn vào khung chat để Javis làm, và làm việc thật như gửi tin, tạo đơn, đăng bài."),
+    ("full", "Toàn quyền", "Đọc, nhắn vào khung chat để SenOS làm, và làm việc thật như gửi tin, tạo đơn, đăng bài."),
     ("auto", "Tự làm có giới hạn", "Đọc, ghi chép, viết nháp. Không nhắn vào khung chat, không làm gì ra bên ngoài."),
     ("suggest", "Chỉ đọc và gợi ý", "Chỉ đọc, kể cả hội thoại. Không ghi gì."),
 )
@@ -797,8 +797,8 @@ _MUC_THE = (
 def _trang_dang_nhap():
     """Trình duyệt chưa vào dashboard: đăng nhập NGAY TẠI ĐÂY rồi tải lại, không bắt đi vòng."""
     return _trang("""
-<h1>Đăng nhập Javis</h1>
-<p class="phu">Một AI (ChatGPT, Claude...) đang xin quyền dùng Javis của bạn. Đăng nhập để xem và quyết định.</p>
+<h1>Đăng nhập SenOS</h1>
+<p class="phu">Một AI (ChatGPT, Claude...) đang xin quyền dùng SenOS của bạn. Đăng nhập để xem và quyết định.</p>
 <form id="f">
   <label for="u">Tài khoản</label><input id="u" name="username" autocomplete="username" required>
   <label for="p">Mật khẩu</label>
@@ -819,7 +819,7 @@ document.getElementById("f").onsubmit = async (ev) => {
     r = await fetch("/auth/login", {method: "POST", body: new FormData(ev.target),
                                     credentials: "same-origin"});
     d = await r.json();
-  } catch (x) { e.textContent = "Không gọi được Javis. Thử lại."; return; }
+  } catch (x) { e.textContent = "Không gọi được SenOS. Thử lại."; return; }
   if (d.ok) { location.reload(); return; }
   if (d.needs_2fa) document.getElementById("o").style.display = "";
   e.textContent = d.error || "Đăng nhập không thành công.";
@@ -836,18 +836,18 @@ def _trang_dong_y(ctx, yc: dict):
     ghi_chu = ('<p class="phu">Đây là địa chỉ bạn đã tự cho phép thêm trên trang của gói. Chỉ bấm Cho phép nếu '
                'bạn vừa tự kết nối từ công cụ đó.</p>') if them else ""
     return _trang(f"""
-<h1>Cho phép {ai} dùng Javis?</h1>
-<p><b>{html.escape(yc["ten"])}</b> trên <code>{html.escape(noi)}</code> muốn gọi công cụ của Javis.</p>
+<h1>Cho phép {ai} dùng SenOS?</h1>
+<p><b>{html.escape(yc["ten"])}</b> trên <code>{html.escape(noi)}</code> muốn gọi công cụ của SenOS.</p>
 {ghi_chu}
 <ul>
-  <li>Dùng mọi kết nối bạn đã bật trong Javis (bán hàng, quảng cáo, lịch, Zalo...)</li>
-  <li>Đọc hội thoại của Javis, và ở mức Toàn quyền thì nhắn vào khung chat để Javis làm tiếp,
+  <li>Dùng mọi kết nối bạn đã bật trong SenOS (bán hàng, quảng cáo, lịch, Zalo...)</li>
+  <li>Đọc hội thoại của SenOS, và ở mức Toàn quyền thì nhắn vào khung chat để SenOS làm tiếp,
       chọn cả model (ghim cho hội thoại đó, bạn đổi lại được) và effort cho tin nó gửi</li>
   <li>Đọc và ghi trong brain đang mở, tạo việc và nhắc lịch</li>
   <li>Mức quyền: {html.escape(_MO_TA_MUC.get(muc, muc))}</li>
 </ul>
 <p class="phu">Đổi mức quyền hoặc ngắt kết nối bất cứ lúc nào trên trang của gói
-(trang Plugin, thẻ Javis Gate, nút Mở trang).</p>
+(trang Plugin, thẻ SenOS Gate, nút Mở trang).</p>
 <form method="post" action="{_p(ctx, "oauth/authorize")}">
   <input type="hidden" name="yeu_cau" value="{html.escape(yc["id"])}">
   <button class="chinh" name="hanh_dong" value="cho_phep" type="submit">Cho phép</button>
@@ -920,13 +920,13 @@ _HD_KET_NOI = """
 <div id="tab-gpt" role="tabpanel"><ol class="buoc">
   <li>Mở <b>chatgpt.com trên máy tính</b>, vào <b>Settings</b>, rồi <b>Apps &amp; Connectors</b>.</li>
   <li>Mở <b>Advanced settings</b>, bật <b>Developer mode</b>.</li>
-  <li>Bấm <b>Create</b>. Tên: <b>Javis</b>. MCP Server URL: dán địa chỉ. Authentication: <b>OAuth</b>.</li>
-  <li>Tích ô tin tưởng, bấm <b>Create</b>, rồi bấm <b>Cho phép</b> trên trang Javis hiện ra.</li>
+  <li>Bấm <b>Create</b>. Tên: <b>SenOS</b>. MCP Server URL: dán địa chỉ. Authentication: <b>OAuth</b>.</li>
+  <li>Tích ô tin tưởng, bấm <b>Create</b>, rồi bấm <b>Cho phép</b> trên trang SenOS hiện ra.</li>
 </ol><p class="phu">Cần gói trả phí. Gói Business: quản trị viên bật Create custom MCP connectors trước.</p></div>
 <div id="tab-claude" role="tabpanel" hidden><ol class="buoc">
   <li>Trên <b>claude.ai</b> hoặc Claude Desktop, vào <b>Settings</b>, rồi <b>Connectors</b>.</li>
-  <li>Bấm <b>Add custom connector</b>. Tên: <b>Javis</b>. Dán địa chỉ, bấm <b>Add</b>.</li>
-  <li>Bấm <b>Connect</b>, rồi bấm <b>Cho phép</b> trên trang Javis hiện ra.</li>
+  <li>Bấm <b>Add custom connector</b>. Tên: <b>SenOS</b>. Dán địa chỉ, bấm <b>Add</b>.</li>
+  <li>Bấm <b>Connect</b>, rồi bấm <b>Cho phép</b> trên trang SenOS hiện ra.</li>
 </ol><p class="phu">Cần gói trả phí (Pro, Max, Team, Enterprise).</p></div>
 <div id="tab-khac" role="tabpanel" hidden><ol class="buoc">
   <li>Trong công cụ, tìm chỗ thêm <b>MCP server</b> bằng địa chỉ, rồi dán địa chỉ.</li>
@@ -945,17 +945,17 @@ def _trang_cai_dat(ctx, request):
     url = goc + _p(ctx, "mcp")
     muc = muc_quyen(ctx)
     https = goc.startswith("https://")
-    dau = f"""<header class="dau"><h1>Javis Gate</h1>
-<p class="phu">Cổng để ChatGPT, Claude và AI khác đọc hội thoại và giao việc cho Javis.</p>"""
+    dau = f"""<header class="dau"><h1>SenOS Gate</h1>
+<p class="phu">Cổng để ChatGPT, Claude và AI khác đọc hội thoại và giao việc cho SenOS.</p>"""
     if not _co_mat_khau():
         return _trang(dau + """<span class="chip loi">Đang đóng</span></header>
 <section class="khoi"><h2>Cần mật khẩu quản trị</h2>
-<p class="mo-ta">Bước Cho phép dựa vào đăng nhập Javis, nên cổng chỉ mở khi Javis có mật khẩu. Đặt mật khẩu trong
+<p class="mo-ta">Bước Cho phép dựa vào đăng nhập SenOS, nên cổng chỉ mở khi SenOS có mật khẩu. Đặt mật khẩu trong
 Cài đặt rồi quay lại trang này.</p></section>""", khung=False)
     chip = ('<span class="chip tot">Sẵn sàng kết nối</span>' if https
             else '<span class="chip loi">Chưa có https</span>')
     canh_bao = "" if https else (
-        '<div class="canh-bao">ChatGPT và Claude chỉ nhận địa chỉ https. Gắn tên miền riêng cho Javis (Cài đặt, mục '
+        '<div class="canh-bao">ChatGPT và Claude chỉ nhận địa chỉ https. Gắn tên miền riêng cho SenOS (Cài đặt, mục '
         'Giọng nói, thương hiệu và truy cập) rồi tải lại trang này.</div>')
     the_muc = "".join(
         f'<label class="chon"><input type="radio" name="muc" value="{m}"{" checked" if m == muc else ""}>'
@@ -979,7 +979,7 @@ Cài đặt rồi quay lại trang này.</p></section>""", khung=False)
 
 <section class="khoi">
   <div class="tieu"><h2>Mức quyền</h2>{_nut_i("i-muc", "Về mức quyền")}</div>
-  {_goi_y("i-muc", '<p>Javis tự chặn ở phía mình theo mức này, AI bên ngoài không tự nâng quyền được.</p>'
+  {_goi_y("i-muc", '<p>SenOS tự chặn ở phía mình theo mức này, AI bên ngoài không tự nâng quyền được.</p>'
                    '<p>Đổi là có hiệu lực từ lượt gọi kế tiếp, không cần kết nối lại. Áp cho mọi AI đang nối.</p>')}
   <div role="radiogroup" aria-label="Mức quyền">{the_muc}</div>
   <p class="tb" id="tb-muc" role="status"></p>
@@ -997,7 +997,7 @@ Cài đặt rồi quay lại trang này.</p></section>""", khung=False)
   <p class="mo-ta">Cho công cụ ngoài ChatGPT và Claude: Le Chat, Copilot, n8n...</p>
   <div class="phan">
     <div class="tieu"><h3>Đang xin kết nối</h3>{_nut_i("i-xin", "Về công cụ xin kết nối")}</div>
-    {_goi_y("i-xin", '<p>Javis tự nhận ChatGPT, Claude và ứng dụng chạy trên chính máy bạn. Công cụ khác xin nối '
+    {_goi_y("i-xin", '<p>SenOS tự nhận ChatGPT, Claude và ứng dụng chạy trên chính máy bạn. Công cụ khác xin nối '
                      'thì hiện ở đây.</p><p><b>Chỉ bấm Cho phép khi bạn vừa tự nối từ đúng công cụ đó</b>, rồi nối '
                      'lại từ công cụ. Địa chỉ lạ cứ để, sau 7 ngày tự mất. Không bao giờ nhận địa chỉ http.</p>')}
     {ds_nguon}
@@ -1005,7 +1005,7 @@ Cài đặt rồi quay lại trang này.</p></section>""", khung=False)
   <div class="phan">
     <div class="tieu"><h3>Khoá riêng</h3>{_nut_i("i-khoa", "Về khoá riêng")}</div>
     {_goi_y("i-khoa", '<p>Cho công cụ chỉ biết dán khoá vào header (n8n, script, trình soạn mã). Tên khoá là tên '
-                      'hiện trên khung chat của Javis.</p><p><b>Ai cầm khoá là dùng được Javis</b> ở mức quyền '
+                      'hiện trên khung chat của SenOS.</p><p><b>Ai cầm khoá là dùng được SenOS</b> ở mức quyền '
                       'trên. Đừng dán vào chỗ công khai. Khoá chỉ hiện một lần.</p>')}
     <div class="xep">
       <input id="ten-khoa" maxlength="40" placeholder="Tên công cụ, ví dụ n8n" aria-label="Tên công cụ">
@@ -1092,7 +1092,7 @@ $("#tao-khoa").onclick = async () => {
     const cau_hinh = JSON.stringify({mcpServers: {javis: {url: C.url,
       headers: {Authorization: "Bearer " + d.khoa}}}}, null, 2);
     o.innerHTML = '<div class="the-moi"><p><b>Khoá cho ' + chu(d.ten) + '</b></p>'
-      + '<p class="phu">Chép ngay: Javis chỉ hiện khoá này một lần.</p>'
+      + '<p class="phu">Chép ngay: SenOS chỉ hiện khoá này một lần.</p>'
       + '<div class="dia-chi" id="khoa-tho"></div><button class="chinh" id="chep-khoa" type="button">Chép khoá</button>'
       + '<ol class="buoc" style="margin-top:16px"><li>Địa chỉ: địa chỉ kết nối ở trên.</li>'
       + '<li>Header: <code>Authorization: Bearer &lt;khoá&gt;</code></li>'
@@ -1176,11 +1176,11 @@ def register(ctx):
 
     # ---- trang Cho phép ----
     # GET công khai nhưng GIỮ cookie: chưa đăng nhập thì hiện ô đăng nhập ngay tại đó.
-    # POST KHÔNG công khai: lõi Javis tự đòi phiên trình duyệt thật và chặn CSRF.
+    # POST KHÔNG công khai: lõi SenOS tự đòi phiên trình duyệt thật và chặn CSRF.
     def uy_quyen(request, ctx):
         from starlette.responses import RedirectResponse
         if not _co_mat_khau():
-            return _trang_loi("Javis chưa có mật khẩu quản trị nên chưa kết nối được AI bên ngoài.", 404)
+            return _trang_loi("SenOS chưa có mật khẩu quản trị nên chưa kết nối được AI bên ngoài.", 404)
         kq, gia_tri = bat_dau_uy_quyen(ctx, dict(request.query_params))
         if kq == "trang_loi":
             return _trang_loi(gia_tri)
@@ -1193,7 +1193,7 @@ def register(ctx):
     async def uy_quyen_xac_nhan(request, ctx):
         from starlette.responses import RedirectResponse
         if not _co_mat_khau():
-            return _trang_loi("Javis chưa có mật khẩu quản trị.", 404)
+            return _trang_loi("SenOS chưa có mật khẩu quản trị.", 404)
         f = await _doc_form(request)
         url = ket_thuc_uy_quyen(ctx, str(f.get("yeu_cau") or ""), f.get("hanh_dong") == "cho_phep")
         if not url:
@@ -1241,12 +1241,12 @@ def register(ctx):
         import mcp_hub
         # Mức quyền đọc TỪNG LƯỢT, không đóng băng vào token: chủ hạ quyền là có hiệu lực ngay.
         # include_ambient=False: tool native của tài khoản Claude không liên quan ở đây.
-        # raw_vault=None: brain do Javis tự suy (brain đang mở), không nhận header từ ngoài.
+        # raw_vault=None: brain do SenOS tự suy (brain đang mở), không nhận header từ ngoài.
         # gate: bốn tool chat của lõi (tìm, đọc, gửi vào hội thoại, đọc kết quả), kèm tên AI đang gọi
-        # để khung chat của Javis ghi "từ ChatGPT" / "từ Claude".
-        # base_url (2.2.3): the public address this door answered on, the one the AI already reaches. A Javis OS that has javis_sync_setup
-        # puts it in the Javis Sync install command (javis_sync_setup), so Claude Code / Codex never has to ask for
-        # the URL. An older Javis OS ignores the extra key.
+        # để khung chat của SenOS ghi "từ ChatGPT" / "từ Claude".
+        # base_url (2.2.3): the public address this door answered on, the one the AI already reaches. A SenOS that has javis_sync_setup
+        # puts it in the SenOS Sync install command (javis_sync_setup), so Claude Code / Codex never has to ask for
+        # the URL. An older SenOS ignores the extra key.
         return await mcp_hub.tra_loi_jsonrpc(request, muc_quyen(ctx), include_plugins=True,
                                              include_ambient=False, raw_vault=None,
                                              gate={"source": nguon, "base_url": _goc(request)})
@@ -1263,7 +1263,7 @@ def register(ctx):
     ctx.register_http("mcp", mcp, methods=("POST",), public=True, no_cookie=True)
     ctx.register_http("mcp", mcp_khac, methods=("GET", "DELETE"), public=True, no_cookie=True)
 
-    # ---- trang của gói (lõi Javis đòi phiên trình duyệt thật cho cả ba) ----
+    # ---- trang của gói (lõi SenOS đòi phiên trình duyệt thật cho cả ba) ----
     ctx.register_http("", lambda request, ctx: _trang_cai_dat(ctx, request))
 
     async def cai_dat(request, ctx):
@@ -1287,7 +1287,7 @@ def register(ctx):
         ok = xoa_khoa_rieng(ctx, str((await _doc_form(request)).get("id") or ""))
         return _json({"ok": ok, **({} if ok else {"error": "Không thấy khoá này."})}, 200 if ok else 404)
 
-    # Không `public`: lõi Javis đòi phiên trình duyệt thật và chặn CSRF, nên chỉ chủ mở được cửa mới.
+    # Không `public`: lõi SenOS đòi phiên trình duyệt thật và chặn CSRF, nên chỉ chủ mở được cửa mới.
     ctx.register_http("nguon", nguon, methods=("POST",))
     ctx.register_http("khoa", khoa, methods=("POST",))
     ctx.register_http("khoa-xoa", khoa_xoa, methods=("POST",))

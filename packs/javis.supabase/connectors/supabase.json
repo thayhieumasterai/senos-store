@@ -17,7 +17,7 @@
         "header": "Authorization: Bearer {access_token}"
       }
     ],
-    "guide": "Làm 1 lần:\n1. Đăng nhập supabase.com, vào Account > Access Tokens.\n2. Bấm Generate new token, đặt tên (ví dụ 'Javis').\n3. Copy token NGAY (dạng sbp_..., đóng là không xem lại được) rồi dán vào ô dưới.\n\nToken này thấy MỌI tổ chức và dự án mà tài khoản Supabase của bạn thấy. Muốn tách riêng thì tạo một tài khoản chỉ là thành viên của tổ chức cần dùng.\n\nLỡ lộ token thì vào lại trang đó bấm Revoke rồi tạo cái mới.",
+    "guide": "Làm 1 lần:\n1. Đăng nhập supabase.com, vào Account > Access Tokens.\n2. Bấm Generate new token, đặt tên (ví dụ 'SenOS').\n3. Copy token NGAY (dạng sbp_..., đóng là không xem lại được) rồi dán vào ô dưới.\n\nToken này thấy MỌI tổ chức và dự án mà tài khoản Supabase của bạn thấy. Muốn tách riêng thì tạo một tài khoản chỉ là thành viên của tổ chức cần dùng.\n\nLỡ lộ token thì vào lại trang đó bấm Revoke rồi tạo cái mới.",
     "guide_url": "https://supabase.com/docs/guides/getting-started/mcp",
     "steps": [
       {
@@ -26,7 +26,7 @@
         "link_label": "Mở trang Access Tokens"
       },
       {
-        "text": "Bấm Generate new token, đặt tên (ví dụ 'Javis')."
+        "text": "Bấm Generate new token, đặt tên (ví dụ 'SenOS')."
       },
       {
         "text": "Copy token sbp_... ngay khi hiện ra, dán vào ô bên dưới rồi bấm Kết nối.",
@@ -81,5 +81,5 @@
     "get_publishable_keys"
   ],
   "default_perm": "readonly",
-  "risk": "Mức Chỉ đọc: xem tổ chức, dự án, danh sách bảng, migration, Edge Function, log, cảnh báo bảo mật, tra tài liệu. Không đổi gì.\n\nMức Ghi nháp: thêm sửa cấu hình storage (giới hạn dung lượng tệp, bật tắt tính năng ảnh).\n\nMức Toàn quyền mở nhóm nguy hiểm: CHẠY SQL tuỳ ý và áp migration lên cơ sở dữ liệu thật (một câu DELETE hay DROP là mất dữ liệu khách hàng), deploy Edge Function, TẠO nhánh cơ sở dữ liệu (mỗi nhánh tính tiền theo giờ chạy), trộn và reset nhánh, tạm dừng hay khôi phục dự án, và TẠO DỰ ÁN MỚI (TIÊU TIỀN theo gói Supabase của bạn).\n\nSupabase khuyên chỉ nối MCP vào dự án phát triển, không nối vào dữ liệu thật đang chạy. Dữ liệu trong bảng có thể chứa câu lệnh gài sẵn nhằm lừa AI làm việc khác, nên đừng để Javis ở Toàn quyền trên dự án có dữ liệu do người lạ nhập vào."
+  "risk": "Mức Chỉ đọc: xem tổ chức, dự án, danh sách bảng, migration, Edge Function, log, cảnh báo bảo mật, tra tài liệu. Không đổi gì.\n\nMức Ghi nháp: thêm sửa cấu hình storage (giới hạn dung lượng tệp, bật tắt tính năng ảnh).\n\nMức Toàn quyền mở nhóm nguy hiểm: CHẠY SQL tuỳ ý và áp migration lên cơ sở dữ liệu thật (một câu DELETE hay DROP là mất dữ liệu khách hàng), deploy Edge Function, TẠO nhánh cơ sở dữ liệu (mỗi nhánh tính tiền theo giờ chạy), trộn và reset nhánh, tạm dừng hay khôi phục dự án, và TẠO DỰ ÁN MỚI (TIÊU TIỀN theo gói Supabase của bạn).\n\nSupabase khuyên chỉ nối MCP vào dự án phát triển, không nối vào dữ liệu thật đang chạy. Dữ liệu trong bảng có thể chứa câu lệnh gài sẵn nhằm lừa AI làm việc khác, nên đừng để SenOS ở Toàn quyền trên dự án có dữ liệu do người lạ nhập vào."
 }

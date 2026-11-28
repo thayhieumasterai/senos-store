@@ -34,8 +34,8 @@
       "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.pricing",
       "download": {
         "url": "dist/javis-pricing-1.1.0.zip",
-        "sha256": "00aa0ae844e6e20a985ec9474d116b4986c47107d64f7d8e11bda3e460e8f160",
-        "size": 5295
+        "sha256": "d998f0f04942eae9553006a03a2d8bc20a84b1b42f1e924afa0651c1c24b2324",
+        "size": 5308
       },
       "replaces": [
         "javis.tinh-gia"
@@ -68,8 +68,8 @@
       "icon": "packs/javis.crm/assets/crm.png",
       "download": {
         "url": "dist/javis-crm-1.1.0.zip",
-        "sha256": "a3ceda0f7ea7a996f73ef3d20f51408436b78b0a931152cdcfd324d5b2339e71",
-        "size": 14022
+        "sha256": "58a8f5726901ad03fda9f71f3767acf558dc4c1b1119101c9de029884cbcc0e1",
+        "size": 14020
       },
       "replaces": [
         "javis.khach-hang-crm"
@@ -104,8 +104,8 @@
       },
       "download": {
         "url": "dist/javis-composio-1.0.2.zip",
-        "sha256": "724d03c5771e7f233884575439b85bbfff3a4989b251f4511db16c31793e17e3",
-        "size": 16145
+        "sha256": "70fd33db634c111eafcd87cb6f684648e4426616a3310294d7202176d179450c",
+        "size": 16150
       }
     },
     {
@@ -137,8 +137,8 @@
       },
       "download": {
         "url": "dist/javis-pancake-pos-1.0.0.zip",
-        "sha256": "93bf26951f5bdf0f2c1635f16ebcd1f4b3334d5f358abe65578667a6ae15229e",
-        "size": 8799
+        "sha256": "28b4dd4ce30a0ff0d9a0d03657f67abb475a6303a591acda8765ae4b818fbd86",
+        "size": 8801
       }
     },
     {
@@ -170,8 +170,8 @@
       },
       "download": {
         "url": "dist/javis-pancake-chat-1.1.1.zip",
-        "sha256": "38b03d805a01a6a4d39be0468877a3cd0a6fc2a684802b711c2ee85970ee036f",
-        "size": 27335
+        "sha256": "4cfa5a43856ec8f18319a683aa5442d29b927d162d8fa6c22404324254da7033",
+        "size": 27351
       }
     },
     {
@@ -203,8 +203,8 @@
       },
       "download": {
         "url": "dist/javis-kiotviet-1.0.1.zip",
-        "sha256": "f21793f24b89fb1e8cb0f175aa8fd318779d65834064c0ffd3e3ae6e736668df",
-        "size": 19904
+        "sha256": "45c90db75b2c903f2747cd0828c9bfd56b6f3acd89c7a2d78c90b96e66705d31",
+        "size": 19915
       }
     },
     {
@@ -236,8 +236,8 @@
       },
       "download": {
         "url": "dist/javis-sapo-1.0.1.zip",
-        "sha256": "2a00d4b23af5d00970e348fb1f487ea4bbe4756418ab1e55ae550f56c15dfa27",
-        "size": 33507
+        "sha256": "0b5e68af388e27b3788d14c7668d8e819e225ac0e0443155948623384fe5b5a6",
+        "size": 33513
       }
     },
     {
@@ -269,8 +269,8 @@
       },
       "download": {
         "url": "dist/javis-haravan-1.0.1.zip",
-        "sha256": "90624303463e0f7852053686cd7b81c0f6991a5112e52a4c355c9c916ec315d8",
-        "size": 24298
+        "sha256": "7c683bdf89963458eceab558c2894eaeeb9b68aaef7fe6ed5a725fadc65c31ac",
+        "size": 24307
       }
     },
     {
@@ -302,8 +302,8 @@
       },
       "download": {
         "url": "dist/javis-nhanh-1.0.1.zip",
-        "sha256": "d6a20dea3c0efcbe7e708d37481d43844fec85e0cbee554847e1d02b5bc77ab5",
-        "size": 16389
+        "sha256": "7b6c8e883a591e2f58cc42ac8e89e64e21c599293eea1cd43d68b9168a63d414",
+        "size": 16397
       }
     },
     {
@@ -335,8 +335,8 @@
       },
       "download": {
         "url": "dist/javis-shopify-1.0.2.zip",
-        "sha256": "b4ffb838c94d096d529d0c2edb9923e60cbe953da8de00a77fa25863d23f6418",
-        "size": 15152
+        "sha256": "fcf0a921ba0060e78353c11ad603f95b3cefa2d3260a7621683a67cebcdd5fa8",
+        "size": 15158
       }
     },
     {
@@ -368,8 +368,8 @@
       },
       "download": {
         "url": "dist/javis-webcake-landing-1.0.1.zip",
-        "sha256": "60289d10a738b3fa4bddf0d14e4adb5ccc8b94f084baa1061181a402fc424fbe",
-        "size": 10403
+        "sha256": "cbcae97df9d65a6ac6ea1f009a3a63ac56abc2c877859f52c7afc3cf9289a44a",
+        "size": 10411
       }
     },
     {
@@ -401,8 +401,8 @@
       },
       "download": {
         "url": "dist/javis-webcake-landing-web-1.0.0.zip",
-        "sha256": "64a4110545934cead5ec181fc278a7e82c18299678d484550578fc938b7d7748",
-        "size": 10388
+        "sha256": "76302b8c3f8899f1588e01b0c2bc64b90a8262e3ac20e27208bbf152cb6a99ea",
+        "size": 10392
       }
     },
     {
@@ -434,8 +434,8 @@
       },
       "download": {
         "url": "dist/javis-google-sheets-1.0.1.zip",
-        "sha256": "61a4b2984dfef716d7fb855f1f458c161dc5fb7a4c8db183a19db2860f0ccc1f",
-        "size": 7516
+        "sha256": "64e4dadd47cc53f8ce2606088847c079f734a0b078107e1784b060bff40c2f8f",
+        "size": 7524
       }
     },
     {
@@ -467,8 +467,8 @@
       },
       "download": {
         "url": "dist/javis-google-search-console-1.0.4.zip",
-        "sha256": "7eef3ddd29d135d232d63cf5ce91510a9e4fa338f06d4a3a2e457966696aa1a2",
-        "size": 9932
+        "sha256": "05f76143f0c66d2ac74a20136258567aeed07404fb921a62d5fd279e1dfd47d5",
+        "size": 9935
       }
     },
     {
@@ -478,7 +478,7 @@
         "vi": "Google Workspace (Gmail, Lịch, Drive, Docs)"
       },
       "description": {
-        "vi": "Gmail, Calendar, Drive, Docs, Sheets, Slides, Forms, Tasks... trong MỘT kết nối. Tạo OAuth client 1 lần, khoảng 10 phút, có hướng dẫn từng bước. Lần đầu gọi tool Google, trình duyệt TRÊN MÁY CHẠY JAVIS mở ra để bấm đồng ý, nên máy phải có màn hình."
+        "vi": "Gmail, Calendar, Drive, Docs, Sheets, Slides, Forms, Tasks... trong MỘT kết nối. Tạo OAuth client 1 lần, khoảng 10 phút, có hướng dẫn từng bước. Lần đầu gọi tool Google, trình duyệt TRÊN MÁY CHẠY SENOS mở ra để bấm đồng ý, nên máy phải có màn hình."
       },
       "version": "1.0.3",
       "author": {
@@ -500,8 +500,8 @@
       },
       "download": {
         "url": "dist/javis-google-workspace-1.0.3.zip",
-        "sha256": "cc6c3435b1d4bc88042e3ef0dc1f5d3e851fc404a37b307ead7f42cc98a844d7",
-        "size": 13201
+        "sha256": "b24ad02cb7937eec40034a9dac5615ce5f8e0f97ae85a2d92e4db4c07916edbd",
+        "size": 13204
       }
     },
     {
@@ -533,8 +533,8 @@
       },
       "download": {
         "url": "dist/javis-google-tasks-1.0.4.zip",
-        "sha256": "257dd360f55cf5293e13a3cdbfcb10c7566d63464ec4583039af3078b38cd441",
-        "size": 14194
+        "sha256": "0332cafca3d953af8e59fa7659d69234293e24dc36deb0eacc794c2330dacb47",
+        "size": 14197
       }
     },
     {
@@ -566,8 +566,8 @@
       },
       "download": {
         "url": "dist/javis-meta-ads-graph-1.0.1.zip",
-        "sha256": "047e9b37c63b948b236529fa3d89c0be7fe7448f569a7923e9736f5387bc9b0f",
-        "size": 18649
+        "sha256": "ae7a79189b9a1773edc5b9c8c962303dec27d6afa1a57823c7e3caefa4627e73",
+        "size": 18653
       }
     },
     {
@@ -605,8 +605,8 @@
       },
       "download": {
         "url": "dist/javis-facebook-monitor-1.1.0.zip",
-        "sha256": "6ff9abfe78da9f7caeda79040dda525d9a117284bf872b79fe72fdb36382c6ff",
-        "size": 21528
+        "sha256": "eb691a958bf08c196d831e04a8a2d37e383d41443d94d97a99fdc67f2c54f179",
+        "size": 21534
       }
     },
     {
@@ -638,8 +638,8 @@
       },
       "download": {
         "url": "dist/javis-google-ads-1.0.2.zip",
-        "sha256": "c496583d74e2a9ef77826ace88ee9202694c802a88a6f5cbce2d5b8eda17b67f",
-        "size": 28959
+        "sha256": "b930ef75294ab35119dd5a630a6b6fc6f71d5f2d5cbf593ce9df317f449c2f43",
+        "size": 28962
       }
     },
     {
@@ -673,8 +673,8 @@
       },
       "download": {
         "url": "dist/javis-google-merchant-center-1.0.0.zip",
-        "sha256": "a4ea6dfe65ea990a5eb9419a5e7807c5415a7b3738ce71564a6ecb0e61dcc3f2",
-        "size": 14994
+        "sha256": "bf4abf43092f30d58d7f0100431446f8f55d8c92edb00cf44ea05e228d0749e8",
+        "size": 14998
       }
     },
     {
@@ -708,8 +708,8 @@
       },
       "download": {
         "url": "dist/javis-google-analytics-1.0.0.zip",
-        "sha256": "2b69c18938cd8f4aee7dbadf685819d46d6169b9ed3ae189a7c4f51c51e1707a",
-        "size": 11323
+        "sha256": "eaa71ff687d2f6825577f336282c6abece12d5cd1812d7500d2329e712f17994",
+        "size": 11328
       }
     },
     {
@@ -743,8 +743,8 @@
       },
       "download": {
         "url": "dist/javis-google-tag-manager-1.0.0.zip",
-        "sha256": "bbcfc6cc9c5c6298fd85a84aa6d68952ebc6e5912710b133bcbc5e1515f5bd0e",
-        "size": 11049
+        "sha256": "d03c318abce6e3f11c7b1dc99a7667ff869896c86406244d660c743ae6fafecd",
+        "size": 11054
       }
     },
     {
@@ -778,8 +778,8 @@
       },
       "download": {
         "url": "dist/javis-tiktok-ads-2.0.0.zip",
-        "sha256": "e8e82b3d76145923c93c09522f1f2fc2a4bff42ae64bc127f6984c5f9eb8228d",
-        "size": 11309
+        "sha256": "d68035774c25f8247bd2d9f92adb61eaf7b089010446bb80b87a612bc5e2a162",
+        "size": 11315
       }
     },
     {
@@ -811,8 +811,8 @@
       },
       "download": {
         "url": "dist/javis-google-calendar-1.0.0.zip",
-        "sha256": "f3204f20a48c9e63959b2678de408e3c6843eceda12f5265d10a60aa1eae6323",
-        "size": 12536
+        "sha256": "aff5967162c6085b3a52f992cd865821df1093f595abe9f5491f7e44b7cf8010",
+        "size": 12539
       }
     },
     {
@@ -844,8 +844,8 @@
       },
       "download": {
         "url": "dist/javis-gmail-1.0.1.zip",
-        "sha256": "f54a42851f50fb028ddf6aea98ebc7ff9fbaba39db29368a08dede2a738a4afe",
-        "size": 16684
+        "sha256": "37a043c5692a684653ae04928ecab9bc79a74c20e2e0ce3a438d9b126156665c",
+        "size": 16688
       }
     },
     {
@@ -877,8 +877,8 @@
       },
       "download": {
         "url": "dist/javis-resend-1.0.0.zip",
-        "sha256": "98950a98f79e9ffb063579496aeccee370cb7d8538bd7d979cc24d56e5acff20",
-        "size": 14435
+        "sha256": "e78df5575cb9bbbbce552e6e49f2b4f048241e4344c2e435c1421a37ac609348",
+        "size": 14440
       }
     },
     {
@@ -910,8 +910,8 @@
       },
       "download": {
         "url": "dist/javis-slack-1.0.0.zip",
-        "sha256": "405dc29f944384259c11e086a063d4f9dedc49cf613433799422a4aad3b0e377",
-        "size": 26088
+        "sha256": "c83711ee4fa8aefbe225fd3cbb01251f719f850753475aba0a6e949c9553012b",
+        "size": 26092
       }
     },
     {
@@ -943,8 +943,8 @@
       },
       "download": {
         "url": "dist/javis-systeme-io-1.0.0.zip",
-        "sha256": "7886621cf1702fe73d7b4a7f663468dc2bd66d03d48d57693eee1d657dc4d194",
-        "size": 12770
+        "sha256": "4586f57aaff71acefadb3039671a37cb7e18ac1c0a3cb896795ef1427835c0b6",
+        "size": 12779
       }
     },
     {
@@ -976,8 +976,8 @@
       },
       "download": {
         "url": "dist/javis-lark-1.0.1.zip",
-        "sha256": "a2f951f30b7694174011882c71fcb596118b5b2db9d57651f17e3bc81e31350b",
-        "size": 51858
+        "sha256": "27766764079683dd55c39730ba5c43a6396298e9c171191a4aec42661a8ed353",
+        "size": 51868
       }
     },
     {
@@ -1009,8 +1009,8 @@
       },
       "download": {
         "url": "dist/javis-higgsfield-1.0.0.zip",
-        "sha256": "5021689623f95050febad984bfc6b9b1f1a8c0978ea1ea775b48ef63ae194584",
-        "size": 91932
+        "sha256": "eff2b0101672f37d61636bfc1c73eb5fb95536b0043c15a912176e5230d3cb11",
+        "size": 91937
       }
     },
     {
@@ -1042,8 +1042,8 @@
       },
       "download": {
         "url": "dist/javis-capcut-1.0.0.zip",
-        "sha256": "43489e30cf592f190ec5bb36eea402f0126042d3f7d5cc6c96daa4b75bbcbc84",
-        "size": 8942
+        "sha256": "5dd4891befffbad199bf9f19e40e07d0e0937386e2f8458e6406b4639e54dc23",
+        "size": 8945
       }
     },
     {
@@ -1077,8 +1077,8 @@
       },
       "download": {
         "url": "dist/javis-topview-1.0.0.zip",
-        "sha256": "e9d00cfbf8850907f67406b8a575cf2af5a65976e413e0807b0f6e2fa9063b88",
-        "size": 9532
+        "sha256": "f386df8caf2ca54be97db67e252727697b6eca4f078d15082149922fc08a231c",
+        "size": 9537
       }
     },
     {
@@ -1110,8 +1110,8 @@
       },
       "download": {
         "url": "dist/javis-mineflow-1.0.0.zip",
-        "sha256": "a2a39edc3353589d494ee5f2d695b04597686a11a311450e1ed4551472ae009a",
-        "size": 54666
+        "sha256": "6b31326409d6364e1fa80adb7f63eaa316100ccb5651d855a27aecad60ddc8f3",
+        "size": 54661
       }
     },
     {
@@ -1145,8 +1145,8 @@
       },
       "download": {
         "url": "dist/javis-tiktok-social-1.0.0.zip",
-        "sha256": "0de3e729e9202b2e91c40efd92a5d235db8d690045cc450b8823954337d24f94",
-        "size": 9868
+        "sha256": "80dd6e64c23a4507ff3b4538fdc7f34554a8555250f63ca9a86b5688ffe11c43",
+        "size": 9871
       }
     },
     {
@@ -1178,8 +1178,8 @@
       },
       "download": {
         "url": "dist/javis-x-twitter-1.0.0.zip",
-        "sha256": "5ab9a99da5e6412f24c9ee3ab89d7bc4594385afdba3c28210164b7193aadde9",
-        "size": 271235
+        "sha256": "4c5c1e8e7ec3ec8a2ac288b0018c69c7e42810e91a4b50fa7ca60fa45bf0ff90",
+        "size": 271241
       }
     },
     {
@@ -1213,8 +1213,8 @@
       },
       "download": {
         "url": "dist/javis-zernio-1.0.0.zip",
-        "sha256": "6d0cf4c4041f11666afd6dbe9b118c43bd88684fd308c22d6f162a321a936db4",
-        "size": 11317
+        "sha256": "f61ecbc6d509ea0d61c921307a0b692a00ca2c53654d6c5274d917b7c3bc28db",
+        "size": 11330
       }
     },
     {
@@ -1246,8 +1246,8 @@
       },
       "download": {
         "url": "dist/javis-google-keep-1.0.3.zip",
-        "sha256": "b949882e176cf531d9ed578a44c7d51b71bcd44b7449d752aa6adbcc2727e11e",
-        "size": 9381
+        "sha256": "c7a2729ce5b1e27d245a79b9387403a985ec1b35d192bdc2f8bcdce19d91048a",
+        "size": 9383
       }
     },
     {
@@ -1279,8 +1279,8 @@
       },
       "download": {
         "url": "dist/javis-notebooklm-1.0.3.zip",
-        "sha256": "34152d0b05ce3e3b292472c09ae85da22b28298f601b9521d068c52a08fffb1c",
-        "size": 14309
+        "sha256": "ff4ac614217bcec15181435e00a1c2ec3a05b114c10a5c7bf30cbf568c314420",
+        "size": 14314
       }
     },
     {
@@ -1312,8 +1312,8 @@
       },
       "download": {
         "url": "dist/javis-n8n-1.0.2.zip",
-        "sha256": "26bf976685b3512240b40fa08547f48b916cd6826c5d9670dd9f4745f3960040",
-        "size": 10911
+        "sha256": "d850aa86a8b21ad2560eddbc88a2e6a95a5a53eaaeb972d21f594937e0df2824",
+        "size": 10914
       }
     },
     {
@@ -1345,8 +1345,8 @@
       },
       "download": {
         "url": "dist/javis-hostinger-1.0.3.zip",
-        "sha256": "db02dd41b688de30bd2448493524c864527dc6878d34587e51c33f62c6b21f02",
-        "size": 11189
+        "sha256": "fabe84b6ed83fc42f9b6109297592488e3a6e193e312fdc63d7000ed80e5ddd9",
+        "size": 11198
       }
     },
     {
@@ -1392,8 +1392,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-creative-1.0.0.zip",
-        "sha256": "e3efc8703f63046fa7d99a64edf8ad0b67125ee6bbe4228dd5dab8b7a8cd637e",
-        "size": 666747
+        "sha256": "fe3bd4e2a424f79ed0524349bd4b86dac690b34ef5623298cb848dd2d035a4b6",
+        "size": 666730
       }
     },
     {
@@ -1435,8 +1435,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-office-1.0.0.zip",
-        "sha256": "c03ed689bf03ffb73d3b400dc326fa4195c0d00e92060e53f89a84ae158f094b",
-        "size": 134379
+        "sha256": "40f9b235ece35d6e35099d4ad5602789a3dc0ff6395ca4aac865fabded65697b",
+        "size": 134367
       }
     },
     {
@@ -1480,8 +1480,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-productivity-1.0.0.zip",
-        "sha256": "0d657f8ef7ff516dd1b74f0c8080ff7a9e5d641690e082c9f3143ad723238cf5",
-        "size": 91078
+        "sha256": "28a4af2663f857fc2b1bdcb86ae5fc2ad4f20767a1e4f48bc9712c58c61ad6a1",
+        "size": 91058
       }
     },
     {
@@ -1522,8 +1522,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-research-1.0.0.zip",
-        "sha256": "3e01a83ce7789aff5d04cb490375940213d46427ea4926378859d10b08f8ca81",
-        "size": 39217
+        "sha256": "64025dbc352a97af87289eefbe919a78020d693992a2708a78ea73344727f404",
+        "size": 39204
       }
     },
     {
@@ -1567,8 +1567,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-dev-1.0.0.zip",
-        "sha256": "d122a466b426681381ff6c1581a5c36676707db64a1aca87cbaa2e82a7025589",
-        "size": 72020
+        "sha256": "bc4b18460f92c793099fb47289591dd4857294ec5e3562fb3f637ff655c1522d",
+        "size": 72002
       }
     },
     {
@@ -1607,8 +1607,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-debug-1.0.0.zip",
-        "sha256": "09e42f488c174e14d794abf5ecc5324f7273c18ef5877e3877e30d7dd831ca14",
-        "size": 19312
+        "sha256": "4c6030d7d2225ca7dd92d774639935479cb73a626029885f7d98ca1b7008bb6e",
+        "size": 19307
       }
     },
     {
@@ -1647,8 +1647,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-media-1.0.0.zip",
-        "sha256": "f0071ad9f350024336a389ed95a682501688274f7d47515d57546e857b7679fe",
-        "size": 10116
+        "sha256": "3fb58ce3f3ff2964ab1afba0cd71be44bd36abe3d900651c55f2da8d6c718084",
+        "size": 10109
       }
     },
     {
@@ -1688,8 +1688,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-apple-1.0.0.zip",
-        "sha256": "5b3c253aecc1583d8683be3fcdfebcbe4ccc6fa7dda866e0b7d2b44d82285fe0",
-        "size": 9173
+        "sha256": "6c97746a68c5a80ac6fc66fd046ca0bb9e602389deb884b90bf78f675824e382",
+        "size": 9165
       }
     },
     {
@@ -1732,8 +1732,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-ai-agents-1.0.0.zip",
-        "sha256": "aca524713504c3a76677bd36a99edee96aafb49ade270a1b2b3e5de824f6c5a9",
-        "size": 98703
+        "sha256": "c324cce2ec99047885af7a3ed63c9d70edf75fe68e32bb3daf85e03dd084ddfc",
+        "size": 98683
       }
     },
     {
@@ -1773,8 +1773,8 @@
       },
       "download": {
         "url": "dist/javis-hermes-inbox-web-1.0.0.zip",
-        "sha256": "61586a463ca4740599ed8189ba297e62c9c5ee8f8a665a577126ef8166479312",
-        "size": 24810
+        "sha256": "711e979e7f2c6906d1b00dc72b321025714789e04bd2594c260fff88a8805fa3",
+        "size": 24800
       }
     },
     {
@@ -1817,8 +1817,8 @@
       },
       "download": {
         "url": "dist/javis-anthropic-plugin-dev-1.0.0.zip",
-        "sha256": "118963e64b81795a227a320a40c52308317b83cad681b943aeeb1240d71926b0",
-        "size": 190584
+        "sha256": "907da35730b047a3f0451bf848380b31879f0a895fd6afbdd8cb7f68b8312fd6",
+        "size": 190568
       }
     },
     {
@@ -1857,8 +1857,8 @@
       },
       "download": {
         "url": "dist/javis-anthropic-mcp-dev-1.0.0.zip",
-        "sha256": "71043b9b4a7da025e42942aff9477552b85ff0b5c560410634d04d5a424ce0d0",
-        "size": 62235
+        "sha256": "42ca739b2d0863fdd4798d48dfe16ae14ebdbf88bdb64905cb8ab9d99ea161b9",
+        "size": 62228
       }
     },
     {
@@ -1899,8 +1899,8 @@
       },
       "download": {
         "url": "dist/javis-anthropic-claude-setup-1.0.0.zip",
-        "sha256": "febd2921fdfc2610ab68c3f885668606f3ded32e44d0fc1e5cf3d8f9f853fc0d",
-        "size": 152711
+        "sha256": "b1f655288fdc327039dd57c812ca3e9d68de04e75700975850ca0043c39038fe",
+        "size": 152699
       }
     },
     {
@@ -1941,8 +1941,8 @@
       },
       "download": {
         "url": "dist/javis-anthropic-ui-report-1.0.0.zip",
-        "sha256": "0f814aea327d715152293ec5c32fe30b883fb674e1b7a39d8c4b789efe33e9a2",
-        "size": 99417
+        "sha256": "aac116f58f46d3097f8a01f02fbe5d9e56d5e5b4ac2e1b6adf11a5056e4e5496",
+        "size": 99406
       }
     },
     {
@@ -1984,8 +1984,8 @@
       },
       "download": {
         "url": "dist/javis-anthropic-chat-channels-1.0.0.zip",
-        "sha256": "adb127ac344bd8a569051cc5c0c53c6a0fb876b2a3047a3be0ab327a725e94d9",
-        "size": 20597
+        "sha256": "5d82f2462d90678ebc352fb658ce708746856311a66f7d7c184bb149d130a6c0",
+        "size": 20583
       }
     },
     {
@@ -2024,8 +2024,8 @@
       },
       "download": {
         "url": "dist/javis-anthropic-lab-1.0.0.zip",
-        "sha256": "c7f1c3b6dacff1fa9b64cfbef803fb5b1fcc1b9277f6fe8dcc5d81c479f04b0e",
-        "size": 48415
+        "sha256": "c0c5aaf655f0a69ce2ff51ef2cf25ee330444ea6d1638291d3140b01dfda9f3b",
+        "size": 48406
       }
     },
     {
@@ -2065,8 +2065,8 @@
       },
       "download": {
         "url": "dist/javis-deepseek-review-1.0.0.zip",
-        "sha256": "56a9a85a6e3e8028baf7e165566a126245c71dd55cd6a586a4bb48346499cb70",
-        "size": 31782
+        "sha256": "434fb9df19c49a25284ebaf4657d810ff3f624f45ca7d9e48fb151ed7dcbbf93",
+        "size": 31773
       }
     },
     {
@@ -2123,7 +2123,7 @@
       },
       "download": {
         "url": "dist/javis-superpowers-1.0.1.zip",
-        "sha256": "31946f9fe7ed8715c280cd4a7524663c9b15de9d9b9b085d747d6caeee03d176",
+        "sha256": "2ea9cb905bf0be0f39f9424e250ed7c811586481e68720bef64c8b0735273455",
         "size": 197647
       }
     },
@@ -2162,8 +2162,8 @@
       },
       "download": {
         "url": "dist/javis-playwright-1.0.3.zip",
-        "sha256": "2d28d1239ff17a9cd7dde4718424c14628b406a12890db522832605885e464ed",
-        "size": 21473
+        "sha256": "e8a4b31366ef61e92aef41f970e92f04e7a90951f7b76cad1c5f08068460cdc5",
+        "size": 21475
       }
     },
     {
@@ -2204,8 +2204,8 @@
       },
       "download": {
         "url": "dist/javis-ads-analytics-1.1.0.zip",
-        "sha256": "0138f3640b5c22eb6a07c5ffc29bdaae2f9043004d4c9cd00824ccb9dba31cb5",
-        "size": 8150
+        "sha256": "832d084b7e6e6e817f19510cbbc97128a64def26e1ab43dddbdc448baf15f214",
+        "size": 8158
       },
       "replaces": [
         "javis.quang-cao-so-lieu"
@@ -2250,8 +2250,8 @@
       },
       "download": {
         "url": "dist/javis-content-social-1.1.0.zip",
-        "sha256": "01f33024aa79374ae5295bab43f3774adedf192eb3e62a8e7ee86c7c9b69d3ee",
-        "size": 9114
+        "sha256": "18dae63c0f5ed3fee6e2c64c976b7f9423184f81c313f714af4b1a87386f0776",
+        "size": 9122
       },
       "replaces": [
         "javis.noi-dung-social"
@@ -2295,8 +2295,8 @@
       },
       "download": {
         "url": "dist/javis-email-funnel-1.1.0.zip",
-        "sha256": "6efa055787db469b61eb609f4d2ccc06f0b469a22837ca74d846dad934bcf7aa",
-        "size": 7892
+        "sha256": "0454798ac84184af477a953e46454a62da7205c7fdcc9e0d118b88deaca116b6",
+        "size": 7901
       },
       "replaces": [
         "javis.email-pheu"
@@ -2342,8 +2342,8 @@
       },
       "download": {
         "url": "dist/javis-digital-products-1.1.0.zip",
-        "sha256": "a15fce0fd34449b05bb56d5f7e34e366ee3cf2f9da7cb53214fe491c25c83903",
-        "size": 9440
+        "sha256": "e0866b8fa32e3efa2f29a2b3cd058d0f9fc9759bb7133b68f6c77f202afe75dd",
+        "size": 9448
       },
       "replaces": [
         "javis.san-pham-ban-hang"
@@ -2383,8 +2383,8 @@
       },
       "download": {
         "url": "dist/javis-everyday-assistants-1.1.0.zip",
-        "sha256": "a233393f7e12fd7378372bb778f048e8bec855504bb64d1cb8eec74b1c9af08d",
-        "size": 5305
+        "sha256": "cab8b17713698b091b8867e5b4174971ebd6fb80add8a5e4f314b81f29b18037",
+        "size": 5312
       },
       "replaces": [
         "javis.tro-ly-hang-ngay"
@@ -2424,8 +2424,8 @@
       },
       "download": {
         "url": "dist/javis-research-assistants-1.1.0.zip",
-        "sha256": "5df62d73b25d8de2df8fe402194c52a0e8565dac279bb1242c929af376f2ee4c",
-        "size": 5335
+        "sha256": "5840fb0f4871ef73f2000c4b7157ddc4bd0f4ff0f5b1215760721712acafe8ef",
+        "size": 5342
       },
       "replaces": [
         "javis.tro-ly-nghien-cuu"
@@ -2460,8 +2460,8 @@
       },
       "download": {
         "url": "dist/javis-tts-dropship-1.1.1.zip",
-        "sha256": "a24ba98ff9e8526e9d3508ea0063784ecf4b05834e44c288e21209daa091cc3b",
-        "size": 64796
+        "sha256": "89c234de649c2fcde5eb3d37fc87291e0bbd862b9c19e0dcecb299247dcccd09",
+        "size": 64812
       }
     },
     {
@@ -2491,8 +2491,8 @@
       "icon": "packs/javis.gate/assets/javis-gate.png",
       "download": {
         "url": "dist/javis-gate-2.2.3.zip",
-        "sha256": "705428c6c678df9cfd0294cfcdd1be33d8c9090f46e2bae2ef28d4daed428bfe",
-        "size": 41399
+        "sha256": "f031d9bbec07c50869863076c58d7b79ea6bf6cfcf559935ac4f6d462bd1598f",
+        "size": 41397
       },
       "replaces": [
         "javis.javis-trong-chatgpt"
@@ -2527,8 +2527,8 @@
       },
       "download": {
         "url": "dist/javis-github-1.0.4.zip",
-        "sha256": "5e092b07b925d0138040cab48ddaafdea4f7ed83edf3dea187345fe1ff503534",
-        "size": 9616
+        "sha256": "5a491c5c591a247ff78c96895806cf2e456247311f1fc494b1fa6547d7123299",
+        "size": 9623
       }
     },
     {
@@ -2560,8 +2560,8 @@
       },
       "download": {
         "url": "dist/javis-supabase-1.0.0.zip",
-        "sha256": "b6f4a93d32fe2d06bd7a7a43f056dc5aa36da9f56465b9ac0c113ceb55d27c45",
-        "size": 8878
+        "sha256": "84409aca1710510b31b2a54078842e629cbbd6710505258644d6361e0eadc4fd",
+        "size": 8884
       }
     },
     {
@@ -2593,8 +2593,8 @@
       },
       "download": {
         "url": "dist/javis-cloudflare-1.0.1.zip",
-        "sha256": "61d57c874acf326380f4336b06744311092c643905bd4adb17d5066291653284",
-        "size": 5306
+        "sha256": "3c5a5c0c0faf0b2332815f136418856e37c6cc86602dc4cf1926a97121eacc64",
+        "size": 5309
       }
     },
     {
@@ -2626,8 +2626,8 @@
       },
       "download": {
         "url": "dist/javis-cloudflare-oauth-1.0.0.zip",
-        "sha256": "6538fee6d5e64d3c94c92c5935c231c874504afade02068f789e058ae6de3dcd",
-        "size": 4735
+        "sha256": "0234ce8e35446c09e6b038524d2b3b09f9268675cb2153557de15bf7beace75f",
+        "size": 4738
       }
     },
     {
@@ -2662,8 +2662,8 @@
       },
       "download": {
         "url": "dist/javis-cloudflare-deploy-1.0.1.zip",
-        "sha256": "3c09ebb26e9b159d16f8792e68941dfeaa9304d5c3af54e4998e59b9e27e4213",
-        "size": 13394
+        "sha256": "93811514794007004aab0ad1513be5f60570c5b18a999c82a7486dc065ef6f45",
+        "size": 13403
       }
     },
     {
@@ -2698,8 +2698,8 @@
       },
       "download": {
         "url": "dist/javis-zalo-2.0.1.zip",
-        "sha256": "25dcda4ecc84aaff6cb6b932166cac37cd724098701a17656fd7b6134eaf5a77",
-        "size": 43436
+        "sha256": "b27ecbf83cce46ccd57aa6203985f04e393c8cb6169e7779c67f7c8664779d2f",
+        "size": 43449
       }
     },
     {
@@ -2744,8 +2744,8 @@
       },
       "download": {
         "url": "dist/javis-ecc-marketing-1.0.0.zip",
-        "sha256": "4c517383211c0f4685065d9c8b96fac759f3194705f04b6238fed8cd65321e26",
-        "size": 37343
+        "sha256": "71f4353bbe53ea17aa2c44859036203b2d62e345ad1b050e7da7042ad95aee26",
+        "size": 37321
       }
     },
     {
@@ -2793,8 +2793,8 @@
       },
       "download": {
         "url": "dist/javis-ecc-business-1.1.0.zip",
-        "sha256": "e34d4669a31273a742a81b2a614a3b468d5c0743aff84faa632d4d3e58c2ce8f",
-        "size": 62905
+        "sha256": "0666c22672690ef2b40ee2c6d68a57991376348291d4bc041fbc1472b5c655f5",
+        "size": 62877
       },
       "replaces": [
         "javis.ecc-kinh-doanh"
@@ -2839,8 +2839,8 @@
       },
       "download": {
         "url": "dist/javis-ecc-research-1.1.0.zip",
-        "sha256": "79211aa16886673777054c291d7a92ab65bd0624ef25bb73de37c93702cc5972",
-        "size": 27185
+        "sha256": "645d49f0b6e6b745672bed021b738a6b9422ae3afe63c1f6dc00793a01064c73",
+        "size": 27169
       },
       "replaces": [
         "javis.ecc-nghien-cuu"
@@ -2891,8 +2891,8 @@
       },
       "download": {
         "url": "dist/javis-ecc-ai-agents-1.0.0.zip",
-        "sha256": "ae619e78905e2bd30a27ccdc675320376dc1baa6fbf1d025f7ec52f1980349ca",
-        "size": 48533
+        "sha256": "786df943ef33ad6a5f7873cb26dc1cff20d3eb8fa94c2cd4a6e0503313fee2a9",
+        "size": 48501
       }
     },
     {
@@ -2937,8 +2937,8 @@
       },
       "download": {
         "url": "dist/javis-ecc-code-quality-1.1.0.zip",
-        "sha256": "76c3b92bcb74365288f62a82832c40741d949b1406fe33a086b4c8764aea4333",
-        "size": 50595
+        "sha256": "f87cf345221ed6d8f3f087f041eaa973a8f70b0212f2d7a7120f602723e23408",
+        "size": 50574
       },
       "replaces": [
         "javis.ecc-code-chat-luong"
@@ -2988,8 +2988,8 @@
       },
       "download": {
         "url": "dist/javis-ecc-backend-web-1.0.0.zip",
-        "sha256": "37705d07cb85cb59f6169726e6f9ec5fcc7c7ead2601550cb32b8576a0a9b99f",
-        "size": 55902
+        "sha256": "b415252e63dc342132d04f61a12008fe9c81ae7be1fd4a8950d684d0d6c4a959",
+        "size": 55875
       }
     },
     {
@@ -3029,7 +3029,7 @@
       },
       "download": {
         "url": "dist/javis-ecc-business-agents-1.1.0.zip",
-        "sha256": "825865d22fd0b7bb9b034fcdb7b0c631f0169dcbd6bb75e792790060a0d313ee",
+        "sha256": "2129f98b3ad0d90cf59c12d90491d284148d570fdf762e3503c11e015009e9e4",
         "size": 17465
       },
       "replaces": [
@@ -3086,8 +3086,8 @@
       },
       "download": {
         "url": "dist/javis-ecc-engineering-team-1.1.0.zip",
-        "sha256": "9ac05f7d5ff2cd355c84f330c12e673d303995eb8f1baca0fcf40a88cfdd9c41",
-        "size": 66338
+        "sha256": "35bb180b111f32e9611c61783c9c3c257540030d4f2a2e8813a71f0fb690a03e",
+        "size": 66333
       },
       "replaces": [
         "javis.ecc-doi-lap-trinh"
@@ -3137,8 +3137,8 @@
       },
       "download": {
         "url": "dist/javis-founder-1.0.0.zip",
-        "sha256": "48ded73d32e832ae937a832e11043afc42405ee133d3332f6f323d9f3f50c91c",
-        "size": 49505
+        "sha256": "c9a67788d20375838be9f40189cdf4b0dfd78709f498749c1756ff2572703cdf",
+        "size": 49478
       }
     },
     {
@@ -3181,8 +3181,8 @@
       },
       "download": {
         "url": "dist/javis-lemo-opuscar-1.0.0.zip",
-        "sha256": "0b7e1de517752f601a8ca09b5395f4f7fe2923d580e899aeccb3d893d12e28d8",
-        "size": 6934
+        "sha256": "2a532dd83df3ee36c78647d2a90b7c5a9dc8a9ea076755d5bc43e93bd8f0d67d",
+        "size": 6933
       }
     },
     {
@@ -3237,8 +3237,8 @@
       },
       "download": {
         "url": "dist/javis-remotion-1.0.4.zip",
-        "sha256": "3bb604a11fb6c9dafeb5b1f27065af253416498d3c7c8fa05d7d947438440160",
-        "size": 884550
+        "sha256": "acb16f10ae3d8661738032fdd975009e7409a55f8ea26f772bdd654716a7e60a",
+        "size": 884551
       }
     },
     {
@@ -3288,7 +3288,7 @@
       },
       "download": {
         "url": "dist/javis-anthropic-marketing-1.0.0.zip",
-        "sha256": "179981665a5bddc5a10e1eebf3a2e887c5d47dbe6ade732cb6dce855860abe73",
+        "sha256": "eb35c7a212f1ae2dd2d53ad31f29990cd096c736d6194a20b7494afdac3b46dc",
         "size": 44775
       }
     },
@@ -3367,7 +3367,7 @@
       },
       "download": {
         "url": "dist/javis-anthropic-sales-1.0.0.zip",
-        "sha256": "add01e8e46ae76241f8a3f40d332f226bd8d91db641bd2285611f89669ea25f1",
+        "sha256": "97dfc55e4a3bdd32f4a5b4abecafd833afa61484149859a3060b3df6625eb1e6",
         "size": 166955
       }
     },
@@ -3422,8 +3422,8 @@
       },
       "download": {
         "url": "dist/javis-anthropic-skills-1.0.1.zip",
-        "sha256": "27033e346e8f7cde732223a7f38edbbf8a6b35302783c8b6b61085c23372a7dc",
-        "size": 3737143
+        "sha256": "82e139de894d51d89644752aaf25d0171a276be9e31cdf547fdaf8f8d2b752fb",
+        "size": 3737145
       }
     },
     {
@@ -3509,8 +3509,8 @@
       },
       "download": {
         "url": "dist/javis-anthropic-small-business-1.0.1.zip",
-        "sha256": "f0df0145bd86489aa34b3fbe4957c94159fd3471617f89e6665fe0eeed314a5e",
-        "size": 574458
+        "sha256": "343867486ba61f5f7603bc05806670483ddb83fc7ec2e100621db9fb1793b80f",
+        "size": 574459
       }
     },
     {
@@ -3564,7 +3564,7 @@
       },
       "download": {
         "url": "dist/javis-gitnexus-1.0.2.zip",
-        "sha256": "308c9757a58f58953386d80dfbb93ba4307088f5bb11a17fb4f0a069ce012dc3",
+        "sha256": "9efaf8360a3138f8db8973d94d1cb5ead3ca7ddc418dcd243a3f06b9a6c89590",
         "size": 150025
       }
     },
@@ -3608,7 +3608,7 @@
       },
       "download": {
         "url": "dist/javis-humanizer-1.0.0.zip",
-        "sha256": "a1b621385d0ae105d5d3654c31c7b9a0676d293fe7e4a08e50821e63b80a7fa7",
+        "sha256": "3c2f697d6791d6d413481d90c1dfca19f29feeeb2d21d01a60902c6425b1c53b",
         "size": 28082
       }
     },
@@ -3658,7 +3658,7 @@
       },
       "download": {
         "url": "dist/javis-hyperframes-1.0.0.zip",
-        "sha256": "0752ec2c49cd594b5e61cacb15a65c4182a90c68264cdecb541f56ae76f263ad",
+        "sha256": "72779f7b7a57132918154e74cec25eb46257cbec56b3d8179372b02f58732f11",
         "size": 2077750
       }
     },
@@ -3753,7 +3753,7 @@
       },
       "download": {
         "url": "dist/javis-marketingskills-1.0.1.zip",
-        "sha256": "67f8b7e94666753ed98541a3aac3189da4836cf50142a45c1d74d61875ae6857",
+        "sha256": "264db7fb1fecd46fa9403196338dc5c6790b8c81b4f9d8289cd981892fe73a6d",
         "size": 1691426
       }
     },
@@ -3823,8 +3823,8 @@
       },
       "download": {
         "url": "dist/javis-mattpocock-1.0.2.zip",
-        "sha256": "f4d0959259f69de481951438c9c447693d570a16fb1c1cb0558afd4add2f8adb",
-        "size": 113505
+        "sha256": "99af39b14f8b15ecc2241dfff94eb04e2c555b35da4f916bff7853f0294273a6",
+        "size": 113506
       }
     },
     {
@@ -3867,8 +3867,8 @@
       },
       "download": {
         "url": "dist/javis-rea-1.0.10.zip",
-        "sha256": "1226db392e4f94e4fa1a78c3cd640cf2c2f7a4f6eeab9513fefd036ac0e60d08",
-        "size": 75918
+        "sha256": "37978431e9f8d2316a91154bcee45c5a64c066eaa6a8b7224c42e8caa57636e6",
+        "size": 75919
       }
     },
     {
@@ -3917,7 +3917,7 @@
       },
       "download": {
         "url": "dist/javis-ui-ux-pro-max-1.0.0.zip",
-        "sha256": "257be9a6a34a1318ba0f9a4b6ac94337fc2686ff43c281299fce41ef74ba485b",
+        "sha256": "4828dbc5e1d6d03e2a2c178018e7903060e077625297ee64019b7afacf132b64",
         "size": 3552640
       }
     },
@@ -3969,7 +3969,7 @@
       },
       "download": {
         "url": "dist/javis-vercel-skills-1.0.0.zip",
-        "sha256": "5fe757668b3553f0e66ef30aa091a4d6ce959c57aa51e55407609e58ef4aee75",
+        "sha256": "dcbbd5ecf4e7cc5621a49f36a14f347955d8d7c5486b6d9a443760ff1c17c92d",
         "size": 554257
       }
     },
@@ -4014,7 +4014,7 @@
       },
       "download": {
         "url": "dist/javis-video-use-1.0.0.zip",
-        "sha256": "cab431354a999ad4a989f2fc160343fd725f85bc1fa0803f8032a2fd6a8a66c0",
+        "sha256": "8a91da11d8864ce5b61a70fc2de40ce860e879a4bd67d4376b48f9d651296853",
         "size": 94287
       }
     },
@@ -4058,7 +4058,7 @@
       },
       "download": {
         "url": "dist/javis-planning-with-files-1.0.0.zip",
-        "sha256": "92fdc2ab824e2a9956b0122b9a24e8d280c14195fc1e753d4a7de8bbcf8f71d4",
+        "sha256": "68cb826caf9998f07f32e45e2302d3b18ef7ec7f43b77bb267ccbf727a541e00",
         "size": 161956
       }
     },
@@ -4142,7 +4142,7 @@
       },
       "download": {
         "url": "dist/javis-flowkit-1.0.0.zip",
-        "sha256": "6e93a581f93258c99f930d5b2823aba62d00f090707c03c1563d95b2f005f2ef",
+        "sha256": "ac5a73f8a495134ece722660bac79340522784e1a80e3fcbf40f77abb35b91a3",
         "size": 163309
       }
     },
@@ -4178,8 +4178,8 @@
       },
       "download": {
         "url": "dist/javis-javis-vu-soul-1.1.0.zip",
-        "sha256": "11da0b3406b253ccbfc1bc96a7688b5f4bdbda130146da121155c872bbeefc9a",
-        "size": 8285
+        "sha256": "5dffc640799b33e57744a212da78ecd37ea3f53fe971c7e8b8a170590a7c93ef",
+        "size": 8295
       },
       "replaces": [
         "javis.linh-hon-javis-vu"
@@ -4507,8 +4507,8 @@
       },
       "download": {
         "url": "dist/javis-agency-agents-1.0.2.zip",
-        "sha256": "c9d85a919df4ad48eed5b6d0479928d67eb2cac95d154b06f4d463ea10e6bf30",
-        "size": 1768157
+        "sha256": "0da575cf024baf51b6a7c66b4ebd39ca6f6f407292ebce2b7dfb2d2356621d5e",
+        "size": 1768158
       }
     },
     {
@@ -4546,8 +4546,8 @@
       },
       "download": {
         "url": "dist/javis-agency-academic-anthropologist-1.0.0.zip",
-        "sha256": "54db9dcc68ed5e6fb845006d03138a6e8bdf492934c27968a206e97366b00740",
-        "size": 5817
+        "sha256": "1508d0659e24fb0430af2c984aaa9000c50cfe739778e8e1a08905da520a149c",
+        "size": 5818
       }
     },
     {
@@ -4585,8 +4585,8 @@
       },
       "download": {
         "url": "dist/javis-agency-academic-geographer-1.0.0.zip",
-        "sha256": "bd546b53e8365cb2bee994b9ccb3391514516025b0f97766232c6bca6bda8f05",
-        "size": 5755
+        "sha256": "b6d5d736499d34202da4eb8451b39084a73cdc18862816091fd3625f4647b8a8",
+        "size": 5756
       }
     },
     {
@@ -4624,8 +4624,8 @@
       },
       "download": {
         "url": "dist/javis-agency-academic-historian-1.0.0.zip",
-        "sha256": "de74e731ec25b8196814695efe0f4b0428c04fa17d453278e18614873c9cb126",
-        "size": 5654
+        "sha256": "939992e0121da8db3d036d6a40dbba34e2f866a9550303953a61d1b8bf3de285",
+        "size": 5655
       }
     },
     {
@@ -4663,8 +4663,8 @@
       },
       "download": {
         "url": "dist/javis-agency-academic-narratologist-1.0.0.zip",
-        "sha256": "4ff93f9c42b58e6a022f44e9c77bab46a3ac90640371f81c20333ef8b4ad02c7",
-        "size": 5550
+        "sha256": "1d2d0fb24b4ab1c8b6d9420205195b86f35696129e5aab705a019132e72ec482",
+        "size": 5551
       }
     },
     {
@@ -4702,8 +4702,8 @@
       },
       "download": {
         "url": "dist/javis-agency-academic-psychologist-1.0.0.zip",
-        "sha256": "2d3fcac72875699e6bc177642ff9b0d6621c5bc3f737841493f89543fe48dd1b",
-        "size": 5754
+        "sha256": "297cff950bd1cdaf74d4e347bc1f852aecab490d9a152c2506fce271b6cfecf3",
+        "size": 5756
       }
     },
     {
@@ -4741,8 +4741,8 @@
       },
       "download": {
         "url": "dist/javis-agency-academic-statistician-1.0.0.zip",
-        "sha256": "d3cd5ccbaabd38dbaa98f2bbef694edfab3a2584a3b5da67851870ab7ff24ddb",
-        "size": 7187
+        "sha256": "98e4675ff1a2373796ef7b3236a82fdea7b467f99b70633e6c578ccfee361c92",
+        "size": 7189
       }
     },
     {
@@ -4780,8 +4780,8 @@
       },
       "download": {
         "url": "dist/javis-agency-accounts-payable-agent-1.0.0.zip",
-        "sha256": "aab1bd8e2f40764a3f0b5b645a223188fd03640bb2ac5297a374d7788f513907",
-        "size": 5545
+        "sha256": "83529bb1e35c5cce55d62c701b0b6eced63516788f0de784f445a913432c7fd9",
+        "size": 5547
       }
     },
     {
@@ -4819,8 +4819,8 @@
       },
       "download": {
         "url": "dist/javis-agency-agentic-identity-trust-1.0.0.zip",
-        "sha256": "3d859853cfa079badf20d824e2a2a3924f57967e57055d28e53fad272a98ca34",
-        "size": 9211
+        "sha256": "252cb48f38111c7711a318688419fd17aff448f178875fa5d6c4cb87884882ca",
+        "size": 9212
       }
     },
     {
@@ -4858,8 +4858,8 @@
       },
       "download": {
         "url": "dist/javis-agency-agents-orchestrator-1.0.0.zip",
-        "sha256": "959f8d87fa1f28a3b5a0d6229cd5059e406506670db487a97824a65d391cb3eb",
-        "size": 8210
+        "sha256": "e5fe8f66741f069ab7c479100ddf21e811f74f5c6f6c1350ab46d57cd0b7c09f",
+        "size": 8212
       }
     },
     {
@@ -4897,8 +4897,8 @@
       },
       "download": {
         "url": "dist/javis-agency-automation-governance-architect-1.0.0.zip",
-        "sha256": "6e725095dee0d456acd37c21720a625e2c2436d1dd67226a4e61bf0408d052d9",
-        "size": 5066
+        "sha256": "0ddbed6c55311ffa3e73acc52727a70d3f3ea25c09a3a26f5909c0df8be8e915",
+        "size": 5067
       }
     },
     {
@@ -4936,8 +4936,8 @@
       },
       "download": {
         "url": "dist/javis-agency-blender-addon-engineer-1.0.0.zip",
-        "sha256": "9872c22651efa450dbbf647db5fa1eaf2c6d7f1186eed984a8e1694bba0821f3",
-        "size": 7033
+        "sha256": "b130e989ee93d3cb4630a90f963886978730bc3aa789339f4f82f5641fe664f7",
+        "size": 7034
       }
     },
     {
@@ -4975,8 +4975,8 @@
       },
       "download": {
         "url": "dist/javis-agency-business-strategist-1.0.0.zip",
-        "sha256": "b3ee09c7935458720ff326e52f63979f08410a0e8ad78d69e634e53a30f9c7d4",
-        "size": 11783
+        "sha256": "153748cd971a226b6d1d41c57984ce453db96dc10560100921c8b72baa0e75a6",
+        "size": 11785
       }
     },
     {
@@ -5014,8 +5014,8 @@
       },
       "download": {
         "url": "dist/javis-agency-change-management-consultant-1.0.0.zip",
-        "sha256": "3770bcdc661fbe30462995c0b0efb912e061af509427f09de0bd6938844e675f",
-        "size": 12472
+        "sha256": "9817d291db21fe2a82c6f1099a2f93ebf30705a2ac1c00ea49ff88cf762dcee8",
+        "size": 12473
       }
     },
     {
@@ -5053,8 +5053,8 @@
       },
       "download": {
         "url": "dist/javis-agency-chief-financial-officer-1.0.0.zip",
-        "sha256": "4083cfd8157c6badf105a599d3f18b30be4660d66fc054332c4b232719a63a54",
-        "size": 10225
+        "sha256": "5d82036b450c051c579a189612b16c8ddfe2abd862a0ea06edd643084a341c12",
+        "size": 10226
       }
     },
     {
@@ -5092,8 +5092,8 @@
       },
       "download": {
         "url": "dist/javis-agency-corporate-training-designer-1.0.0.zip",
-        "sha256": "760a1f0ee1cb2230700aff9772e6dfcd6bc6a2769f059bc30b912fc75f8497ff",
-        "size": 8736
+        "sha256": "4b0f9683ee784234ef0bd9cc1ef1fd974105777110b63ad23820cdb9505fd7e3",
+        "size": 8737
       }
     },
     {
@@ -5131,8 +5131,8 @@
       },
       "download": {
         "url": "dist/javis-agency-customer-service-1.0.0.zip",
-        "sha256": "9ca301623c39aea06b1c63cba449c3e0365455e5991dbaff48f7bb27a482ef30",
-        "size": 9869
+        "sha256": "576d1fb7b71a87f676163d43a8aea2f63dda1365e5600f93715e53edfaee7560",
+        "size": 9871
       }
     },
     {
@@ -5170,8 +5170,8 @@
       },
       "download": {
         "url": "dist/javis-agency-customer-success-manager-1.0.0.zip",
-        "sha256": "3669e9eb9da6838317392d0b964dafa66fc276d4d8e61259ea736ec7a5e68bf3",
-        "size": 11687
+        "sha256": "ac530a8e75f2610cb4cb5cbeaa70a3bc14abb8210e138d1eedb475f74806a6f0",
+        "size": 11688
       }
     },
     {
@@ -5209,8 +5209,8 @@
       },
       "download": {
         "url": "dist/javis-agency-data-consolidation-agent-1.0.0.zip",
-        "sha256": "b3e38b215e46dfbe029606e68643a644a3b4485f3b5cd48288c942c28c67527c",
-        "size": 3434
+        "sha256": "ffb146dbfa77b11cb6d138bf94ee520766b3e17c8141cb92e279ed74fc58b359",
+        "size": 3435
       }
     },
     {
@@ -5248,8 +5248,8 @@
       },
       "download": {
         "url": "dist/javis-agency-data-privacy-officer-1.0.0.zip",
-        "sha256": "db1a384707d485ffd942de451ba9f6e409801c329aea1d1594b68d991b9d9f55",
-        "size": 11143
+        "sha256": "000ea07b85f45f16a0385bd178ad4443382f44d6f45cb0a3853d862b1c8bb8ee",
+        "size": 11144
       }
     },
     {
@@ -5287,8 +5287,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-brand-guardian-1.0.0.zip",
-        "sha256": "17a193e637240c4c72177b5df40f75eb88bf281da288cfe11c3c84d25850560f",
-        "size": 6306
+        "sha256": "146126b92cb897f69811f638fc49429fe0d72af953013330ec4dbba2c652ea5b",
+        "size": 6307
       }
     },
     {
@@ -5326,8 +5326,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-image-prompt-engineer-1.0.0.zip",
-        "sha256": "98bbd7a27bf5371809d4d1edbbf90e49191b0c995e6bd7bf77ffa2b17824720d",
-        "size": 6802
+        "sha256": "7a708732cc23d9c887e1ce8609eb1479a1319323f0feb0201187c6f0a5382069",
+        "size": 6804
       }
     },
     {
@@ -5365,8 +5365,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-inclusive-visuals-specialist-1.0.0.zip",
-        "sha256": "5d195d4e7231fd91f6697f3f5770f8e8e72670ca4cccc690f442b1486360e814",
-        "size": 5550
+        "sha256": "afe80f0f8c54824ad2baed8290a316d5f1e23e4bda4169b62c8e66aefdfcf1d7",
+        "size": 5552
       }
     },
     {
@@ -5404,8 +5404,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-persona-walkthrough-1.0.0.zip",
-        "sha256": "ac8a112b2ed5edd31fc73a040f507664a9a70f600a698aa37d22cea258030b33",
-        "size": 9539
+        "sha256": "a04f992f5d479015e4547f52508ebb994ed12cdbfe592361326d2ee845fda1a3",
+        "size": 9540
       }
     },
     {
@@ -5443,8 +5443,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-ui-designer-1.0.0.zip",
-        "sha256": "7f92e66c4b2e72a1ff25e536b054cc55d93848ae3166535cc4b49afa848012f8",
-        "size": 7264
+        "sha256": "37fa466504568798b55abafa0f1caee02135645b62b71bce37dd1860aad0b569",
+        "size": 7265
       }
     },
     {
@@ -5482,8 +5482,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-ui-finish-gate-reviewer-1.0.0.zip",
-        "sha256": "dd47c14559368d919e810a59e4ed93185696a7e9cb5bc54a02e1f50406a7d34d",
-        "size": 6343
+        "sha256": "fea563dc329018fdd0a009a04516f80f9a6ffa1ba43d0a43caa74bf7f9fb87d3",
+        "size": 6344
       }
     },
     {
@@ -5521,8 +5521,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-ux-architect-1.0.0.zip",
-        "sha256": "b717f271754065eae26ee06172c6e81a4e17c03053e1c5674e48366cb7aba980",
-        "size": 8116
+        "sha256": "51554c329054abab22c834e692ea232af1f8bdaff24771ca9e42d4365a01e2b5",
+        "size": 8117
       }
     },
     {
@@ -5560,8 +5560,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-ux-researcher-1.0.0.zip",
-        "sha256": "1668a7dcbaf5dd9553cf58105a1131e61ec8a07972309edf202ec63a62171700",
-        "size": 7221
+        "sha256": "a204ad5adf62a8db362ba071ebc1409a89fabf2a73b6f8e5b9f612ff6c3dbe04",
+        "size": 7222
       }
     },
     {
@@ -5599,8 +5599,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-visual-storyteller-1.0.0.zip",
-        "sha256": "20c28ceaaa15fcc6bb4ab2e8b5748fe01b7522e5fa5801ec9cc0000cb7ad3823",
-        "size": 5027
+        "sha256": "e3e9d5b76495976941984d023c9f47bf672a6c8e36a6cfa16fbc80cc738a08cc",
+        "size": 5029
       }
     },
     {
@@ -5638,8 +5638,8 @@
       },
       "download": {
         "url": "dist/javis-agency-design-whimsy-injector-1.0.0.zip",
-        "sha256": "acf909fff96566e776453a3ad1746fa0b424602bb9470c520d4d399269863c95",
-        "size": 8423
+        "sha256": "8463bafbd62a879b7e8ed79e3f8cd7318a10928f568d141b61eadc2f1779ed91",
+        "size": 8424
       }
     },
     {
@@ -5677,8 +5677,8 @@
       },
       "download": {
         "url": "dist/javis-agency-economy-designer-1.0.0.zip",
-        "sha256": "895ccb11f73f6ed726689485773437a1740e7bb6f26f26ed2bc7ce7f744e6593",
-        "size": 6321
+        "sha256": "78167610d0098cec6901487d4e67220f493d097c1dd1f41720238991ab4ef31d",
+        "size": 6322
       }
     },
     {
@@ -5716,8 +5716,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-ai-data-remediation-engineer-1.0.0.zip",
-        "sha256": "2ee1338c35cb07a0dc19427244d3a9b645a414b7df47f05a5a377dfd2d790c2a",
-        "size": 7264
+        "sha256": "01a39f607433ad64f5a65e2e5447b813765c432c57d62be74d695cec5b4fadb7",
+        "size": 7265
       }
     },
     {
@@ -5755,8 +5755,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-ai-engineer-1.0.0.zip",
-        "sha256": "217a3a407540088b9293f019a1dfdf0e721871c82a52f28f22a93b9ed10c4da1",
-        "size": 5376
+        "sha256": "0370fb90a0d68a6842019fe72181424b393e43e1c6a14216865864914eb13113",
+        "size": 5377
       }
     },
     {
@@ -5794,8 +5794,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-api-platform-engineer-1.0.0.zip",
-        "sha256": "ee778bf380d1c73c718415f03aea3a15462e58eb9daffdc440e97407adbce3da",
-        "size": 8384
+        "sha256": "f1fe28ef12e491b3227ef7113ce4369844ec225cf57213076367a69fcdf16961",
+        "size": 8385
       }
     },
     {
@@ -5833,8 +5833,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-ats-validator-architect-1.0.0.zip",
-        "sha256": "9583c6514266b4582166e4885620c8cb7f1fb152ce7fbefe0c30137349fb665b",
-        "size": 14473
+        "sha256": "d52bb2971d76ccb1b8ccbce61dffb06908a63cb3a82f1508232b7233741f3545",
+        "size": 14475
       }
     },
     {
@@ -5872,8 +5872,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-autonomous-optimization-architect-1.0.0.zip",
-        "sha256": "6867ff8a512c2ce813ccdfd72942f3c6a8bae4c7a74d74df4ff7ed11d09f6333",
-        "size": 6541
+        "sha256": "77250b7afe1e2cf8668c9c234a1c57a664ef3502ddcad6da3bdd2213e4dc38d3",
+        "size": 6542
       }
     },
     {
@@ -5911,8 +5911,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-backend-architect-1.0.1.zip",
-        "sha256": "e0339a4c639df0f1b1d0afc84b80dc354c7c9d92555a4a1cd7fe5c8d60b16a19",
-        "size": 6841
+        "sha256": "6be41653957eaa5dac177ce476cf1007f1508fcabfea9aaf02feff6e54ee39f8",
+        "size": 6842
       }
     },
     {
@@ -5950,8 +5950,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-china-network-engineer-1.0.0.zip",
-        "sha256": "9ef86a4eb16435c3ef1d88ba128c39c1db4f04c95e6a12f3ebae2ca1de6ed9d0",
-        "size": 9607
+        "sha256": "44acf125dee95ff1108bc2ae46aa7234e41a8e5a8df5e26ce1209faeb132a3ef",
+        "size": 9611
       }
     },
     {
@@ -5989,8 +5989,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-cms-developer-1.0.0.zip",
-        "sha256": "12055fc96150c6b272a3b16de01f24366d7a3d276efb935cced5001b26d746fe",
-        "size": 9964
+        "sha256": "5be046a3fd2d2dafb74cdc4cbba5b475dd2b3a559b79e9e0c33f5f19ab50e609",
+        "size": 9966
       }
     },
     {
@@ -6028,8 +6028,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-code-reviewer-1.0.0.zip",
-        "sha256": "8dd20e7d4666b6e49b31f8b04f230342ef35f1a0ab13a452a4a166d4d6bf4264",
-        "size": 3907
+        "sha256": "149944fc647cf323543fa2501f63359f54fe1ef832e259d8f286b19f0a6d8054",
+        "size": 3908
       }
     },
     {
@@ -6067,8 +6067,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-codebase-onboarding-engineer-1.0.0.zip",
-        "sha256": "c9cf7975b26f0c701e52680ee1beaf952bb7f6b55c699fb3e93ae6fdd551bc7e",
-        "size": 6448
+        "sha256": "7c1052be527918431cb2bb60401b2d84b0a9978c37670c4beadfddfa4023cb99",
+        "size": 6449
       }
     },
     {
@@ -6106,8 +6106,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-data-engineer-1.0.1.zip",
-        "sha256": "6666715efe7832586932b749732eaf939559e307ce2eac647673c8e213bcb01a",
-        "size": 9667
+        "sha256": "2dac0ff09eaed145fda6368b97a8f66fdd6cc4ebed104a5e36ba04d47d29b3aa",
+        "size": 9668
       }
     },
     {
@@ -6145,8 +6145,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-data-visualization-engineer-1.0.0.zip",
-        "sha256": "fb13bde41343d380f3c02f568fbec0c73354641e9e833f64a66c09b4b1702598",
-        "size": 8422
+        "sha256": "88781adbf057f83b4707fd774221b9b20df1e5ed1f47f9438febca3fb617b2b1",
+        "size": 8424
       }
     },
     {
@@ -6184,8 +6184,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-database-optimizer-1.0.0.zip",
-        "sha256": "0ebdcca1370825608fe29aa03cbf2bcca79c028e7e86fc3fcbc08915f75780c0",
-        "size": 5068
+        "sha256": "3193b0667851133e8b1d657c7e4736d69498379a8adc7293b3001f9bc8399224",
+        "size": 5069
       }
     },
     {
@@ -6223,8 +6223,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-database-reliability-engineer-1.0.0.zip",
-        "sha256": "d86240e2d52cf00140960998fcb90e5c72b1140aed25374bab298c0deae8e09e",
-        "size": 9280
+        "sha256": "37d82cd1f8486c2a541948bd179b5e3c86b6b21f85e32a4fcf816bf5bc186bcd",
+        "size": 9282
       }
     },
     {
@@ -6262,7 +6262,7 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-desktop-app-engineer-1.0.0.zip",
-        "sha256": "2e3e0f74f5a25389862066362a6adaeb71dee35b23e5efa0ca168b0f2648aff3",
+        "sha256": "71c2bd80b57855fc678cb99737d8ae3bfd117f77bb3e1a8bdb9b08e13636509f",
         "size": 9104
       }
     },
@@ -6301,7 +6301,7 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-developer-tooling-engineer-1.0.0.zip",
-        "sha256": "4cfed104e9d8121a96b5b1ef0c3cc6ab6527428fc070b9b5b7b72f6c85a8d35b",
+        "sha256": "96d1eea67ce0d4152115961346ea60c65d77d4756671ad5da355667c697a1273",
         "size": 8111
       }
     },
@@ -6340,8 +6340,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-devops-automator-1.0.0.zip",
-        "sha256": "af61d35c9a64c395d3354458c90b997d83f39c1241a6b263ebf9bdf4018f66a3",
-        "size": 7286
+        "sha256": "15111e1316929daf9068ca4a9385b461a97cf0a76d0f490a49322bc61c669cda",
+        "size": 7287
       }
     },
     {
@@ -6379,8 +6379,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-drupal-performance-1.0.0.zip",
-        "sha256": "4ef8c55998fbb94a3c22944c19b0a3c5dda924acba3a228c7cac9c0f76f1a9a8",
-        "size": 11259
+        "sha256": "e56df6ff2d980c92f553a3586691319ee774515c95b39d2673e629daef6981de",
+        "size": 11260
       }
     },
     {
@@ -6418,8 +6418,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-drupal-shopping-cart-1.0.0.zip",
-        "sha256": "1c158691a3da8d8adc41a238eea93b552a74f0c2b9eda60724fef272a5385337",
-        "size": 10836
+        "sha256": "154465cc7e0351ce79a67a0a14af865b141adab9bf687c1bfa17e578c5511f0c",
+        "size": 10837
       }
     },
     {
@@ -6457,7 +6457,7 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-electrical-engineer-1.0.0.zip",
-        "sha256": "dffd1dc7a8840ea728e418af43f2a722c0243fc98b520d0d0656e5f064b2a9c8",
+        "sha256": "1aaa8703e830fb7ba7c0e6a5f18b7444aad8ced8b5f1a4a4c3c47302afe188cb",
         "size": 15285
       }
     },
@@ -6496,8 +6496,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-email-intelligence-engineer-1.0.0.zip",
-        "sha256": "e2996e1162ec55a23cc358bdd30e25af5809c1cbad66dff03bbadcd9d0ad0c44",
-        "size": 9022
+        "sha256": "36d2124f217e3d9e622335d78bafa8cd6513b5baacf9e53e8809ab350ab69868",
+        "size": 9023
       }
     },
     {
@@ -6535,8 +6535,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-embedded-firmware-engineer-1.0.0.zip",
-        "sha256": "c61d2f16eac392363731447cdc7e98cb7c41c291bc0b3928ee422352f3b1d4e3",
-        "size": 6002
+        "sha256": "bc68b2812aaaa2e16932279605d679880205636e4d8d1d1879a87eae9fb98095",
+        "size": 6003
       }
     },
     {
@@ -6574,8 +6574,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-feishu-integration-developer-1.0.0.zip",
-        "sha256": "5603c389fb2f3896481f7a250d6ee9c7607046c80b080cc88ef34999c415a46c",
-        "size": 10003
+        "sha256": "5a64e631fadbc1008abc50aa2001d942d534f1a09e6e1ff0e22658b21e9338c7",
+        "size": 10005
       }
     },
     {
@@ -6613,8 +6613,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-filament-optimization-specialist-1.0.0.zip",
-        "sha256": "52d0fcbd876a94a8729cf456536386fe54f4f847e52505a176607150f71bd6fd",
-        "size": 8077
+        "sha256": "a282e52aea63833781a60fea510a38f827a3e826b48d0b6161cff1dd0c8c1352",
+        "size": 8078
       }
     },
     {
@@ -6652,8 +6652,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-finops-engineer-1.0.0.zip",
-        "sha256": "e946b8b6bab63e6e2a217348caec4570ce3286ad3b68acb266f95dca209848de",
-        "size": 8212
+        "sha256": "f5612a7721740b009cd82833f4fc7b15696260606523267da57f8c6c8c6f4772",
+        "size": 8214
       }
     },
     {
@@ -6691,8 +6691,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-frontend-developer-1.0.1.zip",
-        "sha256": "96ea2f015efaf3e5beccd29eea2f7d9410ff49a034208a57f8bd4540cec4eb51",
-        "size": 6441
+        "sha256": "07930b1ba6c2b1a494c007e3a1e37d10a7a99fb68514da472a0be47ad3b7de94",
+        "size": 6442
       }
     },
     {
@@ -6730,8 +6730,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-gaussdb-expert-1.0.0.zip",
-        "sha256": "71974adf1ea9e87f16198ff1f95ef266be93bc42c7e26ce731ef69311cdb75b4",
-        "size": 8664
+        "sha256": "100ebb9ad3e3a69b5918a74ec78fa9416a85000469c724bce2ffa30b9c4d323a",
+        "size": 8665
       }
     },
     {
@@ -6769,8 +6769,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-git-workflow-master-1.0.0.zip",
-        "sha256": "45e28a9a5f89adadce006130704ea070b50ce5d006c1f66b176a645fcde206e5",
-        "size": 3979
+        "sha256": "ad7818c091e7056b212be0edacf0b96340541b49c5ee0ecac7263adfa38a24f6",
+        "size": 3980
       }
     },
     {
@@ -6808,8 +6808,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-i18n-engineer-1.0.0.zip",
-        "sha256": "320ff46c6ba40f0c73317bb099e545cf0d6329b9406a20beb60e29f346fed82a",
-        "size": 8858
+        "sha256": "99ab18ae0840aabd820c7cc3a9f7b3fbec9b3dad9625b851663325d2f82d39d1",
+        "size": 8859
       }
     },
     {
@@ -6847,7 +6847,7 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-identity-access-engineer-1.0.0.zip",
-        "sha256": "2d27d7f70489999dcb41a42c4d1f70e6f46f2778e04a8184f7864e39d7167430",
+        "sha256": "c67c368950cbcf48dd54c051a9e96966e591b26d7615ad4a31f1efc20bbeda54",
         "size": 9573
       }
     },
@@ -6886,8 +6886,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-incident-response-commander-1.0.0.zip",
-        "sha256": "d1c04b85bc8b95e9f345860d8033e2fd3b8a1e38c6678065e3e98bd6a9903481",
-        "size": 10806
+        "sha256": "5dce55d2a496217507335fb9f7dd0a7dfbb82505143ca7e4bc1ad54a46eacd42",
+        "size": 10807
       }
     },
     {
@@ -6925,8 +6925,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-iot-fleet-engineer-1.0.0.zip",
-        "sha256": "f6baf23ee7e8a1ded582df711980e326352c7193b9de7f80ebb178954e065c95",
-        "size": 8116
+        "sha256": "38b6bf37121645dc5a03e939e30b2f3d915a6c107d4579f4e5abf3a2543a95e5",
+        "size": 8118
       }
     },
     {
@@ -6964,8 +6964,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-it-service-manager-1.0.0.zip",
-        "sha256": "6298a631c133cd206f5c30f5e282f0106f23a09d263e48e61c1a0369db47186a",
-        "size": 12844
+        "sha256": "33e0eb76df0c08766e9fc9033be1cf08c60a19f1ba36be6fcf6fca4c7a05fa6e",
+        "size": 12845
       }
     },
     {
@@ -7003,8 +7003,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-knowledge-graph-engineer-1.0.0.zip",
-        "sha256": "995aa015b875fb202d96e4dac683a6d0c508d0a833b2f7ea40f1f3c517aad518",
-        "size": 11245
+        "sha256": "848c866e90ecec2f3416c29fbad7ebf8a2fc546d6f9df42c4eff52c68bd12423",
+        "size": 11246
       }
     },
     {
@@ -7042,7 +7042,7 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-llm-post-training-engineer-1.0.0.zip",
-        "sha256": "88d575391f751a3e2b93f665824c119846fc56f2dc7fd5c50ac197a532e56b5d",
+        "sha256": "f2182d8fdb299564405cf843faf2e7319cbe0f86dc486b0a00e8a0cf3d741282",
         "size": 6817
       }
     },
@@ -7081,8 +7081,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-minimal-change-engineer-1.0.0.zip",
-        "sha256": "b32805d9451120663d1061ef2eb9b4660289fd10922e5be5e42138b2fbc50448",
-        "size": 7469
+        "sha256": "78475f7c0f30226f71755db7ef6945ce44bd123dafebbfba455590704e43ad32",
+        "size": 7473
       }
     },
     {
@@ -7120,8 +7120,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-mobile-app-builder-1.0.0.zip",
-        "sha256": "14ff5669078bf12d3f597c919369c83087828a3a0f96319ac29e3bd1707c556f",
-        "size": 8018
+        "sha256": "0ede0b92051ecf1bb5004cf27a8f195ceb3cebbed1f628869ae0b19768a0e439",
+        "size": 8019
       }
     },
     {
@@ -7159,8 +7159,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-mobile-release-engineer-1.0.0.zip",
-        "sha256": "57cda3c3539d2f91e3afed55fe0104d91826a44eeb29cafe421d2c764517247d",
-        "size": 8203
+        "sha256": "773794638a2a1d13e52dc70d757e3a31056a9617ba42731f7919887e1c058b38",
+        "size": 8207
       }
     },
     {
@@ -7198,8 +7198,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-multi-agent-systems-architect-1.0.0.zip",
-        "sha256": "639ed5491a36181e99ad1f20612358875ea06b6838d5891f7bc6747b98709d44",
-        "size": 13844
+        "sha256": "3fa4227718895a7cfc40374c5e5b788d3250eff115039378239f59839e01a4dc",
+        "size": 13845
       }
     },
     {
@@ -7237,8 +7237,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-network-engineer-1.0.0.zip",
-        "sha256": "3a2552dca124600c7ed5a71e57785849664ed3b74aa6450e32564bb57c5b88c1",
-        "size": 7265
+        "sha256": "411858bf6a4cb695767321d609b00f82cff39650dbfc6b7ebac7bed37d0b1338",
+        "size": 7266
       }
     },
     {
@@ -7276,8 +7276,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-orgscript-engineer-1.0.0.zip",
-        "sha256": "fe086a511d1e617b663e71b3b2a38259afa29c9f1bee0ed7500d1b3957e2f135",
-        "size": 4695
+        "sha256": "417236fc8ffe5be7e5c86383f9aefcd996ecd6b30d29a985dbc78bdbd8139db3",
+        "size": 4696
       }
     },
     {
@@ -7315,8 +7315,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-payments-billing-engineer-1.0.0.zip",
-        "sha256": "b87c7c5d28e463be67f8e797c4f3fb43656bdf4dd9a1268afae48713fa1f0f93",
-        "size": 8859
+        "sha256": "925e5893d1e1d4cd43402cdcfc13f7a16c5d6084f3a2a90661c8a6fbdafadc44",
+        "size": 8861
       }
     },
     {
@@ -7354,8 +7354,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-pdf-engine-architect-1.0.0.zip",
-        "sha256": "ca48d4bc1668f4d23fad8cd91cf41be54b7834bd9f03d188039d434abddd0019",
-        "size": 14829
+        "sha256": "5b25da41b4e23f0e85b5235683442a9fd5a6dae6e41233b0db28e79c56c15262",
+        "size": 14830
       }
     },
     {
@@ -7393,8 +7393,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-platform-engineer-1.0.0.zip",
-        "sha256": "153bac08f6705acbc4ac594100aa2c2e50c83cf09eabaaf0cf0225b58a3be55f",
-        "size": 7347
+        "sha256": "154b894c735d0feeae9604d4dea10221a4cff3426e94794a0bb250f5f8e17d73",
+        "size": 7348
       }
     },
     {
@@ -7432,8 +7432,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-privacy-engineer-1.0.0.zip",
-        "sha256": "89a34f186dd6ab3bf2a8ac3badedf1eb5bdf687f79014e476e122219732b6aaf",
-        "size": 8340
+        "sha256": "c6c25116de432c0638610045ca7e41a6e41564cf2d3a0f1864fcb0e44542f0e0",
+        "size": 8341
       }
     },
     {
@@ -7471,8 +7471,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-prompt-engineer-1.0.0.zip",
-        "sha256": "63b1ba2230e1b84524a8a613c3179e1040b4c41f20450a9c83a85f6d9cd40ac5",
-        "size": 6809
+        "sha256": "3ccdd4f5f44067fcef73613a55dfc6c91d2d597de8bf146c5f383cdacfcc8515",
+        "size": 6810
       }
     },
     {
@@ -7510,7 +7510,7 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-rag-pipeline-engineer-1.0.0.zip",
-        "sha256": "374f4f8b22a58d209c3155699e776606e59228c6b8ff9c40e5bc1dacd1b9c356",
+        "sha256": "c8fb1f29c4f67eb5411c2317b24147aa1711b2f1e4b26cc519268588c77fc304",
         "size": 9730
       }
     },
@@ -7549,8 +7549,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-rapid-prototyper-1.0.0.zip",
-        "sha256": "d939d610404f48b9eb627e4a63fb2a686c14ade3ae92ce1f0ca59a2c6dcd0e2b",
-        "size": 8307
+        "sha256": "0bf2d2768f31a02c91c9d886063fe3f7a7ff0c973990e0a6ed4635b108cbd207",
+        "size": 8308
       }
     },
     {
@@ -7588,8 +7588,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-realtime-collaboration-engineer-1.0.0.zip",
-        "sha256": "a4f08578599820f05163b5fac0dbd20ebe8bca254bd80766ffad06aa9c615b70",
-        "size": 9051
+        "sha256": "8a78ed71617e25aefea23980e82edf30386d59db799ea2c2d68ee2a610573b07",
+        "size": 9052
       }
     },
     {
@@ -7627,8 +7627,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-rust-refactoring-specialist-1.0.0.zip",
-        "sha256": "30080f8b30547964903847d00aa3e039fe6d5c5249d6e52689728b7c82cf655f",
-        "size": 8374
+        "sha256": "08b085e1a1d8c83ba706df90d5bf57e3149f0762fbb77827a32765b7e1db9f30",
+        "size": 8375
       }
     },
     {
@@ -7666,8 +7666,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-search-relevance-engineer-1.0.0.zip",
-        "sha256": "9bd42d0b8d77169ee73e59859588429c2129c6cd8f0e98c3a2b85831eaf07f29",
-        "size": 8438
+        "sha256": "3f5791f0d57a7529e445ea04a4e12efe2cfe449eecdc02c29eea168cf13ab481",
+        "size": 8440
       }
     },
     {
@@ -7705,8 +7705,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-section-508-specialist-1.0.0.zip",
-        "sha256": "1c639e27386fc7e28a1e59c5a4ccce63c9907683079b5194722da26ab5e55dec",
-        "size": 12302
+        "sha256": "58a35605cc9ccf336ca83dd5e39896bcb36e6aa1eaf0b6739ad6c6b042558519",
+        "size": 12303
       }
     },
     {
@@ -7744,8 +7744,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-senior-developer-1.0.0.zip",
-        "sha256": "ba895c7eecdf8a8115848b289d7640abec7006b718dfe1f8c982bd549df582c4",
-        "size": 4954
+        "sha256": "97eceb4f416daa1bc647666bde8c25865eb3cc4fffedc20304cf0cb1f764cb5c",
+        "size": 4955
       }
     },
     {
@@ -7783,8 +7783,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-servicenow-developer-mentor-1.0.0.zip",
-        "sha256": "21591f1657b59007b752f9372739d9a5a4e170f6fcd07a32a8b2ed54044b5371",
-        "size": 7362
+        "sha256": "983a4ae47991ac5558a4eebd220534b3578b6e857b1bf7a95a7705db1ef16321",
+        "size": 7364
       }
     },
     {
@@ -7822,8 +7822,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-software-architect-1.0.0.zip",
-        "sha256": "a8e9aaf67df5fa9dc86d9f69e7c9d4c0a57aef773027680b4ec37d4c9739f430",
-        "size": 5223
+        "sha256": "7c02ccd7192ef3f66273ae2363fc345a7db072fb7312bb7b2bff0ca3d7bb6b07",
+        "size": 5225
       }
     },
     {
@@ -7861,8 +7861,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-solidity-smart-contract-engineer-1.0.0.zip",
-        "sha256": "a3ccf637d28f25a7d0589323507757a37c3c29dafde6b9b83993f2e5be7640dc",
-        "size": 10200
+        "sha256": "8556f713201218623d2e2593a1eafc0357f760f741769f45258a20f32699757e",
+        "size": 10201
       }
     },
     {
@@ -7900,8 +7900,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-sre-1.0.0.zip",
-        "sha256": "3ab57a7cff0e0e8c7ebf531b3b81504357d09ee6cf871a9be65f59eed6007b61",
-        "size": 4188
+        "sha256": "e16ba3a18cb5ec4573dce477e86bc96daf4cbe13703047bd9e990fa5029ac31f",
+        "size": 4189
       }
     },
     {
@@ -7939,8 +7939,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-technical-writer-1.0.0.zip",
-        "sha256": "c4d53f3c1f3693b0de3643142350a14cd3c5ba5cc415d9c0ab975ebfce9ae26a",
-        "size": 8547
+        "sha256": "bb1204afc15cc41c4ffb6f917349a00106cd1b375bbadd9f60902008ae5a79e2",
+        "size": 8548
       }
     },
     {
@@ -7978,8 +7978,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-universal-document-compiler-1.0.0.zip",
-        "sha256": "cb92bf80bb2ae9fd97066a389272c903890bf27ffa28635a10001d551663c022",
-        "size": 10462
+        "sha256": "890908d4f2ef315049d0abd9132bb2d4b09da4ab901d2426025b6980ef01a310",
+        "size": 10463
       }
     },
     {
@@ -8017,7 +8017,7 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-uswds-developer-1.0.0.zip",
-        "sha256": "41787e3ff0c7565f1be4b87b9005bff4f79c91d6f5480c59e468ee37efe22a23",
+        "sha256": "838eadaba9abcadef80dd888f9114cdc251b89005b55d33f9ab2147600c6b4cd",
         "size": 10951
       }
     },
@@ -8056,7 +8056,7 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-video-streaming-engineer-1.0.0.zip",
-        "sha256": "b0b0377b0f568714a4589de598d0d353910928dbf5dcb09e663e60794c329d43",
+        "sha256": "207e3991aa1a933e6a0f84bf6f5dfe68b6487c205b3ce3ecd95fe13e78aeedde",
         "size": 8123
       }
     },
@@ -8095,8 +8095,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-voice-ai-integration-engineer-1.0.0.zip",
-        "sha256": "53d92ee3e069a8425b1075108afefde8f31b83125ad12ecdabf67252a91e7586",
-        "size": 12991
+        "sha256": "124da7ec7503eee68959d1e16a68a405b588520aa61f97bca67dc583b81d3090",
+        "size": 12993
       }
     },
     {
@@ -8134,8 +8134,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-webassembly-engineer-1.0.0.zip",
-        "sha256": "d1e25f25fa9909258f3b256d4131dbb8abbe7dbcd8d4a80339efe060d3547dc4",
-        "size": 8061
+        "sha256": "1a6ef6a3420af3ca50b664bddcdcff616382d6ad65e1b4a8eb9d6e11fffe75b7",
+        "size": 8062
       }
     },
     {
@@ -8173,8 +8173,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-wechat-mini-program-developer-1.0.0.zip",
-        "sha256": "1a8f90a8ed49f40bf78a75680cde52beb93387fec590acd70a6af5f0935567b2",
-        "size": 8494
+        "sha256": "af5afbe507519b37eab9fddeb296c52f1fd125046d40b99531e69cb4b5f6a2c6",
+        "size": 8495
       }
     },
     {
@@ -8212,8 +8212,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-wordpress-performance-1.0.0.zip",
-        "sha256": "aed3a79457a60b08a5e94e1d73aade814a4776152cb9cdf6f2f6db0dadcd1c44",
-        "size": 11260
+        "sha256": "e0330e2668fc975bfcb6c5e0114f09b6416f7af41dddc49938dfaa6ae7f9c767",
+        "size": 11261
       }
     },
     {
@@ -8251,8 +8251,8 @@
       },
       "download": {
         "url": "dist/javis-agency-engineering-wordpress-shopping-cart-1.0.0.zip",
-        "sha256": "d698a27c4ee32dde537f2438bbe8f316b8f1d871cb7e0e0a8fca4b0c619b5674",
-        "size": 11172
+        "sha256": "af1455a6d2be730093b7a447338925761242c0369535110a282811513ab3c3e1",
+        "size": 11176
       }
     },
     {
@@ -8290,8 +8290,8 @@
       },
       "download": {
         "url": "dist/javis-agency-esg-sustainability-officer-1.0.0.zip",
-        "sha256": "ed60283cf7be9e4bf3c6882d7670817eb3675519cc6e7be68410819e3dfbed13",
-        "size": 10900
+        "sha256": "d92d7719dc1d7054ad9182a330c67eb528010b0ccacad1ba6c7a57c42f4d7e8b",
+        "size": 10901
       }
     },
     {
@@ -8329,8 +8329,8 @@
       },
       "download": {
         "url": "dist/javis-agency-finance-bookkeeper-controller-1.0.0.zip",
-        "sha256": "7ac5e5151780a1a4b7658cba9c78ffd5006d7ad3c54140f267d17ca71a2e066b",
-        "size": 8454
+        "sha256": "f3d757d09eb320bbfcdc849674aa7f78aa49de7aa8f1ef13e8ef2d5c494b22ee",
+        "size": 8455
       }
     },
     {
@@ -8368,8 +8368,8 @@
       },
       "download": {
         "url": "dist/javis-agency-finance-financial-analyst-1.0.0.zip",
-        "sha256": "110030abe9c29f584df3bc13858dea4ae6992341c7e473cfe5f15dfa67f45e79",
-        "size": 7826
+        "sha256": "4ba93959895aec1ebe222530b49e08494ec711f28534c60d48d5ff8823ae6c8e",
+        "size": 7828
       }
     },
     {
@@ -8407,8 +8407,8 @@
       },
       "download": {
         "url": "dist/javis-agency-finance-fpa-analyst-1.0.0.zip",
-        "sha256": "460a8d156abf69b754bc2d7f870f0a32027544aaefe2f8f7c4f82eb57dfbcf75",
-        "size": 8927
+        "sha256": "eb63521b46429f4b52e6a321e8c3426d6fc3d7ed4a3572f495984c53f27ddc57",
+        "size": 8928
       }
     },
     {
@@ -8446,8 +8446,8 @@
       },
       "download": {
         "url": "dist/javis-agency-finance-investment-researcher-1.0.0.zip",
-        "sha256": "f2465ea3c4b6825411b9c08dd4a298d6d000ee9b7c9197e18c2957ceeb6bfa63",
-        "size": 8769
+        "sha256": "70a57b0f8bf8b3d7e8625c0e72b158f55a6915ef4fd40d47183f9a7dbbfa2cb2",
+        "size": 8770
       }
     },
     {
@@ -8485,8 +8485,8 @@
       },
       "download": {
         "url": "dist/javis-agency-finance-tax-strategist-1.0.0.zip",
-        "sha256": "ca0f14ffc1a2ceed7411eef80e515319f4616f02dcbd3ab8239dbff5ad4eb284",
-        "size": 8138
+        "sha256": "09c17c2381eae443256b1984dd78d92b30ae8089a3fa0fb1e5dd05d82ffb5c6e",
+        "size": 8139
       }
     },
     {
@@ -8524,8 +8524,8 @@
       },
       "download": {
         "url": "dist/javis-agency-game-audio-engineer-1.0.0.zip",
-        "sha256": "2c058c23a9e6a7200dd52cb1c21e32f91e50c437b0c348df5a5df7c414f08770",
-        "size": 7499
+        "sha256": "da10ba8960a58e9dff81671bda80228f9e51e33a8e21e58ebe28c03dd394ae03",
+        "size": 7500
       }
     },
     {
@@ -8563,8 +8563,8 @@
       },
       "download": {
         "url": "dist/javis-agency-game-designer-1.0.0.zip",
-        "sha256": "0aefbdcad3fa679478be03bbbdd0caf4560eb6eb2f40fe77449eb6ccbc013b0e",
-        "size": 6147
+        "sha256": "71ff86b6396d29d9e9e44b186e900e3adad66a03ace220373e102142138857bc",
+        "size": 6148
       }
     },
     {
@@ -8602,8 +8602,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-3d-scene-developer-1.0.0.zip",
-        "sha256": "72bdb57d53d1190b81608cba7a78823d81d70116a54e6c9c078817ceb055b983",
-        "size": 5005
+        "sha256": "c4baada5f34670256f3940ba8367e23a0aad6d2d12863d03b31e817af1dd23d4",
+        "size": 5007
       }
     },
     {
@@ -8641,8 +8641,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-analyst-1.0.0.zip",
-        "sha256": "d5c068a19b705f36ea378db3997016118d1a9b5913f5359ce788c6eb13eb7b8c",
-        "size": 4546
+        "sha256": "5cd9122caf7f11576518db9ad8432cebbf32651969bae73a607db87c74f6ae8b",
+        "size": 4552
       }
     },
     {
@@ -8680,8 +8680,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-bim-specialist-1.0.0.zip",
-        "sha256": "33a7d6619cd0e9880235187223a9e019b745690e8e2ce7b98a0d6353c8593272",
-        "size": 4905
+        "sha256": "1d3a5dd9ed520f82d94fccb2de64dc3cbaf4d8b208a12f5a917dfef0f7bb18f2",
+        "size": 4911
       }
     },
     {
@@ -8719,8 +8719,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-cartography-designer-1.0.0.zip",
-        "sha256": "66ff05cb6440c9e1b09ccf83bcb445e4c1f2c2808c05c6f49830fe987bd6596b",
-        "size": 5488
+        "sha256": "7e3023205acc826cd750a30fd27844ee363d295066ea5d2b9bc2b0effa2ebda7",
+        "size": 5489
       }
     },
     {
@@ -8758,8 +8758,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-drone-reality-mapping-1.0.0.zip",
-        "sha256": "d72de9df9e9e04819b138222aa7fb27a99b11c0806b9208a9f0c8235a7b1cd42",
-        "size": 5153
+        "sha256": "586bf78fad4a1247dc3062751725958ce3725a0434bcf74ae4dd4bbafc4aed7c",
+        "size": 5154
       }
     },
     {
@@ -8797,8 +8797,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-geoai-ml-engineer-1.0.0.zip",
-        "sha256": "111190e98a0823717550fac51b178cc8c6c53aa954f67c79625da37181541cb8",
-        "size": 4675
+        "sha256": "c2c94cd631158231b99c2cd7e6e3929d7b410708c336f60a64e179626340c36f",
+        "size": 4676
       }
     },
     {
@@ -8836,8 +8836,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-geoprocessing-specialist-1.0.0.zip",
-        "sha256": "078f182aa5d9e2263f19a1c07cf64d2e829b6f6a048e6c3e37686073300f1d47",
-        "size": 4517
+        "sha256": "400e65a3997786668956bc88e2951e329048ed7dca1691c484784a10e31cb318",
+        "size": 4519
       }
     },
     {
@@ -8875,8 +8875,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-qa-engineer-1.0.0.zip",
-        "sha256": "d2b8b4b5c234e507efcb4c3a0ba08a7bea330b82c057a685a16ef026629f8d84",
-        "size": 4744
+        "sha256": "bdc78809de50e9683f82ef946475a92d8bbffd49cd78edb57c66c1420f48447e",
+        "size": 4750
       }
     },
     {
@@ -8914,8 +8914,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-solution-engineer-1.0.0.zip",
-        "sha256": "fb9ab1ec7483536bc7b144ae104177b45ce45fcbdf2f1d977159fc8daccb67e3",
-        "size": 4607
+        "sha256": "908321df816d2f73b8ab21a17a6e0468c3c33db1374e3cde938971f8b5f71875",
+        "size": 4608
       }
     },
     {
@@ -8953,8 +8953,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-spatial-data-engineer-1.0.0.zip",
-        "sha256": "64a60e006f9dda5ba89b365edec75a6ce6c1dde572ac101436f20e41c616c6fa",
-        "size": 4775
+        "sha256": "798664fd2cd35f03f0cfaff66f2930159e78e27b9e97ff6f6ab9d3c1af387b28",
+        "size": 4777
       }
     },
     {
@@ -8992,8 +8992,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-spatial-data-scientist-1.0.0.zip",
-        "sha256": "604ba4df07ad20c9a67a0865ef95012f82f11414e456bddab03efcc455f3ec6d",
-        "size": 4931
+        "sha256": "08a5a5e0acdd75dbf55608b93ed13b6818a55a64461a37ae27186b915035f0f7",
+        "size": 4932
       }
     },
     {
@@ -9031,8 +9031,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-technical-consultant-1.0.0.zip",
-        "sha256": "a514986c84bb6568cc8f4b4730728dac4dcf6f398795cc1a7f2c87bc34f23522",
-        "size": 4607
+        "sha256": "b359bf58d872daaa2373dead8461ed6f561789477512c70dad96fc0121760aea",
+        "size": 4608
       }
     },
     {
@@ -9070,8 +9070,8 @@
       },
       "download": {
         "url": "dist/javis-agency-gis-web-gis-developer-1.0.0.zip",
-        "sha256": "fd99dd210a5f08c97b5262718fcc0060c4148946d842218a571cae85e039cb75",
-        "size": 4807
+        "sha256": "f29121c60fa4e27654198aeccde5b3ad68b4912d27609b093d9813355194d3e5",
+        "size": 4808
       }
     },
     {
@@ -9109,8 +9109,8 @@
       },
       "download": {
         "url": "dist/javis-agency-godot-gameplay-scripter-1.0.0.zip",
-        "sha256": "258286aa96c498b23e5bedc618c937b0929e01cf95d623f3680e7eaae32bf053",
-        "size": 8336
+        "sha256": "586f6b450fcbb1b37eedfc6b245dc14fe328f3155c32750aeb8003b70d84a535",
+        "size": 8339
       }
     },
     {
@@ -9148,7 +9148,7 @@
       },
       "download": {
         "url": "dist/javis-agency-godot-multiplayer-engineer-1.0.0.zip",
-        "sha256": "b0c271976918f8f962bc56a0fb07e15f0d5ebd8d6f8f6f4864e5f1f7bf366bff",
+        "sha256": "50cd9275e38a9bbaf8e531821c0533c8f4b7f2e3c7e3f650811f7ecd079690b7",
         "size": 7586
       }
     },
@@ -9187,7 +9187,7 @@
       },
       "download": {
         "url": "dist/javis-agency-godot-shader-developer-1.0.0.zip",
-        "sha256": "5a52b1db208b836b0bc7da10638c28122778e321c13ed72faafc50f31d883aa8",
+        "sha256": "bdee91404da55da5f1dd74d1480f88eae8a810945be37f572149a1f847526d4d",
         "size": 7481
       }
     },
@@ -9226,8 +9226,8 @@
       },
       "download": {
         "url": "dist/javis-agency-government-digital-presales-consultant-1.0.0.zip",
-        "sha256": "94a83bdb8c839debb5794da5ea3062f27a63364cab39655176e23f376f8d75dd",
-        "size": 11396
+        "sha256": "8285ed1cbc9759c23e9840e52df482fd84a3e5fb284cdd1e2c86e9ea9ba7ac31",
+        "size": 11397
       }
     },
     {
@@ -9265,8 +9265,8 @@
       },
       "download": {
         "url": "dist/javis-agency-grant-writer-1.0.0.zip",
-        "sha256": "5120facd1d2ae50f23b170c1c8786cec225b7bb11bd000ada8e6d725a20c65e9",
-        "size": 12753
+        "sha256": "44bfe4193ce0885f59c645d76bc930ecffac94e5adce7c1995df8805d48e30e7",
+        "size": 12755
       }
     },
     {
@@ -9304,8 +9304,8 @@
       },
       "download": {
         "url": "dist/javis-agency-healthcare-aging-parent-care-companion-1.0.0.zip",
-        "sha256": "0f9fc5a6dc0512e904d069ae22df7aea884e6cbee516154fab9494f66dd8adc1",
-        "size": 12181
+        "sha256": "2f5a26a4717e8b98ab8802c7549362d39c833df07ee24190a6c2f4564791c31f",
+        "size": 12183
       }
     },
     {
@@ -9343,8 +9343,8 @@
       },
       "download": {
         "url": "dist/javis-agency-healthcare-clinical-evidence-agent-1.0.0.zip",
-        "sha256": "630c41d62d96f7d7f8861e21b63de1a9851a8818b931f136fd39281199765a94",
-        "size": 6218
+        "sha256": "d5f600deedcb2089520c5d723ea3cfcc72ea0275e92734dc333cec18d6fb1634",
+        "size": 6220
       }
     },
     {
@@ -9382,8 +9382,8 @@
       },
       "download": {
         "url": "dist/javis-agency-healthcare-customer-service-1.0.0.zip",
-        "sha256": "e6d2a0bdd7f732a27b4be10ad4608950a521b21270483d1f9d36b2b5f7504d07",
-        "size": 11004
+        "sha256": "ddcf1b95623562a49354c9901d91080d90f58eac8a8e05574ee548a331107179",
+        "size": 11005
       }
     },
     {
@@ -9421,8 +9421,8 @@
       },
       "download": {
         "url": "dist/javis-agency-healthcare-innovation-strategist-1.0.0.zip",
-        "sha256": "3be5d05b15d9a7562c5b0b29947f3e47de18bbc9500fb40cafea950b9fc1946f",
-        "size": 10302
+        "sha256": "0af9e366eed1695006f1376fbff81396715b0b084af5dd9738ba00f98f8c949d",
+        "size": 10303
       }
     },
     {
@@ -9460,8 +9460,8 @@
       },
       "download": {
         "url": "dist/javis-agency-healthcare-marketing-compliance-1.0.0.zip",
-        "sha256": "061d4acde9f11d2ca063ccdf89fcb0bd6d4fc92746c9881a75560da295f7015c",
-        "size": 14385
+        "sha256": "79958dc6adaa8858699ab939cf543911db772b132093d4b1ecd62953835e1ed7",
+        "size": 14386
       }
     },
     {
@@ -9499,8 +9499,8 @@
       },
       "download": {
         "url": "dist/javis-agency-healthcare-sovereign-health-systems-agent-1.0.0.zip",
-        "sha256": "2a52a78f7d3ccc3a9e8556f9a3ad4709f4e7fe33f2a91fc1cf47a48e4ca3146d",
-        "size": 7797
+        "sha256": "389b540a6b270c45818996ee7ea4da74bec88af9a2b2cb17f9e38176184b4c21",
+        "size": 7799
       }
     },
     {
@@ -9538,8 +9538,8 @@
       },
       "download": {
         "url": "dist/javis-agency-hospitality-guest-services-1.0.0.zip",
-        "sha256": "599380b7cfb342dae4fc126eddf4f230b0e98c7138634efb2b76ac80e8335ed7",
-        "size": 12950
+        "sha256": "645a48d1ecbc4c102640b69b8d00dd5d6f34836f8693cfc8a3e95efb9972c20f",
+        "size": 12952
       }
     },
     {
@@ -9577,8 +9577,8 @@
       },
       "download": {
         "url": "dist/javis-agency-hr-onboarding-1.0.0.zip",
-        "sha256": "aaed00d2ad5804d0bee34f5bbd2f84a97b9aa83c76f3ab758d2a2e4416b4ad68",
-        "size": 11439
+        "sha256": "bb36c94759e6f04b61b88759a9ca08e0f205dbc0c9a75223756e1c896d2e5930",
+        "size": 11441
       }
     },
     {
@@ -9616,8 +9616,8 @@
       },
       "download": {
         "url": "dist/javis-agency-identity-graph-operator-1.0.1.zip",
-        "sha256": "86407e51e5ba6b5bd19dbdcd46501d8ba0937e9e16d3e6c1256101ed5d59d633",
-        "size": 8684
+        "sha256": "3cfa022e5843ae87d7c536d92752da866f879846418e6c2dbdb00a4e89920b9b",
+        "size": 8685
       }
     },
     {
@@ -9655,8 +9655,8 @@
       },
       "download": {
         "url": "dist/javis-agency-language-translator-1.0.0.zip",
-        "sha256": "455fff0a576c1c5cef3b0a84a4b3d5de2be23bc8283fe8571ed397f175516a07",
-        "size": 9131
+        "sha256": "ebf7e9590cbc3056d5a34e954babab6109ec14109297261beb3d72ab105a1e99",
+        "size": 9132
       }
     },
     {
@@ -9694,8 +9694,8 @@
       },
       "download": {
         "url": "dist/javis-agency-legal-billing-time-tracking-1.0.0.zip",
-        "sha256": "3526d9a16aeb5d557ed4143872d54c6d6eac2641d9c4b80dec0cf819d0b663d1",
-        "size": 12264
+        "sha256": "5b093f91ffbbeb2b36629f88938c50d0c1ed4158581706154f065b717410c6af",
+        "size": 12265
       }
     },
     {
@@ -9733,8 +9733,8 @@
       },
       "download": {
         "url": "dist/javis-agency-legal-client-intake-1.0.0.zip",
-        "sha256": "7e554e38455df7d4c701f2b7650e955069c6a8a8e008ec2d36d50de6ab6e682f",
-        "size": 11566
+        "sha256": "2fee1e01228a8645c312c123fd56dc3f020ea8865af5f47572c732e7bc925a1f",
+        "size": 11567
       }
     },
     {
@@ -9772,8 +9772,8 @@
       },
       "download": {
         "url": "dist/javis-agency-legal-document-review-1.0.0.zip",
-        "sha256": "39c118c31c05d189e8480b7d474d831d70db4c903a554a9cdca8da0f54e5e097",
-        "size": 11033
+        "sha256": "33ee9131aca047107dd966e8ca8a2f6086f61dde5b92c1d4b37a0ee3914b6ec7",
+        "size": 11034
       }
     },
     {
@@ -9811,8 +9811,8 @@
       },
       "download": {
         "url": "dist/javis-agency-level-designer-1.0.0.zip",
-        "sha256": "2f89669e69872816fe0f09d365ea3cc7d0a52418b48a86736631a2c0d006f9f3",
-        "size": 6828
+        "sha256": "f9e389ecae5d0e6a2e3a12268c83ced3414d723619da1bccd14c99b11bbbcf2a",
+        "size": 6829
       }
     },
     {
@@ -9850,8 +9850,8 @@
       },
       "download": {
         "url": "dist/javis-agency-loan-officer-assistant-1.0.0.zip",
-        "sha256": "ad5266eccdff3d032439a9099258b97136043b2391e14d45acda6d328a10dc2a",
-        "size": 12491
+        "sha256": "5a38545fff0f671ab6a3a88a156287bc86137ef21495d49cb6de05b725049ca5",
+        "size": 12493
       }
     },
     {
@@ -9889,8 +9889,8 @@
       },
       "download": {
         "url": "dist/javis-agency-lsp-index-engineer-1.0.0.zip",
-        "sha256": "5edc5dce63a8e9525211f1a5a0edacccc850560c037fad8ea4affcd6b0d2179b",
-        "size": 7111
+        "sha256": "212a72f69eaf7166c75d990085e5ccac4b08bc4731eaea80653dd4836e572f66",
+        "size": 7112
       }
     },
     {
@@ -9928,8 +9928,8 @@
       },
       "download": {
         "url": "dist/javis-agency-ma-integration-manager-1.0.0.zip",
-        "sha256": "6bae32c14da020a6c475137ebb3a224e20475959d3ee1d396f176c4014977527",
-        "size": 10600
+        "sha256": "73d32a0f86540a1f0de8c48e04bcdedec03b176df839ee12d641d77d38597c09",
+        "size": 10601
       }
     },
     {
@@ -9967,8 +9967,8 @@
       },
       "download": {
         "url": "dist/javis-agency-macos-spatial-metal-engineer-1.0.0.zip",
-        "sha256": "28f1283d8fed838170867790bcce5b4ee5c0ec505715a1f4e40bf71edecc4c3c",
-        "size": 6822
+        "sha256": "1e2c0805a741a27eba7d854e6bff1e839bb82551b57974b12431e7958399037d",
+        "size": 6823
       }
     },
     {
@@ -10006,8 +10006,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-aeo-foundations-1.0.0.zip",
-        "sha256": "598cd238982cd6572fcfa71dce7ac89d3b22e561ba08718a8f7ef0101944b30d",
-        "size": 8399
+        "sha256": "f937b141786cc6924ca05d76f9404459c71b8973ae91f1c5af96e0aaae059c67",
+        "size": 8401
       }
     },
     {
@@ -10045,8 +10045,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-agentic-search-optimizer-1.0.0.zip",
-        "sha256": "30c4d892c7db52cb7131797096c94164afc15204ccf10a0a729d9f509a120b3f",
-        "size": 8534
+        "sha256": "557274a947f73cf810c0e1f6f26af9feaebeb782eb04f419a2b6f20ba015e6eb",
+        "size": 8538
       }
     },
     {
@@ -10084,8 +10084,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-ai-citation-strategist-1.0.0.zip",
-        "sha256": "a8070967ae7e4571da49acb15bcf06ec5b81d33f34b77fff194c38f39922616d",
-        "size": 6195
+        "sha256": "429b759f9e545f4261b3b30944f085248271992dc8200d78233dd207e8a15cf8",
+        "size": 6197
       }
     },
     {
@@ -10123,8 +10123,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-app-store-optimizer-1.0.0.zip",
-        "sha256": "1cc741d5af5575daa34c9f81f0ba9cf7edb36273741eed158e79d3ddd9a5a654",
-        "size": 7082
+        "sha256": "b3228de7e098c532eb385ef8d6278e5dc1ddc2a37a19e5120af123f63cc49c8c",
+        "size": 7083
       }
     },
     {
@@ -10162,8 +10162,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-baidu-seo-specialist-1.0.0.zip",
-        "sha256": "aafc7b33be5019417507a8d456cdc2bccdbca90ad85124a029270bebebe902ad",
-        "size": 8129
+        "sha256": "35feacf5b16068e1b9d8a2e6e474faec8bf0c65cd7f333b50bbe34bdd21a1b7f",
+        "size": 8130
       }
     },
     {
@@ -10201,8 +10201,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-bilibili-content-strategist-1.0.0.zip",
-        "sha256": "5b5f8917c02fdf47a03748867c5cd58f748d33822d1dc14a0357a81f549ed56b",
-        "size": 7861
+        "sha256": "32767ddecf50f8b81aa7c508acdeb8b2bbda42a2a769f9d20e3d6bb2cfe10df3",
+        "size": 7863
       }
     },
     {
@@ -10240,8 +10240,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-book-co-author-1.0.0.zip",
-        "sha256": "3968e3d86b546cb3e77bdd6036fe88fc908ab591e490d4c2817cdeec106e6cdf",
-        "size": 4691
+        "sha256": "7c8dc821c0a63df8a304f1e239dc5bb473189926e5a451a8eb0c26be4e3a00ce",
+        "size": 4692
       }
     },
     {
@@ -10279,8 +10279,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-carousel-growth-engine-1.0.0.zip",
-        "sha256": "36b9b818fb02949a424c3157d03d7c57a14d2738f926bf533a9562a7c65f65ae",
-        "size": 8324
+        "sha256": "a8c6bdd490c46a699a522515a8fa9e7fe2ebc35346993f91ede5d37e812f23e3",
+        "size": 8325
       }
     },
     {
@@ -10318,8 +10318,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-china-ecommerce-operator-1.0.0.zip",
-        "sha256": "9d3da1cf5436fbb94dd55fbb0346de2eff36bedb611702c97bc21bd3037c7aff",
-        "size": 9434
+        "sha256": "67cf7cabc597b9f9b195cf561a9038f0b3e0b0b9b090401127a1710d23ec9392",
+        "size": 9435
       }
     },
     {
@@ -10357,8 +10357,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-china-market-localization-strategist-1.0.0.zip",
-        "sha256": "fbf9fbdfbca6201aa1cb4ee8a2fd417fb447659aeccb0f451c7f47e8811eb396",
-        "size": 9781
+        "sha256": "66a0ad8417e1a1fc5b05f0408ab256df38dd9fe8dbc76a459a29c91d3afa746b",
+        "size": 9783
       }
     },
     {
@@ -10396,8 +10396,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-content-creator-1.0.0.zip",
-        "sha256": "9a2ac5e0c2cbe751250647ff9c339d18b2692410f0b83e46f03edb66a5b3a530",
-        "size": 3681
+        "sha256": "2c26d5189a04cdf3a5dcb9661b5df2fec288eeb0a9bc30ddde2fc706e5b6ce9d",
+        "size": 3682
       }
     },
     {
@@ -10435,8 +10435,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-cross-border-ecommerce-1.0.0.zip",
-        "sha256": "7c81fb633f82c13248f44f0ee77d18a74b094a404fdb9962a6893e69f95c5a2f",
-        "size": 9666
+        "sha256": "ec9f67c597ec12036f3f5455bb5dd7b9531dea9f13aecb2b8143860895941e9f",
+        "size": 9670
       }
     },
     {
@@ -10474,8 +10474,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-developer-community-builder-1.0.0.zip",
-        "sha256": "6f622a5e43c9dc3abe21883d285cd15957cb17b174f4f547b8a17319e373c7d5",
-        "size": 8201
+        "sha256": "1aec2b30abf44c964005a78034ebcc9663f673a12ff299d7e11619b432cf3309",
+        "size": 8202
       }
     },
     {
@@ -10513,8 +10513,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-douyin-strategist-1.0.0.zip",
-        "sha256": "fafc929d04c85f93ace845331e6a82d88160b672cc2b847b8ef1d1831a132b36",
-        "size": 5647
+        "sha256": "86c0bd99a60936471142a0a7a6f15a0348698c47b4a8ae3cfba86ec6ef5f5b4c",
+        "size": 5648
       }
     },
     {
@@ -10552,8 +10552,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-email-strategist-1.0.0.zip",
-        "sha256": "e3b20fa63264588ef5a445ba19cbb17055d50a254afd045d7e02f9d3425d2e7b",
-        "size": 9626
+        "sha256": "7987842f7bbae3f85a4dbbb779a0434c5204f55660eb99dd98183ffef4a1b30c",
+        "size": 9627
       }
     },
     {
@@ -10591,8 +10591,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-global-podcast-strategist-1.0.0.zip",
-        "sha256": "0513f986730323bfb3779e113ebf13c34a741e8fd6631f5d77255a70053f5c22",
-        "size": 11374
+        "sha256": "5fbdbdd74024de4eb433e5b4c29aabaae6de12947d83b1f67e39e3bbab78b827",
+        "size": 11376
       }
     },
     {
@@ -10630,8 +10630,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-growth-hacker-1.0.0.zip",
-        "sha256": "93d17b69790c75de4d09d0fec20fbd481abcfbcf270fea03ac7de4e2da923b65",
-        "size": 3694
+        "sha256": "95b204c0ea1c6f4894ba13bc92907f968e24db6ca302c89bc91eea5dcb28e810",
+        "size": 3695
       }
     },
     {
@@ -10669,8 +10669,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-instagram-curator-1.0.0.zip",
-        "sha256": "79d9f66aa86041a31d9c7983ac161260b669c5ff6d3a2d1e23ec90e0eca5e901",
-        "size": 5036
+        "sha256": "fb3a8c2ed1eccd72d3f66e3ec266d0f2270dc2756232e116e3a069dab85cb997",
+        "size": 5037
       }
     },
     {
@@ -10708,8 +10708,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-kuaishou-strategist-1.0.0.zip",
-        "sha256": "7826296dde0e0bc973a6d712b97943cad1bd9c9b957ec00aae0aa62269b00f40",
-        "size": 8438
+        "sha256": "c5badc04f576c2182012b4af0d5ce5e23b6d80dcfb1a8b5ab6ce92ef846df008",
+        "size": 8440
       }
     },
     {
@@ -10747,8 +10747,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-linkedin-content-creator-1.0.0.zip",
-        "sha256": "0e06b4b7cf9c01d073f9ea2cf2e2ff42e245d655f595bee6e6285f94666020ca",
-        "size": 8340
+        "sha256": "9f718bb607e121cedd00ba80bba7ef3cb21080d83d4b183490115f616dbdd1cf",
+        "size": 8341
       }
     },
     {
@@ -10786,8 +10786,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-livestream-commerce-coach-1.0.0.zip",
-        "sha256": "7149a5825208036032767be6fa1d973c2f8649d713c0e678f57f6d43abd359de",
-        "size": 9777
+        "sha256": "fe2717100bcb8bf99f328aea955e9ab4d3fd4018018e7f9e2e29a2e6a9215959",
+        "size": 9781
       }
     },
     {
@@ -10825,8 +10825,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-multi-platform-publisher-1.0.0.zip",
-        "sha256": "b5e40c5c5a6076fdb1852e974fad779b993bea766c1c3670b49c01eb1846b712",
-        "size": 7815
+        "sha256": "e225e5b12962cdff00f4a695bbb24e314bd687fad8c8a576a793494fa8032dde",
+        "size": 7816
       }
     },
     {
@@ -10864,8 +10864,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-podcast-strategist-1.0.0.zip",
-        "sha256": "aa138743847c06b15f8212e32dd556abb2fda97a2712529199b3cea1b0a28387",
-        "size": 10057
+        "sha256": "3a01f25d6879b8ba6c61e5b317691c59d36ef663dd88e1a6c261b024eff23ffe",
+        "size": 10058
       }
     },
     {
@@ -10903,8 +10903,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-pr-communications-manager-1.0.0.zip",
-        "sha256": "1f6ed389e951d8b8a81308d0d0b360dcdae08802b3cde77318f342132640948c",
-        "size": 12266
+        "sha256": "8609708c2e08fa5f2a74dc3c6ba09f4ce96729a1a02c8135fff900907c3e1280",
+        "size": 12270
       }
     },
     {
@@ -10942,8 +10942,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-private-domain-operator-1.0.0.zip",
-        "sha256": "44e8dd22959f0ad770106f28b112310db92373c70d04f55a79b89cfa9c45f289",
-        "size": 8787
+        "sha256": "1a4e675692f99ea1bab18b5b73ed5d1c0797b431a8147c1b3b7e0e5676e71ba3",
+        "size": 8789
       }
     },
     {
@@ -10981,8 +10981,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-reddit-community-builder-1.0.0.zip",
-        "sha256": "163089dbd209d4b3dd5d0062ebaba184f305f76e70628324fa41af699455d029",
-        "size": 5203
+        "sha256": "a5ee259686a41b952f0c405796db9ff60f5daebf3854b2005be8f5aa66f70f44",
+        "size": 5204
       }
     },
     {
@@ -11020,8 +11020,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-seo-specialist-1.0.0.zip",
-        "sha256": "3a06f1a735c8a2dda0e258ed9f5944dbea9f27318c3f30812d7086ec56215bc4",
-        "size": 10956
+        "sha256": "7b6bc6c8ba70a2c009414fea40390992d604084e3e57eeaee800e2893ffd4e96",
+        "size": 10957
       }
     },
     {
@@ -11059,8 +11059,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-short-video-editing-coach-1.0.0.zip",
-        "sha256": "f3198f0a3ea5990e45e37f39746eacb02835e84be1ad7c9b9470ae4181c8952c",
-        "size": 15406
+        "sha256": "09d6f93f4ffaa18ca1e832fb78fa4b281b0359a8510b5001e4865fda77b0ee6b",
+        "size": 15410
       }
     },
     {
@@ -11098,8 +11098,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-social-media-strategist-1.0.0.zip",
-        "sha256": "9eb8c04b357ca79f3db124d38d1ffac09a5a46bcd6fca2790d355ea8400f1594",
-        "size": 5131
+        "sha256": "373a3e7dffdc71032570a72db3457df7863704495cbd34c055b7261cb695aae0",
+        "size": 5132
       }
     },
     {
@@ -11137,8 +11137,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-tiktok-strategist-1.0.0.zip",
-        "sha256": "d3e9b4a24e4f8cb8be078317beeb85bcd967f63ff8d535585c62511ae5b7b4ed",
-        "size": 5275
+        "sha256": "e75aae7ed36e2f10fdf49256b2679e33d4e2f93f0120d0060a2fe43644d62a9d",
+        "size": 5276
       }
     },
     {
@@ -11176,8 +11176,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-twitter-engager-1.0.0.zip",
-        "sha256": "56083131e24b77a6710e61044fa7309c1a9a07d6e6135ef169a35bf9743c4a45",
-        "size": 5239
+        "sha256": "2c469ebcca78170652d187f775bcde95d4b557b3a37e0b9e1ecdb2831f2c5522",
+        "size": 5241
       }
     },
     {
@@ -11215,8 +11215,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-video-optimization-specialist-1.0.0.zip",
-        "sha256": "c00f9f1293e2ace75df00bbb1501f21e8e2bcbab26b704568201a0fa3b4d9638",
-        "size": 5145
+        "sha256": "9d5b763a5a02410408ad133f89d30a94ac6b276659aa100e85fcab0ff3a76998",
+        "size": 5146
       }
     },
     {
@@ -11254,8 +11254,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-wechat-official-account-1.0.0.zip",
-        "sha256": "f6dafffd3e2e0fc80fbc1adc9d5ce5d807f3bf38c05cdd70f4373d4060f29f8d",
-        "size": 6061
+        "sha256": "25663c05768d2eb764adde55f0de29b0566f4b5daea546201d0f84eb0f649b64",
+        "size": 6063
       }
     },
     {
@@ -11293,8 +11293,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-weibo-strategist-1.0.0.zip",
-        "sha256": "78f99bdc6ca2382f5476d8b9c5bc678bbb67487c0935477c4be0f9efcd4bde03",
-        "size": 8996
+        "sha256": "a67089f9ed415a7c682136f4131eda1c4cbd5d66c188579517e71a459915a8c6",
+        "size": 8997
       }
     },
     {
@@ -11332,8 +11332,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-x-twitter-intelligence-analyst-1.0.0.zip",
-        "sha256": "9335a0fd3903eb88f687d725b07e7af4540f071077c0fdd85bfa926d1d80c41f",
-        "size": 6533
+        "sha256": "92838ebea79bbbe96b46b9a27051743f386210f10c422e67ddab303f90793399",
+        "size": 6535
       }
     },
     {
@@ -11371,8 +11371,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-xiaohongshu-specialist-1.0.0.zip",
-        "sha256": "3482ac2c4252d05f0ab62b54be911f75bb81c3933eab47ecd8bcb26e0fcfb2a0",
-        "size": 6182
+        "sha256": "cd37926eb2c7258d834112fdc8992913095e30c8527fd01a14b4ae312186b650",
+        "size": 6186
       }
     },
     {
@@ -11410,8 +11410,8 @@
       },
       "download": {
         "url": "dist/javis-agency-marketing-zhihu-strategist-1.0.0.zip",
-        "sha256": "78b2de93b7af4dbc51229bca1c218ac39a14e3aee0bfc6f062958249101c7401",
-        "size": 6668
+        "sha256": "4cfe91bf2bec956a8b91a94ca44c27e40610f664b2434f24a263bae2b0d069a5",
+        "size": 6669
       }
     },
     {
@@ -11449,8 +11449,8 @@
       },
       "download": {
         "url": "dist/javis-agency-medical-billing-coding-specialist-1.0.0.zip",
-        "sha256": "03ffcf2e2f66890b546765f2ad0fb6811cbbb9747a3f75583af303451585946c",
-        "size": 12141
+        "sha256": "868144b6e38a7591e3df950a38e54e1e74417b5f0e048c7914aab5e04923f126",
+        "size": 12142
       }
     },
     {
@@ -11488,8 +11488,8 @@
       },
       "download": {
         "url": "dist/javis-agency-narrative-designer-1.0.0.zip",
-        "sha256": "0027190e2da210f6bd5481e0703f1c676732b809ef39cd007700b6bc9a73f99e",
-        "size": 7771
+        "sha256": "cb28a76bf880906099843756cfe3a2eaa2c18f33d8271b28673786fa9bf73edc",
+        "size": 7772
       }
     },
     {
@@ -11527,8 +11527,8 @@
       },
       "download": {
         "url": "dist/javis-agency-operations-manager-1.0.0.zip",
-        "sha256": "9cdf81553abd46d21a05458b881fd08f2b1199012ddc3e6e6e939fcd6e5f97a8",
-        "size": 10588
+        "sha256": "b5f09a0309e67428e5e0ef7789d3f45f482798d34830c3509f364e9dc40c4c70",
+        "size": 10590
       }
     },
     {
@@ -11566,8 +11566,8 @@
       },
       "download": {
         "url": "dist/javis-agency-organizational-psychologist-1.0.0.zip",
-        "sha256": "4b8718ec9f6a04b6d0ba0bffe59fc6a97a77910f5194db7c41d9daa3a4bedc63",
-        "size": 11776
+        "sha256": "9beb02c4b7781cf0f4a710f30c00f14b69ee782051065d00213e3e7680efeb3c",
+        "size": 11778
       }
     },
     {
@@ -11605,8 +11605,8 @@
       },
       "download": {
         "url": "dist/javis-agency-paid-media-auditor-1.0.0.zip",
-        "sha256": "e92cc66a9bffd00f89412f425a92c1cf6622ebe361d485aeb88da5c1c5017eb9",
-        "size": 4967
+        "sha256": "da56ea1bf4871cacf9b4c430f688238f1dbf9bf679bd754c7463f336393d2959",
+        "size": 4969
       }
     },
     {
@@ -11644,8 +11644,8 @@
       },
       "download": {
         "url": "dist/javis-agency-paid-media-creative-strategist-1.0.0.zip",
-        "sha256": "d9866a129e9e8044589b38f771e6cbb505e795373038abf0c9b6ff16cdb7884b",
-        "size": 4780
+        "sha256": "a5150d48f95979fb45d960980ab85ecad8fcc0dc05575a2397fb9eefe8febdf5",
+        "size": 4781
       }
     },
     {
@@ -11683,8 +11683,8 @@
       },
       "download": {
         "url": "dist/javis-agency-paid-media-paid-social-strategist-1.0.0.zip",
-        "sha256": "a57291da80651edce0311bdf3847a30a3203c274afe560fedc51ad8ba2a8d50c",
-        "size": 4845
+        "sha256": "9c83b79ce4fd46c5c8f59381863d7c3765983c78535b51fb14988dd7aae39391",
+        "size": 4846
       }
     },
     {
@@ -11722,8 +11722,8 @@
       },
       "download": {
         "url": "dist/javis-agency-paid-media-ppc-strategist-1.0.0.zip",
-        "sha256": "fe86051517ef31b64d4f29243bb633b94ed500d1caff5f33ac5dfea94b7f72d0",
-        "size": 4675
+        "sha256": "4308339dfe99b71f34fed195bebe10028aedb2fa06a3f6232e864dafd25f0619",
+        "size": 4677
       }
     },
     {
@@ -11761,8 +11761,8 @@
       },
       "download": {
         "url": "dist/javis-agency-paid-media-programmatic-buyer-1.0.0.zip",
-        "sha256": "cd487aec8609932ff2b94f71c62d10ea02d257c9e364b594e7ec78f070829cf6",
-        "size": 4675
+        "sha256": "27e505b186f188d6d5ef842fb35a10693a47d0c2ee3d2835ea0b7367a0f0cfc4",
+        "size": 4676
       }
     },
     {
@@ -11800,8 +11800,8 @@
       },
       "download": {
         "url": "dist/javis-agency-paid-media-search-query-analyst-1.0.0.zip",
-        "sha256": "9984c5fcacb6568003527cc9e7a0d4a589d0fb4f24112e54bfc81a264e1ecb72",
-        "size": 4628
+        "sha256": "9c4fccd3d213d82de2afa1715ec02100abf6c93f9a2870123895e872166786de",
+        "size": 4629
       }
     },
     {
@@ -11839,8 +11839,8 @@
       },
       "download": {
         "url": "dist/javis-agency-paid-media-tracking-specialist-1.0.0.zip",
-        "sha256": "a349d6cf489729118dad4f2ec4f94f88cdd713b052b75e444097596b3faec897",
-        "size": 4748
+        "sha256": "516e761acdeafb836e70c5e276e59af6c874d185dfdcc8ea13d18d64a7ccb452",
+        "size": 4750
       }
     },
     {
@@ -11878,8 +11878,8 @@
       },
       "download": {
         "url": "dist/javis-agency-personal-growth-mentor-1.0.0.zip",
-        "sha256": "57186d65107ffcf7db8f1a9a2293ae5d1bacc98c52eb1aa1576c1dccb444358c",
-        "size": 5764
+        "sha256": "af76eb6ac62279675c3b3eabf5ba4cb60d718efa1c2f8f1de8acf22eb404aca6",
+        "size": 5765
       }
     },
     {
@@ -11917,8 +11917,8 @@
       },
       "download": {
         "url": "dist/javis-agency-product-behavioral-nudge-engine-1.0.0.zip",
-        "sha256": "25862071986f7d8a570947473aec6c0f007984327b3bf3f95897e845eef61c8b",
-        "size": 5015
+        "sha256": "9b322f8c044d82fb585caf7db270971cb4b13d630f0a219ea36a6a7a38d3994b",
+        "size": 5016
       }
     },
     {
@@ -11956,8 +11956,8 @@
       },
       "download": {
         "url": "dist/javis-agency-product-dx-engineer-1.0.0.zip",
-        "sha256": "e4bf914418e1017ca47e78ffa9399e96ffe67e76da0910227502abdab994a603",
-        "size": 8885
+        "sha256": "dd1085027d358c6f720feedd15747ec78b9bf738b37979af18d7b9af61cb050c",
+        "size": 8887
       }
     },
     {
@@ -11995,8 +11995,8 @@
       },
       "download": {
         "url": "dist/javis-agency-product-feedback-synthesizer-1.0.0.zip",
-        "sha256": "116422fc799cc12b8399fd2d66917b57d38604b1b52932d8f01935aec3e92ad7",
-        "size": 5091
+        "sha256": "a8925913e307a2fa9fe5ea00647444e2e50f46b9e6f1c76598a2328d8460ba24",
+        "size": 5092
       }
     },
     {
@@ -12034,8 +12034,8 @@
       },
       "download": {
         "url": "dist/javis-agency-product-manager-1.0.0.zip",
-        "sha256": "f9f8940c122665ab3ce91da7ca802545db3733f924d3815992f912b42be4ccfe",
-        "size": 11966
+        "sha256": "0acb3bf2c624c4ca83f8ae656fe4fe30789725929417bb87a8f49a45033fe891",
+        "size": 11968
       }
     },
     {
@@ -12073,8 +12073,8 @@
       },
       "download": {
         "url": "dist/javis-agency-product-sprint-prioritizer-1.0.0.zip",
-        "sha256": "7adc9355a7fddded91078550a24bcb65b39ee35a819b5cbf63961155be3aae60",
-        "size": 5933
+        "sha256": "bc55183e2475f52db20ccc3100ba468a3eebf7085cccdfa4c1433812c06e940a",
+        "size": 5934
       }
     },
     {
@@ -12112,8 +12112,8 @@
       },
       "download": {
         "url": "dist/javis-agency-product-trend-researcher-1.0.0.zip",
-        "sha256": "8ea50c5a46edcfab5dd372a908a314b88752e60dd2c30d4a439f2047d721f31c",
-        "size": 6292
+        "sha256": "190dce5fa24f3f131e79c0eb67f98af3beb3be6e24baa6fe4c6513382c323a2d",
+        "size": 6293
       }
     },
     {
@@ -12151,8 +12151,8 @@
       },
       "download": {
         "url": "dist/javis-agency-project-management-experiment-tracker-1.0.1.zip",
-        "sha256": "5961f3eba9fdafbcc4d53e5baa4ed063834b6fcf6b140e3df5e0d5c15e48b5b8",
-        "size": 6019
+        "sha256": "177e6f7ec542cb8e286c7843961317385143a50c1eaa5bada684ca258a3d4545",
+        "size": 6021
       }
     },
     {
@@ -12190,8 +12190,8 @@
       },
       "download": {
         "url": "dist/javis-agency-project-management-jira-workflow-steward-1.0.0.zip",
-        "sha256": "58b1da7453e8b766977141639e5e75e7d27567b4f2810dce43dff40ce0973757",
-        "size": 8049
+        "sha256": "1e96434ebb4375be9d88ecb3d47ce617b94d82bb23f8653c39cc9d814881a542",
+        "size": 8051
       }
     },
     {
@@ -12229,8 +12229,8 @@
       },
       "download": {
         "url": "dist/javis-agency-project-management-meeting-notes-specialist-1.0.0.zip",
-        "sha256": "1deba19a89f4a744568f93ee2c7dea419c322db6dd41584f0dbeb2da7cbf45bc",
-        "size": 4816
+        "sha256": "bb9d7edcf693d098fb7a771eb179fed10755a04b08e355b545363d2ccadd1d0d",
+        "size": 4817
       }
     },
     {
@@ -12268,8 +12268,8 @@
       },
       "download": {
         "url": "dist/javis-agency-project-management-project-shepherd-1.0.0.zip",
-        "sha256": "8fa45d985fd02f590699c83c95d85d7e0c933d3d2ae9e358b1b171eebb4ee902",
-        "size": 6152
+        "sha256": "51ef15c3fab4d2ea621d13f7b13da0f5fa29f2b273aab9ffb35e3aa3a27b01bb",
+        "size": 6153
       }
     },
     {
@@ -12307,8 +12307,8 @@
       },
       "download": {
         "url": "dist/javis-agency-project-management-studio-operations-1.0.0.zip",
-        "sha256": "410e55d90c868baf6df89f1a021e1b1c85e3f7483516d36285e716ea535ee0f2",
-        "size": 6019
+        "sha256": "8adfb3ce13255ac006661704a6e8450d62c9746f463c7e89bdf23e9c851a621f",
+        "size": 6020
       }
     },
     {
@@ -12346,8 +12346,8 @@
       },
       "download": {
         "url": "dist/javis-agency-project-management-studio-producer-1.0.0.zip",
-        "sha256": "2c119f1b7719425e3b729b5a2d1a1c9989ed9fb65679e5a42919559f4166191a",
-        "size": 6097
+        "sha256": "04bdfdc554407a02454112f83cb1c535071e182b864b0d30938419be739dd2c7",
+        "size": 6098
       }
     },
     {
@@ -12385,7 +12385,7 @@
       },
       "download": {
         "url": "dist/javis-agency-project-manager-senior-1.0.0.zip",
-        "sha256": "652c06bf1cbb5af86e35c50db0fab7b2b9e9a6e17d1bfb8fe362dad4ea92c7e3",
+        "sha256": "be0ea52d90e5e9f104aac0d1ec752c12995b95a96461b2e1ec1ddbe8fc541d7b",
         "size": 4645
       }
     },
@@ -12424,8 +12424,8 @@
       },
       "download": {
         "url": "dist/javis-agency-real-estate-buyer-seller-1.0.0.zip",
-        "sha256": "82273a840975c7ee7431e9d7d731a88a939e0a8410f844d8e55d63a9f37b7f72",
-        "size": 12607
+        "sha256": "25280d5688fe3854d0f28711465fe4eb73591a73e2804fa30aaeac78df9b1603",
+        "size": 12608
       }
     },
     {
@@ -12463,8 +12463,8 @@
       },
       "download": {
         "url": "dist/javis-agency-recruitment-specialist-1.0.0.zip",
-        "sha256": "6840c1f3f54d334802384f188630b9aeda39e2afbda29dcdbeefc1b9ed97d600",
-        "size": 13452
+        "sha256": "f99613b67d27073d9edc5d4c4ddefc021adce7f99dac9d575dde4d2a92192bad",
+        "size": 13453
       }
     },
     {
@@ -12502,8 +12502,8 @@
       },
       "download": {
         "url": "dist/javis-agency-report-distribution-agent-1.0.0.zip",
-        "sha256": "00dcade6b3a4e8c0448f13297b9569a0fef93a6162d8b976a03a0c352d60bc9f",
-        "size": 3429
+        "sha256": "80fe42ebab3986b439d88560e14e00f0459913359d51c87bdc89673032650a1f",
+        "size": 3432
       }
     },
     {
@@ -12541,8 +12541,8 @@
       },
       "download": {
         "url": "dist/javis-agency-research-synthesist-1.0.0.zip",
-        "sha256": "32aabbbda9335c1262bafa3b157ff3b82b36e3835b06d216735ae977168549c0",
-        "size": 6800
+        "sha256": "cb587a43e2a44872141e4f902e727fa518c99bbfb0240fdda94c39982e8ca18e",
+        "size": 6802
       }
     },
     {
@@ -12580,8 +12580,8 @@
       },
       "download": {
         "url": "dist/javis-agency-resume-tailor-1.0.0.zip",
-        "sha256": "ad40ed71684d0ed7744e933b315c866c65572bb0a2961425a4b9ad5e915b4526",
-        "size": 6962
+        "sha256": "7b0009f52c8731ea3beb274d0f09df6a7208f45d047bb0a9780a4c8f1f7147d0",
+        "size": 6963
       }
     },
     {
@@ -12619,8 +12619,8 @@
       },
       "download": {
         "url": "dist/javis-agency-retail-customer-returns-1.0.0.zip",
-        "sha256": "6cb7938f7f525e69bbb924649b256b78cc39881d667f2aa650ae57ca599a5671",
-        "size": 12226
+        "sha256": "a1a32974851a2d4a65793d81ae10e84af7942ed2e59134fc238db680f40f3730",
+        "size": 12227
       }
     },
     {
@@ -12658,8 +12658,8 @@
       },
       "download": {
         "url": "dist/javis-agency-roblox-avatar-creator-1.0.0.zip",
-        "sha256": "24a4d50ed2ccbf28ae3e696d0fe880518904d3326a4f6410f05473977ff63c79",
-        "size": 7810
+        "sha256": "536d601a37e22724ef2961f91572cf666a8cc7a5ef248ffc3c9d9f48650ef550",
+        "size": 7812
       }
     },
     {
@@ -12697,8 +12697,8 @@
       },
       "download": {
         "url": "dist/javis-agency-roblox-experience-designer-1.0.0.zip",
-        "sha256": "9744fc0432dfebdb616858e8b5be8b1f054d0621897c52e9a741106e4a24e0ad",
-        "size": 8355
+        "sha256": "de8158a0cf0532ae8978c1e0ebea7d109ab223b3a8b4c923802832fb8e125610",
+        "size": 8357
       }
     },
     {
@@ -12736,8 +12736,8 @@
       },
       "download": {
         "url": "dist/javis-agency-roblox-systems-scripter-1.0.0.zip",
-        "sha256": "32b300299653dfadce73c30811765571b398d7896dda35960eafdeead7ed4627",
-        "size": 7946
+        "sha256": "842be2a033cc4e107c41583b72d00aba6e3d76da26bd42007f8816fb84f76744",
+        "size": 7947
       }
     },
     {
@@ -12775,8 +12775,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-account-strategist-1.0.0.zip",
-        "sha256": "542ea17ffc8b604ea0887d49e0cd729cede8a1cf3d3c94afd08eed1eac948394",
-        "size": 8559
+        "sha256": "741cbfbeabda2a7c050b5081c92bd7db3097d43555db2d5078799e18bfb6530e",
+        "size": 8560
       }
     },
     {
@@ -12814,8 +12814,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-coach-1.0.0.zip",
-        "sha256": "2b021f82a2d7b83692470eccb8a753270e1d35c6a0c14858b9d4d563921819b1",
-        "size": 10583
+        "sha256": "502ec7a748b1612aeccfd1e7cccaba3e941d1f3b46110126eba582dde52ebd88",
+        "size": 10589
       }
     },
     {
@@ -12853,8 +12853,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-data-extraction-agent-1.0.0.zip",
-        "sha256": "2213d67373821244fcd0af8354903537c687e42fe9ef85644ce450ca4ee29849",
-        "size": 3659
+        "sha256": "64f61c424e0c6c5e203ab2771ad1bfab24fbce37366d474eaa7aa1d07d13d8b6",
+        "size": 3661
       }
     },
     {
@@ -12892,8 +12892,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-deal-strategist-1.0.0.zip",
-        "sha256": "28868f3e19524d6b97d43d180ee42c38b18c90369ce7d3593dfa0ed19a5a9981",
-        "size": 8157
+        "sha256": "35a3bbec4f576c64d7a648a845f5ad97f8409b0d4f3b9c61d3d7f19f0be91b79",
+        "size": 8159
       }
     },
     {
@@ -12931,8 +12931,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-discovery-coach-1.0.0.zip",
-        "sha256": "15d4c43399052b23f9c1773b321f1a997f3a3963f3658bda78a731968f2c812d",
-        "size": 8270
+        "sha256": "9c69a43dd8f39c30eb5d47043d295d8a6b5266536a8717bc8fbf4a98030f66d6",
+        "size": 8271
       }
     },
     {
@@ -12970,8 +12970,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-engineer-1.0.0.zip",
-        "sha256": "4b409b56e86326096a7285624d04c3d995bcd9d08f397abf9732ba945e5cfe43",
-        "size": 8171
+        "sha256": "00ac62c394a2b99427af1ce213cecb16d5aeec24b62955e01d0ecfb2dfe00c5b",
+        "size": 8177
       }
     },
     {
@@ -13009,8 +13009,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-offer-lead-gen-strategist-1.0.0.zip",
-        "sha256": "8c2dad81b9d86100c7a9949df1629cbcd67f4478c0b4fbd38f225266a697dd70",
-        "size": 9298
+        "sha256": "d6f1b970a5b4914f33d9ed30cf2243b3df2d1669aa27f867f2a98f4df815325a",
+        "size": 9300
       }
     },
     {
@@ -13048,7 +13048,7 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-outbound-strategist-1.0.0.zip",
-        "sha256": "ace699f56fe27ba6525397f297a7a60b9b8880246b15738ed6b03acaef181c54",
+        "sha256": "a169ec3df16ea7e95ddc7d2eab3f2a20fe5f8c05db6a84152dcb456cc6407891",
         "size": 7388
       }
     },
@@ -13087,8 +13087,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-outreach-1.0.0.zip",
-        "sha256": "eb18b915545a354692fa89894ccbaaaec857f0e5eeeb483d8f1a3fe052337e87",
-        "size": 10771
+        "sha256": "36dbcef57be624075cf6494486e1d11c3c62ead891b55515e65d0caba624281d",
+        "size": 10773
       }
     },
     {
@@ -13126,8 +13126,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-pipeline-analyst-1.0.0.zip",
-        "sha256": "b65a909e5509b2c89162f08bc9b8d5911f54f6cd7be65d93fa46684ea8004956",
-        "size": 9418
+        "sha256": "13580f83c01178923247d6dcd584ab551540bcc574a995ea95f2526a9afac0f8",
+        "size": 9419
       }
     },
     {
@@ -13165,8 +13165,8 @@
       },
       "download": {
         "url": "dist/javis-agency-sales-proposal-strategist-1.0.0.zip",
-        "sha256": "215541fc5958e99237065019812ba81cab642a9b50c1485a1960be70e209eca4",
-        "size": 8044
+        "sha256": "bc6b4fe725cafea3e110fab3eb662e85ec3aff3c6f5b4bfbf577d73007d0eea6",
+        "size": 8045
       }
     },
     {
@@ -13204,8 +13204,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-ai-generated-code-auditor-1.0.0.zip",
-        "sha256": "c865e7e1af7924be3d430492107b103c81df7b86e2393c0c69711b886deffef7",
-        "size": 9522
+        "sha256": "2fb3f40983c63367f548ec1024309997327018fcf377ec55e8446c44a4c044cd",
+        "size": 9523
       }
     },
     {
@@ -13243,8 +13243,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-appsec-engineer-1.0.0.zip",
-        "sha256": "680f1a3132d9b24558fdaf6aa76d9939a7a689f412b229201a942c29ecf00272",
-        "size": 13213
+        "sha256": "2708d04a91d26f8ee48c53d36933364a05492a6eebe9bb33eec9d96c5a5ed32b",
+        "size": 13214
       }
     },
     {
@@ -13282,8 +13282,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-architect-1.0.0.zip",
-        "sha256": "f75804aeb7597a37a3948651441d9ab4825b23f56ae9de513a912b659cbaef21",
-        "size": 10056
+        "sha256": "f47961f7506e59a194c0621885725dbd704899dde750350353df8f69fb572dc9",
+        "size": 10057
       }
     },
     {
@@ -13321,8 +13321,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-blockchain-security-auditor-1.0.0.zip",
-        "sha256": "5b959310ae26447752d3e60e8ed25fb5f6859b8f83cdff429bac6dbbec1a164f",
-        "size": 11216
+        "sha256": "67d1c2981cab716bf17eb2327404c23ca8b95626c3723ecabaca65ee47f4a894",
+        "size": 11218
       }
     },
     {
@@ -13360,8 +13360,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-cloud-security-architect-1.0.0.zip",
-        "sha256": "19b11104cb4cb29acbd667b11423864fa0a3191403b9badd079daece6b2eed0c",
-        "size": 11242
+        "sha256": "3a33f86c4bd92cc3603fd72e67c14f09478a59d2af233b747b899468d27c103d",
+        "size": 11243
       }
     },
     {
@@ -13399,8 +13399,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-compliance-auditor-1.0.0.zip",
-        "sha256": "e40f41587848460ff9c4b86c53261200d1743045f1590a6ed71d74193f58453b",
-        "size": 5370
+        "sha256": "ee9074bbbaef19bbdb3cd7095d38092aea95e5849e40b8e07983bb0e819ab7e7",
+        "size": 5371
       }
     },
     {
@@ -13438,7 +13438,7 @@
       },
       "download": {
         "url": "dist/javis-agency-security-incident-responder-1.0.0.zip",
-        "sha256": "fed319618af8a3841fb7831afaf5c6aaaa90d3044fdf49a9321a7b8dad57ba63",
+        "sha256": "cf43b9b26ccd196b9b3fa924753ed4c829cdb190b3ca959f60b6c4645d98dd42",
         "size": 12281
       }
     },
@@ -13477,8 +13477,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-penetration-tester-1.0.0.zip",
-        "sha256": "7baf94d007bda70552574dfdb4bb84624c4be120d113290c13039193a1eb2b16",
-        "size": 11249
+        "sha256": "6ad07df829e405baccb5ee56fcc6f82f3060a0e3b4cca5b3a952cd8a9a567e17",
+        "size": 11251
       }
     },
     {
@@ -13516,7 +13516,7 @@
       },
       "download": {
         "url": "dist/javis-agency-security-secrets-credential-engineer-1.0.0.zip",
-        "sha256": "801a78010d73b0e7811dc70c39aeb9e920b837334dd65ac219d1b03c4e72f2a2",
+        "sha256": "c2d9c68bccae13f2853360c7d6fcf9ae98e5a0d387cf20af3df7bdbfdfb569c0",
         "size": 8541
       }
     },
@@ -13555,8 +13555,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-senior-secops-1.0.1.zip",
-        "sha256": "6d5f61c0695fae4e4b82cf2a7db79c54077b21749c93453fd0c5081c13a2c094",
-        "size": 14868
+        "sha256": "256b9f63f31bba4899c80cd682c125abf376209589e3b794f5b166e1eb6154b9",
+        "size": 14869
       }
     },
     {
@@ -13594,8 +13594,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-threat-detection-engineer-1.0.0.zip",
-        "sha256": "50589486c0e3aa40ba477c6a6f9637c83c32ce257d1eb93998fcb06f44bec29f",
-        "size": 12146
+        "sha256": "f6a6c49dc013ed4edb124784a07657a52fc358f30027951e5c658bf03c18a7ad",
+        "size": 12147
       }
     },
     {
@@ -13633,8 +13633,8 @@
       },
       "download": {
         "url": "dist/javis-agency-security-threat-intelligence-analyst-1.0.0.zip",
-        "sha256": "35044a4020152bdd39deb8760327441e2f78695f7a0c2da20c46f2692318e5c1",
-        "size": 13339
+        "sha256": "e11dfc6877a54883e959cddf67c910db3b36ce231375889ce550ada60f36ecbd",
+        "size": 13341
       }
     },
     {
@@ -13672,8 +13672,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-chief-of-staff-1.0.0.zip",
-        "sha256": "c81e5370178ea5059d54635796e35835924136cdc77babbc12bf26c2484c14b5",
-        "size": 9823
+        "sha256": "e3e26cad75ce74902125ba0c77add75479fad6b8fa0e4ae088fda4cfe7a1c61f",
+        "size": 9824
       }
     },
     {
@@ -13711,8 +13711,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-civil-engineer-1.0.0.zip",
-        "sha256": "53b2f059a0ab1b02bfbd99aa4304c10a56a85dd87f89701e446217777b66d565",
-        "size": 9556
+        "sha256": "1f00d393df3502627eab5e5c55fc38e7fe1eedf8c1f4ec72b4974dbe0f7c35a8",
+        "size": 9558
       }
     },
     {
@@ -13750,8 +13750,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-codebase-archaeologist-1.0.0.zip",
-        "sha256": "58dd65ff066c05d1b7a4231326d401b0d77f706ba50da036706c391ac83da2e7",
-        "size": 12757
+        "sha256": "5272b2a3e75a8f726423f8e8a56bffe68ef7ef5d6e6124db2df9388438a99875",
+        "size": 12758
       }
     },
     {
@@ -13789,8 +13789,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-cultural-intelligence-strategist-1.0.0.zip",
-        "sha256": "a6e016d8775a5ff3cc6316f5e51992c318c0713bddd7173eba049f3a06f87014",
-        "size": 5572
+        "sha256": "75bdc4e0c80d89a17fe09a50c56bad9c3cd017a3c6594ade512261f896e2bbf0",
+        "size": 5574
       }
     },
     {
@@ -13828,8 +13828,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-developer-advocate-1.0.0.zip",
-        "sha256": "96fdd0116ac2a40bc590e3b3800642a8e7b100945fae73a5ad98708cd2060041",
-        "size": 9036
+        "sha256": "e0dc7521cf59c12e29c47a2f8981ae17e423daac55cf490c890c17c865260594",
+        "size": 9037
       }
     },
     {
@@ -13867,8 +13867,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-document-generator-1.0.0.zip",
-        "sha256": "33f4304e6de3ac81361b5950a4f9c4b8a130e474c8e68d42a52ae9cc870f37b4",
-        "size": 3439
+        "sha256": "688d643a8776281678375d016f1a9d2d3d7b601c7f625b80808d00457abe964c",
+        "size": 3441
       }
     },
     {
@@ -13906,8 +13906,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-fedramp-rmf-compliance-1.0.0.zip",
-        "sha256": "777db7bbf03807cd1d33a4043c4e38df95964488c5c0242c7d94e6619256d2cc",
-        "size": 13593
+        "sha256": "eb1962b91424e121d4837c445f910f777ffcd5dd28d559634dc04ad9fbb88414",
+        "size": 13595
       }
     },
     {
@@ -13945,8 +13945,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-focus-music-architect-1.0.0.zip",
-        "sha256": "003b97da60173fcc26c3aa59f8c0d5be4e563a40d6771cc6d049cb26c8c6937c",
-        "size": 7031
+        "sha256": "396759e2633f6621a683b88515f91a0121989d065ffcf10b72483ab967f258b5",
+        "size": 7033
       }
     },
     {
@@ -13984,8 +13984,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-french-consulting-market-1.0.0.zip",
-        "sha256": "208254a0138351d974cee75a30eea71d7f6c99f8a8f15289b08b509bf097024a",
-        "size": 7316
+        "sha256": "c21a6cbd0dad9c25e47abbab58205af7b3b23cbc68c37e3b496d53432f75340b",
+        "size": 7318
       }
     },
     {
@@ -14023,8 +14023,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-korean-business-navigator-1.0.0.zip",
-        "sha256": "e25130a9c8f7c21e07ec58c908b892436c44a6f8dff8765a975136cc74a53b1d",
-        "size": 8899
+        "sha256": "82c0c8781f7387a1f261e23b60caa0b1cb941aee6dc541891b33348a08393b43",
+        "size": 8901
       }
     },
     {
@@ -14062,8 +14062,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-master-plan-architect-1.0.0.zip",
-        "sha256": "5fd37a5c7c91a8bfb3c005ef494ba8845ea003d569c41782b17ead26d6550f37",
-        "size": 7216
+        "sha256": "b42934801e8f6f8178f5e2e794d8c7fd77ae0c33d2aa159353d1f331ea7b7828",
+        "size": 7217
       }
     },
     {
@@ -14101,8 +14101,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-mcp-builder-1.0.0.zip",
-        "sha256": "ebad77d6edddf00702ee920685a138bc483a5251831031cce6af2d2f5b424063",
-        "size": 7615
+        "sha256": "74deca786fdb6a4855ed8735ea836beb568cafa29e430faa4c08d880ca1bdb55",
+        "size": 7616
       }
     },
     {
@@ -14140,8 +14140,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-model-qa-1.0.0.zip",
-        "sha256": "e03d00508bccf96583976ee9aa24fe4b1aa64306463947a46f5326dc6f33c8ac",
-        "size": 10989
+        "sha256": "4472b64275a61b877db8ac53e89e2178b40578a464428d288fb38610151be8cd",
+        "size": 10992
       }
     },
     {
@@ -14179,8 +14179,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-pricing-analyst-1.0.0.zip",
-        "sha256": "f9f3992f98576356be4a11536db4311060ecb120ff8d73490d2b3715de58a58b",
-        "size": 7747
+        "sha256": "8d177de0ba2367210bab262c0f059a16a032ca5f8f7bb4f0cbd3750e6f3a2334",
+        "size": 7748
       }
     },
     {
@@ -14218,8 +14218,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-salesforce-architect-1.0.0.zip",
-        "sha256": "726df94ea12f3f92381a8e464afb022eaf28a84565905be72f66e7c0f8be5dfd",
-        "size": 6703
+        "sha256": "234b60a158e47d9f9f830b3adddffb02faa69f6ac5111e4d56341dc5233fc80e",
+        "size": 6705
       }
     },
     {
@@ -14257,8 +14257,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-strategy-duel-agent-1.0.0.zip",
-        "sha256": "55f9393fe720eca0508f0bbfb8563bdefb611ec368417d4e2ee5546472a8e2e7",
-        "size": 4499
+        "sha256": "045194dc9d5514465eed617d98a8a8b19f3b10a25ca37e060d338f72ae35f125",
+        "size": 4500
       }
     },
     {
@@ -14296,8 +14296,8 @@
       },
       "download": {
         "url": "dist/javis-agency-specialized-workflow-architect-1.0.0.zip",
-        "sha256": "f20accb0e2f4f7e6b5262c3c89b238ed356cef7dd0a17a227c720d55c9320afb",
-        "size": 12521
+        "sha256": "b5f99bd3a3b148f0b484179aa2b00d35bba36e456ea737a373a9057d50b341dc",
+        "size": 12523
       }
     },
     {
@@ -14335,8 +14335,8 @@
       },
       "download": {
         "url": "dist/javis-agency-study-abroad-advisor-1.0.0.zip",
-        "sha256": "ae8f15b79038edfa7d0e838d8f8bf6409acc30fb8a6466f8a21c3244a4f6b7a2",
-        "size": 9303
+        "sha256": "f605dec147013ae41e3a7f0ecb795a270029931d0c3f9173238f5c6c66778b90",
+        "size": 9304
       }
     },
     {
@@ -14374,8 +14374,8 @@
       },
       "download": {
         "url": "dist/javis-agency-supply-chain-strategist-1.0.0.zip",
-        "sha256": "98c873873be9faccdeccfafc98ede4c94453da104789afaff948ddd1dca7c678",
-        "size": 14409
+        "sha256": "50e06c7836c91495ac944ad566ec4431e14ccd77eebd3b01e0c4c1296e553d81",
+        "size": 14411
       }
     },
     {
@@ -14413,8 +14413,8 @@
       },
       "download": {
         "url": "dist/javis-agency-support-analytics-reporter-1.0.0.zip",
-        "sha256": "7df935388911684f02f2736df30cb64f56bdcfe7f19c3aaf62750912b8401660",
-        "size": 8452
+        "sha256": "451b0bd857889961fbd94a8e4f42a90b83f4380a58879e5db7bb3ae5c02421e0",
+        "size": 8453
       }
     },
     {
@@ -14452,8 +14452,8 @@
       },
       "download": {
         "url": "dist/javis-agency-support-executive-summary-generator-1.0.0.zip",
-        "sha256": "84f5565704b1385ae9088a1cc1fd0fb86758e84a81e94f394baf728cbf69c365",
-        "size": 6126
+        "sha256": "66a97f9eaa8947465e7622e16ca201ebb10fef60cdf2c15cd235329223d05494",
+        "size": 6127
       }
     },
     {
@@ -14491,8 +14491,8 @@
       },
       "download": {
         "url": "dist/javis-agency-support-finance-tracker-1.0.1.zip",
-        "sha256": "caba4a7f7234e70b74e68ce0f1eb9ddd35c9322af51e80d6d9fa44e2179849a5",
-        "size": 9290
+        "sha256": "d39d2e28df827bfe0a4e7e795b78aaff44a488176944588d50a2e56571b29362",
+        "size": 9292
       }
     },
     {
@@ -14530,8 +14530,8 @@
       },
       "download": {
         "url": "dist/javis-agency-support-infrastructure-maintainer-1.0.0.zip",
-        "sha256": "f433cb2844482c97b29d88a9ef8b5eab69af92b0f6d7bec6efa0a3fc69fb87f4",
-        "size": 10317
+        "sha256": "55db2785c78513f76ded6b2d5a4a708553a9971306396c606a9ed8658408de83",
+        "size": 10321
       }
     },
     {
@@ -14569,8 +14569,8 @@
       },
       "download": {
         "url": "dist/javis-agency-support-legal-compliance-checker-1.0.0.zip",
-        "sha256": "2ba75864f711571cc8f9b9f63c74f3a930e0db8c5a12cc5ceaf2c29b84709db1",
-        "size": 10309
+        "sha256": "38addeccf0cd4552db25eaaadadc504e5da5533ea908c0caf2ff6d037bfc10a5",
+        "size": 10310
       }
     },
     {
@@ -14608,8 +14608,8 @@
       },
       "download": {
         "url": "dist/javis-agency-support-support-responder-1.0.0.zip",
-        "sha256": "11a0d18fca0a7847df748765a188da1e5054e86f97456543ce2186ecb99d30cf",
-        "size": 10516
+        "sha256": "c9bb8c72e12166b3a969df0e8cb91c1366ea3cbb48347c519e9873dbf8629066",
+        "size": 10517
       }
     },
     {
@@ -14647,8 +14647,8 @@
       },
       "download": {
         "url": "dist/javis-agency-technical-artist-1.0.0.zip",
-        "sha256": "dfb76d694be59c38554c3bd453f861f0af9ec04199ffcc1efff7cccef73dcfa9",
-        "size": 7262
+        "sha256": "781b2abd5f502f31899594a4fa4e2dc3514afd84d9d1b4f5528660c5f90bd25d",
+        "size": 7263
       }
     },
     {
@@ -14686,8 +14686,8 @@
       },
       "download": {
         "url": "dist/javis-agency-terminal-integration-specialist-1.0.0.zip",
-        "sha256": "07204afb405d7953b216e78a42f468a50be60d855c36b65eba4378917f44cedb",
-        "size": 3956
+        "sha256": "f7beefac7252b64fd733f4768257a2ea35de24cef36942fdd187b66168ba3d79",
+        "size": 3957
       }
     },
     {
@@ -14725,8 +14725,8 @@
       },
       "download": {
         "url": "dist/javis-agency-testing-accessibility-auditor-1.0.0.zip",
-        "sha256": "826811de61461e01d54ea880d7fbc131ec69758809c8d96734a21e1276b21034",
-        "size": 9101
+        "sha256": "55ba2ef40cbbc7aef12a42dcefebd6be20dfaf00090be256002e7bcac20d8fe2",
+        "size": 9103
       }
     },
     {
@@ -14764,8 +14764,8 @@
       },
       "download": {
         "url": "dist/javis-agency-testing-api-tester-1.0.1.zip",
-        "sha256": "94689ce9c3589415bd1636e6c3f2975e1664739ef76da9b169156e06e65812c0",
-        "size": 7485
+        "sha256": "cead4953d8a69190f0013febf142345ccb068643a88a4818cbb2580c9276ac42",
+        "size": 7486
       }
     },
     {
@@ -14803,8 +14803,8 @@
       },
       "download": {
         "url": "dist/javis-agency-testing-evidence-collector-1.0.0.zip",
-        "sha256": "d24bb5cbd044963abaae8632dcd6776d446dfe5a8aa25dc9246d189d047faeeb",
-        "size": 6060
+        "sha256": "f5605741680cd5b1d489e4cbb8339856c0f02eca041d5e7289ab84331052158f",
+        "size": 6061
       }
     },
     {
@@ -14842,8 +14842,8 @@
       },
       "download": {
         "url": "dist/javis-agency-testing-performance-benchmarker-1.0.1.zip",
-        "sha256": "925fb2a541ac23ac07577162e5f1ba055b929a47c5adfd06cbf2706fd81b052b",
-        "size": 7409
+        "sha256": "06b0b8871ce1d9a6a248b2252875d39ae94cf3fd619e2df08a89ced035026da0",
+        "size": 7411
       }
     },
     {
@@ -14881,8 +14881,8 @@
       },
       "download": {
         "url": "dist/javis-agency-testing-reality-checker-1.0.0.zip",
-        "sha256": "ccbc891e0699fe5d07ab87c1f75de99fdabff805a0c882afe73ead0849b8e94b",
-        "size": 6483
+        "sha256": "c51e849f9642a56179e113f75e6100b6cfde85fa40c12f69df069e721fb8bbe0",
+        "size": 6484
       }
     },
     {
@@ -14920,8 +14920,8 @@
       },
       "download": {
         "url": "dist/javis-agency-testing-test-automation-engineer-1.0.0.zip",
-        "sha256": "dbf16c1243421bf437bf4b3f06da2158f6289794a5a005c7c32c0dee912a919f",
-        "size": 8046
+        "sha256": "9cd7f953e4e8e9f3f6ed134fa4960064217732956eae38cff10ddfa39fe1996d",
+        "size": 8047
       }
     },
     {
@@ -14959,8 +14959,8 @@
       },
       "download": {
         "url": "dist/javis-agency-testing-test-results-analyzer-1.0.0.zip",
-        "sha256": "01a567fbdf23863b83dec5a21ccbb902effd19a15058ae80b7d44cd54ea9457e",
-        "size": 7715
+        "sha256": "3fb2505c72350e852a0ca02ab7d0d0f4012cfa9ee82a490f866e10c2ffcbe763",
+        "size": 7716
       }
     },
     {
@@ -14998,8 +14998,8 @@
       },
       "download": {
         "url": "dist/javis-agency-testing-tool-evaluator-1.0.0.zip",
-        "sha256": "3124aa9268b338386abee546421e2b08f353d5d7ba18cbf77adde0a91f3e6621",
-        "size": 8281
+        "sha256": "d0df6e509d64c025fdc693dd4a9e463071ecfc821baa76a538ea117ed86bf735",
+        "size": 8282
       }
     },
     {
@@ -15037,8 +15037,8 @@
       },
       "download": {
         "url": "dist/javis-agency-testing-workflow-optimizer-1.0.1.zip",
-        "sha256": "2aa9c48db5c5e810742bfa895c00a24ea31b12c93dda26b89a72556ffc2ed007",
-        "size": 9029
+        "sha256": "0d4a993318cc537f20a232b7d24ba107bb43fd0d996aa24130176e5b94cf46a1",
+        "size": 9030
       }
     },
     {
@@ -15076,8 +15076,8 @@
       },
       "download": {
         "url": "dist/javis-agency-unity-architect-1.0.0.zip",
-        "sha256": "36bf5cf3ba03fb20602ce9650fbbd78bafdc93968ca1011500bf2883edff0e73",
-        "size": 7112
+        "sha256": "d7ffbcd806f2f7cc1e51148d5e94e0cfc78519d4ccff524f6f8d18c9202208a8",
+        "size": 7113
       }
     },
     {
@@ -15115,8 +15115,8 @@
       },
       "download": {
         "url": "dist/javis-agency-unity-editor-tool-developer-1.0.0.zip",
-        "sha256": "9da8cdaf82b89e78fae65534c2bd7f6286714e39fe03c3846d6ba2fcaf452ae9",
-        "size": 8008
+        "sha256": "6b51f6afa2db15c2e674453255e4cd5c9fc449d3a52d02781541881e09f51878",
+        "size": 8013
       }
     },
     {
@@ -15154,8 +15154,8 @@
       },
       "download": {
         "url": "dist/javis-agency-unity-multiplayer-engineer-1.0.0.zip",
-        "sha256": "08d81c34e5e63cba9df9b62fbbe30bb8cf784465a9e44b64608030eb1091b1d5",
-        "size": 7808
+        "sha256": "ac2ee5ec691422bc0e7c53e2edbffe24052d249757e625b63458cb21789a28a2",
+        "size": 7810
       }
     },
     {
@@ -15193,8 +15193,8 @@
       },
       "download": {
         "url": "dist/javis-agency-unity-shader-graph-artist-1.0.0.zip",
-        "sha256": "b5fbef42668f8f11a7f863a1af3ca048fe7ea412aeda5239828abdf341f65a55",
-        "size": 7582
+        "sha256": "73b132eb731432e91a65d9dda59d6fa206aebe798e163e49135d029ac3dff3be",
+        "size": 7584
       }
     },
     {
@@ -15232,8 +15232,8 @@
       },
       "download": {
         "url": "dist/javis-agency-unreal-multiplayer-architect-1.0.0.zip",
-        "sha256": "88707c90633054e15f1e86597c0ce1e5af9607e11beca0523339605ef189ce83",
-        "size": 8394
+        "sha256": "7adf67ba0ce784a972b51bb03710bce10188826c457b1389fd27e92f97590eb2",
+        "size": 8395
       }
     },
     {
@@ -15271,8 +15271,8 @@
       },
       "download": {
         "url": "dist/javis-agency-unreal-systems-engineer-1.0.0.zip",
-        "sha256": "2c20453240675ca904ad442cf62e8eda4b562aef33faad132d14d996b31a491d",
-        "size": 8914
+        "sha256": "4db61fabbff6bae9c518d5ed7c42b8bc79ff2e23d5747403e70ce2bab3f0cdc2",
+        "size": 8915
       }
     },
     {
@@ -15310,8 +15310,8 @@
       },
       "download": {
         "url": "dist/javis-agency-unreal-technical-artist-1.0.0.zip",
-        "sha256": "e3f9dc6b4b5c9aa6dd343b79ddd5f4651a512a067dc99d9ca7adad655a04dce2",
-        "size": 7440
+        "sha256": "ede52ef45c7c8e4878c03a8d847ea51c2f9a79d07353947b2b49b5382724c846",
+        "size": 7441
       }
     },
     {
@@ -15349,8 +15349,8 @@
       },
       "download": {
         "url": "dist/javis-agency-unreal-world-builder-1.0.0.zip",
-        "sha256": "db6164c9a97b60f8ab224d970deb3470cfc6177a8de095b4fcb0ac3d7db01d50",
-        "size": 8206
+        "sha256": "adbd9e75c171caa4a6cfc8e67c391ac0676260ba89a508c95be4bf78ff4f117e",
+        "size": 8207
       }
     },
     {
@@ -15388,8 +15388,8 @@
       },
       "download": {
         "url": "dist/javis-agency-visionos-spatial-engineer-1.0.0.zip",
-        "sha256": "6b6099a6e0340465a389ff16e0350983b01ae5d5196d11461412c116a9c2c829",
-        "size": 3575
+        "sha256": "fed432eb800e59e3f0f1d4a0eef35152b336c0c992bc9b6dfcf1407283a97ed5",
+        "size": 3576
       }
     },
     {
@@ -15427,8 +15427,8 @@
       },
       "download": {
         "url": "dist/javis-agency-xr-cockpit-interaction-specialist-1.0.0.zip",
-        "sha256": "d0368535ab13c753cf1ba0a14ebfcece7239ad3c7063072cbe8903da458bcae0",
-        "size": 3194
+        "sha256": "161786b358cb729b5f93d753eb8d1a659f6206a91be7cacba880fec55437ea31",
+        "size": 3196
       }
     },
     {
@@ -15466,8 +15466,8 @@
       },
       "download": {
         "url": "dist/javis-agency-xr-immersive-developer-1.0.0.zip",
-        "sha256": "5f407fb6b545d3dd1bbf5a83ab71e0b9b7b8ef916ec7233fc51b4341afa66532",
-        "size": 3118
+        "sha256": "85670ed49ba38736a1c2dc4971012a845423583ff697720bf83118903412edf3",
+        "size": 3120
       }
     },
     {
@@ -15505,8 +15505,8 @@
       },
       "download": {
         "url": "dist/javis-agency-xr-interface-architect-1.0.0.zip",
-        "sha256": "10416c6cb42671d9eaa00c5ca8270f6ade8937d529dbbb19022694d2bcdc7306",
-        "size": 3092
+        "sha256": "476d5d2a52b1bfc9b21d763347b0d44ad9ad35cf30781308075de304f5753a40",
+        "size": 3093
       }
     },
     {
@@ -15544,8 +15544,8 @@
       },
       "download": {
         "url": "dist/javis-agency-zk-steward-1.0.0.zip",
-        "sha256": "ff350767bf0430a9dab828a44cffca53c2fe67a07fbd20eea80cb1dfa5a4b49c",
-        "size": 7166
+        "sha256": "eb55ee649990d0611d03827b9fb8f2807ceb9f32a6553f29f6d9c9c318ffa0b5",
+        "size": 7168
       }
     },
     {
@@ -15611,7 +15611,7 @@
       },
       "download": {
         "url": "dist/javis-claude-seo-1.0.2.zip",
-        "sha256": "27533246873c23ab3b510e461c1aee3e6dbf619c68b9911e8d07a0da7af3171c",
+        "sha256": "60b1a71ae0372b601cb90beeef09d6b47aad5ba5e6e19d5aba8e770ca0e7d818",
         "size": 676402
       }
     },
@@ -15650,8 +15650,8 @@
       },
       "download": {
         "url": "dist/javis-scrapling-1.0.0.zip",
-        "sha256": "ebe39e4cc071356c3cf73278099be8f7eb97b01c5b8bd3ba290503377b9a8a52",
-        "size": 23983
+        "sha256": "6010759df221bb197a8e7bca4bcd40f83e440b3253f3f6a2ee4949ec6fea0ea6",
+        "size": 23982
       }
     },
     {
@@ -15694,7 +15694,7 @@
       },
       "download": {
         "url": "dist/javis-scrapling-skill-1.0.0.zip",
-        "sha256": "61783c20f774029b045559c5a301d1e6e2f857262deeba0df2d5905477897f9f",
+        "sha256": "f35beb7c4fbbea39ed6d89f171bb8c6b24280716d515c0960b43afebfb91851f",
         "size": 100478
       }
     }

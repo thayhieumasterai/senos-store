@@ -3,7 +3,7 @@
   "name": "Zernio",
   "icon": "assets/zernio.png",
   "category": "Mạng xã hội",
-  "description": "Đăng bài đa kênh bằng một câu lệnh: Javis soạn, lên lịch và đăng cùng lúc lên Facebook, Instagram, TikTok, YouTube, LinkedIn, X, Threads, Pinterest, Bluesky, Reddit, Telegram, Google Business Profile và nhiều kênh khác qua MCP chính chủ của Zernio. Xem số liệu, giờ đăng tốt nhất, trả lời bình luận. Dán API key là xong.",
+  "description": "Đăng bài đa kênh bằng một câu lệnh: SenOS soạn, lên lịch và đăng cùng lúc lên Facebook, Instagram, TikTok, YouTube, LinkedIn, X, Threads, Pinterest, Bluesky, Reddit, Telegram, Google Business Profile và nhiều kênh khác qua MCP chính chủ của Zernio. Xem số liệu, giờ đăng tốt nhất, trả lời bình luận. Dán API key là xong.",
   "status": "beta",
   "transport": "http",
   "url": "https://mcp.zernio.com/mcp",
@@ -17,11 +17,11 @@
         "header": "Authorization: Bearer {api_key}"
       }
     ],
-    "guide": "Làm 1 lần, khoảng 2 phút:\n1. Chưa có tài khoản thì đăng ký Zernio qua link của Javis: https://zernio.link/JavisOS (có gói miễn phí). Trong Zernio, kết nối các trang mạng xã hội bạn muốn đăng (Facebook, Instagram, TikTok...).\n2. Vào zernio.com/dashboard/api-keys, tạo một API key mới rồi copy key dạng sk_...\n3. Dán key vào đây, bấm Kết nối.\n\nXong là nhờ Javis ngay trong chat, vd 'đăng bài này lên Facebook và Instagram lúc 8 giờ tối mai'. Muốn Javis đăng thật thì nâng kết nối này lên Toàn quyền; mức Chỉ đọc chỉ xem tài khoản, bài và số liệu.",
-    "guide_url": "https://github.com/blogminhquy/javis-store/blob/main/huong-dan/zernio.md",
+    "guide": "Làm 1 lần, khoảng 2 phút:\n1. Chưa có tài khoản thì đăng ký Zernio qua link của SenOS: https://zernio.link/JavisOS (có gói miễn phí). Trong Zernio, kết nối các trang mạng xã hội bạn muốn đăng (Facebook, Instagram, TikTok...).\n2. Vào zernio.com/dashboard/api-keys, tạo một API key mới rồi copy key dạng sk_...\n3. Dán key vào đây, bấm Kết nối.\n\nXong là nhờ SenOS ngay trong chat, vd 'đăng bài này lên Facebook và Instagram lúc 8 giờ tối mai'. Muốn SenOS đăng thật thì nâng kết nối này lên Toàn quyền; mức Chỉ đọc chỉ xem tài khoản, bài và số liệu.",
+    "guide_url": "https://github.com/thayhieumasterai/senos-store/blob/main/huong-dan/zernio.md",
     "steps": [
       {
-        "text": "Chưa có tài khoản Zernio? Đăng ký miễn phí qua link của Javis, rồi kết nối các trang mạng xã hội bạn muốn đăng ngay trong Zernio.",
+        "text": "Chưa có tài khoản Zernio? Đăng ký miễn phí qua link của SenOS, rồi kết nối các trang mạng xã hội bạn muốn đăng ngay trong Zernio.",
         "link": "https://zernio.link/JavisOS",
         "link_label": "Đăng ký Zernio miễn phí"
       },
@@ -31,8 +31,8 @@
         "link_label": "Mở trang API Keys"
       },
       {
-        "text": "Dán key vào ô bên dưới rồi bấm Kết nối. Muốn Javis đăng bài thật thì nâng kết nối lên Toàn quyền.",
-        "link": "https://github.com/blogminhquy/javis-store/blob/main/huong-dan/zernio.md",
+        "text": "Dán key vào ô bên dưới rồi bấm Kết nối. Muốn SenOS đăng bài thật thì nâng kết nối lên Toàn quyền.",
+        "link": "https://github.com/thayhieumasterai/senos-store/blob/main/huong-dan/zernio.md",
         "link_label": "Xem hướng dẫn đầy đủ"
       }
     ]
@@ -110,5 +110,5 @@
     "comments_get_inbox_post_comments"
   ],
   "default_perm": "readonly",
-  "risk": "Zernio đăng thật lên trang mạng xã hội của bạn: bài lên là khách thấy ngay.\n\nChỉ đọc (mặc định): xem tài khoản, bài, số liệu, bình luận và kiểm tra trước bài, chưa đăng gì.\n\nGhi nháp: thêm tạo hồ sơ, khung giờ hàng chờ, tải ảnh lên. Vẫn chưa đăng bài.\n\nToàn quyền: Javis đăng, lên lịch, sửa, gỡ, xoá bài và trả lời bình luận bằng tài khoản của bạn, dùng được mọi tính năng còn lại của Zernio (nhắn tin, quảng cáo...), kể cả hỏi đáp hỗ trợ có tính phí của Zernio."
+  "risk": "Zernio đăng thật lên trang mạng xã hội của bạn: bài lên là khách thấy ngay.\n\nChỉ đọc (mặc định): xem tài khoản, bài, số liệu, bình luận và kiểm tra trước bài, chưa đăng gì.\n\nGhi nháp: thêm tạo hồ sơ, khung giờ hàng chờ, tải ảnh lên. Vẫn chưa đăng bài.\n\nToàn quyền: SenOS đăng, lên lịch, sửa, gỡ, xoá bài và trả lời bình luận bằng tài khoản của bạn, dùng được mọi tính năng còn lại của Zernio (nhắn tin, quảng cáo...), kể cả hỏi đáp hỗ trợ có tính phí của Zernio."
 }

@@ -8,13 +8,13 @@ Giấy phép gốc: **MIT** - nguyên văn ở `docs/LICENSE.txt`.
 ## Đã sửa những gì
 
 Nội dung skill (thân file, `lenses.md`, tệp mẫu `.json`/`.md` và 4 công cụ Python) **giữ nguyên
-bản gốc, không dịch**. Chỉ frontmatter của `SKILL.md` được chỉnh cho khớp Javis:
+bản gốc, không dịch**. Chỉ frontmatter của `SKILL.md` được chỉnh cho khớp SenOS:
 
-- `description` được viết lại cho vừa trần 150 ký tự của router Javis (router cắt đúng ở 150 nên
+- `description` được viết lại cho vừa trần 150 ký tự của router SenOS (router cắt đúng ở 150 nên
   phần dư vốn mất im lặng). Mô tả gốc được chép xuống cuối file.
 - Thêm `group: "Founder"` để trang Kỹ năng gom nhóm.
 - 5 skill gọi tệp trong thư mục của chính nó qua `${CLAUDE_SKILL_DIR}` (board, consumer, pricing,
-  cfo, plan) có thêm MỘT dòng `Javis:` dưới tiêu đề: engine không phải Claude Code không tự thay
+  cfo, plan) có thêm MỘT dòng `SenOS:` dưới tiêu đề: engine không phải Claude Code không tự thay
   biến đó, nên dòng này chỉ đường `skills/<slug>` tính từ gốc brain.
 - Mỗi `SKILL.md` có một dòng ghi nguồn ở cuối.
 - Không mang theo `.claude-plugin/` và `tests/` của repo gốc. Test của 4 công cụ được chép sang
@@ -22,7 +22,7 @@ bản gốc, không dịch**. Chỉ frontmatter của `SKILL.md` được chỉn
 
 ## Bảng đối chiếu
 
-| Slug trong Javis | Đường dẫn gốc |
+| Slug trong SenOS | Đường dẫn gốc |
 |---|---|
 | `founder-board` | `founder-skill/skills/founder-board` |
 | `founder-competitors` | `founder-skill/skills/founder-competitors` |
@@ -48,7 +48,7 @@ Gói có 4 tệp `.py`, đều chỉ dùng thư viện chuẩn, **không gọi m
 - `founder-plan/compile.py`: gom các tệp trong `founder/` thành kế hoạch kinh doanh và tính kết
   luận. Nạp `../founder-cfo/unit_economics.py` nên hai skill phải nằm cạnh nhau trong `skills/`.
 
-Đây là công cụ dòng lệnh model chạy bằng shell khi làm theo skill, không phải plugin của Javis:
+Đây là công cụ dòng lệnh model chạy bằng shell khi làm theo skill, không phải plugin của SenOS:
 không tool mới nào vào MCP Hub.
 
 ## Lưu ý trước khi dùng

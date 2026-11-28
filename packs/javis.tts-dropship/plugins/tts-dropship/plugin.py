@@ -147,7 +147,7 @@ def _het_han_noi_gi(con_lai: int) -> str:
     return (f"Token TTS đã hết hạn {abs(con_lai) // 3600} giờ trước và không tự gia hạn được. "
             f"Mở {WEB}, đăng nhập lại, bấm F12 > Console, chạy "
             "copy(localStorage.getItem('@publicToken')) rồi dán vào trang Kết nối > TTS "
-            "Dropship > Sửa. Làm tương tự với @refreshToken để lần sau Javis tự gia hạn.")
+            "Dropship > Sửa. Làm tương tự với @refreshToken để lần sau SenOS tự gia hạn.")
 
 
 async def _gia_han(conn, sec):
@@ -231,7 +231,7 @@ async def _token(ep_gia_han=False):
     if moi:
         return moi, None
     if ep_gia_han:
-        return None, ("Sàn TTS từ chối token và Javis không tự gia hạn được (%s). %s"
+        return None, ("Sàn TTS từ chối token và SenOS không tự gia hạn được (%s). %s"
                       % (vi_sao, _het_han_noi_gi(con_lai if con_lai <= 0 else 0)))
     if con_lai <= 0:
         return None, _het_han_noi_gi(con_lai) + f" (tự gia hạn không chạy: {vi_sao})"
@@ -251,7 +251,7 @@ def _canh_bao_han():
     con_lai = _con_lai(tok)
     if 0 < con_lai <= _REFRESH_TRUOC and not (sec.get("refresh_token") or "").strip():
         return (f"Token TTS còn khoảng {max(1, con_lai // 3600)} giờ là hết hạn và kết nối chưa "
-                "có @refreshToken nên Javis không tự gia hạn được. Vào trang Kết nối > TTS "
+                "có @refreshToken nên SenOS không tự gia hạn được. Vào trang Kết nối > TTS "
                 "Dropship > Sửa, dán thêm @refreshToken để khỏi phải làm lại mỗi 3 ngày.")
     return ""
 
@@ -315,7 +315,7 @@ async def _api(method, path, *, params=None, body=None, multipart=None, dropship
     try:
         import httpx
     except Exception as e:
-        return None, f"thiếu thư viện httpx trong máy chủ Javis ({type(e).__name__})"
+        return None, f"thiếu thư viện httpx trong máy chủ SenOS ({type(e).__name__})"
 
     # Đường khiếu nại của sàn nhận multipart/form-data. httpx chỉ dựng multipart khi `files`
     # KHÁC RỖNG, nên trường chữ phải đi bằng dạng `(None, giá_trị)`.
@@ -686,7 +686,7 @@ async def _gql(ctx, ten_op, bien, cho_tu_sua=True):
         if not moi:
             return None, (
                 "sàn TTS từ chối truy vấn GraphQL '%s': %s\n\nĐây là tên trường trong "
-                "graphql.json không còn khớp sàn, KHÔNG phải token hay mạng. Javis đã thử tự "
+                "graphql.json không còn khớp sàn, KHÔNG phải token hay mạng. SenOS đã thử tự "
                 "sửa nhưng không xong (%s). Soi hình dạng thật bằng tts_graphql "
                 "action=introspect rồi ghi lại bằng action=set. Không phải cài lại gói."
                 % (ten_op, json.dumps(d["errors"], ensure_ascii=False)[:400], vi_sao))
@@ -696,12 +696,12 @@ async def _gql(ctx, ten_op, bien, cho_tu_sua=True):
         if loi2 or (isinstance(d2, dict) and d2.get("errors") and not d2.get("data")):
             chi_tiet = loi2 or json.dumps(d2.get("errors"), ensure_ascii=False)[:300]
             return None, (
-                "sàn TTS từ chối truy vấn GraphQL '%s'. Javis đã tự sửa (%s) rồi thử lại, vẫn "
+                "sàn TTS từ chối truy vấn GraphQL '%s'. SenOS đã tự sửa (%s) rồi thử lại, vẫn "
                 "không được: %s. Soi bằng tts_graphql action=introspect rồi ghi lại bằng "
                 "action=set." % (ten_op, ghi, chi_tiet))
         _ghi_doc(ctx, ten_op, {"doc": moi})
         d = d2
-        ghi_chu = ("Sàn đã đổi hình dạng dữ liệu. Javis tự sửa truy vấn (%s), thử lại thành "
+        ghi_chu = ("Sàn đã đổi hình dạng dữ liệu. SenOS tự sửa truy vấn (%s), thử lại thành "
                    "công và ĐÃ LƯU bản sửa ngoài gói, nên lần sau chạy thẳng." % ghi)
 
     than = (d or {}).get("data") if isinstance(d, dict) else None
@@ -1325,7 +1325,7 @@ async def _cart_update(args, ctx):
                                f"{v.get('inventory_quantity')}")
             if sl > 0 and gia in (None, ""):
                 return _loi(f"variant {vid} thiếu 'dropship_selling_price' (giá bán cho khách). "
-                            "Truyền kèm product_id để Javis tự lấy giá gợi ý.")
+                            "Truyền kèm product_id để SenOS tự lấy giá gợi ý.")
             dong_sach = {"variant_id": vid, "quantity": sl,
                          "dropship_selling_price": _so(gia) if gia not in (None, "") else 0,
                          "note": str(it.get("note") or "")}
@@ -1412,7 +1412,7 @@ async def _customers(args, ctx):
               "sdt_trong_tin": [_sdt(x) for x in re.findall(r"(?:\+?84|0)[\d .]{8,12}\d", dc)]}
         if isinstance(cua_san, dict) and isinstance(cua_javis, dict) and cua_javis.get("quan") \
                 and cua_san.get("province") and cua_san.get("province") != cua_javis.get("quan"):
-            ra["CANH_BAO"] = (f"Hai bộ tách ra hai quận khác nhau: Javis đọc "
+            ra["CANH_BAO"] = (f"Hai bộ tách ra hai quận khác nhau: SenOS đọc "
                               f"'{cua_javis.get('quan')}', sàn đọc '{cua_san.get('province')}'. "
                               "Hỏi lại khách.")
         return _ra(ra, "Ưu tiên 'javis_tim_thay' vì nó so với danh mục của sàn theo cụm từ "
@@ -1585,7 +1585,7 @@ async def _shipping_rates(args, ctx):
             "service_code": r.get("service_code")} for i, r in enumerate(rates)]
     return _ra({"lua_chon": gon, "rates": rates},
                "Đưa NGUYÊN một mục trong 'rates' vào tham số 'shipping_rate' của "
-               "tts_create_order. Javis tự đổi sang dạng shipping_lines mà sàn cần. Web sàn "
+               "tts_create_order. SenOS tự đổi sang dạng shipping_lines mà sàn cần. Web sàn "
                "mặc định chọn mục đầu tiên.")
 
 
@@ -1605,7 +1605,7 @@ async def _chuan_don(ctx, o, cart_token, nho):
     if isinstance(o.get("raw_body"), dict):
         don = dict(o["raw_body"])
         return don, {"raw_body": True, "shop_id": don.get("shop_id"),
-                     "canh_bao": "thân đơn tự dựng, Javis không kiểm được gì"}, None
+                     "canh_bao": "thân đơn tự dựng, SenOS không kiểm được gì"}, None
     sid = str(o.get("shop_id") or "").strip()
     if not sid:
         return None, None, ("mỗi đơn phải có 'shop_id'. Một nhà cung cấp là MỘT đơn riêng, giỏ "
@@ -1939,7 +1939,7 @@ async def _finance(args, ctx):
     ghi = ""
     if act == "withdraw_fee":
         ghi = ("Gói này CỐ Ý không có tool rút tiền. Muốn rút thì vào ví trên web của sàn, "
-               "Javis chỉ đọc biểu phí.")
+               "SenOS chỉ đọc biểu phí.")
     elif act == "escrow":
         ghi = "Tiền theo từng đơn kèm ngày giải ngân. Đơn chưa đánh giá thì tiền còn bị giữ."
     return _ra(d, ghi)
@@ -2193,7 +2193,7 @@ def register(ctx):
 
     _t(ctx, "tts_cart_update",
        "TTS Dropship: thêm hàng vào giỏ, đổi số lượng, đổi giá bán, hoặc xoá dòng (quantity=0). "
-       "Truyền kèm product_id để Javis kiểm variant có thật và giá bán không dưới giá nhập.",
+       "Truyền kèm product_id để SenOS kiểm variant có thật và giá bán không dưới giá nhập.",
        _cart_update, "safe", "🧺", {
            "items": {"type": "array", "items": {"type": "object"},
                      "description": "[{product_id, variant_id, quantity, dropship_selling_price, note}]"},
@@ -2202,7 +2202,7 @@ def register(ctx):
 
     _t(ctx, "tts_customer_write",
        "TTS Dropship: tạo khách hàng và địa chỉ. action=create | add_address | set_default. "
-       "Javis tự kiểm số điện thoại đã có khách chưa và tự đối chiếu tỉnh, quận, phường với "
+       "SenOS tự kiểm số điện thoại đã có khách chưa và tự đối chiếu tỉnh, quận, phường với "
        "danh mục của sàn trước khi tạo. Sàn KHÔNG có đường sửa hay xoá khách hàng.",
        _customer_write, "safe", "👤", {
            "action": {"type": "string", "enum": ["create", "add_address", "set_default"]},
@@ -2263,7 +2263,7 @@ def register(ctx):
        _create_order, "full", "🧾", {
            "shop_id": {"type": "string", "description": "Nhà cung cấp của đơn này"},
            "customer_phone": {"type": "string",
-                              "description": "SĐT khách đã lưu, Javis tự lấy địa chỉ giao"},
+                              "description": "SĐT khách đã lưu, SenOS tự lấy địa chỉ giao"},
            "customer_address_id": {"type": "string",
                                    "description": "Chọn địa chỉ khi khách có nhiều địa chỉ"},
            "customer_id": {"type": "string"},
@@ -2282,7 +2282,7 @@ def register(ctx):
            "note": {"type": "string", "description": "Ghi chú cho nhà cung cấp"},
            "price_rule_ids": {"type": "array", "items": {"type": "string"},
                               "description": "id khuyến mãi của shop, từ tts_suppliers promotions"},
-           "cart_token": {"type": "string", "description": "Bỏ trống, Javis tự lấy"},
+           "cart_token": {"type": "string", "description": "Bỏ trống, SenOS tự lấy"},
            "source_name": {"type": "string"},
            "marketplace": {"type": "string",
                            "description": "Đơn từ sàn khác, ví dụ TikTok Shop"},

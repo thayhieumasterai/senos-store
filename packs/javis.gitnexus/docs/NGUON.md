@@ -4,7 +4,7 @@ Skill trong gói này chép **nguyên văn** từ [abhigyanpatwari/GitNexus](htt
 không dịch, không rút gọn, không sửa frontmatter.
 
 Mỗi ngày kho so lại với repo gốc (`tools/theo-goc.py`). Repo gốc đổi thì gói lên một bản
-vá, Javis báo trong chuông và bạn bấm Cập nhật. Skill bạn đã tự sửa thì Javis giữ lại,
+vá, SenOS báo trong chuông và bạn bấm Cập nhật. Skill bạn đã tự sửa thì SenOS giữ lại,
 không ghi đè. Commit gốc của bản đang phát hành nằm ở trường `upstream.commit` trong
 `index.json`.
 

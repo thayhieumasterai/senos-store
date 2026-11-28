@@ -7,7 +7,7 @@ group: "Founder"
 
 # founder-consumer
 
-> **Javis:** `${CLAUDE_SKILL_DIR}` is this skill's folder. If your engine does not expand it, use `skills/founder-consumer` from the brain root (sibling skills sit next to it in `skills/`). The tools need Python 3.8+ and a shell; nothing to install.
+> **SenOS:** `${CLAUDE_SKILL_DIR}` is this skill's folder. If your engine does not expand it, use `skills/founder-consumer` from the brain root (sibling skills sit next to it in `skills/`). The tools need Python 3.8+ and a shell; nothing to install.
 
 The craziest part of the pack. Instead of guessing whether people will buy, you
 ask a hundred of them, each one a sub-agent playing a specific buyer drawn from
@@ -123,7 +123,7 @@ answers, results). Next: `/founder-pricing` reads the price answers,
 ---
 
 *Nguồn: [founder-skill](https://github.com/Jakeschincariol/founder-skill) của Jake Schincariol - `founder-skill/skills/founder-consumer` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `description` được viết lại còn ≤150 ký tự cho router của Javis; `group` được thêm cho trang Kỹ năng của Javis; thêm một dòng `Javis:` dưới tiêu đề chỉ chỗ đặt thư mục skill. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `description` được viết lại còn ≤150 ký tự cho router của SenOS; `group` được thêm cho trang Kỹ năng của SenOS; thêm một dòng `SenOS:` dưới tiêu đề chỉ chỗ đặt thư mục skill. Nội dung skill giữ nguyên bản gốc.*
 
 *Mô tả gốc:*
 

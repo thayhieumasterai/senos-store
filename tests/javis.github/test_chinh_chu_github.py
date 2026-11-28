@@ -6,7 +6,7 @@ Canh bốn thứ:
   1. Bộ tool ĐÃ SOÁT trong kho luôn được `tool_meta` của khuôn phân loại sạch: sửa khuôn mà làm
      một tool đã soát lọt nhóm thì đỏ ngay ở Pull Request, không đợi lần soi hằng ngày.
   2. Nhãn của bên chính chủ thắng luật tên: `hide_issue_comment` (tên không có từ ghi nào) mà GitHub
-     ghi là không chỉ đọc thì đỏ khi Javis xếp nó vào nhóm đọc. Đây là vụ thật lúc viết.
+     ghi là không chỉ đọc thì đỏ khi SenOS xếp nó vào nhóm đọc. Đây là vụ thật lúc viết.
   3. Gộp các biến thể snapshot của cùng một tool theo nhãn NẶNG NHẤT, không để bản không gắn nhãn
      (`list_branches_output.snap`) đè lên bản có nhãn.
   4. Bản mới thêm, bớt tool hay đổi nhãn thì phát hiện đúng từng cái.
@@ -28,7 +28,7 @@ except Exception:
 STORE = Path(__file__).resolve().parents[2]
 ROOT = Path(os.environ.get("JAVIS_OS_DIR") or (STORE.parent / "javis-os")).resolve()
 if not (ROOT / "server" / "mcp_catalog.py").is_file():
-    raise SystemExit(f"Javis OS checkout not found at {ROOT} (set JAVIS_OS_DIR)")
+    raise SystemExit(f"SenOS checkout not found at {ROOT} (set JAVIS_OS_DIR)")
 os.environ["JAVIS_OS_DIR"] = str(ROOT)
 os.environ.setdefault("SENOS_STATE_DIR", tempfile.mkdtemp(prefix="javis-test-chinh-chu-"))
 sys.path.insert(0, str(STORE / "tools"))
@@ -61,17 +61,17 @@ check("mọi tool đã soát qua luật phân loại", do == [], do)
 check("không tool đã soát nào còn phải đoán là đọc", doan == [], doan)
 for t, nhan in d["tools"].items():
     if nhan in ("write", "destructive"):
-        check(f"{t}: GitHub ghi là {nhan} thì Javis không xếp vào nhóm đọc", classify(con, t, {}) != "read")
+        check(f"{t}: GitHub ghi là {nhan} thì SenOS không xếp vào nhóm đọc", classify(con, t, {}) != "read")
 
 # 2. Nhãn chính chủ thắng luật tên.
 trong = {"id": "x", "tool_meta": {}}
 do, _ = S.soi_ten(classify, trong, "x", ["hide_issue_comment"], {"hide_issue_comment": "write"})
-check("tool ghi tên lạ mà Javis xếp đọc thì đỏ", len(do) == 1 and "KHÔNG chỉ đọc" in do[0], do)
+check("tool ghi tên lạ mà SenOS xếp đọc thì đỏ", len(do) == 1 and "KHÔNG chỉ đọc" in do[0], do)
 do, _ = S.soi_ten(classify, trong, "x", ["hide_issue_comment"], {})
 check("không có nhãn thì chỉ còn luật tên (không đỏ oan)", do == [], do)
 co_meta = {"id": "x", "tool_meta": {"write": ["label_write"]}}
 do, _ = S.soi_ten(classify, co_meta, "x", ["label_write"], {"label_write": "destructive"})
-check("tool phá huỷ mà Javis xếp ghi thì đỏ", len(do) == 1 and "PHÁ HUỶ" in do[0], do)
+check("tool phá huỷ mà SenOS xếp ghi thì đỏ", len(do) == 1 and "PHÁ HUỶ" in do[0], do)
 co_meta["ghi_da_can_nhac"] = ["label_write"]
 do, _ = S.soi_ten(classify, co_meta, "x", ["label_write"], {"label_write": "destructive"})
 check("`ghi_da_can_nhac` gỡ được chặn phá huỷ", do == [], do)

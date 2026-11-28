@@ -1,21 +1,21 @@
-"""javis.gate 2.0.0: ChatGPT and Claude connect through OAuth and post into a Javis chat.
+"""javis.gate 2.0.0: ChatGPT and Claude connect through OAuth and post into a SenOS chat.
 
     JAVIS_OS_DIR=/path/to/javis-os python tests/javis.gate/test_gate.py      (no network)
 
-Runs the real Javis OS app with the pack installed through the real installer, then walks the whole path an outside
+Runs the real SenOS app with the pack installed through the real installer, then walks the whole path an outside
 AI takes: dynamic client registration with Claude's callback, the owner's consent page, the token exchange, then MCP
-calls on /ext/javis-gate/mcp. The model behind Javis is a fake OpenRouter (HTTP mocked), so the chat turn is real.
+calls on /ext/javis-gate/mcp. The model behind SenOS is a fake OpenRouter (HTTP mocked), so the chat turn is real.
 
 Locks:
 1. Redirects: ChatGPT, Claude and localhost (Claude Code / Desktop) yes; any other host no.
 2. The four chat tools are listed on the Gate; senos_chat_send only at Full access.
-3. senos_chat_send posts into the chat, Javis answers, and the stored message carries the sender "Claude".
+3. senos_chat_send posts into the chat, SenOS answers, and the stored message carries the sender "Claude".
 4. Upgrade from javis.javis-trong-chatgpt 1.x: the token issued before the update still works, on the OLD address.
-5. Notes (Javis 0.441.0+): senos_chat_note saves the owner's decision into a "Từ Claude: <title>" chat.
-6. Model and effort (gate 2.2.0, on a Javis OS that has senos_chat_models): through this pack's own OAuth door, the
+5. Notes (SenOS 0.441.0+): senos_chat_note saves the owner's decision into a "Từ Claude: <title>" chat.
+6. Model and effort (gate 2.2.0, on a SenOS that has senos_chat_models): through this pack's own OAuth door, the
    outside AI pins a chat's model and sets one message's effort, the consent page says so, and senos_chat_updates
    hands over a result it did not wait for.
-7. Other AI tools (gate 2.2.0, any Javis OS): an unknown redirect address is refused but listed for the owner, who
+7. Other AI tools (gate 2.2.0, any SenOS): an unknown redirect address is refused but listed for the owner, who
    alone can allow it (https or an app scheme, never http); a personal key, made by the owner only, connects a tool
    that only sends a header, labels its messages with the key's name, and dies on revoke or "disconnect all".
 8. The pack's page (gate 2.2.1, owner 15/11: "guidance tucked behind an i button, steps easy to read"): status first,
@@ -23,7 +23,7 @@ Locks:
    level as three choices, each connection listed by name with its own Disconnect (owner only), danger zone last.
 9. Theme (gate 2.2.2): every page of the pack is light unless the dashboard's saved choice (localStorage javis.theme)
    says dark, uses the dashboard's font, and no longer follows the phone's own light/dark setting.
-10. Javis Sync (gate 2.2.3): the door passes its public address to Javis OS, so javis_sync_setup builds the install
+10. SenOS Sync (gate 2.2.3): the door passes its public address to SenOS, so javis_sync_setup builds the install
    command for Claude Code / Codex without asking the AI for a URL.
 """
 import _paths  # noqa: F401
@@ -79,7 +79,7 @@ def install(data: bytes):
     return s, r
 
 
-# ---- fake model behind Javis: answers "DONE: <last line of the owner's message>" ----
+# ---- fake model behind SenOS: answers "DONE: <last line of the owner's message>" ----
 class _Resp:
     def __init__(self, data):
         self.status_code, self._data, self.text, self.headers = 200, data, json.dumps(data), {}
@@ -122,12 +122,12 @@ cfg.write_settings(_s)
 OLD = Path(tempfile.mkdtemp(prefix="old-gate-"))
 (OLD / "plugins" / "javis-trong-chatgpt").mkdir(parents=True)
 (OLD / "javis-pack.yaml").write_text(
-    "format: javis-pack\nspec: 1\nid: javis.javis-trong-chatgpt\nversion: 1.0.0\nname: Javis trong ChatGPT\n"
+    "format: javis-pack\nspec: 1\nid: javis.javis-trong-chatgpt\nversion: 1.0.0\nname: SenOS trong ChatGPT\n"
     "provides:\n  plugins:\n    - plugins/javis-trong-chatgpt\n", encoding="utf-8")
 src = (PACK / "plugins" / "javis-gate" / "plugin.py").read_text(encoding="utf-8")
 (OLD / "plugins" / "javis-trong-chatgpt" / "plugin.py").write_text(src, encoding="utf-8")
 (OLD / "plugins" / "javis-trong-chatgpt" / "plugin.yaml").write_text(
-    "name: Javis trong ChatGPT\nslug: javis-trong-chatgpt\nversion: 1.0.0\nenabled: true\nmin_mode: readonly\n",
+    "name: SenOS trong ChatGPT\nslug: javis-trong-chatgpt\nversion: 1.0.0\nenabled: true\nmin_mode: readonly\n",
     encoding="utf-8")
 install(zip_dir(OLD))
 old_data = STATE_DIR / "plugin-data" / "javis-trong-chatgpt"
@@ -195,7 +195,7 @@ ch = base64.urlsafe_b64encode(hashlib.sha256(ver.encode()).digest()).decode().rs
 q = {"client_id": cid, "redirect_uri": CB, "response_type": "code", "state": "st1",
      "code_challenge": ch, "code_challenge_method": "S256"}
 r = owner.get("/ext/javis-gate/oauth/authorize", params=q)
-check("consent page names Claude", r.status_code == 200 and "Cho phép Claude dùng Javis?" in r.text, r.text[:300])
+check("consent page names Claude", r.status_code == 200 and "Cho phép Claude dùng SenOS?" in r.text, r.text[:300])
 yid = r.text.split('name="yeu_cau" value="', 1)[1].split('"', 1)[0]
 r = owner.post("/ext/javis-gate/oauth/authorize", data={"yeu_cau": yid, "hanh_dong": "cho_phep"},
                headers={"Origin": "http://testserver"}, follow_redirects=False)
@@ -235,14 +235,14 @@ r = rpc(stranger, "/ext/javis-gate/mcp", "tools/call",
                                                   "wait_seconds": 15}}, token=tok)
 txt = r.json()["result"]["content"][0]["text"]
 out = json.loads(txt) if not txt.startswith("ERROR") else {}
-check("send: Javis answers in the same call", (out.get("result") or {}).get("status") == "done"
+check("send: SenOS answers in the same call", (out.get("result") or {}).get("status") == "done"
       and "trang giỏ hàng" in (out.get("result") or {}).get("answer", ""), txt[:300])
 last_user = [m for m in ss.get_messages(sid) if m["role"] == "user"][-1]["content"]
 check("the stored message says it came from Claude", last_user.startswith("[GỬI QUA SENOS GATE: Claude."),
       last_user[:80])
 
 # ============================================================
-# 5. Notes (Javis 0.441.0): the outside AI saves what the owner decided, Javis runs nothing
+# 5. Notes (SenOS 0.441.0): the outside AI saves what the owner decided, SenOS runs nothing
 # ============================================================
 import chat_bridge  # noqa: E402
 if "senos_chat_note" in chat_bridge.TOOLS:
@@ -253,12 +253,12 @@ if "senos_chat_note" in chat_bridge.TOOLS:
     out = json.loads(txt) if not txt.startswith("ERROR") else {}
     check("note: saved into its own 'Từ Claude: <title>' chat", out.get("title") == "Từ Claude: Tet plan", txt[:200])
     msgs = ss.get_messages(out.get("id", "")) if out.get("id") else []
-    check("note: the owner's decision is in Javis", any("Plan 2" in (m.get("content") or "") for m in msgs))
+    check("note: the owner's decision is in SenOS", any("Plan 2" in (m.get("content") or "") for m in msgs))
 else:
-    print("skip notes: this Javis OS is older than 0.441.0")
+    print("skip notes: this SenOS is older than 0.441.0")
 
 # ============================================================
-# 6. Model and effort, and unread results (javis.gate 2.2.0 on a Javis OS that has them)
+# 6. Model and effort, and unread results (javis.gate 2.2.0 on a SenOS that has them)
 # ============================================================
 if "senos_chat_models" in chat_bridge.TOOLS:
     SEEN = []
@@ -287,7 +287,7 @@ if "senos_chat_models" in chat_bridge.TOOLS:
     check("that turn ran on it, at that effort", SEEN and SEEN[-1] == {"model": "model-b", "reasoning": {"effort": "high"}},
           SEEN[-1:])
     # A turn left running after the request ends does not go on under TestClient (its event loop closes with the
-    # request), so the unread-result path itself is locked in Javis OS (tests/python/test_javis_gate_model_notice.py).
+    # request), so the unread-result path itself is locked in SenOS (tests/python/test_javis_gate_model_notice.py).
     # Here: the tool answers through this pack's door, and a result the AI already waited for is not handed over again.
     txt = call("senos_chat_updates", {})
     check("senos_chat_updates answers through the gate, nothing unread after a send it waited for",
@@ -296,15 +296,15 @@ if "senos_chat_models" in chat_bridge.TOOLS:
     r = owner.get("/ext/javis-gate/oauth/authorize", params={**q, "state": "st2"})
     check("consent page says the AI may pick the model and effort", "chọn cả model" in r.text, r.text[:300])
 else:
-    print("skip model/effort: this Javis OS has no senos_chat_models yet")
+    print("skip model/effort: this SenOS has no senos_chat_models yet")
 
 # ============================================================
-# 6b. Javis Sync (gate 2.2.3 on a Javis OS that has javis_sync_setup): connecting Gate is the whole setup
+# 6b. SenOS Sync (gate 2.2.3 on a SenOS that has javis_sync_setup): connecting Gate is the whole setup
 # ============================================================
 if "javis_sync_setup" in chat_bridge.TOOLS:
     r = rpc(stranger, "/ext/javis-gate/mcp", "initialize", {"protocolVersion": "2025-06-18"}, token=tok)
     ins = (r.json().get("result") or {}).get("instructions") or ""
-    check("initialize through this door tells a coding agent to offer Javis Sync", "javis_sync_setup" in ins, ins[:200])
+    check("initialize through this door tells a coding agent to offer SenOS Sync", "javis_sync_setup" in ins, ins[:200])
     r = rpc(stranger, "/ext/javis-gate/mcp", "tools/call", {"name": "javis_sync_setup", "arguments": {}}, token=tok)
     txt = r.json()["result"]["content"][0]["text"]
     out = json.loads(txt) if not txt.startswith("ERROR") else {}
@@ -313,7 +313,7 @@ if "javis_sync_setup" in chat_bridge.TOOLS:
     check("javis_sync_setup takes this door's public address, the AI never has to ask",
           f"--url {base} --token jvs_" in out.get("command", ""), txt[:300])
 else:
-    print("skip Javis Sync: this Javis OS has no javis_sync_setup yet")
+    print("skip SenOS Sync: this SenOS has no javis_sync_setup yet")
 
 # ============================================================
 # 7. Other AI tools: owner-allowed addresses and personal keys
@@ -329,7 +329,7 @@ for uri, want in (("https://chat.mistral.ai/oauth/cb", "https://chat.mistral.ai"
 OWN = {"Origin": "http://testserver"}
 LC = "https://chat.mistral.ai/connectors/oauth/callback"
 r = stranger.post("/ext/javis-gate/oauth/register", json={"client_name": "Le Chat", "redirect_uris": [LC]}, headers=HDR)
-check("unknown web tool: refused at registration", r.status_code == 400 and "Javis Gate page" in r.text, r.text[:200])
+check("unknown web tool: refused at registration", r.status_code == 400 and "SenOS Gate page" in r.text, r.text[:200])
 page = owner.get("/ext/javis-gate/").text
 check("the owner's page lists it as asking to connect", "https://chat.mistral.ai" in page and "Le Chat" in page)
 r = stranger.post("/ext/javis-gate/nguon", json={"goc": "https://chat.mistral.ai", "cho": True}, headers=OWN)
@@ -348,7 +348,7 @@ q2 = {"client_id": lc_id, "redirect_uri": LC, "response_type": "code", "state": 
       "code_challenge": ch2, "code_challenge_method": "S256"}
 r = owner.get("/ext/javis-gate/oauth/authorize", params=q2)
 check("consent page names Le Chat and says the owner added this address",
-      "Cho phép Le Chat dùng Javis?" in r.text and "tự cho phép thêm" in r.text, r.text[:300])
+      "Cho phép Le Chat dùng SenOS?" in r.text and "tự cho phép thêm" in r.text, r.text[:300])
 yid = r.text.split('name="yeu_cau" value="', 1)[1].split('"', 1)[0]
 r = owner.post("/ext/javis-gate/oauth/authorize", data={"yeu_cau": yid, "hanh_dong": "cho_phep"}, headers=OWN,
                follow_redirects=False)

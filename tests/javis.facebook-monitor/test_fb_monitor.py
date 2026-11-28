@@ -2,13 +2,13 @@
 
     JAVIS_OS_DIR=../javis-os python tests/javis.facebook-monitor/test_fb_monitor.py
 
-No network (`_token` and `_run` are faked). This test came over from Javis OS (`tests/python/test_fb_monitor.py`)
+No network (`_token` and `_run` are faked). This test came over from SenOS (`tests/python/test_fb_monitor.py`)
 together with the plugin, when the plugin left the app for this pack (owner decision, 2026-11-12). It covers: the
 pack declares the connector AND the plugin, the plugin registers one read-only tool, the gate without a token,
 Page and Group URLs going to the right actor, the share count under its several field names, post normalising,
 the min_shares filter, the order by shares, and errors folded into the answer.
 """
-from _paths import PACK, ROOT, SERVER  # noqa: E402,F401  - puts server/ of Javis OS on sys.path
+from _paths import PACK, ROOT, SERVER  # noqa: E402,F401  - puts server/ of SenOS on sys.path
 import asyncio
 import importlib.util
 import json
@@ -35,12 +35,12 @@ check("pack: only one plugin folder", sorted(p.name for p in (PACK / "plugins").
 check("pack: plugin.yaml carries the pack's version",
       re.search(r"^version:\s*(\S+)", plugin_yaml, re.M).group(1) == pack_version)
 compat = re.search(r'app:\s*">=(\d+)\.(\d+)\.(\d+)"', manifest)
-# Javis before 0.549.0 still ships this plugin inside the app; installing the pack there would register fb_monitor twice.
+# SenOS before 0.549.0 still ships this plugin inside the app; installing the pack there would register fb_monitor twice.
 check("pack: compat keeps it off app versions that still bundle the plugin",
       bool(compat) and tuple(int(x) for x in compat.groups()) >= (0, 549, 0))
 check("plugin.yaml: slug, tool and level unchanged",
       "slug: fb-monitor-apify" in plugin_yaml and "- fb_monitor" in plugin_yaml and "min_mode: readonly" in plugin_yaml)
-check("Javis OS no longer bundles the plugin (the checkout under test is new enough)",
+check("SenOS no longer bundles the plugin (the checkout under test is new enough)",
       not (ROOT / "system" / "plugins" / "fb-monitor-apify").exists())
 
 

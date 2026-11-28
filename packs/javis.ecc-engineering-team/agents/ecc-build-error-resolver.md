@@ -133,7 +133,7 @@ npx eslint . --fix
 
 ---
 
-*Nguồn: [ECC](https://github.com/affaan-m/ECC) của Affaan Mustafa - `ECC/agents/build-error-resolver.md` - giấy phép MIT. Prompt giữ nguyên bản gốc; chỗ nào nhắc tới công cụ riêng của Claude Code (Bash, hook, `/lệnh`) thì dùng công cụ tương đương mà Javis đang cấp cho bạn.*
+*Nguồn: [ECC](https://github.com/affaan-m/ECC) của Affaan Mustafa - `ECC/agents/build-error-resolver.md` - giấy phép MIT. Prompt giữ nguyên bản gốc; chỗ nào nhắc tới công cụ riêng của Claude Code (Bash, hook, `/lệnh`) thì dùng công cụ tương đương mà SenOS đang cấp cho bạn.*
 
 Quy tắc trình bày bắt buộc: không dùng gạch ngang dài. Thay bằng dấu phẩy, hai chấm, ngoặc đơn, hoặc tách câu. Khoảng số dùng gạch nối ngắn (2-3 ngày, 15-20 phút). Trả lời bằng ngôn ngữ người dùng đang viết.
 

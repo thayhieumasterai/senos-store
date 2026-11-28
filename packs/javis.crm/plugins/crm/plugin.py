@@ -1,6 +1,6 @@
-"""Quản lý khách hàng (CRM) trên kho hội thoại khách đa kênh của Javis OS.
+"""Quản lý khách hàng (CRM) trên kho hội thoại khách đa kênh của SenOS.
 
-Gói này là TẦNG TRÊN của trang Hội thoại (Javis 0.60.1+): lõi Javis đã gom tin từ bot
+Gói này là TẦNG TRÊN của trang Hội thoại (SenOS 0.60.1+): lõi SenOS đã gom tin từ bot
 Telegram, bot Zalo và Zalo cá nhân về một kho (khách -> hội thoại -> tin). Plugin đọc kho đó
 qua đúng các hàm của `conversations` (tầng CRM 0.60.1+), không tự viết SQL: schema là của lõi, lõi đổi thì
 hàm của lõi đổi theo, còn SQL chép ở đây sẽ gãy im lặng.
@@ -11,7 +11,7 @@ Tám tool, chia hai nhóm:
   thư mục exports/ của brain đang mở. Không tool nào gửi tin hay gọi ra ngoài; muốn trả lời
   khách thì dùng tool của kênh (zalo_send_message, bot Telegram...) như bình thường.
 
-Ba luật viết plugin của Javis, giữ đúng:
+Ba luật viết plugin của SenOS, giữ đúng:
 1. `register(ctx)` là toàn bộ hợp đồng; handler nhận `(args, ctx)` và trả CHUỖI.
 2. Sai đầu vào thì trả chuỗi bắt đầu bằng `ERROR:`, không ném exception.
 3. Tên tool mang tiền tố riêng (`crm_`) để không đụng tool có sẵn.
@@ -30,16 +30,16 @@ _TRAN_DONG = 500
 
 
 def _kho():
-    """Kho hội thoại của lõi Javis (module `conversations`, tầng CRM có từ 0.60.1).
+    """Kho hội thoại của lõi SenOS (module `conversations`, tầng CRM có từ 0.60.1).
     Trả (module, None) hoặc (None, lý do)."""
     try:
         import conversations as cs
     except Exception:
-        return None, ("ERROR: Javis này chưa có kho hội thoại khách (cần Javis OS 0.60.1 trở lên). "
-                      "Cập nhật Javis rồi gọi lại.")
+        return None, ("ERROR: SenOS này chưa có kho hội thoại khách (cần SenOS 0.60.1 trở lên). "
+                      "Cập nhật SenOS rồi gọi lại.")
     if not hasattr(cs, "danh_sach_khach"):
-        return None, ("ERROR: kho hội thoại của Javis này chưa có tầng CRM (cần Javis OS 0.60.1 trở lên). "
-                      "Cập nhật Javis rồi gọi lại.")
+        return None, ("ERROR: kho hội thoại của SenOS này chưa có tầng CRM (cần SenOS 0.60.1 trở lên). "
+                      "Cập nhật SenOS rồi gọi lại.")
     return cs, None
 
 
@@ -332,7 +332,7 @@ def register(ctx):
        crm_thong_ke, "readonly", "📊", {"ngay": {"type": "integer"}, "kenh": KENH, "bot_id": {"type": "string"}})
     _t(ctx, "crm_gan_tag",
        "CRM: gắn / bỏ tag và ghi chú lên một khách (vd 'VIP', 'Quan tâm', 'Đã mua'). 'them' và 'bo' sửa dần; "
-       "'tags' thay cả danh sách; 'ghi_chu' thay ghi chú. Chỉ ghi vào kho khách của Javis, không gửi gì cho khách.",
+       "'tags' thay cả danh sách; 'ghi_chu' thay ghi chú. Chỉ ghi vào kho khách của SenOS, không gửi gì cho khách.",
        crm_gan_tag, "safe", "🏷️",
        {"khach_id": {"type": "integer"}, "them": {"type": "array", "items": {"type": "string"}},
         "bo": {"type": "array", "items": {"type": "string"}}, "tags": {"type": "array", "items": {"type": "string"}},

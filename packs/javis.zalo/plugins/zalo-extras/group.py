@@ -1,12 +1,12 @@
-"""Phần của plugin `zalo-extras` (gói javis.zalo, Javis Store): tag ĐÚNG người trong nhóm Zalo, ghi chú nhóm, nhắc hẹn và poll.
+"""Phần của plugin `zalo-extras` (gói javis.zalo, Chợ Sen): tag ĐÚNG người trong nhóm Zalo, ghi chú nhóm, nhắc hẹn và poll.
 
-Vì sao có plugin này. Chủ dự án (2026-09-30): trong nhóm Zalo Javis không tag được đúng tên người đang nói chuyện ("@minhquy"), và
-muốn Javis tạo được ghi chú, nhắc hẹn, poll. MCP chuẩn của `zalo-agent-cli` chỉ có bảy tool và `zalo_send_message` chỉ nhận chữ,
+Vì sao có plugin này. Chủ dự án (2026-09-30): trong nhóm Zalo SenOS không tag được đúng tên người đang nói chuyện ("@minhquy"), và
+muốn SenOS tạo được ghi chú, nhắc hẹn, poll. MCP chuẩn của `zalo-agent-cli` chỉ có bảy tool và `zalo_send_message` chỉ nhận chữ,
 nhưng chính CLI đó (bản 1.6.2, bản mới nhất trên npm) đã có `msg send --mention`, `group note-create`, `reminder create`,
 `poll create`. Nên làm như phần gửi ảnh (`send_media.py`): gọi lại đúng CLI đó bằng phiên đã đăng nhập (xem `server/zalo_cli.py`).
 
 Điều khó nhất là TAG ĐÚNG NGƯỜI. Zalo tag bằng `uid` chứ không bằng tên, mà người dùng chỉ nói tên ("tag anh Quý"). Nên:
-  1. tìm tên trong những người ĐÃ NHẮN trong nhóm này (Hộp thư của Javis có sẵn, tức thì, không tốn mạng);
+  1. tìm tên trong những người ĐÃ NHẮN trong nhóm này (Hộp thư của SenOS có sẵn, tức thì, không tốn mạng);
   2. không thấy thì hỏi Zalo danh sách thành viên của nhóm;
   3. chuẩn hoá bỏ dấu, hoa thường, khoảng trắng và dấu @ khi so ("minhquy" khớp "Minh Quý");
   4. TRÙNG TÊN HOẶC KHÔNG THẤY THÌ HỎI LẠI kèm danh sách ứng viên, không đoán: tag nhầm người thì không rút lại được;
@@ -75,7 +75,7 @@ def utf16_len(s: str) -> int:
 # Danh sách thành viên
 # ============================================================
 def local_members(conn: dict, thread_id: str) -> List[dict]:
-    """Người đã nhắn trong nhóm này, từ Hộp thư của Javis (không tốn mạng)."""
+    """Người đã nhắn trong nhóm này, từ Hộp thư của SenOS (không tốn mạng)."""
     try:
         import conversations
         rows = conversations.group_speakers(f"zalo_personal:{conn['id']}", thread_id)
@@ -418,12 +418,12 @@ def _old_cli(err: str) -> bool:
 
 
 def _old_cli_msg(what: str) -> str:
-    return (f"ERROR: {what} cần CLI Zalo javis-zalo {CLI_NOTES} trở lên mà máy đang chạy bản cũ. Cập nhật Javis (Cài đặt, mục Cập "
+    return (f"ERROR: {what} cần CLI Zalo javis-zalo {CLI_NOTES} trở lên mà máy đang chạy bản cũ. Cập nhật SenOS (Cài đặt, mục Cập "
             "nhật) rồi thử lại. Chưa có gì bị đổi trong nhóm.")
 
 
 def _when(ms: Any) -> str:
-    """Giờ Zalo (mili giây) theo múi giờ của Javis, dạng dd/mm/yyyy HH:MM. Rỗng khi không có."""
+    """Giờ Zalo (mili giây) theo múi giờ của SenOS, dạng dd/mm/yyyy HH:MM. Rỗng khi không có."""
     try:
         v = int(ms or 0)
     except (TypeError, ValueError):
@@ -541,7 +541,7 @@ async def _edit_note(args, ctx):
 # Tool 4: nhắc hẹn
 # ============================================================
 def machine_local_time(value: str) -> Tuple[Optional[str], str]:
-    """Đổi giờ người dùng nói ("YYYY-MM-DD HH:mm", theo múi giờ CỦA JAVIS) sang chuỗi giờ theo đồng hồ của MÁY chạy CLI.
+    """Đổi giờ người dùng nói ("YYYY-MM-DD HH:mm", theo múi giờ CỦA SENOS) sang chuỗi giờ theo đồng hồ của MÁY chạy CLI.
 
     CLI đọc `--time` bằng `new Date(y, m, d, h, mi)` tức là theo múi giờ hệ thống của máy. VPS thường ở UTC còn người dùng ở
     Việt Nam, nên "9 giờ sáng mai" gửi nguyên chữ sẽ thành 16 giờ. Trả `(chuỗi, "")` hoặc `(None, lý do)`."""
@@ -555,7 +555,7 @@ def machine_local_time(value: str) -> Tuple[Optional[str], str]:
     try:
         import localefmt
         tz = localefmt.now().tzinfo
-    except Exception:      # noqa: BLE001 - không biết múi giờ Javis thì coi như trùng đồng hồ máy
+    except Exception:      # noqa: BLE001 - không biết múi giờ SenOS thì coi như trùng đồng hồ máy
         tz = None
     aware = naive.replace(tzinfo=tz) if tz else naive.astimezone()
     now = datetime.now(aware.tzinfo)
@@ -661,7 +661,7 @@ def register(ctx):
         name="zalo_group_members",
         description=(
             "Liệt kê thành viên một NHÓM Zalo (uid kèm tên) để biết tag ai, hoặc tra một người theo tên (query). Gộp hai nguồn: "
-            "người đã nhắn trong nhóm (Hộp thư của Javis) và danh sách thành viên của Zalo. Chỉ đọc. Tham số: thread_id (id nhóm, "
+            "người đã nhắn trong nhóm (Hộp thư của SenOS) và danh sách thành viên của Zalo. Chỉ đọc. Tham số: thread_id (id nhóm, "
             "từ zalo_search_threads), query (tuỳ chọn, tên cần tìm; không phân biệt hoa thường hay dấu)."
         ),
         handler=_members, min_mode="readonly", check_fn=zalo_cli.check,
@@ -734,7 +734,7 @@ def register(ctx):
         name="zalo_create_reminder",
         description=(
             "Tạo NHẮC HẸN ngay TRONG Zalo, hiện cho cả nhóm (hoặc người kia trong chat riêng) và họ bấm nhận/từ chối được. KHÁC nhắc "
-            "hẹn riêng của Javis (javis_schedule chỉ nhắc chủ qua Telegram). Tham số: thread_id, title, time (\"YYYY-MM-DD HH:mm\" theo "
+            "hẹn riêng của SenOS (javis_schedule chỉ nhắc chủ qua Telegram). Tham số: thread_id, title, time (\"YYYY-MM-DD HH:mm\" theo "
             "giờ của người dùng, phải ở tương lai), repeat (none, daily, weekly, monthly), emoji, thread_type (1=nhóm mặc định, "
             "0=chat riêng)."
         ),

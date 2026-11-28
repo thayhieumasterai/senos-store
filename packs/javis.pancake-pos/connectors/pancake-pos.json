@@ -17,7 +17,7 @@
         "header": "Authorization: Bearer {api_key}"
       }
     ],
-    "guide": "Mở Pancake POS > Cấu hình cửa hàng > Ứng dụng & API > tạo API key, rồi dán vào đây.\n\nJavis sẽ tự kiểm tra và lấy tên cửa hàng.",
+    "guide": "Mở Pancake POS > Cấu hình cửa hàng > Ứng dụng & API > tạo API key, rồi dán vào đây.\n\nSenOS sẽ tự kiểm tra và lấy tên cửa hàng.",
     "guide_url": "https://docs.pancake.biz/pos/st-f13/st-p2?lang=vi"
   },
   "validate": {
@@ -71,6 +71,6 @@
       "pos_promotion"
     ]
   },
-  "risk": "Mức Chỉ đọc (mặc định) chỉ xem đơn, doanh thu, tồn kho, khách hàng. An toàn.\n\nMức Toàn quyền cho phép Javis TẠO ĐƠN HÀNG, ghi GIAO DỊCH THU CHI, sửa CÔNG NỢ, xuất HOÁ ĐƠN ĐIỆN TỬ, chạy QUẢNG CÁO và tạo voucher/khuyến mãi.\n\nĐây là tiền thật và đơn thật của cửa hàng, nhiều thao tác không hoàn tác được. Chỉ nâng quyền khi bạn thật sự cần Javis thao tác thay mình.\n\nLoop chạy nền không bao giờ được tự tạo đơn hay tiêu tiền, kể cả khi kết nối đã ở mức Toàn quyền.",
+  "risk": "Mức Chỉ đọc (mặc định) chỉ xem đơn, doanh thu, tồn kho, khách hàng. An toàn.\n\nMức Toàn quyền cho phép SenOS TẠO ĐƠN HÀNG, ghi GIAO DỊCH THU CHI, sửa CÔNG NỢ, xuất HOÁ ĐƠN ĐIỆN TỬ, chạy QUẢNG CÁO và tạo voucher/khuyến mãi.\n\nĐây là tiền thật và đơn thật của cửa hàng, nhiều thao tác không hoàn tác được. Chỉ nâng quyền khi bạn thật sự cần SenOS thao tác thay mình.\n\nLoop chạy nền không bao giờ được tự tạo đơn hay tiêu tiền, kể cả khi kết nối đã ở mức Toàn quyền.",
   "default_perm": "readonly"
 }
