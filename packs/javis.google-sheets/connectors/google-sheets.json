@@ -56,6 +56,6 @@
       "*share*"
     ]
   },
-  "risk": "Mức Ghi nháp (mặc định) cho phép Javis TẠO và SỬA bảng tính thật trong Drive, kể cả ghi đè dữ liệu đang có.\n\nMức Toàn quyền thêm quyền CHIA SẺ bảng tính cho người khác. Chia sẻ là đẩy số liệu kinh doanh ra ngoài nên xếp mức nguy hiểm, giống việc chia sẻ ghi chú ở Google Keep.\n\nJavis chỉ đụng được thư mục Drive mà bạn đã share cho service account.",
+  "risk": "Mức Ghi nháp (mặc định) cho phép SenOS TẠO và SỬA bảng tính thật trong Drive, kể cả ghi đè dữ liệu đang có.\n\nMức Toàn quyền thêm quyền CHIA SẺ bảng tính cho người khác. Chia sẻ là đẩy số liệu kinh doanh ra ngoài nên xếp mức nguy hiểm, giống việc chia sẻ ghi chú ở Google Keep.\n\nSenOS chỉ đụng được thư mục Drive mà bạn đã share cho service account.",
   "default_perm": "safe"
 }

@@ -4,7 +4,7 @@ Skill trong gói này chép **nguyên văn** từ [AgriciDaniel/claude-seo](http
 không dịch, không rút gọn, không sửa frontmatter.
 
 Mỗi ngày kho so lại với repo gốc (`tools/theo-goc.py`). Repo gốc đổi thì gói lên một bản
-vá, Javis báo trong chuông và bạn bấm Cập nhật. Skill bạn đã tự sửa thì Javis giữ lại,
+vá, SenOS báo trong chuông và bạn bấm Cập nhật. Skill bạn đã tự sửa thì SenOS giữ lại,
 không ghi đè. Commit gốc của bản đang phát hành nằm ở trường `upstream.commit` trong
 `index.json`.
 
@@ -47,7 +47,7 @@ Tệp dùng chung chép kèm vào skill, đúng chỗ bộ cài chính thức c�
 | `skills/seo/requirements.txt` | `requirements.txt` |
 | `skills/seo/.claude-plugin/plugin.json` | `.claude-plugin/plugin.json` |
 
-Chữ duy nhất gói viết lại, trong tệp `.md` (giống bộ cài tay của tác giả). Javis không đặt
+Chữ duy nhất gói viết lại, trong tệp `.md` (giống bộ cài tay của tác giả). SenOS không đặt
 `CLAUDE_PLUGIN_ROOT` như plugin Claude Code, còn `CLAUDE_SKILL_DIR` là thư mục skill đang nạp:
 
 | Gốc | Trong gói |

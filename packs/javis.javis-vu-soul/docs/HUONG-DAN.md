@@ -1,9 +1,9 @@
-# Linh Hồn Javis Vũ
+# Linh Hồn SenOS Vũ
 
 > "Dạ em là Vũ ạ 😄 Câu nào em biết thì em trả lời chắc, câu nào chưa biết thì em nói thật,
 > chứ không bịa cho có đâu nha."
 
-Vũ là **lõi** của trợ lý chăm sóc khách hàng Javis Vũ: phần tính cách, cách nhắn và nguyên tắc
+Vũ là **lõi** của trợ lý chăm sóc khách hàng SenOS Vũ: phần tính cách, cách nhắn và nguyên tắc
 làm việc, đã tách khỏi mọi ngành nghề cụ thể. Bán mỹ phẩm, mở spa, dạy khoá học, bán phụ tùng xe
 hay nhận đặt bánh đều dùng được. Bạn chỉ cần dạy Vũ biết **cửa hàng của bạn bán gì**, phần còn
 lại Vũ đã biết sẵn.
@@ -29,7 +29,7 @@ lại Vũ đã biết sẵn.
 
 ### 1. Điền hồ sơ cửa hàng
 
-Vào trang **Agents**, mở **Linh Hồn Javis Vũ**, sửa **PHẦN 0. HỒ SƠ** trong phần hướng dẫn:
+Vào trang **Agents**, mở **Linh Hồn SenOS Vũ**, sửa **PHẦN 0. HỒ SƠ** trong phần hướng dẫn:
 
 - Tên gọi của trợ lý (mặc định là Vũ, đổi tên khác cũng được)
 - Tên cửa hàng hoặc thương hiệu
@@ -57,8 +57,8 @@ Vũ thì coi như khách có thể nghe thấy.
 ### 3. Cho Vũ vào ca trực
 
 Vào trang **Chatbot**, bấm **Bot mới**, chọn kênh **Zalo** hoặc **Telegram**, chọn **Linh Hồn
-Javis Vũ** làm Agent. Cứ để mức quyền **Chỉ đọc** cho lần đầu. Chi tiết từng bước ở
-[tài liệu Chatbot của Javis](https://github.com/blogminhquy/javis-os/blob/main/docs/25-chatbot.md).
+SenOS Vũ** làm Agent. Cứ để mức quyền **Chỉ đọc** cho lần đầu. Chi tiết từng bước ở
+[tài liệu Chatbot của SenOS](https://github.com/thayhieumasterai/senos-os/blob/main/docs/25-chatbot.md).
 
 ### 4. Nhắn thử trước khi bật cho khách
 
@@ -68,17 +68,17 @@ sung tài liệu rồi thử lại.
 
 ## Vũ lớn lên cùng cửa hàng
 
-Lúc trò chuyện với Vũ trong Javis, bạn dặn thẳng như dặn nhân viên mới, ví dụ:
+Lúc trò chuyện với Vũ trong SenOS, bạn dặn thẳng như dặn nhân viên mới, ví dụ:
 
 - "Khách hỏi ship tỉnh thì báo 2-3 ngày nha."
 - "Từ nay đừng nhắc tới mẫu cũ nữa, hết hàng rồi."
 - "Khách mua từ 2 món thì nhắc là được freeship."
 
-Javis ghi những câu đó vào mục **Luật chủ dặn** trong bộ nhớ của Vũ, và lần sau Vũ làm theo.
+SenOS ghi những câu đó vào mục **Luật chủ dặn** trong bộ nhớ của Vũ, và lần sau Vũ làm theo.
 Luật chủ dặn thắng các phần hướng dẫn gốc, trừ ba điều không ai đổi được: không bịa thông tin,
 không nhận là người thật, không xin mật khẩu hay mã OTP của khách.
 
-Câu nào khách hỏi mà Vũ bí, Javis ghi vào tab **Bot bí** ở trang Chatbot. Ghé đó mỗi tuần, bổ
+Câu nào khách hỏi mà Vũ bí, SenOS ghi vào tab **Bot bí** ở trang Chatbot. Ghé đó mỗi tuần, bổ
 sung tài liệu cho những câu hay gặp là Vũ giỏi lên rõ rệt.
 
 ## Chỗ có thể chỉnh thêm
@@ -86,5 +86,5 @@ sung tài liệu cho những câu hay gặp là Vũ giỏi lên rõ rệt.
 - Agent để `model: ""`, tức chạy theo mặc định của engine bạn đang dùng. Muốn trả lời nhanh và
   rẻ thì chọn một model nhỏ ở ô Model của trợ lý.
 - Skill gắn sẵn là `query-wiki` (skill hệ thống, brain nào cũng có), không cần cài thêm gói nào.
-- Trợ lý được ghi vào **brain đang mở lúc bấm Cài**. Javis không ghi đè trợ lý bạn đã tự tạo trùng
+- Trợ lý được ghi vào **brain đang mở lúc bấm Cài**. SenOS không ghi đè trợ lý bạn đã tự tạo trùng
   tên, và gỡ gói chỉ xoá những thứ bạn chưa sửa.

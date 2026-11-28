@@ -1,10 +1,10 @@
 # Gói `javis.crm` - Quản lý khách hàng (CRM)
 
-Tầng CRM đặt lên **trang Hội thoại** của Javis OS (có từ bản 0.60.0, tầng CRM từ 0.60.1). Lõi Javis đã gom tin
-khách từ bot Telegram, bot Zalo và Zalo cá nhân về một kho; gói này cho Javis đọc kho đó như
+Tầng CRM đặt lên **trang Hội thoại** của SenOS (có từ bản 0.60.0, tầng CRM từ 0.60.1). Lõi SenOS đã gom tin
+khách từ bot Telegram, bot Zalo và Zalo cá nhân về một kho; gói này cho SenOS đọc kho đó như
 một sổ khách hàng: ai đang chờ, ai là ai, gắn tag, ghi chú, thống kê, xuất Excel.
 
-Cần **Javis OS 0.60.1 trở lên**. Bản cũ hơn thì gói bị tắt kèm lý do ngay lúc cài.
+Cần **SenOS 0.60.1 trở lên**. Bản cũ hơn thì gói bị tắt kèm lý do ngay lúc cài.
 
 ## Trong gói có gì
 
@@ -25,7 +25,7 @@ Cần **Javis OS 0.60.1 trở lên**. Bản cũ hơn thì gói bị tắt kèm l
 | `crm_tim_tin` | đọc | Tìm chữ trong mọi tin nhắn |
 | `crm_cho_tra_loi` | đọc | Hội thoại câu cuối là của khách, quá N giờ chưa ai trả lời |
 | `crm_thong_ke` | đọc | Tổng, hôm nay, chưa đọc, theo kênh, khách mới theo ngày, số khách mỗi tag |
-| `crm_gan_tag` | ghi nháp | Gắn / bỏ tag, ghi chú lên khách (chỉ ghi vào kho của Javis) |
+| `crm_gan_tag` | ghi nháp | Gắn / bỏ tag, ghi chú lên khách (chỉ ghi vào kho của SenOS) |
 | `crm_xuat_csv` | ghi nháp | Xuất danh sách khách ra `exports/` của brain, mở bằng Excel |
 
 Không tool nào gửi tin hay gọi ra ngoài. Muốn trả lời khách thì vẫn dùng tool của kênh
@@ -41,7 +41,7 @@ Không tool nào gửi tin hay gọi ra ngoài. Muốn trả lời khách thì v
 
 ## Giới hạn phải biết
 
-- Kho chỉ có dữ liệu **từ lúc bot / Zalo được nối vào Javis**, không có lịch sử cũ.
+- Kho chỉ có dữ liệu **từ lúc bot / Zalo được nối vào SenOS**, không có lịch sử cũ.
 - **Zalo cá nhân chỉ ghi khi bạn bật** ở mục Kênh của trang Hội thoại, và tin bạn tự trả lời
   bằng app trên điện thoại có thể không vào kho, nên "chờ trả lời" ở kênh này là gợi ý để kiểm
   lại, không phải kết luận.

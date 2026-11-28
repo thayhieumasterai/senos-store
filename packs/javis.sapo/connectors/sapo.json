@@ -36,14 +36,14 @@
         "env": "SAPO_API_SECRET"
       }
     ],
-    "guide": "Làm 1 lần trong trang quản trị Sapo:\n1. Vào Ứng dụng > Ứng dụng riêng > Tạo ứng dụng riêng.\n2. Đặt tên (ví dụ 'Javis') và email liên hệ.\n3. Cấp quyền: chỉ cần xem số liệu thì chọn Chỉ đọc cho Sản phẩm, Đơn hàng, Khách hàng, Khuyến mãi. Muốn Javis sửa thì chọn Đọc và ghi ĐÚNG nhóm cần sửa.\n4. Bấm Lưu, copy API Key và API Secret.\n\nĐịa chỉ cửa hàng là địa chỉ trang quản trị, dạng https://tencuahang.mysapo.net.\n\nQuyền cấp trong Sapo là hàng rào thứ hai: cấp Chỉ đọc ở đó thì dù Javis ở mức nào cũng không sửa được gì.",
+    "guide": "Làm 1 lần trong trang quản trị Sapo:\n1. Vào Ứng dụng > Ứng dụng riêng > Tạo ứng dụng riêng.\n2. Đặt tên (ví dụ 'SenOS') và email liên hệ.\n3. Cấp quyền: chỉ cần xem số liệu thì chọn Chỉ đọc cho Sản phẩm, Đơn hàng, Khách hàng, Khuyến mãi. Muốn SenOS sửa thì chọn Đọc và ghi ĐÚNG nhóm cần sửa.\n4. Bấm Lưu, copy API Key và API Secret.\n\nĐịa chỉ cửa hàng là địa chỉ trang quản trị, dạng https://tencuahang.mysapo.net.\n\nQuyền cấp trong Sapo là hàng rào thứ hai: cấp Chỉ đọc ở đó thì dù SenOS ở mức nào cũng không sửa được gì.",
     "guide_url": "https://help.sapo.vn/ung-dung-rieng-private-apps",
     "steps": [
       {
         "text": "Mở trang quản trị Sapo, vào Ứng dụng > Ứng dụng riêng > Tạo ứng dụng riêng."
       },
       {
-        "text": "Đặt tên, điền email, cấp quyền Chỉ đọc cho các nhóm cần xem (Đọc và ghi chỉ cho nhóm muốn Javis sửa)."
+        "text": "Đặt tên, điền email, cấp quyền Chỉ đọc cho các nhóm cần xem (Đọc và ghi chỉ cho nhóm muốn SenOS sửa)."
       },
       {
         "text": "Bấm Lưu rồi copy API Key và API Secret."
@@ -129,7 +129,7 @@
     ]
   },
   "default_perm": "readonly",
-  "risk": "Mức Chỉ đọc (mặc định) chỉ xem đơn, sản phẩm, khách hàng, tồn kho, khuyến mãi và báo cáo. An toàn.\n\nMức Ghi nháp cho phép Javis TẠO và SỬA sản phẩm, khách hàng, và ĐẶT LẠI TỒN KHO thật. Sai tồn kho là bán quá số hàng đang có.\n\nMức Toàn quyền thêm: tạo, sửa, giao, HUỶ và XOÁ ĐƠN HÀNG; HOÀN TIỀN; tạo và xoá chương trình KHUYẾN MÃI, MÃ GIẢM GIÁ; xoá sản phẩm và khách hàng. Đây là tiền và đơn thật, nhiều thao tác không hoàn tác được.\n\nCác tool xoá, huỷ, hoàn tiền của MCP này mặc định chỉ xem trước (dry run), nhưng đừng dựa vào đó: chỉ nâng quyền khi bạn thật sự cần Javis thao tác thay mình.",
+  "risk": "Mức Chỉ đọc (mặc định) chỉ xem đơn, sản phẩm, khách hàng, tồn kho, khuyến mãi và báo cáo. An toàn.\n\nMức Ghi nháp cho phép SenOS TẠO và SỬA sản phẩm, khách hàng, và ĐẶT LẠI TỒN KHO thật. Sai tồn kho là bán quá số hàng đang có.\n\nMức Toàn quyền thêm: tạo, sửa, giao, HUỶ và XOÁ ĐƠN HÀNG; HOÀN TIỀN; tạo và xoá chương trình KHUYẾN MÃI, MÃ GIẢM GIÁ; xoá sản phẩm và khách hàng. Đây là tiền và đơn thật, nhiều thao tác không hoàn tác được.\n\nCác tool xoá, huỷ, hoàn tiền của MCP này mặc định chỉ xem trước (dry run), nhưng đừng dựa vào đó: chỉ nâng quyền khi bạn thật sự cần SenOS thao tác thay mình.",
   "ghi_da_can_nhac": [
     "list_orders",
     "count_orders",

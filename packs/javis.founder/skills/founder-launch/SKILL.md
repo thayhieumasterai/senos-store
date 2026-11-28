@@ -62,7 +62,7 @@ review. Next: `/founder-plan` compiles everything into the business plan.
 ---
 
 *Nguồn: [founder-skill](https://github.com/Jakeschincariol/founder-skill) của Jake Schincariol - `founder-skill/skills/founder-launch` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `description` được viết lại còn ≤150 ký tự cho router của Javis; `group` được thêm cho trang Kỹ năng của Javis. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `description` được viết lại còn ≤150 ký tự cho router của SenOS; `group` được thêm cho trang Kỹ năng của SenOS. Nội dung skill giữ nguyên bản gốc.*
 
 *Mô tả gốc:*
 

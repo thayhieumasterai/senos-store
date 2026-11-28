@@ -17,7 +17,7 @@
         "header": "Authorization: Bearer {bearer_token}"
       }
     ],
-    "guide": "Làm 1 lần:\n1. Vào developer.x.com > Developer Portal > Projects & Apps.\n2. Chọn App có sẵn, hoặc Create Project/App nếu chưa có.\n3. Tab 'Keys and tokens' > mục 'Bearer Token' > Generate.\n4. Copy token dán vào đây.\n\nĐây là token App-only: đọc và tìm bài đăng, hồ sơ công khai.\n\nMuốn ĐĂNG bài hoặc thao tác theo tài khoản người dùng thì cần OAuth ngữ cảnh người dùng, hiện Javis chưa hỗ trợ. Báo em nếu cần bổ sung.",
+    "guide": "Làm 1 lần:\n1. Vào developer.x.com > Developer Portal > Projects & Apps.\n2. Chọn App có sẵn, hoặc Create Project/App nếu chưa có.\n3. Tab 'Keys and tokens' > mục 'Bearer Token' > Generate.\n4. Copy token dán vào đây.\n\nĐây là token App-only: đọc và tìm bài đăng, hồ sơ công khai.\n\nMuốn ĐĂNG bài hoặc thao tác theo tài khoản người dùng thì cần OAuth ngữ cảnh người dùng, hiện SenOS chưa hỗ trợ. Báo em nếu cần bổ sung.",
     "guide_url": "https://docs.x.com/tools/mcp"
   },
   "tool_meta": {

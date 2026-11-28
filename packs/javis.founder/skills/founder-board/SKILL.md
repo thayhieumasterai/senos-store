@@ -7,7 +7,7 @@ group: "Founder"
 
 # founder-board
 
-> **Javis:** `${CLAUDE_SKILL_DIR}` is this skill's folder. If your engine does not expand it, use `skills/founder-board` from the brain root (sibling skills sit next to it in `skills/`).
+> **SenOS:** `${CLAUDE_SKILL_DIR}` is this skill's folder. If your engine does not expand it, use `skills/founder-board` from the brain root (sibling skills sit next to it in `skills/`).
 
 The first meeting. Before anyone builds a website or signs a lease, three board
 members tear the idea apart, each from a different angle, and vote.
@@ -108,7 +108,7 @@ Every skill can also run on its own; each reads whatever is already in `founder/
 ---
 
 *Nguồn: [founder-skill](https://github.com/Jakeschincariol/founder-skill) của Jake Schincariol - `founder-skill/skills/founder-board` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `description` được viết lại còn ≤150 ký tự cho router của Javis; `group` được thêm cho trang Kỹ năng của Javis; thêm một dòng `Javis:` dưới tiêu đề chỉ chỗ đặt thư mục skill. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `description` được viết lại còn ≤150 ký tự cho router của SenOS; `group` được thêm cho trang Kỹ năng của SenOS; thêm một dòng `SenOS:` dưới tiêu đề chỉ chỗ đặt thư mục skill. Nội dung skill giữ nguyên bản gốc.*
 
 *Mô tả gốc:*
 

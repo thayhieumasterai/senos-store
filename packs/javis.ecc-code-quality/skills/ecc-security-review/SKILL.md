@@ -512,7 +512,7 @@ Before ANY production deployment:
 ---
 
 *Nguồn: [ECC](https://github.com/affaan-m/ECC) của Affaan Mustafa - `ECC/skills/security-review` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `description` được viết lại còn ≤150 ký tự cho router của Javis; `group` được thêm cho trang Kỹ năng của Javis; thư mục đổi tên cho khỏi đè lệnh `/security-review` của Claude Code. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `description` được viết lại còn ≤150 ký tự cho router của SenOS; `group` được thêm cho trang Kỹ năng của SenOS; thư mục đổi tên cho khỏi đè lệnh `/security-review` của Claude Code. Nội dung skill giữ nguyên bản gốc.*
 
 *Mô tả gốc:*
 

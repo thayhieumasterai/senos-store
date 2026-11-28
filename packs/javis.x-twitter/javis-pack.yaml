@@ -4,9 +4,9 @@ id: javis.x-twitter
 version: 1.0.0
 name: {vi: "X (Twitter)"}
 description: {vi: "Tìm kiếm và đọc bài đăng, xem hồ sơ và số liệu công khai trên X (Twitter) qua MCP chính chủ của X. Dán Bearer Token (App-only) từ X Developer Portal - dùng để đọc/tìm; đăng bài cần OAuth người dùng (sẽ bổ sung nếu cần)."}
-author: {name: Javis}
+author: {name: SenOS}
 license: MIT
-homepage: "https://github.com/blogminhquy/javis-store"
+homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.55.27"}
 provides:
   connectors: [connectors/x-twitter.json]

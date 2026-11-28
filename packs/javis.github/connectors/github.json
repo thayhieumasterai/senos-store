@@ -17,7 +17,7 @@
         "header": "Authorization: Bearer {pat}"
       }
     ],
-    "guide": "Làm 1 lần:\n1. Vào github.com > Settings > Developer settings > Personal access tokens > Fine-grained tokens > Generate new token.\n2. Đặt tên (ví dụ 'Javis'), chọn hạn dùng. Repository access: All repositories, hoặc chỉ các repo muốn Javis đụng tới.\n3. Repository permissions, muốn Javis làm code trọn vẹn thì cấp Read and write cho: Contents, Pull requests, Issues, Actions, Workflows, Commit statuses. Metadata để Read. Thêm Administration nếu muốn Javis tạo hoặc xoá repo.\n4. Bấm Generate, copy token NGAY (đóng là không xem lại được) rồi dán vào ô dưới.\n\nDùng token cổ điển (ghp_...) cũng được: tick repo, workflow, read:org, gist.\n\nToken là hàng rào thật: Javis chỉ làm được đúng những gì token cho phép, trên đúng các repo bạn chọn. Hết hạn thì tạo token mới và cập nhật ở đây.",
+    "guide": "Làm 1 lần:\n1. Vào github.com > Settings > Developer settings > Personal access tokens > Fine-grained tokens > Generate new token.\n2. Đặt tên (ví dụ 'SenOS'), chọn hạn dùng. Repository access: All repositories, hoặc chỉ các repo muốn SenOS đụng tới.\n3. Repository permissions, muốn SenOS làm code trọn vẹn thì cấp Read and write cho: Contents, Pull requests, Issues, Actions, Workflows, Commit statuses. Metadata để Read. Thêm Administration nếu muốn SenOS tạo hoặc xoá repo.\n4. Bấm Generate, copy token NGAY (đóng là không xem lại được) rồi dán vào ô dưới.\n\nDùng token cổ điển (ghp_...) cũng được: tick repo, workflow, read:org, gist.\n\nToken là hàng rào thật: SenOS chỉ làm được đúng những gì token cho phép, trên đúng các repo bạn chọn. Hết hạn thì tạo token mới và cập nhật ở đây.",
     "guide_url": "https://github.com/github/github-mcp-server/blob/main/docs/remote-server.md",
     "steps": [
       {
@@ -29,7 +29,7 @@
         "text": "Đặt tên, chọn hạn dùng, chọn All repositories hoặc chỉ các repo cần dùng."
       },
       {
-        "text": "Cấp Read and write cho Contents, Pull requests, Issues, Actions, Workflows, Commit statuses. Thêm Administration nếu muốn Javis tạo hoặc xoá repo."
+        "text": "Cấp Read and write cho Contents, Pull requests, Issues, Actions, Workflows, Commit statuses. Thêm Administration nếu muốn SenOS tạo hoặc xoá repo."
       },
       {
         "text": "Bấm Generate, copy token ngay, dán vào ô bên dưới rồi bấm Kết nối.",
@@ -155,5 +155,5 @@
     "list_available_automation_triggers"
   ],
   "default_perm": "readonly",
-  "risk": "Mức Chỉ đọc: đọc code, issue, Pull Request, log CI, tìm kiếm. Không đổi gì.\n\nMức Ghi nháp: Javis SỬA THẬT trên GitHub, gồm đẩy commit thẳng vào nhánh, tạo nhánh, sửa file, mở Pull Request, viết issue và bình luận, gửi review, ẩn hoặc hiện bình luận, mời người review, gỡ reaction và gỡ issue con, tạo và sửa nhãn, thêm và sửa mục Project, trả lời thảo luận. Mọi thứ vẫn nằm trong lịch sử git nên quay lại được, nhưng bình luận và review thì người khác đã thấy.\n\nMức Toàn quyền mở thêm nhóm nguy hiểm: TRỘN Pull Request vào nhánh chính, CHẠY lại hoặc huỷ workflow GitHub Actions (có thể deploy thật, tốn phút Actions), xoá file, XOÁ REPO, xoá nhãn, xoá mục và view trong Project, xoá bình luận thảo luận, đặt luật bảo vệ nhánh, giao việc cho Copilot (tiêu lượt Copilot trả phí), tạo, sửa, chạy hay xoá Copilot automation (một agent tự chạy theo lịch hoặc sự kiện trên repo, cũng tiêu lượt Copilot trả phí).\n\nToken là hàng rào thật: chỉ chọn những repo và quyền bạn muốn Javis đụng tới. Không cấp Administration thì Javis không xoá được repo dù đang ở Toàn quyền."
+  "risk": "Mức Chỉ đọc: đọc code, issue, Pull Request, log CI, tìm kiếm. Không đổi gì.\n\nMức Ghi nháp: SenOS SỬA THẬT trên GitHub, gồm đẩy commit thẳng vào nhánh, tạo nhánh, sửa file, mở Pull Request, viết issue và bình luận, gửi review, ẩn hoặc hiện bình luận, mời người review, gỡ reaction và gỡ issue con, tạo và sửa nhãn, thêm và sửa mục Project, trả lời thảo luận. Mọi thứ vẫn nằm trong lịch sử git nên quay lại được, nhưng bình luận và review thì người khác đã thấy.\n\nMức Toàn quyền mở thêm nhóm nguy hiểm: TRỘN Pull Request vào nhánh chính, CHẠY lại hoặc huỷ workflow GitHub Actions (có thể deploy thật, tốn phút Actions), xoá file, XOÁ REPO, xoá nhãn, xoá mục và view trong Project, xoá bình luận thảo luận, đặt luật bảo vệ nhánh, giao việc cho Copilot (tiêu lượt Copilot trả phí), tạo, sửa, chạy hay xoá Copilot automation (một agent tự chạy theo lịch hoặc sự kiện trên repo, cũng tiêu lượt Copilot trả phí).\n\nToken là hàng rào thật: chỉ chọn những repo và quyền bạn muốn SenOS đụng tới. Không cấp Administration thì SenOS không xoá được repo dù đang ở Toàn quyền."
 }

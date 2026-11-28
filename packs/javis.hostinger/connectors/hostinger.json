@@ -33,7 +33,7 @@
         "env": "HOSTINGER_API_TOKEN"
       }
     ],
-    "guide": "Làm 1 lần:\n1. Đăng nhập hPanel rồi vào Hồ sơ > API (hpanel.hostinger.com/profile/api).\n2. Bấm Tạo token, đặt tên (ví dụ 'Javis') và chọn hạn dùng.\n3. Copy token NGAY lúc đó rồi dán vào ô dưới - đóng cửa sổ là không xem lại được nữa.\n\nToken thấy đúng những gì tài khoản Hostinger của bạn thấy: tên miền, website, VPS, hộp thư, hoá đơn. Mất token thì vào lại trang đó thu hồi rồi tạo cái mới.",
+    "guide": "Làm 1 lần:\n1. Đăng nhập hPanel rồi vào Hồ sơ > API (hpanel.hostinger.com/profile/api).\n2. Bấm Tạo token, đặt tên (ví dụ 'SenOS') và chọn hạn dùng.\n3. Copy token NGAY lúc đó rồi dán vào ô dưới - đóng cửa sổ là không xem lại được nữa.\n\nToken thấy đúng những gì tài khoản Hostinger của bạn thấy: tên miền, website, VPS, hộp thư, hoá đơn. Mất token thì vào lại trang đó thu hồi rồi tạo cái mới.",
     "guide_url": "https://www.hostinger.com/support/11079316-hostinger-api-mcp-server/",
     "steps": [
       {
@@ -66,7 +66,7 @@
     ]
   },
   "default_perm": "readonly",
-  "risk": "Đây là chìa khoá vào hạ tầng website của bạn, nên mặc định để mức Chỉ đọc.\n\nTừ bản 2.x, Hostinger gom mọi thao tác vào một cổng chạy lệnh. Javis xét TỪNG lệnh đi qua cổng: chỉ những lệnh Hostinger tự đánh dấu là chỉ đọc mới chạy ở mức Chỉ đọc. Mọi lệnh còn lại, kể cả lệnh Hostinger mới thêm sau này, đều tính là nguy hiểm.\n\nVì vậy mức Ghi nháp không mở thêm gì. Mức Toàn quyền mở tất cả: SỬA bản ghi DNS, tạo và XOÁ website, tên miền, hộp thư, VPS; tắt hoặc khởi động lại VPS; khôi phục bản sao lưu. Sai một bản ghi DNS là website hoặc email tắt ngay.\nToàn quyền còn mở các thao tác TIÊU TIỀN: mua tên miền, mua VPS, gia hạn gói. Trừ tiền thật trong tài khoản Hostinger và không hoàn tác được.\n\nMã chuyển tên miền, link đăng nhập phpMyAdmin và token WordPress cũng chỉ lấy được ở mức Toàn quyền, vì cầm chúng là vào được tài khoản.\n\nChỉ nâng quyền khi bạn thật sự muốn Javis tự tay làm những việc đó.",
+  "risk": "Đây là chìa khoá vào hạ tầng website của bạn, nên mặc định để mức Chỉ đọc.\n\nTừ bản 2.x, Hostinger gom mọi thao tác vào một cổng chạy lệnh. SenOS xét TỪNG lệnh đi qua cổng: chỉ những lệnh Hostinger tự đánh dấu là chỉ đọc mới chạy ở mức Chỉ đọc. Mọi lệnh còn lại, kể cả lệnh Hostinger mới thêm sau này, đều tính là nguy hiểm.\n\nVì vậy mức Ghi nháp không mở thêm gì. Mức Toàn quyền mở tất cả: SỬA bản ghi DNS, tạo và XOÁ website, tên miền, hộp thư, VPS; tắt hoặc khởi động lại VPS; khôi phục bản sao lưu. Sai một bản ghi DNS là website hoặc email tắt ngay.\nToàn quyền còn mở các thao tác TIÊU TIỀN: mua tên miền, mua VPS, gia hạn gói. Trừ tiền thật trong tài khoản Hostinger và không hoàn tác được.\n\nMã chuyển tên miền, link đăng nhập phpMyAdmin và token WordPress cũng chỉ lấy được ở mức Toàn quyền, vì cầm chúng là vào được tài khoản.\n\nChỉ nâng quyền khi bạn thật sự muốn SenOS tự tay làm những việc đó.",
   "call_rules": {
     "execute": {
       "key": "operation",

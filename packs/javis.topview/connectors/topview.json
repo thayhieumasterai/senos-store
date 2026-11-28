@@ -10,7 +10,7 @@
   "auth": {
     "type": "oauth",
     "fields": [],
-    "guide": "Bấm Kết nối rồi đăng nhập tài khoản Topview và cấp quyền.\n\nJavis tự đăng ký ứng dụng theo chuẩn OAuth của Topview, không cần tạo app hay dán key.\n\nCần có credit trong tài khoản Topview để tạo ảnh, video, giọng đọc hoặc nhạc. Gói Unlimited của Topview không dùng được với MCP: cần gói tính theo credit.\n\nXong là Javis tra được dữ liệu thị trường và tạo nội dung ngay trong chat.",
+    "guide": "Bấm Kết nối rồi đăng nhập tài khoản Topview và cấp quyền.\n\nSenOS tự đăng ký ứng dụng theo chuẩn OAuth của Topview, không cần tạo app hay dán key.\n\nCần có credit trong tài khoản Topview để tạo ảnh, video, giọng đọc hoặc nhạc. Gói Unlimited của Topview không dùng được với MCP: cần gói tính theo credit.\n\nXong là SenOS tra được dữ liệu thị trường và tạo nội dung ngay trong chat.",
     "guide_url": "https://www.topview.ai/mcp"
   },
   "tool_meta": {
@@ -60,7 +60,7 @@
       "*subscription*"
     ]
   },
-  "ghi_chu_tool_meta": "Tên tool lấy từ repo chính chủ github.com/topviewai/skill bản 0.2.0 (topview-generate/SKILL.md và README). Nhóm đọc chỉ khai tên chính xác, không dùng mẫu chung, vì Javis xét nhóm đọc trước nhóm nguy hiểm. Hai mẫu topview_* và ta_* ở nhóm ghi là lưới đỡ: tool Topview thêm sau này rơi vào ghi thay vì đọc, trừ khi tên nó khớp một mẫu nguy hiểm.",
+  "ghi_chu_tool_meta": "Tên tool lấy từ repo chính chủ github.com/topviewai/skill bản 0.2.0 (topview-generate/SKILL.md và README). Nhóm đọc chỉ khai tên chính xác, không dùng mẫu chung, vì SenOS xét nhóm đọc trước nhóm nguy hiểm. Hai mẫu topview_* và ta_* ở nhóm ghi là lưới đỡ: tool Topview thêm sau này rơi vào ghi thay vì đọc, trừ khi tên nó khớp một mẫu nguy hiểm.",
   "ghi_da_can_nhac": [
     "topview_remove_background"
   ],
@@ -192,5 +192,5 @@
   },
   "ghi_chu_call_rules": "call_tool là tool cổng: chạy một lệnh dữ liệu theo tham số name (Amazon, Shopee, TikTok Shop, kho KOL YouTube). read_values lấy đúng tên lệnh ghi trong references/tool_routing.md của 4 skill dữ liệu, repo topviewai/skill bản 0.2.0. youtube_kol_auto_quote tạo báo giá mới và ghi vào kho của Topview nên là ghi. Lệnh TikTok Shop chỉ công bố theo mẫu td_*, nên tên bắt đầu bằng td mà không kèm động từ ghi nào được coi là đọc. Lệnh lạ ngoài danh sách rơi về danger.",
   "default_perm": "safe",
-  "risk": "Topview là công cụ TẠO nội dung: mỗi lần sinh ảnh, video, video avatar, giọng đọc, nhạc hoặc xoá nền sẽ TIÊU CREDIT trong tài khoản Topview của bạn. Video dài và model cao cấp tốn nhiều credit hơn.\n\nMặc định để mức Ghi nháp để Javis tra dữ liệu và tạo được nội dung ngay, đồng thời chặn xoá, huỷ và thanh toán. Mua credit hoặc đổi gói chỉ làm được trên trang web của Topview, Javis không tự mua.\n\nMuốn Javis chỉ tra dữ liệu thị trường, xem số credit và kết quả cũ mà không tự tạo (đỡ tốn credit) thì hạ xuống Chỉ đọc. Muốn mở tất cả thì nâng Toàn quyền.\n\nNhân bản giọng nói chạy được ở mức Ghi nháp: chỉ đưa mẫu giọng của chính bạn hoặc của người đã đồng ý.\n\nTra dữ liệu đi qua một công cụ cổng tên call_tool. Javis phân loại theo tên lệnh bên trong: lệnh tra cứu đã biết là đọc, tạo báo giá KOL là ghi, lệnh lạ Topview thêm sau này bị chặn cho tới mức Toàn quyền.\n\nTên tool lấy từ bộ skill chính chủ của Topview trên GitHub; kết nối này chưa được thử với tài khoản Topview thật."
+  "risk": "Topview là công cụ TẠO nội dung: mỗi lần sinh ảnh, video, video avatar, giọng đọc, nhạc hoặc xoá nền sẽ TIÊU CREDIT trong tài khoản Topview của bạn. Video dài và model cao cấp tốn nhiều credit hơn.\n\nMặc định để mức Ghi nháp để SenOS tra dữ liệu và tạo được nội dung ngay, đồng thời chặn xoá, huỷ và thanh toán. Mua credit hoặc đổi gói chỉ làm được trên trang web của Topview, SenOS không tự mua.\n\nMuốn SenOS chỉ tra dữ liệu thị trường, xem số credit và kết quả cũ mà không tự tạo (đỡ tốn credit) thì hạ xuống Chỉ đọc. Muốn mở tất cả thì nâng Toàn quyền.\n\nNhân bản giọng nói chạy được ở mức Ghi nháp: chỉ đưa mẫu giọng của chính bạn hoặc của người đã đồng ý.\n\nTra dữ liệu đi qua một công cụ cổng tên call_tool. SenOS phân loại theo tên lệnh bên trong: lệnh tra cứu đã biết là đọc, tạo báo giá KOL là ghi, lệnh lạ Topview thêm sau này bị chặn cho tới mức Toàn quyền.\n\nTên tool lấy từ bộ skill chính chủ của Topview trên GitHub; kết nối này chưa được thử với tài khoản Topview thật."
 }

@@ -23,7 +23,7 @@
         "header": "Authorization: Bearer {mcp_token}"
       }
     ],
-    "guide": "Làm 1 lần:\n1. Mở n8n của bạn, vào Settings > MCP Access.\n2. Sang tab Access Token, copy token NGAY lúc đó - lần sau quay lại chỉ còn thấy bản che, không copy được nữa.\n3. Dán địa chỉ n8n và token vào hai ô dưới đây.\n\nĐịa chỉ gõ kiểu nào cũng được (thiếu https://, thừa gạch chéo, hay dán nguyên URL đang mở) - Javis tự cắt về đúng tên miền.\n\nTạo token mới là n8n THU HỒI token cũ, nên mỗi lần tạo lại phải cập nhật ở đây.\n\nDùng được cả n8n cloud lẫn n8n tự dựng, miễn máy chạy Javis vào được địa chỉ đó.",
+    "guide": "Làm 1 lần:\n1. Mở n8n của bạn, vào Settings > MCP Access.\n2. Sang tab Access Token, copy token NGAY lúc đó - lần sau quay lại chỉ còn thấy bản che, không copy được nữa.\n3. Dán địa chỉ n8n và token vào hai ô dưới đây.\n\nĐịa chỉ gõ kiểu nào cũng được (thiếu https://, thừa gạch chéo, hay dán nguyên URL đang mở) - SenOS tự cắt về đúng tên miền.\n\nTạo token mới là n8n THU HỒI token cũ, nên mỗi lần tạo lại phải cập nhật ở đây.\n\nDùng được cả n8n cloud lẫn n8n tự dựng, miễn máy chạy SenOS vào được địa chỉ đó.",
     "guide_url": "https://docs.n8n.io/connect/connect-to-n8n-mcp-server/",
     "steps": [
       {
@@ -74,5 +74,5 @@
     ]
   },
   "default_perm": "readonly",
-  "risk": "Mức Ghi nháp cho phép Javis TẠO và SỬA workflow thật trên n8n của bạn.\n\nMức Toàn quyền thêm quyền CHẠY workflow - đây là chỗ nguy hiểm nhất.\nMột workflow chạy lên có thể gửi mail, đăng bài, gọi API tính tiền, đẩy dữ liệu ra ngoài.\nJavis không nhìn được bên trong workflow làm gì, và chạy rồi thì không hoàn tác được.\n\nChỉ cần xem và soạn workflow thì giữ mức Chỉ đọc hoặc Ghi nháp.\n\nLưu ý: token này thấy MỌI workflow và cả danh sách credential mà tài khoản n8n của bạn thấy."
+  "risk": "Mức Ghi nháp cho phép SenOS TẠO và SỬA workflow thật trên n8n của bạn.\n\nMức Toàn quyền thêm quyền CHẠY workflow - đây là chỗ nguy hiểm nhất.\nMột workflow chạy lên có thể gửi mail, đăng bài, gọi API tính tiền, đẩy dữ liệu ra ngoài.\nSenOS không nhìn được bên trong workflow làm gì, và chạy rồi thì không hoàn tác được.\n\nChỉ cần xem và soạn workflow thì giữ mức Chỉ đọc hoặc Ghi nháp.\n\nLưu ý: token này thấy MỌI workflow và cả danh sách credential mà tài khoản n8n của bạn thấy."
 }

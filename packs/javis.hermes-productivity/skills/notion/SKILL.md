@@ -451,4 +451,4 @@ Headings 5/6 collapse to H4. Multiple `>` lines render as separate quote blocks 
 ---
 
 *Nguồn: [Nous Research](https://github.com/NousResearch/hermes-agent) - `hermes-agent/skills/productivity/notion` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `group` được thêm cho trang Kỹ năng của Javis. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `group` được thêm cho trang Kỹ năng của SenOS. Nội dung skill giữ nguyên bản gốc.*

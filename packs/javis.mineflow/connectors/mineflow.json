@@ -10,8 +10,8 @@
   "auth": {
     "type": "oauth",
     "fields": [],
-    "guide": "Bấm Kết nối rồi đăng nhập tài khoản Mineflow và chọn tổ chức (organization) muốn cấp quyền.\n\nJavis tự đăng ký ứng dụng theo chuẩn OAuth của Mineflow, không cần tạo app hay dán key. Mỗi lần kết nối chỉ thao tác trên đúng MỘT tổ chức Mineflow; có nhiều tổ chức thì kết nối thêm tài khoản.\n\nNgười dùng Javis có ưu đãi riêng khi đăng ký Mineflow (3 tháng gói Pro và các gói setup Zalo OA, ZNS, Mini App): xem trang hướng dẫn.",
-    "guide_url": "https://github.com/blogminhquy/javis-store/blob/main/huong-dan/mineflow.md"
+    "guide": "Bấm Kết nối rồi đăng nhập tài khoản Mineflow và chọn tổ chức (organization) muốn cấp quyền.\n\nSenOS tự đăng ký ứng dụng theo chuẩn OAuth của Mineflow, không cần tạo app hay dán key. Mỗi lần kết nối chỉ thao tác trên đúng MỘT tổ chức Mineflow; có nhiều tổ chức thì kết nối thêm tài khoản.\n\nNgười dùng SenOS có ưu đãi riêng khi đăng ký Mineflow (3 tháng gói Pro và các gói setup Zalo OA, ZNS, Mini App): xem trang hướng dẫn.",
+    "guide_url": "https://github.com/thayhieumasterai/senos-store/blob/main/huong-dan/mineflow.md"
   },
   "tool_meta": {
     "read": [
@@ -67,5 +67,5 @@
   },
   "ghi_da_can_nhac": ["report_issue", "toggle_customer_mapping"],
   "default_perm": "readonly",
-  "risk": "Mineflow chạy thật trên trang và khách hàng của bạn: trang đã xuất bản không có bản nháp, nên mọi chỉnh sửa trên trang đó LÊN MẠNG NGAY; workflow khi bật có thể tự nhắn tin Zalo cho khách hàng thật.\n\nVì vậy mặc định để Chỉ đọc: Javis xem được trang, mini app, bảng dữ liệu và workflow nhưng không sửa gì. Nâng lên Ghi nháp thì Javis dựng và sửa nội dung trang, bảng, bước workflow; vẫn chặn xoá, xuất bản hoặc gỡ trang, bật hoặc tắt workflow, thêm hoặc đổi trigger của workflow, đổi trang chủ, khôi phục bản chụp và đổi tên miền. Muốn Javis làm cả những việc đó thì nâng Toàn quyền.\n\nreport_issue chỉ gửi phản hồi lỗi về cho Mineflow; toggle_customer_mapping bật hoặc tắt việc ghép dữ liệu khách hàng và bật lại được, nên xếp vào Ghi nháp.\n\nTên tool lấy từ máy chủ MCP của Mineflow; phân loại quyền dựa trên các tên đó."
+  "risk": "Mineflow chạy thật trên trang và khách hàng của bạn: trang đã xuất bản không có bản nháp, nên mọi chỉnh sửa trên trang đó LÊN MẠNG NGAY; workflow khi bật có thể tự nhắn tin Zalo cho khách hàng thật.\n\nVì vậy mặc định để Chỉ đọc: SenOS xem được trang, mini app, bảng dữ liệu và workflow nhưng không sửa gì. Nâng lên Ghi nháp thì SenOS dựng và sửa nội dung trang, bảng, bước workflow; vẫn chặn xoá, xuất bản hoặc gỡ trang, bật hoặc tắt workflow, thêm hoặc đổi trigger của workflow, đổi trang chủ, khôi phục bản chụp và đổi tên miền. Muốn SenOS làm cả những việc đó thì nâng Toàn quyền.\n\nreport_issue chỉ gửi phản hồi lỗi về cho Mineflow; toggle_customer_mapping bật hoặc tắt việc ghép dữ liệu khách hàng và bật lại được, nên xếp vào Ghi nháp.\n\nTên tool lấy từ máy chủ MCP của Mineflow; phân loại quyền dựa trên các tên đó."
 }

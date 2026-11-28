@@ -378,7 +378,7 @@ Before merging any code that touches error handling:
 ---
 
 *Nguồn: [ECC](https://github.com/affaan-m/ECC) của Affaan Mustafa - `ECC/skills/error-handling` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `description` được viết lại còn ≤150 ký tự cho router của Javis; `group` được thêm cho trang Kỹ năng của Javis. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `description` được viết lại còn ≤150 ký tự cho router của SenOS; `group` được thêm cho trang Kỹ năng của SenOS. Nội dung skill giữ nguyên bản gốc.*
 
 *Mô tả gốc:*
 

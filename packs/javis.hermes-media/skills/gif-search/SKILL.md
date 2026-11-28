@@ -94,4 +94,4 @@ Each result has multiple formats under `.media_formats`:
 ---
 
 *Nguồn: [Nous Research](https://github.com/NousResearch/hermes-agent) - `hermes-agent/skills/media/gif-search` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `group` được thêm cho trang Kỹ năng của Javis. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `group` được thêm cho trang Kỹ năng của SenOS. Nội dung skill giữ nguyên bản gốc.*

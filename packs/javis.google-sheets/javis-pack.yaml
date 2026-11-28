@@ -4,9 +4,9 @@ id: javis.google-sheets
 version: 1.0.1
 name: {vi: "Google Sheets"}
 description: {vi: "Đọc/ghi bảng tính Google: đổ báo cáo doanh thu, tồn kho, công nợ ra Sheets tự động. Đấu bằng service account - không cần đăng nhập."}
-author: {name: Javis}
+author: {name: SenOS}
 license: MIT
-homepage: "https://github.com/blogminhquy/javis-store"
+homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.55.27"}
 provides:
   connectors: [connectors/google-sheets.json]

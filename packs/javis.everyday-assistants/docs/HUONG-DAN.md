@@ -12,10 +12,10 @@
 
 Skill ghi **(hệ thống)** có sẵn trong mọi brain, không phải cài gì thêm.
 
-Skill còn lại đến từ: `javis.hermes-inbox-web`, `javis.hermes-office`, `javis.hermes-productivity`, `javis.hermes-research`, `javis.superpowers`. Javis không có cơ chế khai phụ thuộc giữa các gói, nên chưa cài chúng thì trợ lý vẫn chạy: mỗi trợ lý được dạy là gọi skill không có thì đi tiếp bằng năng lực sẵn có rồi báo lại một dòng cho bạn biết thiếu gì.
+Skill còn lại đến từ: `javis.hermes-inbox-web`, `javis.hermes-office`, `javis.hermes-productivity`, `javis.hermes-research`, `javis.superpowers`. SenOS không có cơ chế khai phụ thuộc giữa các gói, nên chưa cài chúng thì trợ lý vẫn chạy: mỗi trợ lý được dạy là gọi skill không có thì đi tiếp bằng năng lực sẵn có rồi báo lại một dòng cho bạn biết thiếu gì.
 
 ## Chỗ bạn nên chỉnh sau khi cài
 
 Mọi trợ lý để `model: ""`, tức chạy theo mặc định của engine bạn đang dùng. Ghim model cụ thể chỉ khi bạn chắc máy mình có model đó.
 
-Trợ lý được ghi vào **brain đang mở lúc bấm Cài**, không phải mọi brain. Javis không ghi đè trợ lý bạn tự tạo trùng tên, và gỡ gói chỉ xoá thứ bạn chưa sửa.
+Trợ lý được ghi vào **brain đang mở lúc bấm Cài**, không phải mọi brain. SenOS không ghi đè trợ lý bạn tự tạo trùng tên, và gỡ gói chỉ xoá thứ bạn chưa sửa.

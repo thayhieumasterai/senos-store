@@ -7,7 +7,7 @@ plugin của riêng bạn:
 2. Sai đầu vào thì trả chuỗi bắt đầu bằng `ERROR:` chứ đừng ném exception. Model đọc được
    câu đó và tự sửa tham số ở lượt sau; một traceback thì nó chỉ biết là hỏng.
 3. Tên tool nên mang tiền tố của gói bạn. Ở đây dùng `javis_` vì gói này là của chính
-   Javis; gói của bên thứ ba nên dùng tên riêng để không đụng tool có sẵn.
+   SenOS; gói của bên thứ ba nên dùng tên riêng để không đụng tool có sẵn.
 
 Vì sao làm tròn giá ĐÃ CÓ VAT
 -----------------------------

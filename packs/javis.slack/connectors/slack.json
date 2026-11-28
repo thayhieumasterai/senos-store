@@ -54,5 +54,5 @@
     ]
   },
   "default_perm": "readonly",
-  "risk": "Mức Toàn quyền cho phép Javis GỬI TIN NHẮN THẬT và tạo, sửa canvas bằng tài khoản Slack của bạn.\n\nChỉ cần đọc và tìm tin thì giữ mức Chỉ đọc.\n\nLưu ý: tên tool chính xác của Slack MCP chưa công bố nên phân loại quyền dựa trên heuristic, mọi tool có động từ hành động đều bị coi là GHI.\n\nNếu một công cụ đọc bị chặn nhầm ở mức Chỉ đọc, nâng quyền hoặc báo lại để chỉnh."
+  "risk": "Mức Toàn quyền cho phép SenOS GỬI TIN NHẮN THẬT và tạo, sửa canvas bằng tài khoản Slack của bạn.\n\nChỉ cần đọc và tìm tin thì giữ mức Chỉ đọc.\n\nLưu ý: tên tool chính xác của Slack MCP chưa công bố nên phân loại quyền dựa trên heuristic, mọi tool có động từ hành động đều bị coi là GHI.\n\nNếu một công cụ đọc bị chặn nhầm ở mức Chỉ đọc, nâng quyền hoặc báo lại để chỉnh."
 }

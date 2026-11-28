@@ -16,7 +16,7 @@ Each module keeps its own `register(ctx)` and declares the permission level of e
 anything sent to Zalo stays full. A NEW Zalo feature is a new module here (or a function in the matching one), added
 to `_PARTS` and to `tools` in plugin.yaml, never a new plugin folder.
 
-The modules are loaded by path rather than with relative imports, so this works with every Javis loader since 0.73.0
+The modules are loaded by path rather than with relative imports, so this works with every SenOS loader since 0.73.0
 (older ones did not treat a plugin folder as a package).
 """
 from __future__ import annotations

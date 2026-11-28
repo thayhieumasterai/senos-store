@@ -1,6 +1,6 @@
 # Nguồn của gói `javis.playwright`
 
-Gói này **không mang theo mã của Playwright**. Nó chỉ là một tờ khai connector trỏ Javis chạy MCP server chính chủ của Microsoft:
+Gói này **không mang theo mã của Playwright**. Nó chỉ là một tờ khai connector trỏ SenOS chạy MCP server chính chủ của Microsoft:
 
 ```
 npx -y @playwright/mcp@latest
@@ -22,10 +22,10 @@ Vì mã tải thẳng từ npm lúc chạy, gói này không chép lại tệp n
 | `write` | Mở trang, đổi cỡ cửa sổ, quản lý tab, chụp màn hình, xuất PDF, quay video và trace. Đổi trạng thái trình duyệt hoặc ghi tệp, không đụng tới trang của người khác. |
 | `danger` | Bấm, gõ, điền form, kéo thả, chuột toạ độ, xử lý hộp thoại: đây là chỗ đặt hàng và xoá dữ liệu thật xảy ra. Cộng thêm `browser_evaluate` và `browser_run_code_unsafe` (chạy mã tuỳ ý), `browser_file_upload` (đẩy tệp trên máy lên web), `browser_route`/`browser_network_request` (chặn và tự phát request), và toàn bộ cookie/localStorage/sessionStorage. |
 
-Cookie và storage bị xếp `danger` **kể cả lệnh chỉ đọc**: chúng là phiên đăng nhập, đọc ra được là mạo danh được. Trong ba mức của Javis thì đó là hậu quả ngang một lệnh phá huỷ, nên nó không thuộc mức đọc.
+Cookie và storage bị xếp `danger` **kể cả lệnh chỉ đọc**: chúng là phiên đăng nhập, đọc ra được là mạo danh được. Trong ba mức của SenOS thì đó là hậu quả ngang một lệnh phá huỷ, nên nó không thuộc mức đọc.
 
 ## Mặc định an toàn
 
 Bốn ô cấu hình điền sẵn `isolated=true` và `headless=true`, còn ô trình duyệt để trống. `isolated` là quan trọng nhất: mặc định GỐC của Playwright MCP là hồ sơ lưu trên đĩa, tức nó thấy mọi trang bạn đang đăng nhập. Gói này lật ngược mặc định đó.
 
-Ô trình duyệt cố ý để trống (từ bản 1.0.3). Để trống thì Javis tự chọn theo máy: `chrome` khi máy có sẵn Google Chrome, `chromium` khi Javis đã tải bản Chromium riêng hoặc máy không có Chrome (máy chủ Linux, container). Bản 1.0.2 trở về trước điền sẵn `chrome`, và giá trị điền sẵn được lưu vào kết nối nên lấn quyền lựa chọn tự động đó: trên máy chủ, Playwright đi tìm `/opt/google/chrome/chrome`, không thấy, và thử cài thì cần quyền root.
+Ô trình duyệt cố ý để trống (từ bản 1.0.3). Để trống thì SenOS tự chọn theo máy: `chrome` khi máy có sẵn Google Chrome, `chromium` khi SenOS đã tải bản Chromium riêng hoặc máy không có Chrome (máy chủ Linux, container). Bản 1.0.2 trở về trước điền sẵn `chrome`, và giá trị điền sẵn được lưu vào kết nối nên lấn quyền lựa chọn tự động đó: trên máy chủ, Playwright đi tìm `/opt/google/chrome/chrome`, không thấy, và thử cài thì cần quyền root.

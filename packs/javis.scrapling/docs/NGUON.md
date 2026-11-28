@@ -1,6 +1,6 @@
 # Nguồn của gói `javis.scrapling`
 
-Gói này **không mang theo mã của Scrapling**. Nó chỉ là một tờ khai connector trỏ Javis chạy MCP server chính chủ của tác giả, lấy từ PyPI:
+Gói này **không mang theo mã của Scrapling**. Nó chỉ là một tờ khai connector trỏ SenOS chạy MCP server chính chủ của tác giả, lấy từ PyPI:
 
 ```
 uvx --from "scrapling[ai]@latest" scrapling mcp
@@ -37,13 +37,13 @@ Ba chỗ phân loại theo tham số (`call_rules`), vì cùng một tool mà h�
 - `make_request`, `session_make_request`: tham số `method`. GET (kể cả khi bỏ trống, vì mặc định của Scrapling là GET) là đọc. POST, PUT, DELETE gửi dữ liệu lên trang của người khác nên là `danger`.
 - `browser_fetch_once`: tham số `additional_args`. Vắng thì là `write`. Có thì là `danger`: nó đè tuỳ chọn khởi động trình duyệt, gồm cả cờ dòng lệnh của Chromium, mà vài cờ trong đó chạy được lệnh tuỳ ý trên máy.
 
-Cả ba tool trên cũng được kể tên trong `tool_meta.danger`. Javis xét `call_rules` trước danh sách `danger`, nên luật theo tham số mới là thứ quyết định; danh sách `danger` chỉ là lưới đỡ, để bản Javis nào không hiểu `call_rules` thì ba tool rơi về mức nguy hiểm thay vì rơi về đọc.
+Cả ba tool trên cũng được kể tên trong `tool_meta.danger`. SenOS xét `call_rules` trước danh sách `danger`, nên luật theo tham số mới là thứ quyết định; danh sách `danger` chỉ là lưới đỡ, để bản SenOS nào không hiểu `call_rules` thì ba tool rơi về mức nguy hiểm thay vì rơi về đọc.
 
 Vì sao `browser_open` là `danger` dù chỉ "mở phiên": nó nhận cả `cdp_url` (nối vào một Chrome đang chạy, tức thấy mọi trang người dùng đang đăng nhập) lẫn `additional_args`. Một luật `call_rules` chỉ canh được một tham số, nên cả tool nằm ở mức cao nhất. Hệ quả: phiên trình duyệt dài và các lệnh bấm, gõ chỉ dùng được ở mức Toàn quyền; mức Ghi nháp tải từng trang bằng `browser_fetch_once`.
 
 `browser_network_request` là `danger` dù chỉ đọc: nó trả header của request đã ghi, trong đó có cookie phiên. Cùng lý do gói Playwright xếp cookie vào mức này.
 
-Điều còn hở, nói thẳng: ở mức Ghi nháp, `browser_fetch_once` vẫn nhận `executable_path` (chạy một tệp có sẵn trên máy thay cho Chromium) và `real_chrome`. Javis chưa có cách canh hai tham số trên cùng một tool. Câu `risk` của khuôn nói điều này cho người dùng trước khi họ nâng mức.
+Điều còn hở, nói thẳng: ở mức Ghi nháp, `browser_fetch_once` vẫn nhận `executable_path` (chạy một tệp có sẵn trên máy thay cho Chromium) và `real_chrome`. SenOS chưa có cách canh hai tham số trên cùng một tool. Câu `risk` của khuôn nói điều này cho người dùng trước khi họ nâng mức.
 
 ## Mặc định an toàn
 

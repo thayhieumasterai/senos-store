@@ -4,9 +4,9 @@ id: javis.resend
 version: 1.0.0
 name: {vi: "Resend"}
 description: {vi: "Gửi và quản lý email qua MCP chính chủ của Resend: email giao dịch, broadcast, mẫu email, danh bạ và phân khúc, tên miền gửi, thống kê và nhật ký. Chạy trên máy chủ của Resend, chỉ cần dán API key. Mặc định Chỉ đọc."}
-author: {name: Javis}
+author: {name: SenOS}
 license: MIT
-homepage: "https://github.com/blogminhquy/javis-store"
+homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.55.27"}
 provides:
   connectors: [connectors/resend.json]

@@ -223,7 +223,7 @@ async def fetch_buffer(conn: dict, thread_id: str, count: int) -> Tuple[bool, An
 
 
 def sender_names(conn: dict, thread_id: str) -> dict:
-    """uid -> name of people who have written in this chat, from Javis's own inbox (instant, no network)."""
+    """uid -> name of people who have written in this chat, from SenOS's own inbox (instant, no network)."""
     try:
         import conversations
         rows = conversations.group_speakers(f"zalo_personal:{conn['id']}", thread_id)

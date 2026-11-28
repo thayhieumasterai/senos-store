@@ -10,7 +10,7 @@
   "auth": {
     "type": "oauth",
     "fields": [],
-    "guide": "Bấm Kết nối rồi đăng nhập tài khoản Higgsfield và cấp quyền.\n\nJavis tự đăng ký ứng dụng theo chuẩn OAuth của Higgsfield, không cần tạo app hay dán key.\n\nCần có credit trong tài khoản Higgsfield để tạo ảnh hoặc video. Xong là Javis vẽ được ngay trong chat.",
+    "guide": "Bấm Kết nối rồi đăng nhập tài khoản Higgsfield và cấp quyền.\n\nSenOS tự đăng ký ứng dụng theo chuẩn OAuth của Higgsfield, không cần tạo app hay dán key.\n\nCần có credit trong tài khoản Higgsfield để tạo ảnh hoặc video. Xong là SenOS vẽ được ngay trong chat.",
     "guide_url": "https://higgsfield.ai/mcp"
   },
   "tool_meta": {
@@ -52,5 +52,5 @@
     ]
   },
   "default_perm": "safe",
-  "risk": "Higgsfield là công cụ TẠO nội dung: mỗi lần sinh hoặc chỉnh ảnh, video sẽ TIÊU CREDIT trả trước trong tài khoản Higgsfield của bạn.\n\nMặc định để mức Ghi nháp để Javis tạo được nội dung ngay, đồng thời chặn các thao tác xoá và thanh toán.\n\nMuốn Javis chỉ xem lịch sử và kết quả mà không tự tạo (đỡ tốn credit) thì hạ xuống Chỉ đọc. Muốn mở tất cả thì nâng Toàn quyền.\n\nTên tool chính xác của Higgsfield chưa công bố nên phân loại quyền dựa trên heuristic."
+  "risk": "Higgsfield là công cụ TẠO nội dung: mỗi lần sinh hoặc chỉnh ảnh, video sẽ TIÊU CREDIT trả trước trong tài khoản Higgsfield của bạn.\n\nMặc định để mức Ghi nháp để SenOS tạo được nội dung ngay, đồng thời chặn các thao tác xoá và thanh toán.\n\nMuốn SenOS chỉ xem lịch sử và kết quả mà không tự tạo (đỡ tốn credit) thì hạ xuống Chỉ đọc. Muốn mở tất cả thì nâng Toàn quyền.\n\nTên tool chính xác của Higgsfield chưa công bố nên phân loại quyền dựa trên heuristic."
 }

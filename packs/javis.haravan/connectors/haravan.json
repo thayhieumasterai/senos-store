@@ -9,7 +9,7 @@
   "command": "npx",
   "args": [
     "-y",
-    "--package=https://raw.githubusercontent.com/blogminhquy/javis-store/main/mcp/haravan-mcp-0.1.0-c915ce0.tgz",
+    "--package=https://raw.githubusercontent.com/thayhieumasterai/senos-store/main/mcp/haravan-mcp-0.1.0-c915ce0.tgz",
     "haravan-mcp",
     "mcp",
     "--tools",
@@ -29,7 +29,7 @@
         "env": "HARAVAN_ACCESS_TOKEN"
       }
     ],
-    "guide": "Làm 1 lần trong trang quản trị Haravan:\n1. Vào Ứng dụng > Ứng dụng riêng (Private apps) > Tạo ứng dụng riêng.\n2. Đặt tên (ví dụ 'Javis') và chọn quyền. Chỉ cần xem số liệu thì chỉ tick quyền đọc (read) cho đơn hàng, sản phẩm, khách hàng, tồn kho, cửa hàng.\n3. Lưu lại, copy Access Token rồi dán vào ô dưới.\n\nQuyền tick trong Haravan là hàng rào thứ hai: chỉ tick quyền đọc thì dù Javis ở mức nào cũng không sửa được gì.\n\nToken thấy mọi dữ liệu theo quyền đã tick. Lộ thì xoá ứng dụng riêng đó và tạo cái mới.",
+    "guide": "Làm 1 lần trong trang quản trị Haravan:\n1. Vào Ứng dụng > Ứng dụng riêng (Private apps) > Tạo ứng dụng riêng.\n2. Đặt tên (ví dụ 'SenOS') và chọn quyền. Chỉ cần xem số liệu thì chỉ tick quyền đọc (read) cho đơn hàng, sản phẩm, khách hàng, tồn kho, cửa hàng.\n3. Lưu lại, copy Access Token rồi dán vào ô dưới.\n\nQuyền tick trong Haravan là hàng rào thứ hai: chỉ tick quyền đọc thì dù SenOS ở mức nào cũng không sửa được gì.\n\nToken thấy mọi dữ liệu theo quyền đã tick. Lộ thì xoá ứng dụng riêng đó và tạo cái mới.",
     "guide_url": "https://github.com/pluginmd/Haravan-MCP",
     "steps": [
       {
@@ -139,7 +139,7 @@
     ]
   },
   "default_perm": "readonly",
-  "risk": "Mức Chỉ đọc (mặc định) chỉ xem đơn, sản phẩm, khách hàng, tồn kho, giao dịch và các báo cáo tổng hợp. An toàn.\n\nMức Ghi nháp cho phép Javis TẠO và SỬA sản phẩm, biến thể, khách hàng, trang nội dung, và ĐIỀU CHỈNH TỒN KHO thật trên cửa hàng.\n\nMức Toàn quyền thêm: tạo, sửa, xác nhận, đóng và HUỶ ĐƠN HÀNG; ghi GIAO DỊCH THANH TOÁN; xoá sản phẩm, khách hàng, trang.\nNguy hiểm nhất là webhook và script tag: webhook gửi dữ liệu đơn hàng, khách hàng tới một địa chỉ bên ngoài; script tag gắn mã JavaScript vào website bán hàng của bạn, chạy trên máy MỌI khách truy cập.\n\nChỉ nâng quyền khi bạn thật sự cần Javis thao tác thay mình.",
+  "risk": "Mức Chỉ đọc (mặc định) chỉ xem đơn, sản phẩm, khách hàng, tồn kho, giao dịch và các báo cáo tổng hợp. An toàn.\n\nMức Ghi nháp cho phép SenOS TẠO và SỬA sản phẩm, biến thể, khách hàng, trang nội dung, và ĐIỀU CHỈNH TỒN KHO thật trên cửa hàng.\n\nMức Toàn quyền thêm: tạo, sửa, xác nhận, đóng và HUỶ ĐƠN HÀNG; ghi GIAO DỊCH THANH TOÁN; xoá sản phẩm, khách hàng, trang.\nNguy hiểm nhất là webhook và script tag: webhook gửi dữ liệu đơn hàng, khách hàng tới một địa chỉ bên ngoài; script tag gắn mã JavaScript vào website bán hàng của bạn, chạy trên máy MỌI khách truy cập.\n\nChỉ nâng quyền khi bạn thật sự cần SenOS thao tác thay mình.",
   "ghi_da_can_nhac": [
     "hrv_orders_summary",
     "hrv_order_cycle_time",
@@ -148,5 +148,5 @@
     "haravan_orders_count",
     "haravan_orders_get"
   ],
-  "ghi_chu_tool_meta": "Chạy với --tools all (70 tool, haravan-mcp 0.1.0). Mặc định của MCP chỉ có 17 tool đọc; mở hết để mức quyền của Javis là chỗ chặn, không phải bộ lọc của MCP. Mẫu `*orders_*`, `*webhooks_*`, `*script_tags_*` ở nhóm danger chỉ áp cho tool KHÔNG có tên trong nhóm đọc, nên tool đơn hàng mới thêm sau tự rơi về danger."
+  "ghi_chu_tool_meta": "Chạy với --tools all (70 tool, haravan-mcp 0.1.0). Mặc định của MCP chỉ có 17 tool đọc; mở hết để mức quyền của SenOS là chỗ chặn, không phải bộ lọc của MCP. Mẫu `*orders_*`, `*webhooks_*`, `*script_tags_*` ở nhóm danger chỉ áp cho tool KHÔNG có tên trong nhóm đọc, nên tool đơn hàng mới thêm sau tự rơi về danger."
 }

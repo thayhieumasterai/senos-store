@@ -18,12 +18,12 @@ kênh (`zalo_send_message`, bot Telegram) và chỉ khi người dùng bảo g�
 
 ## Dữ liệu này từ đâu và giới hạn của nó
 
-Kho hội thoại của Javis (trang **Hội thoại** trên thanh bên) gom tin từ ba nguồn: khách nhắn
+Kho hội thoại của SenOS (trang **Hội thoại** trên thanh bên) gom tin từ ba nguồn: khách nhắn
 cho bot Telegram, khách nhắn cho bot Zalo, và tin gửi tới tài khoản Zalo cá nhân đã đấu.
 
 Ba điều phải nhớ khi kết luận:
 
-- **Chỉ có dữ liệu từ ngày Javis bắt đầu trực.** Không có lịch sử cũ trước đó.
+- **Chỉ có dữ liệu từ ngày SenOS bắt đầu trực.** Không có lịch sử cũ trước đó.
 - **Zalo cá nhân chỉ ghi khi chủ bật** (mục Kênh ở trang Hội thoại), và tin chủ tự trả lời
   bằng app trên điện thoại có thể không vào kho. Nên hội thoại Zalo cá nhân "chờ trả lời" có
   thể đã được trả lời rồi; nói rõ điều đó, đừng kết luận "khách bị bỏ quên".
@@ -58,7 +58,7 @@ Ba điều phải nhớ khi kết luận:
 
 ## Lỗi hay gặp
 
-- Tool trả `ERROR: ... cần Javis OS 0.60.1`: Javis chưa có kho hội thoại. Bảo người dùng cập
-  nhật Javis (mục Cập nhật trên thanh bên).
+- Tool trả `ERROR: ... cần SenOS 0.60.1`: SenOS chưa có kho hội thoại. Bảo người dùng cập
+  nhật SenOS (mục Cập nhật trên thanh bên).
 - Kho trống dù đã có bot: bot chưa được BẬT ở trang Chatbot, hoặc chưa có khách nhắn từ lúc
   bật. Với Zalo cá nhân: kiểm công tắc Ghi hội thoại ở mục Kênh của trang Hội thoại.

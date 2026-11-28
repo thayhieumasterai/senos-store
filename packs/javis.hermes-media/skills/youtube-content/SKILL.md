@@ -86,4 +86,4 @@ After fetching the transcript, format it based on what the user asks for:
 ---
 
 *Nguồn: [Nous Research](https://github.com/NousResearch/hermes-agent) - `hermes-agent/skills/media/youtube-content` - giấy phép MIT.*
-*Đã sửa để chạy trên Javis OS: `group` được thêm cho trang Kỹ năng của Javis. Nội dung skill giữ nguyên bản gốc.*
+*Đã sửa để chạy trên SenOS: `group` được thêm cho trang Kỹ năng của SenOS. Nội dung skill giữ nguyên bản gốc.*
