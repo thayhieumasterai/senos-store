@@ -92,6 +92,26 @@ def rebrand_packs():
     spec = importlib.util.spec_from_file_location("dong_goi", ROOT / "tools" / "dong-goi.py")
     dg = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(dg)
+    import zipfile
+    ip = ROOT / "index.json"
+    entries = {p.get("id"): p for p in json.loads(ip.read_text(encoding="utf-8")).get("packs", [])}
+
+    def zip_lags(d):
+        """The listed zip no longer holds what the folder holds. After a sync merge, a folder can be SenOS text
+        already (lines both sides kept) while the zip came over from upstream whole, still saying Javis."""
+        url = ((entries.get(d.name) or {}).get("download") or {}).get("url") or ""
+        zp = ROOT / url
+        if not url or not zp.is_file():
+            return False
+        try:
+            with zipfile.ZipFile(zp) as z:
+                inside = {i.filename: z.read(i.filename) for i in z.infolist() if not i.is_dir()}
+        except zipfile.BadZipFile:
+            return True
+        on_disk = {str(f.relative_to(d)).replace("\\", "/"): f.read_bytes() for f in d.rglob("*")
+                   if f.is_file() and not any(x in f.parts for x in dg.BO_QUA)}
+        return inside != on_disk
+
     touched = []
     for d in sorted((ROOT / "packs").iterdir()):
         if not (d / "javis-pack.yaml").is_file():
@@ -108,11 +128,10 @@ def rebrand_packs():
             if t != s:
                 f.write_text(t, encoding="utf-8", newline="")
                 hit = True
-        if hit:
+        if hit or zip_lags(d):
             touched.append(d.name)
     if not touched:
         return 0
-    ip = ROOT / "index.json"
     idx = json.loads(ip.read_text(encoding="utf-8"))
     by_id = {p.get("id"): p for p in idx.get("packs", [])}
     import contextlib, io
