@@ -425,7 +425,7 @@
       "tier": "code",
       "verified": true,
       "updated": "2026-11-27",
-      "homepage": "https://github.com/blogminhquy/javis-store/tree/main/packs/javis.google-sheets",
+      "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-sheets",
       "icon": "packs/javis.google-sheets/assets/google-sheets.png",
       "provides": {
         "connectors": [
@@ -434,8 +434,8 @@
       },
       "download": {
         "url": "dist/javis-google-sheets-1.0.2.zip",
-        "sha256": "e46a55d8b10792bdd34f6ef65226e81481fb4b7d6f8f181160bff0753537ac59",
-        "size": 7522
+        "sha256": "67b8cc8e2d36e21bae1eabadc63ad7166d360c151a5fbbba70fd519a2267aef5",
+        "size": 7530
       }
     },
     {
@@ -491,7 +491,7 @@
       "tier": "code",
       "verified": true,
       "updated": "2026-11-27",
-      "homepage": "https://github.com/blogminhquy/javis-store/tree/main/packs/javis.google-workspace",
+      "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-workspace",
       "icon": "packs/javis.google-workspace/assets/google-workspace.png",
       "provides": {
         "connectors": [
@@ -500,8 +500,8 @@
       },
       "download": {
         "url": "dist/javis-google-workspace-1.0.4.zip",
-        "sha256": "ba90040e67ac0179066078b92cb63b2288a8b9f0c3eb79a782922698fa1b7e5c",
-        "size": 13207
+        "sha256": "05fcb2a38fd88d0418fb1bde113413f57103774db71fadf11eff98fc6fe281ae",
+        "size": 13211
       }
     },
     {
@@ -524,7 +524,7 @@
       "tier": "code",
       "verified": true,
       "updated": "2026-11-27",
-      "homepage": "https://github.com/blogminhquy/javis-store/tree/main/packs/javis.google-tasks",
+      "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-tasks",
       "icon": "packs/javis.google-tasks/assets/google-tasks.png",
       "provides": {
         "connectors": [
@@ -533,8 +533,8 @@
       },
       "download": {
         "url": "dist/javis-google-tasks-1.0.5.zip",
-        "sha256": "8a482d67c318bf50037e74d064dddab7846a11e1a3bf0414ca9d4b0304bbfde3",
-        "size": 14201
+        "sha256": "df900e4a86b35f01ef1f013f3927fdd2d73553b591b84264a8037b6909255f40",
+        "size": 14204
       }
     },
     {
@@ -802,7 +802,7 @@
       "tier": "data",
       "verified": true,
       "updated": "2026-11-27",
-      "homepage": "https://github.com/blogminhquy/javis-store/tree/main/packs/javis.google-calendar",
+      "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-calendar",
       "icon": "packs/javis.google-calendar/assets/google-calendar.png",
       "provides": {
         "connectors": [
@@ -811,8 +811,8 @@
       },
       "download": {
         "url": "dist/javis-google-calendar-1.0.1.zip",
-        "sha256": "02e2dabd6cadca2c97a0139872b7c09cc2b15728d0272278106d0004c4a5d578",
-        "size": 12540
+        "sha256": "0bc92e1a4cb8b1c363f3ed59cc57e061469dd9f2d29c354a86895c185d3d8460",
+        "size": 12543
       }
     },
     {
@@ -826,7 +826,7 @@
       },
       "version": "1.0.2",
       "author": {
-        "name": "Javis"
+        "name": "SenOS"
       },
       "category": "van-phong",
       "category_label": {
@@ -835,7 +835,7 @@
       "tier": "data",
       "verified": true,
       "updated": "2026-11-27",
-      "homepage": "https://github.com/blogminhquy/javis-store/tree/main/packs/javis.gmail",
+      "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.gmail",
       "icon": "packs/javis.gmail/assets/gmail.webp",
       "provides": {
         "connectors": [
@@ -844,8 +844,8 @@
       },
       "download": {
         "url": "dist/javis-gmail-1.0.2.zip",
-        "sha256": "ef62d5d49165ba81fff8f4d5cdabb6bc49be2f0bbcad0e5bef5bb0ff30f6b45d",
-        "size": 16838
+        "sha256": "14149d68f41b6bc1ec4900a7a2d45194d7b36dd79a62d15328e47ab822d03716",
+        "size": 16843
       }
     },
     {
@@ -1237,7 +1237,7 @@
       "tier": "code",
       "verified": true,
       "updated": "2026-11-27",
-      "homepage": "https://github.com/blogminhquy/javis-store/tree/main/packs/javis.google-keep",
+      "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-keep",
       "icon": "packs/javis.google-keep/assets/google-keep.png",
       "provides": {
         "connectors": [
@@ -1246,8 +1246,8 @@
       },
       "download": {
         "url": "dist/javis-google-keep-1.0.4.zip",
-        "sha256": "0af47a900713056b13f943838455ed48be834fda8c6d4d3e8a62235907901184",
-        "size": 9386
+        "sha256": "05c87041e0122a452dab48452b5b5ff29759e847c3f36fbef33b18ce34aaec59",
+        "size": 9389
       }
     },
     {
@@ -2518,7 +2518,7 @@
       "tier": "data",
       "verified": true,
       "updated": "2026-11-26",
-      "homepage": "https://github.com/blogminhquy/javis-store/tree/main/packs/javis.github",
+      "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.github",
       "icon": "packs/javis.github/assets/github.png",
       "provides": {
         "connectors": [
@@ -2527,8 +2527,8 @@
       },
       "download": {
         "url": "dist/javis-github-1.0.5.zip",
-        "sha256": "2c10ee2eba97a20c0ac52c78f0af584f42e53971e735e0c08a03951d9e81d368",
-        "size": 9774
+        "sha256": "eb2fd73cb993f448af0b1c37f99d4b9ab335ac0507585ea698ada216ccab1936",
+        "size": 9780
       }
     },
     {

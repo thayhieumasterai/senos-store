@@ -5,8 +5,8 @@ hứa mọi gói được người phát hành kho đọc mã trước khi trộ
 
 **Tên phiên mang số phiên bản** (chủ kho, 27/11/2026): trong lượt đầu, trước việc khác, gọi `get_session` (không
 truyền `session_id`) lấy tên phiên, rồi `set_session_title` đổi thành `v<bản> · <tên hiện tại>`, với `<bản>` là
-`VERSION` của Javis OS lúc mở phiên (`../javis-os/VERSION`; phiên không có repo đó thì đọc `VERSION` trên `main` của
-`blogminhquy/javis-os` qua GitHub). Tên đã mở đầu bằng `v` kèm số phiên bản thì để nguyên.
+`VERSION` của SenOS lúc mở phiên (`../javis-os/VERSION`; phiên không có repo đó thì đọc `VERSION` trên `main` của
+`thayhieumasterai/senos-os` qua GitHub). Tên đã mở đầu bằng `v` kèm số phiên bản thì để nguyên.
 
 Đọc `CONTRIBUTING.md` trước khi sửa gói. Mấy luật hay bị quên:
 

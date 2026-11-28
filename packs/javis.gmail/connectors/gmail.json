@@ -121,6 +121,6 @@
     ]
   },
   "default_perm": "readonly",
-  "risk": "Mức Ghi nháp cho phép Javis SOẠN NHÁP thư và gắn, gỡ nhãn trong hộp thư của bạn.\n\nMức Toàn quyền thêm quyền GỬI thư thật (gửi, trả lời, chuyển tiếp), bỏ thư vào thùng rác, đánh dấu spam và tạo bộ lọc Gmail.\n\nChỉ cần đọc và tìm thư thì giữ mức Chỉ đọc.",
-  "_tool_meta_doc": "2026-11-27: Google's Gmail server now also sends, replies, forwards, trashes and marks spam. Before this entry named them, send_message fell to write by its name (allowed at Draft) and mark_thread_spam to read (allowed at Read only). Same list as the core gmail card in Javis 0.647.0."
+  "risk": "Mức Ghi nháp cho phép SenOS SOẠN NHÁP thư và gắn, gỡ nhãn trong hộp thư của bạn.\n\nMức Toàn quyền thêm quyền GỬI thư thật (gửi, trả lời, chuyển tiếp), bỏ thư vào thùng rác, đánh dấu spam và tạo bộ lọc Gmail.\n\nChỉ cần đọc và tìm thư thì giữ mức Chỉ đọc.",
+  "_tool_meta_doc": "2026-11-27: Google's Gmail server now also sends, replies, forwards, trashes and marks spam. Before this entry named them, send_message fell to write by its name (allowed at Draft) and mark_thread_spam to read (allowed at Read only). Same list as the core gmail card in SenOS 0.647.0."
 }
