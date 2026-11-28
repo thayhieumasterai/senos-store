@@ -1,7 +1,7 @@
 {
   "format": "senos-pack-index",
   "format_version": 1,
-  "updated": "2026-11-16",
+  "updated": "2026-11-26",
   "store": {
     "name": "Kho cài đặt SenOS",
     "url": "https://github.com/thayhieumasterai/senos-store"
@@ -414,7 +414,7 @@
       "description": {
         "vi": "Đọc/ghi bảng tính Google: đổ báo cáo doanh thu, tồn kho, công nợ ra Sheets tự động. Đấu bằng service account - không cần đăng nhập."
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": {
         "name": "SenOS"
       },
@@ -424,7 +424,7 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-10-05",
+      "updated": "2026-11-27",
       "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-sheets",
       "icon": "packs/javis.google-sheets/assets/google-sheets.png",
       "provides": {
@@ -433,9 +433,9 @@
         ]
       },
       "download": {
-        "url": "dist/javis-google-sheets-1.0.1.zip",
-        "sha256": "64e4dadd47cc53f8ce2606088847c079f734a0b078107e1784b060bff40c2f8f",
-        "size": 7524
+        "url": "dist/javis-google-sheets-1.0.2.zip",
+        "sha256": "67b8cc8e2d36e21bae1eabadc63ad7166d360c151a5fbbba70fd519a2267aef5",
+        "size": 7530
       }
     },
     {
@@ -480,7 +480,7 @@
       "description": {
         "vi": "Gmail, Calendar, Drive, Docs, Sheets, Slides, Forms, Tasks... trong MỘT kết nối. Tạo OAuth client 1 lần, khoảng 10 phút, có hướng dẫn từng bước. Lần đầu gọi tool Google, trình duyệt TRÊN MÁY CHẠY SENOS mở ra để bấm đồng ý, nên máy phải có màn hình."
       },
-      "version": "1.0.3",
+      "version": "1.0.4",
       "author": {
         "name": "SenOS"
       },
@@ -490,7 +490,7 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-10-05",
+      "updated": "2026-11-27",
       "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-workspace",
       "icon": "packs/javis.google-workspace/assets/google-workspace.png",
       "provides": {
@@ -499,9 +499,9 @@
         ]
       },
       "download": {
-        "url": "dist/javis-google-workspace-1.0.3.zip",
-        "sha256": "b24ad02cb7937eec40034a9dac5615ce5f8e0f97ae85a2d92e4db4c07916edbd",
-        "size": 13204
+        "url": "dist/javis-google-workspace-1.0.4.zip",
+        "sha256": "05fcb2a38fd88d0418fb1bde113413f57103774db71fadf11eff98fc6fe281ae",
+        "size": 13211
       }
     },
     {
@@ -513,7 +513,7 @@
       "description": {
         "vi": "Việc cần làm trong Google Tasks: xem danh sách, thêm việc, đặt hạn, đánh dấu xong. Chỉ xin quyền Tasks, không đụng Gmail hay Drive. Đăng nhập Google bằng OAuth client tự tạo (~10 phút, có hướng dẫn)."
       },
-      "version": "1.0.4",
+      "version": "1.0.5",
       "author": {
         "name": "SenOS"
       },
@@ -523,7 +523,7 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-11-16",
+      "updated": "2026-11-27",
       "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-tasks",
       "icon": "packs/javis.google-tasks/assets/google-tasks.png",
       "provides": {
@@ -532,9 +532,9 @@
         ]
       },
       "download": {
-        "url": "dist/javis-google-tasks-1.0.4.zip",
-        "sha256": "0332cafca3d953af8e59fa7659d69234293e24dc36deb0eacc794c2330dacb47",
-        "size": 14197
+        "url": "dist/javis-google-tasks-1.0.5.zip",
+        "sha256": "df900e4a86b35f01ef1f013f3927fdd2d73553b591b84264a8037b6909255f40",
+        "size": 14204
       }
     },
     {
@@ -791,39 +791,6 @@
       "description": {
         "vi": "Lịch Google qua MCP chính chủ của Google: xem lịch, tìm chỗ trống, tạo/sửa sự kiện, nhắc hẹn. Đăng nhập Google trong dashboard, chạy được cả trên VPS. Cần tạo OAuth client + ghi danh Developer Preview của Google 1 lần (~10 phút)."
       },
-      "version": "1.0.0",
-      "author": {
-        "name": "SenOS"
-      },
-      "category": "van-phong",
-      "category_label": {
-        "vi": "Văn phòng"
-      },
-      "tier": "data",
-      "verified": true,
-      "updated": "2026-09-05",
-      "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-calendar",
-      "icon": "packs/javis.google-calendar/assets/google-calendar.png",
-      "provides": {
-        "connectors": [
-          "google-calendar"
-        ]
-      },
-      "download": {
-        "url": "dist/javis-google-calendar-1.0.0.zip",
-        "sha256": "aff5967162c6085b3a52f992cd865821df1093f595abe9f5491f7e44b7cf8010",
-        "size": 12539
-      }
-    },
-    {
-      "id": "javis.gmail",
-      "kind": "connector",
-      "name": {
-        "vi": "Gmail"
-      },
-      "description": {
-        "vi": "Gmail qua MCP chính chủ của Google: đọc và tìm thư, soạn NHÁP, gắn nhãn sắp xếp hộp thư. Server chính chủ KHÔNG có tool gửi thẳng - luôn dừng ở bản nháp để bạn tự bấm gửi. Cần tạo OAuth client + ghi danh Developer Preview của Google 1 lần."
-      },
       "version": "1.0.1",
       "author": {
         "name": "SenOS"
@@ -834,7 +801,40 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-16",
+      "updated": "2026-11-27",
+      "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-calendar",
+      "icon": "packs/javis.google-calendar/assets/google-calendar.png",
+      "provides": {
+        "connectors": [
+          "google-calendar"
+        ]
+      },
+      "download": {
+        "url": "dist/javis-google-calendar-1.0.1.zip",
+        "sha256": "0bc92e1a4cb8b1c363f3ed59cc57e061469dd9f2d29c354a86895c185d3d8460",
+        "size": 12543
+      }
+    },
+    {
+      "id": "javis.gmail",
+      "kind": "connector",
+      "name": {
+        "vi": "Gmail"
+      },
+      "description": {
+        "vi": "Gmail qua MCP chính chủ của Google: đọc và tìm thư, soạn NHÁP, gắn nhãn sắp xếp hộp thư. Gửi, trả lời, chuyển tiếp và bỏ thư vào thùng rác chỉ chạy ở mức Toàn quyền. Cần tạo OAuth client của Google 1 lần, khoảng 10 phút."
+      },
+      "version": "1.0.2",
+      "author": {
+        "name": "SenOS"
+      },
+      "category": "van-phong",
+      "category_label": {
+        "vi": "Văn phòng"
+      },
+      "tier": "data",
+      "verified": true,
+      "updated": "2026-11-27",
       "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.gmail",
       "icon": "packs/javis.gmail/assets/gmail.webp",
       "provides": {
@@ -843,9 +843,9 @@
         ]
       },
       "download": {
-        "url": "dist/javis-gmail-1.0.1.zip",
-        "sha256": "37a043c5692a684653ae04928ecab9bc79a74c20e2e0ce3a438d9b126156665c",
-        "size": 16688
+        "url": "dist/javis-gmail-1.0.2.zip",
+        "sha256": "14149d68f41b6bc1ec4900a7a2d45194d7b36dd79a62d15328e47ab822d03716",
+        "size": 16843
       }
     },
     {
@@ -1226,7 +1226,7 @@
       "description": {
         "vi": "Đọc và sửa ghi chú Google Keep: tìm note, tạo note và danh sách việc, gắn nhãn, ghim, lưu trữ. LƯU Ý: Keep không có API chính chủ nên phải dùng master token có TOÀN QUYỀN tài khoản Google, không phải OAuth giới hạn phạm vi như Gmail hay Lịch. SenOS chỉ thao tác được ghi chú, nhưng token thì mở cả tài khoản nếu bị lộ."
       },
-      "version": "1.0.3",
+      "version": "1.0.4",
       "author": {
         "name": "SenOS"
       },
@@ -1236,7 +1236,7 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-10-05",
+      "updated": "2026-11-27",
       "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.google-keep",
       "icon": "packs/javis.google-keep/assets/google-keep.png",
       "provides": {
@@ -1245,9 +1245,9 @@
         ]
       },
       "download": {
-        "url": "dist/javis-google-keep-1.0.3.zip",
-        "sha256": "c7a2729ce5b1e27d245a79b9387403a985ec1b35d192bdc2f8bcdce19d91048a",
-        "size": 9383
+        "url": "dist/javis-google-keep-1.0.4.zip",
+        "sha256": "05c87041e0122a452dab48452b5b5ff29759e847c3f36fbef33b18ce34aaec59",
+        "size": 9389
       }
     },
     {
@@ -2507,7 +2507,7 @@
       "description": {
         "vi": "Làm việc với code trên GitHub qua MCP chính chủ: đọc và sửa file, tạo nhánh, đẩy commit, mở và trộn Pull Request, issue, review, xem và chạy GitHub Actions, đọc log CI, cảnh báo bảo mật. Bật đủ mọi bộ công cụ, dán Personal Access Token là xong."
       },
-      "version": "1.0.4",
+      "version": "1.0.5",
       "author": {
         "name": "SenOS"
       },
@@ -2517,7 +2517,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-20",
+      "updated": "2026-11-26",
       "homepage": "https://github.com/thayhieumasterai/senos-store/tree/main/packs/javis.github",
       "icon": "packs/javis.github/assets/github.png",
       "provides": {
@@ -2526,9 +2526,9 @@
         ]
       },
       "download": {
-        "url": "dist/javis-github-1.0.4.zip",
-        "sha256": "5a491c5c591a247ff78c96895806cf2e456247311f1fc494b1fa6547d7123299",
-        "size": 9623
+        "url": "dist/javis-github-1.0.5.zip",
+        "sha256": "eb2fd73cb993f448af0b1c37f99d4b9ab335ac0507585ea698ada216ccab1936",
+        "size": 9780
       }
     },
     {
