@@ -13,7 +13,7 @@ description:
     đều bị soát lại xem sản phẩm có giao nổi không.'
   en: '4 agents and 3 workflows for digital products: turn existing skills into a sellable product, build
     a sales page from a customer profile, and run a post-purchase sequence that earns testimonials.'
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.440.0"}

@@ -4,7 +4,7 @@ id: javis.lark
 version: 1.0.1
 name: {vi: "Lark"}
 description: {vi: "Nhắn tin, tài liệu (Docs), bảng dữ liệu (Base/Bitable), wiki và danh bạ trong Lark qua MCP chính chủ. Chạy local bằng app của bạn (dán App ID + App Secret). Cần tạo một Lark app và cấp quyền tương ứng."}
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.55.27"}

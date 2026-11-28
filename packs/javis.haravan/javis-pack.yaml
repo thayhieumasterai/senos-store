@@ -4,7 +4,7 @@ id: javis.haravan
 version: 1.0.1
 name: {vi: "Haravan"}
 description: {vi: "Đơn hàng, sản phẩm, khách hàng, tồn kho và báo cáo doanh thu, phân nhóm khách, gợi ý nhập hàng từ Haravan. Tạo một ứng dụng riêng trong Haravan, dán Access Token là xong."}
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.55.27"}

@@ -80,11 +80,20 @@ PACK_WORD = [(re.compile(_L + r"Javis OS\b"), "SenOS"), (re.compile(_L + r"Javis
 PACK_EXT = (".md", ".txt", ".yaml", ".yml", ".json", ".py", ".html", ".js")
 
 
+# Who wrote a pack is credit, not branding (MIT and the other licenses ask to keep it): `author:` lines keep the
+# original author's name, Javis included.
+AUTHOR_LINE = re.compile(r'^\s*"?author"?\s*:')
+
+
 def pack_text(s):
-    s = urls(s)
-    for rx, b in PACK_WORD:
-        s = rx.sub(b, s)
-    return s
+    out = []
+    for ln in s.split("\n"):
+        if not AUTHOR_LINE.match(ln):
+            ln = urls(ln)
+            for rx, b in PACK_WORD:
+                ln = rx.sub(b, ln)
+        out.append(ln)
+    return "\n".join(out)
 
 
 def rebrand_packs():
@@ -156,6 +165,8 @@ KEEP = ("id", "url", "sha256", "replaces", "requires", "pairs", "connector", "co
 
 
 def walk(v, key=""):
+    if key == "author":
+        return v                      # credit, kept as the author wrote it (see AUTHOR_LINE)
     if isinstance(v, dict):
         return {k: walk(x, k) for k, x in v.items()}
     if isinstance(v, list):

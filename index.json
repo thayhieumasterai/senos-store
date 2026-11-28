@@ -21,7 +21,7 @@
       },
       "version": "1.1.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -54,7 +54,7 @@
       },
       "version": "1.1.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -86,7 +86,7 @@
       },
       "version": "1.0.2",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "kho-ung-dung",
       "category_label": {
@@ -104,8 +104,8 @@
       },
       "download": {
         "url": "dist/javis-composio-1.0.2.zip",
-        "sha256": "70fd33db634c111eafcd87cb6f684648e4426616a3310294d7202176d179450c",
-        "size": 16150
+        "sha256": "d54d32e42987b7ad668bd603a631a4d71f6f0010af5171d25d6f9abec6df1463",
+        "size": 16151
       }
     },
     {
@@ -119,7 +119,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -137,7 +137,7 @@
       },
       "download": {
         "url": "dist/javis-pancake-pos-1.0.0.zip",
-        "sha256": "28b4dd4ce30a0ff0d9a0d03657f67abb475a6303a591acda8765ae4b818fbd86",
+        "sha256": "6945cfee6d59ebcf320f62aae972308ab78689b060ba05875f5543657e814dc4",
         "size": 8801
       }
     },
@@ -152,7 +152,7 @@
       },
       "version": "1.1.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "nhan-tin",
       "category_label": {
@@ -170,8 +170,8 @@
       },
       "download": {
         "url": "dist/javis-pancake-chat-1.1.1.zip",
-        "sha256": "4cfa5a43856ec8f18319a683aa5442d29b927d162d8fa6c22404324254da7033",
-        "size": 27351
+        "sha256": "ae5760d68e50d5be3f03938cb5e5a4edaa508fd615ae04e44b12973a4813d24f",
+        "size": 27349
       }
     },
     {
@@ -185,7 +185,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -203,7 +203,7 @@
       },
       "download": {
         "url": "dist/javis-kiotviet-1.0.1.zip",
-        "sha256": "45c90db75b2c903f2747cd0828c9bfd56b6f3acd89c7a2d78c90b96e66705d31",
+        "sha256": "c1cd84d4cc52790974c0e8510a3df574c5b40d24f2a7d6623bd15c289fd98481",
         "size": 19915
       }
     },
@@ -218,7 +218,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -236,8 +236,8 @@
       },
       "download": {
         "url": "dist/javis-sapo-1.0.1.zip",
-        "sha256": "0b5e68af388e27b3788d14c7668d8e819e225ac0e0443155948623384fe5b5a6",
-        "size": 33513
+        "sha256": "bbad89f73b3a142615652d82aa801cfe724e563eb8f988e9f76c7ac3614ca5c1",
+        "size": 33510
       }
     },
     {
@@ -251,7 +251,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -269,8 +269,8 @@
       },
       "download": {
         "url": "dist/javis-haravan-1.0.1.zip",
-        "sha256": "7c683bdf89963458eceab558c2894eaeeb9b68aaef7fe6ed5a725fadc65c31ac",
-        "size": 24307
+        "sha256": "72580478d50905fe3ce0b862422227b70823a181925ba5b66dee0b592f73f629",
+        "size": 24305
       }
     },
     {
@@ -284,7 +284,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -302,8 +302,8 @@
       },
       "download": {
         "url": "dist/javis-nhanh-1.0.1.zip",
-        "sha256": "7b6c8e883a591e2f58cc42ac8e89e64e21c599293eea1cd43d68b9168a63d414",
-        "size": 16397
+        "sha256": "2aafb90d36e77067755c5f7f43643184af032f3f18aee9377dffde2a0d9ced6c",
+        "size": 16396
       }
     },
     {
@@ -317,7 +317,7 @@
       },
       "version": "1.0.2",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -335,8 +335,8 @@
       },
       "download": {
         "url": "dist/javis-shopify-1.0.2.zip",
-        "sha256": "fcf0a921ba0060e78353c11ad603f95b3cefa2d3260a7621683a67cebcdd5fa8",
-        "size": 15158
+        "sha256": "b8ea05ee17e95953758aca253e76cc58f73bd3216ec50119c03c112265100299",
+        "size": 15159
       }
     },
     {
@@ -350,7 +350,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "marketing",
       "category_label": {
@@ -368,8 +368,8 @@
       },
       "download": {
         "url": "dist/javis-webcake-landing-1.0.1.zip",
-        "sha256": "cbcae97df9d65a6ac6ea1f009a3a63ac56abc2c877859f52c7afc3cf9289a44a",
-        "size": 10411
+        "sha256": "e74c276959e927302db0841eb7dd7b3867f2ac5e1a7c74452840afcbe2a9a93c",
+        "size": 10407
       }
     },
     {
@@ -383,7 +383,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "marketing",
       "category_label": {
@@ -401,8 +401,8 @@
       },
       "download": {
         "url": "dist/javis-webcake-landing-web-1.0.0.zip",
-        "sha256": "76302b8c3f8899f1588e01b0c2bc64b90a8262e3ac20e27208bbf152cb6a99ea",
-        "size": 10392
+        "sha256": "83ad15e418b919e275a6158e6fd702ed44b93d0b1ea05f2f8c2c562aad0a9ca6",
+        "size": 10391
       }
     },
     {
@@ -416,7 +416,7 @@
       },
       "version": "1.0.2",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -434,8 +434,8 @@
       },
       "download": {
         "url": "dist/javis-google-sheets-1.0.2.zip",
-        "sha256": "67b8cc8e2d36e21bae1eabadc63ad7166d360c151a5fbbba70fd519a2267aef5",
-        "size": 7530
+        "sha256": "67eaecf59c40451856df620ab4dab9dd7b4905227aa14c6fdbe3e66cf720bf2a",
+        "size": 7529
       }
     },
     {
@@ -449,7 +449,7 @@
       },
       "version": "1.0.4",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "marketing",
       "category_label": {
@@ -467,7 +467,7 @@
       },
       "download": {
         "url": "dist/javis-google-search-console-1.0.4.zip",
-        "sha256": "05f76143f0c66d2ac74a20136258567aeed07404fb921a62d5fd279e1dfd47d5",
+        "sha256": "69f98452296fbb7e8054a19132e4e45e2f7e3838ac8cad5e243807780f43647f",
         "size": 9935
       }
     },
@@ -482,7 +482,7 @@
       },
       "version": "1.0.4",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -500,8 +500,8 @@
       },
       "download": {
         "url": "dist/javis-google-workspace-1.0.4.zip",
-        "sha256": "05fcb2a38fd88d0418fb1bde113413f57103774db71fadf11eff98fc6fe281ae",
-        "size": 13211
+        "sha256": "a836325c6176db8c6fac5f17b0a80ca69f5b880fcfb0092ac1f194d83c36d952",
+        "size": 13210
       }
     },
     {
@@ -515,7 +515,7 @@
       },
       "version": "1.0.5",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -533,8 +533,8 @@
       },
       "download": {
         "url": "dist/javis-google-tasks-1.0.5.zip",
-        "sha256": "df900e4a86b35f01ef1f013f3927fdd2d73553b591b84264a8037b6909255f40",
-        "size": 14204
+        "sha256": "f489814ab116fe4ab23d47188f84e26bbdade923da79f489c3014cd71b3c2347",
+        "size": 14202
       }
     },
     {
@@ -548,7 +548,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "quang-cao",
       "category_label": {
@@ -566,8 +566,8 @@
       },
       "download": {
         "url": "dist/javis-meta-ads-graph-1.0.1.zip",
-        "sha256": "ae7a79189b9a1773edc5b9c8c962303dec27d6afa1a57823c7e3caefa4627e73",
-        "size": 18653
+        "sha256": "bcc266d7c16bc9227e6597804377e8167205a947eca5d0c230fb361b75886ae6",
+        "size": 18652
       }
     },
     {
@@ -583,7 +583,7 @@
       },
       "version": "1.1.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "mang-xa-hoi",
       "category_label": {
@@ -605,8 +605,8 @@
       },
       "download": {
         "url": "dist/javis-facebook-monitor-1.1.0.zip",
-        "sha256": "eb691a958bf08c196d831e04a8a2d37e383d41443d94d97a99fdc67f2c54f179",
-        "size": 21534
+        "sha256": "176ad75ff2c1c2479da487c205c3a83bdd028fdc41944d3c3568627ed00a877e",
+        "size": 21536
       }
     },
     {
@@ -620,7 +620,7 @@
       },
       "version": "1.0.2",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "quang-cao",
       "category_label": {
@@ -638,8 +638,8 @@
       },
       "download": {
         "url": "dist/javis-google-ads-1.0.2.zip",
-        "sha256": "b930ef75294ab35119dd5a630a6b6fc6f71d5f2d5cbf593ce9df317f449c2f43",
-        "size": 28962
+        "sha256": "eddcdb75b444bcfc69c1ec62b71e216ec18304bbc2257994bfc41e290e9f67cc",
+        "size": 28961
       }
     },
     {
@@ -655,7 +655,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "quang-cao",
       "category_label": {
@@ -673,8 +673,8 @@
       },
       "download": {
         "url": "dist/javis-google-merchant-center-1.0.0.zip",
-        "sha256": "bf4abf43092f30d58d7f0100431446f8f55d8c92edb00cf44ea05e228d0749e8",
-        "size": 14998
+        "sha256": "0494ad1d97b16cce395d4ae800d6c277d4f7343710aba26cdf9ea7e691abf75a",
+        "size": 14997
       }
     },
     {
@@ -690,7 +690,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "marketing",
       "category_label": {
@@ -708,8 +708,8 @@
       },
       "download": {
         "url": "dist/javis-google-analytics-1.0.0.zip",
-        "sha256": "eaa71ff687d2f6825577f336282c6abece12d5cd1812d7500d2329e712f17994",
-        "size": 11328
+        "sha256": "e1b301aa8b9821def1d9d9e71b522969f947f7b50fc38008ca2944c8c302392b",
+        "size": 11326
       }
     },
     {
@@ -725,7 +725,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "marketing",
       "category_label": {
@@ -743,8 +743,8 @@
       },
       "download": {
         "url": "dist/javis-google-tag-manager-1.0.0.zip",
-        "sha256": "d03c318abce6e3f11c7b1dc99a7667ff869896c86406244d660c743ae6fafecd",
-        "size": 11054
+        "sha256": "bdeb1d8331dd04233b367a4f23bf472c62e4b6b5eabb30b73a914e834fb0cbfb",
+        "size": 11057
       }
     },
     {
@@ -760,7 +760,7 @@
       },
       "version": "2.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "quang-cao",
       "category_label": {
@@ -778,7 +778,7 @@
       },
       "download": {
         "url": "dist/javis-tiktok-ads-2.0.0.zip",
-        "sha256": "d68035774c25f8247bd2d9f92adb61eaf7b089010446bb80b87a612bc5e2a162",
+        "sha256": "669f3cb94f3e16158382608de1473152d927134c6cea5b2899093b3ed3a048a2",
         "size": 11315
       }
     },
@@ -793,7 +793,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -811,7 +811,7 @@
       },
       "download": {
         "url": "dist/javis-google-calendar-1.0.1.zip",
-        "sha256": "0bc92e1a4cb8b1c363f3ed59cc57e061469dd9f2d29c354a86895c185d3d8460",
+        "sha256": "dbc870664ddade298e43df95e605156400a0918d006c5d53e94bd0ac1000f420",
         "size": 12543
       }
     },
@@ -826,7 +826,7 @@
       },
       "version": "1.0.2",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -844,8 +844,8 @@
       },
       "download": {
         "url": "dist/javis-gmail-1.0.2.zip",
-        "sha256": "14149d68f41b6bc1ec4900a7a2d45194d7b36dd79a62d15328e47ab822d03716",
-        "size": 16843
+        "sha256": "8c78c34020493985171053996213b8b158345edb4fbb9503a736e0c165b13ffd",
+        "size": 16842
       }
     },
     {
@@ -859,7 +859,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "marketing",
       "category_label": {
@@ -877,8 +877,8 @@
       },
       "download": {
         "url": "dist/javis-resend-1.0.0.zip",
-        "sha256": "e78df5575cb9bbbbce552e6e49f2b4f048241e4344c2e435c1421a37ac609348",
-        "size": 14440
+        "sha256": "700d9e6cc1a48362b1ec9cc9a8ac540339209ef454a6e7272e13365bb9bcc0fc",
+        "size": 14437
       }
     },
     {
@@ -892,7 +892,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "nhan-tin",
       "category_label": {
@@ -910,7 +910,7 @@
       },
       "download": {
         "url": "dist/javis-slack-1.0.0.zip",
-        "sha256": "c83711ee4fa8aefbe225fd3cbb01251f719f850753475aba0a6e949c9553012b",
+        "sha256": "d5ddd49082d748dd4ce010d973a1ef4709bf9f9eb45390cbe6636f918651707f",
         "size": 26092
       }
     },
@@ -925,7 +925,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "marketing",
       "category_label": {
@@ -943,8 +943,8 @@
       },
       "download": {
         "url": "dist/javis-systeme-io-1.0.0.zip",
-        "sha256": "4586f57aaff71acefadb3039671a37cb7e18ac1c0a3cb896795ef1427835c0b6",
-        "size": 12779
+        "sha256": "571d3a01c4b395fd525ad6f82edbd0e7d8d1daa1c9e46f4323bec7fd37f1459d",
+        "size": 12773
       }
     },
     {
@@ -958,7 +958,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -976,8 +976,8 @@
       },
       "download": {
         "url": "dist/javis-lark-1.0.1.zip",
-        "sha256": "27766764079683dd55c39730ba5c43a6396298e9c171191a4aec42661a8ed353",
-        "size": 51868
+        "sha256": "3732bcb565f09ab4118c731b413b6fe88d85832bc01b60d5d2147a4b006c5d85",
+        "size": 51865
       }
     },
     {
@@ -991,7 +991,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "sang-tao",
       "category_label": {
@@ -1009,8 +1009,8 @@
       },
       "download": {
         "url": "dist/javis-higgsfield-1.0.0.zip",
-        "sha256": "eff2b0101672f37d61636bfc1c73eb5fb95536b0043c15a912176e5230d3cb11",
-        "size": 91937
+        "sha256": "466913863b92259509927da46321b3646cec8844016e218d2d18dc03976326db",
+        "size": 91936
       }
     },
     {
@@ -1024,7 +1024,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "sang-tao",
       "category_label": {
@@ -1042,8 +1042,8 @@
       },
       "download": {
         "url": "dist/javis-capcut-1.0.0.zip",
-        "sha256": "5dd4891befffbad199bf9f19e40e07d0e0937386e2f8458e6406b4639e54dc23",
-        "size": 8945
+        "sha256": "bfe47575aef4f48a0ee569ad79200eb189336d0938b581ee9fa580ccf50e1c17",
+        "size": 8944
       }
     },
     {
@@ -1059,7 +1059,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "sang-tao",
       "category_label": {
@@ -1077,8 +1077,8 @@
       },
       "download": {
         "url": "dist/javis-topview-1.0.0.zip",
-        "sha256": "f386df8caf2ca54be97db67e252727697b6eca4f078d15082149922fc08a231c",
-        "size": 9537
+        "sha256": "8effef311f2a769e17c9abccde124ee52a91a0ed0f5c2a5b61b78d62ca98cfa8",
+        "size": 9535
       }
     },
     {
@@ -1092,7 +1092,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "marketing",
       "category_label": {
@@ -1110,8 +1110,8 @@
       },
       "download": {
         "url": "dist/javis-mineflow-1.0.0.zip",
-        "sha256": "6b31326409d6364e1fa80adb7f63eaa316100ccb5651d855a27aecad60ddc8f3",
-        "size": 54661
+        "sha256": "1ec59f307844e6dfdbc675b570c3558d01f83599e19f88702f77a38848df5358",
+        "size": 54662
       }
     },
     {
@@ -1127,7 +1127,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "mang-xa-hoi",
       "category_label": {
@@ -1145,8 +1145,8 @@
       },
       "download": {
         "url": "dist/javis-tiktok-social-1.0.0.zip",
-        "sha256": "80dd6e64c23a4507ff3b4538fdc7f34554a8555250f63ca9a86b5688ffe11c43",
-        "size": 9871
+        "sha256": "f038e0b004be98a30e0895389e72913029f214aff7ff4e73674c7bb13607f355",
+        "size": 9870
       }
     },
     {
@@ -1160,7 +1160,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "mang-xa-hoi",
       "category_label": {
@@ -1178,8 +1178,8 @@
       },
       "download": {
         "url": "dist/javis-x-twitter-1.0.0.zip",
-        "sha256": "4c5c1e8e7ec3ec8a2ac288b0018c69c7e42810e91a4b50fa7ca60fa45bf0ff90",
-        "size": 271241
+        "sha256": "460b4ea1b3698b349b29ff6e9c5c3e742dc82a6fd91a27d210a60f77e70f143f",
+        "size": 271240
       }
     },
     {
@@ -1195,7 +1195,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "mang-xa-hoi",
       "category_label": {
@@ -1213,8 +1213,8 @@
       },
       "download": {
         "url": "dist/javis-zernio-1.0.0.zip",
-        "sha256": "f61ecbc6d509ea0d61c921307a0b692a00ca2c53654d6c5274d917b7c3bc28db",
-        "size": 11330
+        "sha256": "8a963ac75dfa826052fae1221b0618c80868f20c8731d8274f04048b28f5e5c2",
+        "size": 11332
       }
     },
     {
@@ -1228,7 +1228,7 @@
       },
       "version": "1.0.4",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -1246,8 +1246,8 @@
       },
       "download": {
         "url": "dist/javis-google-keep-1.0.4.zip",
-        "sha256": "05c87041e0122a452dab48452b5b5ff29759e847c3f36fbef33b18ce34aaec59",
-        "size": 9389
+        "sha256": "a00807ad2114885e48f121984b6735be05cbc721fdc08bdbfb60c6275268def3",
+        "size": 9390
       }
     },
     {
@@ -1261,7 +1261,7 @@
       },
       "version": "1.0.3",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -1279,8 +1279,8 @@
       },
       "download": {
         "url": "dist/javis-notebooklm-1.0.3.zip",
-        "sha256": "ff4ac614217bcec15181435e00a1c2ec3a05b114c10a5c7bf30cbf568c314420",
-        "size": 14314
+        "sha256": "6bcc0340bd0137be9d9bb347f5158f5345c5fb8d294567c6f683e1e3e2300e94",
+        "size": 14313
       }
     },
     {
@@ -1294,7 +1294,7 @@
       },
       "version": "1.0.2",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -1312,8 +1312,8 @@
       },
       "download": {
         "url": "dist/javis-n8n-1.0.2.zip",
-        "sha256": "d850aa86a8b21ad2560eddbc88a2e6a95a5a53eaaeb972d21f594937e0df2824",
-        "size": 10914
+        "sha256": "384322668534b14a4c46b036eafc8eef2d0187252d46be928df48edfe3cd4a41",
+        "size": 10915
       }
     },
     {
@@ -1327,7 +1327,7 @@
       },
       "version": "1.0.3",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "website",
       "category_label": {
@@ -1345,8 +1345,8 @@
       },
       "download": {
         "url": "dist/javis-hostinger-1.0.3.zip",
-        "sha256": "fabe84b6ed83fc42f9b6109297592488e3a6e193e312fdc63d7000ed80e5ddd9",
-        "size": 11198
+        "sha256": "0e4da348461b6d81e54332d9b9fdc9696f3e6fe016690a9644340674aafd92f8",
+        "size": 11196
       }
     },
     {
@@ -2179,7 +2179,7 @@
       },
       "version": "1.1.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "quang-cao",
       "category_label": {
@@ -2204,7 +2204,7 @@
       },
       "download": {
         "url": "dist/javis-ads-analytics-1.1.0.zip",
-        "sha256": "832d084b7e6e6e817f19510cbbc97128a64def26e1ab43dddbdc448baf15f214",
+        "sha256": "967f08f8723599bc3ac8d0d3ef654b096277d3c58607904b3548af217311aadb",
         "size": 8158
       },
       "replaces": [
@@ -2224,7 +2224,7 @@
       },
       "version": "1.1.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "mang-xa-hoi",
       "category_label": {
@@ -2250,8 +2250,8 @@
       },
       "download": {
         "url": "dist/javis-content-social-1.1.0.zip",
-        "sha256": "18dae63c0f5ed3fee6e2c64c976b7f9423184f81c313f714af4b1a87386f0776",
-        "size": 9122
+        "sha256": "3d62e994397418f0c096a2cf941657ed7a87a214bc6d1c31d1beddfa7d311672",
+        "size": 9121
       },
       "replaces": [
         "javis.noi-dung-social"
@@ -2270,7 +2270,7 @@
       },
       "version": "1.1.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "marketing",
       "category_label": {
@@ -2295,8 +2295,8 @@
       },
       "download": {
         "url": "dist/javis-email-funnel-1.1.0.zip",
-        "sha256": "0454798ac84184af477a953e46454a62da7205c7fdcc9e0d118b88deaca116b6",
-        "size": 7901
+        "sha256": "5c71a58702c9cb9becbb2dac7527b10b87e64344d373ed6f02c2479d7ab915a2",
+        "size": 7898
       },
       "replaces": [
         "javis.email-pheu"
@@ -2315,7 +2315,7 @@
       },
       "version": "1.1.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -2342,8 +2342,8 @@
       },
       "download": {
         "url": "dist/javis-digital-products-1.1.0.zip",
-        "sha256": "e0866b8fa32e3efa2f29a2b3cd058d0f9fc9759bb7133b68f6c77f202afe75dd",
-        "size": 9448
+        "sha256": "d6a1ef2c6aedf8a288e6916913f320f8da6cd5df661ba6be34c6d75bd9b1dca8",
+        "size": 9446
       },
       "replaces": [
         "javis.san-pham-ban-hang"
@@ -2362,7 +2362,7 @@
       },
       "version": "1.1.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "van-phong",
       "category_label": {
@@ -2383,8 +2383,8 @@
       },
       "download": {
         "url": "dist/javis-everyday-assistants-1.1.0.zip",
-        "sha256": "cab8b17713698b091b8867e5b4174971ebd6fb80add8a5e4f314b81f29b18037",
-        "size": 5312
+        "sha256": "45ba6eba2751073d3fb502841a281e67c249e8d921d5af2f5bd71eda18d697e4",
+        "size": 5309
       },
       "replaces": [
         "javis.tro-ly-hang-ngay"
@@ -2403,7 +2403,7 @@
       },
       "version": "1.1.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "nghien-cuu",
       "category_label": {
@@ -2424,8 +2424,8 @@
       },
       "download": {
         "url": "dist/javis-research-assistants-1.1.0.zip",
-        "sha256": "5840fb0f4871ef73f2000c4b7157ddc4bd0f4ff0f5b1215760721712acafe8ef",
-        "size": 5342
+        "sha256": "66e25e646fcefcc8c6ed1692543799a1b862e6fe6b3d1cda23b389a54cb01b12",
+        "size": 5341
       },
       "replaces": [
         "javis.tro-ly-nghien-cuu"
@@ -2442,7 +2442,7 @@
       },
       "version": "1.1.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "ban-hang",
       "category_label": {
@@ -2460,8 +2460,8 @@
       },
       "download": {
         "url": "dist/javis-tts-dropship-1.1.1.zip",
-        "sha256": "89c234de649c2fcde5eb3d37fc87291e0bbd862b9c19e0dcecb299247dcccd09",
-        "size": 64812
+        "sha256": "e99b356bbedc60f5fa02e1ffd36956513aebba4857c2234104621d3e3a543ffb",
+        "size": 64810
       }
     },
     {
@@ -2477,7 +2477,7 @@
       },
       "version": "2.2.3",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "tro-ly-ai",
       "category_label": {
@@ -2509,7 +2509,7 @@
       },
       "version": "1.0.5",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "lap-trinh",
       "category_label": {
@@ -2527,8 +2527,8 @@
       },
       "download": {
         "url": "dist/javis-github-1.0.5.zip",
-        "sha256": "eb2fd73cb993f448af0b1c37f99d4b9ab335ac0507585ea698ada216ccab1936",
-        "size": 9780
+        "sha256": "baf99da7f746603d53192ba29210f99c04554f9d1ed5df69d8be06df64f1d750",
+        "size": 9779
       }
     },
     {
@@ -2542,7 +2542,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "lap-trinh",
       "category_label": {
@@ -2560,8 +2560,8 @@
       },
       "download": {
         "url": "dist/javis-supabase-1.0.0.zip",
-        "sha256": "84409aca1710510b31b2a54078842e629cbbd6710505258644d6361e0eadc4fd",
-        "size": 8884
+        "sha256": "05548ffc7dcdc79f8be0addda9e5ec5322a2f4ba3923ebf1389e73f2189b6f0b",
+        "size": 8883
       }
     },
     {
@@ -2575,7 +2575,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "lap-trinh",
       "category_label": {
@@ -2593,8 +2593,8 @@
       },
       "download": {
         "url": "dist/javis-cloudflare-1.0.1.zip",
-        "sha256": "3c5a5c0c0faf0b2332815f136418856e37c6cc86602dc4cf1926a97121eacc64",
-        "size": 5309
+        "sha256": "f4175b0356b6ed0ff1201c17b06dfcee28b7b3ef60bd7ae292ccf2785f851173",
+        "size": 5310
       }
     },
     {
@@ -2608,7 +2608,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "lap-trinh",
       "category_label": {
@@ -2626,7 +2626,7 @@
       },
       "download": {
         "url": "dist/javis-cloudflare-oauth-1.0.0.zip",
-        "sha256": "0234ce8e35446c09e6b038524d2b3b09f9268675cb2153557de15bf7beace75f",
+        "sha256": "7531a15ea95ee4973a021e4ab1becf0f60345ddfa8cb137f028242a0e071cfa8",
         "size": 4738
       }
     },
@@ -2641,7 +2641,7 @@
       },
       "version": "1.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "lap-trinh",
       "category_label": {
@@ -2662,8 +2662,8 @@
       },
       "download": {
         "url": "dist/javis-cloudflare-deploy-1.0.1.zip",
-        "sha256": "93811514794007004aab0ad1513be5f60570c5b18a999c82a7486dc065ef6f45",
-        "size": 13403
+        "sha256": "121c67b7bc08505ac9354f5c972c8af19fe5ea04f45a46b6701e492a5e30b3cc",
+        "size": 13404
       }
     },
     {
@@ -2679,7 +2679,7 @@
       },
       "version": "2.0.1",
       "author": {
-        "name": "SenOS"
+        "name": "Javis"
       },
       "category": "nhan-tin",
       "category_label": {

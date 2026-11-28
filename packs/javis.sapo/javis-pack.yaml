@@ -4,7 +4,7 @@ id: javis.sapo
 version: 1.0.1
 name: {vi: "Sapo"}
 description: {vi: "Đơn hàng, sản phẩm, khách hàng, tồn kho, khuyến mãi và báo cáo doanh thu từ Sapo (Omni, Web). Tạo một ứng dụng riêng trong Sapo, dán API Key và API Secret là xong."}
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.55.27"}

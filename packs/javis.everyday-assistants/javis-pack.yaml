@@ -14,7 +14,7 @@ description:
   en: '3 everyday agents that work standalone: a secretary who triages the inbox and orders the day, a
     summariser who turns long documents into decisions and actions, and a devil''s advocate who finds
     the holes in a plan before you commit to it.'
-author: {name: SenOS}
+author: {name: Javis}
 license: MIT
 homepage: "https://github.com/thayhieumasterai/senos-store"
 compat: {app: ">=0.440.0"}
